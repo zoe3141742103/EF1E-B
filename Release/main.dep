@@ -1,0 +1,2 @@
+main.o: ../main.c ../includes.h ../KF8_Type_Define.h ../PinConfig.h \
+ ../SoftSpi.h ../Work.h ../Pwm.h ../Timer.h

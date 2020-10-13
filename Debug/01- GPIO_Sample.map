@@ -1,0 +1,1827 @@
+gplink-2.0.0
+Map File - Created 10-10-2020  10:44:39
+ 
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                  STARTUP       code   00000000    program   0x000008
+           interrupt_0x04       code   0x000004    program   0x000018
+           func._int_fun0       code   0x007000    program   0x000158
+   func._Led_RT_WaterOpen       code   0x0070ac    program   0x000156
+func._Tail_Stop_Check_Input       code   0x007157    program   0x000124
+     func._RT_Check_Input       code   0x0071e9    program   0x0000dc
+        func._Rt_Two_Init       code   0x007257    program   0x0000c6
+        func._Rt_One_Init       code   0x0072ba    program   0x0000c6
+      func._Tail_Two_Init       code   0x00731d    program   0x0000c6
+      func._Tail_One_Init       code   0x007380    program   0x0000c6
+           func._Mode_Act       code   0x0073e3    program   0x0000c4
+  func._Led_Tail_AllClose       code   0x007445    program   0x00008c
+   func._Led_Tail_AllOpen       code   0x00748b    program   0x00008c
+    func._Led_RT_AllClose       code   0x0074d1    program   0x00008c
+     func._Led_RT_AllOpen       code   0x007517    program   0x00008c
+               func._main       code   0x00755d    program   0x000082
+                   .cinit       code   0x00759e    program   0x00007a
+        func._RT_Mode_Act       code   0x0075db    program   0x00006a
+    func._SPI_Write_2Byte       code   0x007610    program   0x000064
+            func._Init_IO       code   0x007642    program   0x000056
+          _sartup_A100GQS       code   0x00766d    program   0x00004a
+   func._IS31FL3265B_Init       code   0x007692    program   0x000048
+           func._delay_ms       code   0x0076b6    program   0x000048
+         func._Spi_CS_Low       code   0x0076da    program   0x000046
+        func._Spi_CS_High       code   0x0076fd    program   0x000046
+           func._spi_init       code   0x007720    program   0x000042
+        func._Timer2_Init       code   0x007741    program   0x00001e
+        func._Timer1_Init       code   0x007750    program   0x000018
+        func._Timer0_Init       code   0x00775c    program   0x000012
+   func._LED_Stop_PWMOpen       code   0x007765    program   0x000010
+                 INIT_IMP       code   0x00776d    program   0x000010
+    func.__gsinit_startup       code   0x007775    program   0x000010
+  func._LED_Stop_AllClose       code   0x00777d    program   0x00000e
+   func._LED_Stop_AllOpen       code   0x007784    program   0x00000e
+                .org_7ef0       code   0x007ef0    program   0x000206
+                .org_8004       code   0x008004    program   0x000002
+                  .config       code   0x008007    program   0x000004
+            sharebankTRAP      idata   0x000073       data   0x000005
+                ID_Work_0      idata   0x00009a       data   0x000002
+                ID_Work_1      idata   0x00009c       data   0x000002
+                ID_Work_2      idata   0x00009e       data   0x000002
+                ID_Work_3      idata   0x0000a0       data   0x000002
+                ID_Work_4      idata   0x0000a2       data   0x000002
+                ID_Work_5      idata   0x0000a4       data   0x000002
+                ID_main_1      idata   0x0000a8       data   0x000002
+                ID_main_0      idata   0x0000c4       data   0x000001
+      UD_abs_KF8A100GQS_0      udata   00000000       data   0x000001
+      UD_abs_KF8A100GQS_1      udata   0x000001       data   0x000001
+      UD_abs_KF8A100GQS_2      udata   0x000002       data   0x000001
+      UD_abs_KF8A100GQS_3      udata   0x000003       data   0x000001
+      UD_abs_KF8A100GQS_4      udata   0x000004       data   0x000001
+      UD_abs_KF8A100GQS_5      udata   0x000005       data   0x000001
+      UD_abs_KF8A100GQS_6      udata   0x000006       data   0x000001
+      UD_abs_KF8A100GQS_7      udata   0x000007       data   0x000001
+      UD_abs_KF8A100GQS_8      udata   0x000008       data   0x000001
+      UD_abs_KF8A100GQS_9      udata   0x000009       data   0x000001
+      UD_abs_KF8A100GQS_a      udata   0x00000a       data   0x000001
+      UD_abs_KF8A100GQS_b      udata   0x00000b       data   0x000001
+      UD_abs_KF8A100GQS_c      udata   0x00000c       data   0x000001
+      UD_abs_KF8A100GQS_d      udata   0x00000d       data   0x000001
+      UD_abs_KF8A100GQS_e      udata   0x00000e       data   0x000001
+      UD_abs_KF8A100GQS_f      udata   0x00000f       data   0x000001
+     UD_abs_KF8A100GQS_10      udata   0x000010       data   0x000001
+     UD_abs_KF8A100GQS_11      udata   0x000011       data   0x000001
+     UD_abs_KF8A100GQS_12      udata   0x000012       data   0x000001
+     UD_abs_KF8A100GQS_13      udata   0x000013       data   0x000001
+     UD_abs_KF8A100GQS_15      udata   0x000015       data   0x000001
+     UD_abs_KF8A100GQS_16      udata   0x000016       data   0x000001
+     UD_abs_KF8A100GQS_17      udata   0x000017       data   0x000001
+     UD_abs_KF8A100GQS_19      udata   0x000019       data   0x000001
+     UD_abs_KF8A100GQS_1a      udata   0x00001a       data   0x000001
+     UD_abs_KF8A100GQS_1d      udata   0x00001d       data   0x000001
+     UD_abs_KF8A100GQS_1e      udata   0x00001e       data   0x000001
+     UD_abs_KF8A100GQS_1f      udata   0x00001f       data   0x000001
+     UD_abs_KF8A100GQS_21      udata   0x000021       data   0x000001
+     UD_abs_KF8A100GQS_22      udata   0x000022       data   0x000001
+     UD_abs_KF8A100GQS_23      udata   0x000023       data   0x000001
+     UD_abs_KF8A100GQS_24      udata   0x000024       data   0x000001
+     UD_abs_KF8A100GQS_25      udata   0x000025       data   0x000001
+     UD_abs_KF8A100GQS_26      udata   0x000026       data   0x000001
+     UD_abs_KF8A100GQS_27      udata   0x000027       data   0x000001
+     UD_abs_KF8A100GQS_28      udata   0x000028       data   0x000001
+     UD_abs_KF8A100GQS_29      udata   0x000029       data   0x000001
+     UD_abs_KF8A100GQS_2b      udata   0x00002b       data   0x000001
+     UD_abs_KF8A100GQS_2c      udata   0x00002c       data   0x000001
+     UD_abs_KF8A100GQS_2d      udata   0x00002d       data   0x000001
+     UD_abs_KF8A100GQS_2e      udata   0x00002e       data   0x000001
+     UD_abs_KF8A100GQS_30      udata   0x000030       data   0x000001
+     UD_abs_KF8A100GQS_31      udata   0x000031       data   0x000001
+     UD_abs_KF8A100GQS_32      udata   0x000032       data   0x000001
+     UD_abs_KF8A100GQS_33      udata   0x000033       data   0x000001
+     UD_abs_KF8A100GQS_35      udata   0x000035       data   0x000001
+     UD_abs_KF8A100GQS_36      udata   0x000036       data   0x000001
+     UD_abs_KF8A100GQS_37      udata   0x000037       data   0x000001
+     UD_abs_KF8A100GQS_38      udata   0x000038       data   0x000001
+     UD_abs_KF8A100GQS_39      udata   0x000039       data   0x000001
+     UD_abs_KF8A100GQS_3a      udata   0x00003a       data   0x000001
+     UD_abs_KF8A100GQS_3b      udata   0x00003b       data   0x000001
+     UD_abs_KF8A100GQS_3c      udata   0x00003c       data   0x000001
+     UD_abs_KF8A100GQS_3d      udata   0x00003d       data   0x000001
+     UD_abs_KF8A100GQS_3e      udata   0x00003e       data   0x000001
+     UD_abs_KF8A100GQS_3f      udata   0x00003f       data   0x000001
+     UD_abs_KF8A100GQS_40      udata   0x000040       data   0x000001
+     UD_abs_KF8A100GQS_41      udata   0x000041       data   0x000001
+     UD_abs_KF8A100GQS_42      udata   0x000042       data   0x000001
+     UD_abs_KF8A100GQS_43      udata   0x000043       data   0x000001
+     UD_abs_KF8A100GQS_44      udata   0x000044       data   0x000001
+     UD_abs_KF8A100GQS_45      udata   0x000045       data   0x000001
+     UD_abs_KF8A100GQS_46      udata   0x000046       data   0x000001
+     UD_abs_KF8A100GQS_47      udata   0x000047       data   0x000001
+     UD_abs_KF8A100GQS_48      udata   0x000048       data   0x000001
+     UD_abs_KF8A100GQS_49      udata   0x000049       data   0x000001
+     UD_abs_KF8A100GQS_4a      udata   0x00004a       data   0x000001
+     UD_abs_KF8A100GQS_4b      udata   0x00004b       data   0x000001
+     UD_abs_KF8A100GQS_4c      udata   0x00004c       data   0x000001
+     UD_abs_KF8A100GQS_4d      udata   0x00004d       data   0x000001
+     UD_abs_KF8A100GQS_4e      udata   0x00004e       data   0x000001
+     UD_abs_KF8A100GQS_4f      udata   0x00004f       data   0x000001
+     UD_abs_KF8A100GQS_50      udata   0x000050       data   0x000001
+     UD_abs_KF8A100GQS_51      udata   0x000051       data   0x000001
+     UD_abs_KF8A100GQS_52      udata   0x000052       data   0x000001
+     UD_abs_KF8A100GQS_53      udata   0x000053       data   0x000001
+     UD_abs_KF8A100GQS_54      udata   0x000054       data   0x000001
+     UD_abs_KF8A100GQS_55      udata   0x000055       data   0x000001
+     UD_abs_KF8A100GQS_56      udata   0x000056       data   0x000001
+     UD_abs_KF8A100GQS_57      udata   0x000057       data   0x000001
+     UD_abs_KF8A100GQS_5d      udata   0x00005d       data   0x000001
+     UD_abs_KF8A100GQS_5e      udata   0x00005e       data   0x000001
+     UD_abs_KF8A100GQS_60      udata   0x000060       data   0x000001
+     UD_abs_KF8A100GQS_62      udata   0x000062       data   0x000001
+     UD_abs_KF8A100GQS_63      udata   0x000063       data   0x000001
+     UD_abs_KF8A100GQS_64      udata   0x000064       data   0x000001
+     UD_abs_KF8A100GQS_65      udata   0x000065       data   0x000001
+     UD_abs_KF8A100GQS_68      udata   0x000068       data   0x000001
+     UD_abs_KF8A100GQS_69      udata   0x000069       data   0x000001
+     UD_abs_KF8A100GQS_6a      udata   0x00006a       data   0x000001
+     UD_abs_KF8A100GQS_6b      udata   0x00006b       data   0x000001
+               ICD_DATA_0      udata   0x000070       data   0x000003
+              ICD_DATA_00      udata   0x00007f       data   0x000001
+                sharebank      udata   0x000080       data   0x000014
+           UDL_SoftSpi_26      udata   0x000094       data   0x000002
+              UDL_Work_10      udata   0x000096       data   0x000002
+              UDL_Work_11      udata   0x000098       data   0x000002
+                UD_main_1      udata   0x0000a6       data   0x000002
+                UDL_Led_0      udata   0x0000aa       data   0x000001
+                UDL_Led_1      udata   0x0000ab       data   0x000001
+                UDL_Led_2      udata   0x0000ac       data   0x000001
+                UDL_Led_3      udata   0x0000ad       data   0x000001
+                UDL_Led_4      udata   0x0000ae       data   0x000001
+            UDL_SoftSpi_0      udata   0x0000af       data   0x000001
+            UDL_SoftSpi_1      udata   0x0000b0       data   0x000001
+            UDL_SoftSpi_2      udata   0x0000b1       data   0x000001
+            UDL_SoftSpi_3      udata   0x0000b2       data   0x000001
+            UDL_SoftSpi_4      udata   0x0000b3       data   0x000001
+            UDL_SoftSpi_5      udata   0x0000b4       data   0x000001
+            UDL_SoftSpi_6      udata   0x0000b5       data   0x000001
+            UDL_SoftSpi_7      udata   0x0000b6       data   0x000001
+            UDL_SoftSpi_8      udata   0x0000b7       data   0x000001
+            UDL_SoftSpi_9      udata   0x0000b8       data   0x000001
+           UDL_SoftSpi_10      udata   0x0000b9       data   0x000001
+           UDL_SoftSpi_24      udata   0x0000ba       data   0x000001
+           UDL_SoftSpi_25      udata   0x0000bb       data   0x000001
+               UDL_Work_0      udata   0x0000bc       data   0x000001
+               UDL_Work_1      udata   0x0000bd       data   0x000001
+               UDL_Work_2      udata   0x0000be       data   0x000001
+               UDL_Work_3      udata   0x0000bf       data   0x000001
+               UDL_Work_6      udata   0x0000c0       data   0x000001
+               UDL_Work_7      udata   0x0000c1       data   0x000001
+               UDL_Work_8      udata   0x0000c2       data   0x000001
+               UDL_Work_9      udata   0x0000c3       data   0x000001
+           ISR_UDLr1x1005      udata   0x0000c5       data   0x000001
+           ISR_UDLr1x1006      udata   0x0000c6       data   0x000001
+           ISR_UDLr1x1007      udata   0x0000c7       data   0x000001
+               ICD_DATA_1      udata   0x0000f3       data   0x00000d
+    UD_abs_KF8A100GQS_105      udata   0x000105       data   0x000001
+    UD_abs_KF8A100GQS_106      udata   0x000106       data   0x000001
+    UD_abs_KF8A100GQS_107      udata   0x000107       data   0x000001
+    UD_abs_KF8A100GQS_109      udata   0x000109       data   0x000001
+    UD_abs_KF8A100GQS_10c      udata   0x00010c       data   0x000001
+    UD_abs_KF8A100GQS_10d      udata   0x00010d       data   0x000001
+    UD_abs_KF8A100GQS_10e      udata   0x00010e       data   0x000001
+    UD_abs_KF8A100GQS_10f      udata   0x00010f       data   0x000001
+    UD_abs_KF8A100GQS_110      udata   0x000110       data   0x000001
+    UD_abs_KF8A100GQS_111      udata   0x000111       data   0x000001
+    UD_abs_KF8A100GQS_112      udata   0x000112       data   0x000001
+    UD_abs_KF8A100GQS_113      udata   0x000113       data   0x000001
+    UD_abs_KF8A100GQS_114      udata   0x000114       data   0x000001
+    UD_abs_KF8A100GQS_115      udata   0x000115       data   0x000001
+    UD_abs_KF8A100GQS_116      udata   0x000116       data   0x000001
+    UD_abs_KF8A100GQS_118      udata   0x000118       data   0x000001
+    UD_abs_KF8A100GQS_119      udata   0x000119       data   0x000001
+    UD_abs_KF8A100GQS_11a      udata   0x00011a       data   0x000001
+    UD_abs_KF8A100GQS_11b      udata   0x00011b       data   0x000001
+    UD_abs_KF8A100GQS_11c      udata   0x00011c       data   0x000001
+    UD_abs_KF8A100GQS_123      udata   0x000123       data   0x000001
+    UD_abs_KF8A100GQS_124      udata   0x000124       data   0x000001
+    UD_abs_KF8A100GQS_125      udata   0x000125       data   0x000001
+    UD_abs_KF8A100GQS_126      udata   0x000126       data   0x000001
+    UD_abs_KF8A100GQS_127      udata   0x000127       data   0x000001
+    UD_abs_KF8A100GQS_129      udata   0x000129       data   0x000001
+    UD_abs_KF8A100GQS_12a      udata   0x00012a       data   0x000001
+    UD_abs_KF8A100GQS_12b      udata   0x00012b       data   0x000001
+    UD_abs_KF8A100GQS_12c      udata   0x00012c       data   0x000001
+    UD_abs_KF8A100GQS_12d      udata   0x00012d       data   0x000001
+    UD_abs_KF8A100GQS_12e      udata   0x00012e       data   0x000001
+    UD_abs_KF8A100GQS_12f      udata   0x00012f       data   0x000001
+    UD_abs_KF8A100GQS_130      udata   0x000130       data   0x000001
+    UD_abs_KF8A100GQS_131      udata   0x000131       data   0x000001
+    UD_abs_KF8A100GQS_132      udata   0x000132       data   0x000001
+    UD_abs_KF8A100GQS_133      udata   0x000133       data   0x000001
+    UD_abs_KF8A100GQS_134      udata   0x000134       data   0x000001
+    UD_abs_KF8A100GQS_135      udata   0x000135       data   0x000001
+    UD_abs_KF8A100GQS_136      udata   0x000136       data   0x000001
+    UD_abs_KF8A100GQS_137      udata   0x000137       data   0x000001
+    UD_abs_KF8A100GQS_138      udata   0x000138       data   0x000001
+    UD_abs_KF8A100GQS_139      udata   0x000139       data   0x000001
+    UD_abs_KF8A100GQS_13a      udata   0x00013a       data   0x000001
+    UD_abs_KF8A100GQS_13b      udata   0x00013b       data   0x000001
+    UD_abs_KF8A100GQS_13c      udata   0x00013c       data   0x000001
+    UD_abs_KF8A100GQS_13d      udata   0x00013d       data   0x000001
+    UD_abs_KF8A100GQS_13e      udata   0x00013e       data   0x000001
+    UD_abs_KF8A100GQS_13f      udata   0x00013f       data   0x000001
+    UD_abs_KF8A100GQS_140      udata   0x000140       data   0x000001
+    UD_abs_KF8A100GQS_141      udata   0x000141       data   0x000001
+    UD_abs_KF8A100GQS_142      udata   0x000142       data   0x000001
+    UD_abs_KF8A100GQS_145      udata   0x000145       data   0x000001
+    UD_abs_KF8A100GQS_146      udata   0x000146       data   0x000001
+    UD_abs_KF8A100GQS_147      udata   0x000147       data   0x000001
+    UD_abs_KF8A100GQS_149      udata   0x000149       data   0x000001
+    UD_abs_KF8A100GQS_14a      udata   0x00014a       data   0x000001
+    UD_abs_KF8A100GQS_14b      udata   0x00014b       data   0x000001
+    UD_abs_KF8A100GQS_14c      udata   0x00014c       data   0x000001
+    UD_abs_KF8A100GQS_14d      udata   0x00014d       data   0x000001
+    UD_abs_KF8A100GQS_14e      udata   0x00014e       data   0x000001
+    UD_abs_KF8A100GQS_14f      udata   0x00014f       data   0x000001
+    UD_abs_KF8A100GQS_151      udata   0x000151       data   0x000001
+    UD_abs_KF8A100GQS_152      udata   0x000152       data   0x000001
+    UD_abs_KF8A100GQS_154      udata   0x000154       data   0x000001
+    UD_abs_KF8A100GQS_155      udata   0x000155       data   0x000001
+    UD_abs_KF8A100GQS_156      udata   0x000156       data   0x000001
+    UD_abs_KF8A100GQS_157      udata   0x000157       data   0x000001
+    UD_abs_KF8A100GQS_158      udata   0x000158       data   0x000001
+    UD_abs_KF8A100GQS_159      udata   0x000159       data   0x000001
+    UD_abs_KF8A100GQS_15a      udata   0x00015a       data   0x000001
+    UD_abs_KF8A100GQS_160      udata   0x000160       data   0x000001
+    UD_abs_KF8A100GQS_163      udata   0x000163       data   0x000001
+    UD_abs_KF8A100GQS_164      udata   0x000164       data   0x000001
+    UD_abs_KF8A100GQS_165      udata   0x000165       data   0x000001
+    UD_abs_KF8A100GQS_166      udata   0x000166       data   0x000001
+    UD_abs_KF8A100GQS_167      udata   0x000167       data   0x000001
+    UD_abs_KF8A100GQS_168      udata   0x000168       data   0x000001
+    UD_abs_KF8A100GQS_169      udata   0x000169       data   0x000001
+    UD_abs_KF8A100GQS_16a      udata   0x00016a       data   0x000001
+    UD_abs_KF8A100GQS_16b      udata   0x00016b       data   0x000001
+    UD_abs_KF8A100GQS_16c      udata   0x00016c       data   0x000001
+    UD_abs_KF8A100GQS_16d      udata   0x00016d       data   0x000001
+    UD_abs_KF8A100GQS_205      udata   0x000205       data   0x000001
+    UD_abs_KF8A100GQS_206      udata   0x000206       data   0x000001
+    UD_abs_KF8A100GQS_207      udata   0x000207       data   0x000001
+    UD_abs_KF8A100GQS_208      udata   0x000208       data   0x000001
+    UD_abs_KF8A100GQS_209      udata   0x000209       data   0x000001
+    UD_abs_KF8A100GQS_20c      udata   0x00020c       data   0x000001
+    UD_abs_KF8A100GQS_20d      udata   0x00020d       data   0x000001
+    UD_abs_KF8A100GQS_20e      udata   0x00020e       data   0x000001
+    UD_abs_KF8A100GQS_20f      udata   0x00020f       data   0x000001
+    UD_abs_KF8A100GQS_210      udata   0x000210       data   0x000001
+    UD_abs_KF8A100GQS_211      udata   0x000211       data   0x000001
+    UD_abs_KF8A100GQS_212      udata   0x000212       data   0x000001
+    UD_abs_KF8A100GQS_213      udata   0x000213       data   0x000001
+    UD_abs_KF8A100GQS_214      udata   0x000214       data   0x000001
+    UD_abs_KF8A100GQS_215      udata   0x000215       data   0x000001
+    UD_abs_KF8A100GQS_216      udata   0x000216       data   0x000001
+    UD_abs_KF8A100GQS_218      udata   0x000218       data   0x000001
+    UD_abs_KF8A100GQS_219      udata   0x000219       data   0x000001
+    UD_abs_KF8A100GQS_21a      udata   0x00021a       data   0x000001
+    UD_abs_KF8A100GQS_21b      udata   0x00021b       data   0x000001
+    UD_abs_KF8A100GQS_21c      udata   0x00021c       data   0x000001
+    UD_abs_KF8A100GQS_21d      udata   0x00021d       data   0x000001
+    UD_abs_KF8A100GQS_21e      udata   0x00021e       data   0x000001
+    UD_abs_KF8A100GQS_21f      udata   0x00021f       data   0x000001
+    UD_abs_KF8A100GQS_22a      udata   0x00022a       data   0x000001
+    UD_abs_KF8A100GQS_231      udata   0x000231       data   0x000001
+    UD_abs_KF8A100GQS_232      udata   0x000232       data   0x000001
+    UD_abs_KF8A100GQS_233      udata   0x000233       data   0x000001
+    UD_abs_KF8A100GQS_234      udata   0x000234       data   0x000001
+    UD_abs_KF8A100GQS_235      udata   0x000235       data   0x000001
+    UD_abs_KF8A100GQS_236      udata   0x000236       data   0x000001
+    UD_abs_KF8A100GQS_237      udata   0x000237       data   0x000001
+    UD_abs_KF8A100GQS_238      udata   0x000238       data   0x000001
+    UD_abs_KF8A100GQS_239      udata   0x000239       data   0x000001
+    UD_abs_KF8A100GQS_23a      udata   0x00023a       data   0x000001
+    UD_abs_KF8A100GQS_23b      udata   0x00023b       data   0x000001
+    UD_abs_KF8A100GQS_23c      udata   0x00023c       data   0x000001
+    UD_abs_KF8A100GQS_240      udata   0x000240       data   0x000001
+    UD_abs_KF8A100GQS_241      udata   0x000241       data   0x000001
+    UD_abs_KF8A100GQS_242      udata   0x000242       data   0x000001
+    UD_abs_KF8A100GQS_243      udata   0x000243       data   0x000001
+    UD_abs_KF8A100GQS_244      udata   0x000244       data   0x000001
+    UD_abs_KF8A100GQS_245      udata   0x000245       data   0x000001
+    UD_abs_KF8A100GQS_246      udata   0x000246       data   0x000001
+    UD_abs_KF8A100GQS_247      udata   0x000247       data   0x000001
+    UD_abs_KF8A100GQS_248      udata   0x000248       data   0x000001
+    UD_abs_KF8A100GQS_249      udata   0x000249       data   0x000001
+    UD_abs_KF8A100GQS_24a      udata   0x00024a       data   0x000001
+    UD_abs_KF8A100GQS_24b      udata   0x00024b       data   0x000001
+    UD_abs_KF8A100GQS_24c      udata   0x00024c       data   0x000001
+    UD_abs_KF8A100GQS_24d      udata   0x00024d       data   0x000001
+    UD_abs_KF8A100GQS_24e      udata   0x00024e       data   0x000001
+    UD_abs_KF8A100GQS_24f      udata   0x00024f       data   0x000001
+    UD_abs_KF8A100GQS_250      udata   0x000250       data   0x000001
+    UD_abs_KF8A100GQS_251      udata   0x000251       data   0x000001
+    UD_abs_KF8A100GQS_252      udata   0x000252       data   0x000001
+    UD_abs_KF8A100GQS_253      udata   0x000253       data   0x000001
+    UD_abs_KF8A100GQS_254      udata   0x000254       data   0x000001
+    UD_abs_KF8A100GQS_255      udata   0x000255       data   0x000001
+    UD_abs_KF8A100GQS_256      udata   0x000256       data   0x000001
+    UD_abs_KF8A100GQS_257      udata   0x000257       data   0x000001
+    UD_abs_KF8A100GQS_258      udata   0x000258       data   0x000001
+    UD_abs_KF8A100GQS_259      udata   0x000259       data   0x000001
+    UD_abs_KF8A100GQS_25a      udata   0x00025a       data   0x000001
+    UD_abs_KF8A100GQS_25b      udata   0x00025b       data   0x000001
+    UD_abs_KF8A100GQS_25c      udata   0x00025c       data   0x000001
+    UD_abs_KF8A100GQS_25d      udata   0x00025d       data   0x000001
+    UD_abs_KF8A100GQS_25e      udata   0x00025e       data   0x000001
+    UD_abs_KF8A100GQS_25f      udata   0x00025f       data   0x000001
+    UD_abs_KF8A100GQS_318      udata   0x000318       data   0x000001
+    UD_abs_KF8A100GQS_319      udata   0x000319       data   0x000001
+    UD_abs_KF8A100GQS_31c      udata   0x00031c       data   0x000001
+    UD_abs_KF8A100GQS_31d      udata   0x00031d       data   0x000001
+    UD_abs_KF8A100GQS_31e      udata   0x00031e       data   0x000001
+    UD_abs_KF8A100GQS_31f      udata   0x00031f       data   0x000001
+    UD_abs_KF8A100GQS_320      udata   0x000320       data   0x000001
+    UD_abs_KF8A100GQS_321      udata   0x000321       data   0x000001
+    UD_abs_KF8A100GQS_322      udata   0x000322       data   0x000001
+    UD_abs_KF8A100GQS_323      udata   0x000323       data   0x000001
+    UD_abs_KF8A100GQS_324      udata   0x000324       data   0x000001
+    UD_abs_KF8A100GQS_325      udata   0x000325       data   0x000001
+    UD_abs_KF8A100GQS_326      udata   0x000326       data   0x000001
+    UD_abs_KF8A100GQS_327      udata   0x000327       data   0x000001
+    UD_abs_KF8A100GQS_328      udata   0x000328       data   0x000001
+    UD_abs_KF8A100GQS_32c      udata   0x00032c       data   0x000001
+    UD_abs_KF8A100GQS_32d      udata   0x00032d       data   0x000001
+    UD_abs_KF8A100GQS_32e      udata   0x00032e       data   0x000001
+    UD_abs_KF8A100GQS_32f      udata   0x00032f       data   0x000001
+    UD_abs_KF8A100GQS_360      udata   0x000360       data   0x000001
+    UD_abs_KF8A100GQS_361      udata   0x000361       data   0x000001
+    UD_abs_KF8A100GQS_362      udata   0x000362       data   0x000001
+    UD_abs_KF8A100GQS_363      udata   0x000363       data   0x000001
+    UD_abs_KF8A100GQS_364      udata   0x000364       data   0x000001
+    UD_abs_KF8A100GQS_365      udata   0x000365       data   0x000001
+    UD_abs_KF8A100GQS_366      udata   0x000366       data   0x000001
+    UD_abs_KF8A100GQS_368      udata   0x000368       data   0x000001
+    UD_abs_KF8A100GQS_410      udata   0x000410       data   0x000001
+    UD_abs_KF8A100GQS_411      udata   0x000411       data   0x000001
+    UD_abs_KF8A100GQS_412      udata   0x000412       data   0x000001
+    UD_abs_KF8A100GQS_413      udata   0x000413       data   0x000001
+    UD_abs_KF8A100GQS_414      udata   0x000414       data   0x000001
+    UD_abs_KF8A100GQS_415      udata   0x000415       data   0x000001
+    UD_abs_KF8A100GQS_416      udata   0x000416       data   0x000001
+    UD_abs_KF8A100GQS_418      udata   0x000418       data   0x000001
+    UD_abs_KF8A100GQS_419      udata   0x000419       data   0x000001
+    UD_abs_KF8A100GQS_41a      udata   0x00041a       data   0x000001
+    UD_abs_KF8A100GQS_41b      udata   0x00041b       data   0x000001
+    UD_abs_KF8A100GQS_41c      udata   0x00041c       data   0x000001
+    UD_abs_KF8A100GQS_41d      udata   0x00041d       data   0x000001
+    UD_abs_KF8A100GQS_41e      udata   0x00041e       data   0x000001
+    UD_abs_KF8A100GQS_424      udata   0x000424       data   0x000001
+    UD_abs_KF8A100GQS_425      udata   0x000425       data   0x000001
+    UD_abs_KF8A100GQS_426      udata   0x000426       data   0x000001
+    UD_abs_KF8A100GQS_427      udata   0x000427       data   0x000001
+    UD_abs_KF8A100GQS_428      udata   0x000428       data   0x000001
+    UD_abs_KF8A100GQS_429      udata   0x000429       data   0x000001
+    UD_abs_KF8A100GQS_42a      udata   0x00042a       data   0x000001
+    UD_abs_KF8A100GQS_42b      udata   0x00042b       data   0x000001
+    UD_abs_KF8A100GQS_42c      udata   0x00042c       data   0x000001
+    UD_abs_KF8A100GQS_42d      udata   0x00042d       data   0x000001
+    UD_abs_KF8A100GQS_430      udata   0x000430       data   0x000001
+    UD_abs_KF8A100GQS_431      udata   0x000431       data   0x000001
+    UD_abs_KF8A100GQS_432      udata   0x000432       data   0x000001
+    UD_abs_KF8A100GQS_433      udata   0x000433       data   0x000001
+    UD_abs_KF8A100GQS_434      udata   0x000434       data   0x000001
+    UD_abs_KF8A100GQS_435      udata   0x000435       data   0x000001
+    UD_abs_KF8A100GQS_436      udata   0x000436       data   0x000001
+    UD_abs_KF8A100GQS_438      udata   0x000438       data   0x000001
+    UD_abs_KF8A100GQS_439      udata   0x000439       data   0x000001
+    UD_abs_KF8A100GQS_43a      udata   0x00043a       data   0x000001
+    UD_abs_KF8A100GQS_440      udata   0x000440       data   0x000001
+    UD_abs_KF8A100GQS_441      udata   0x000441       data   0x000001
+    UD_abs_KF8A100GQS_442      udata   0x000442       data   0x000001
+    UD_abs_KF8A100GQS_443      udata   0x000443       data   0x000001
+    UD_abs_KF8A100GQS_444      udata   0x000444       data   0x000001
+    UD_abs_KF8A100GQS_445      udata   0x000445       data   0x000001
+    UD_abs_KF8A100GQS_446      udata   0x000446       data   0x000001
+    UD_abs_KF8A100GQS_447      udata   0x000447       data   0x000001
+    UD_abs_KF8A100GQS_448      udata   0x000448       data   0x000001
+    UD_abs_KF8A100GQS_449      udata   0x000449       data   0x000001
+    UD_abs_KF8A100GQS_44a      udata   0x00044a       data   0x000001
+    UD_abs_KF8A100GQS_44b      udata   0x00044b       data   0x000001
+    UD_abs_KF8A100GQS_44c      udata   0x00044c       data   0x000001
+    UD_abs_KF8A100GQS_44d      udata   0x00044d       data   0x000001
+    UD_abs_KF8A100GQS_44e      udata   0x00044e       data   0x000001
+    UD_abs_KF8A100GQS_44f      udata   0x00044f       data   0x000001
+    UD_abs_KF8A100GQS_450      udata   0x000450       data   0x000001
+    UD_abs_KF8A100GQS_451      udata   0x000451       data   0x000001
+    UD_abs_KF8A100GQS_452      udata   0x000452       data   0x000001
+    UD_abs_KF8A100GQS_453      udata   0x000453       data   0x000001
+    UD_abs_KF8A100GQS_454      udata   0x000454       data   0x000001
+    UD_abs_KF8A100GQS_455      udata   0x000455       data   0x000001
+    UD_abs_KF8A100GQS_456      udata   0x000456       data   0x000001
+    UD_abs_KF8A100GQS_457      udata   0x000457       data   0x000001
+    UD_abs_KF8A100GQS_458      udata   0x000458       data   0x000001
+    UD_abs_KF8A100GQS_459      udata   0x000459       data   0x000001
+    UD_abs_KF8A100GQS_45a      udata   0x00045a       data   0x000001
+    UD_abs_KF8A100GQS_45b      udata   0x00045b       data   0x000001
+    UD_abs_KF8A100GQS_45c      udata   0x00045c       data   0x000001
+    UD_abs_KF8A100GQS_45d      udata   0x00045d       data   0x000001
+    UD_abs_KF8A100GQS_45e      udata   0x00045e       data   0x000001
+    UD_abs_KF8A100GQS_45f      udata   0x00045f       data   0x000001
+    UD_abs_KF8A100GQS_460      udata   0x000460       data   0x000001
+    UD_abs_KF8A100GQS_461      udata   0x000461       data   0x000001
+    UD_abs_KF8A100GQS_462      udata   0x000462       data   0x000001
+    UD_abs_KF8A100GQS_463      udata   0x000463       data   0x000001
+    UD_abs_KF8A100GQS_464      udata   0x000464       data   0x000001
+    UD_abs_KF8A100GQS_465      udata   0x000465       data   0x000001
+    UD_abs_KF8A100GQS_466      udata   0x000466       data   0x000001
+    UD_abs_KF8A100GQS_467      udata   0x000467       data   0x000001
+    UD_abs_KF8A100GQS_468      udata   0x000468       data   0x000001
+    UD_abs_KF8A100GQS_505      udata   0x000505       data   0x000001
+    UD_abs_KF8A100GQS_509      udata   0x000509       data   0x000001
+    UD_abs_KF8A100GQS_50c      udata   0x00050c       data   0x000001
+    UD_abs_KF8A100GQS_50d      udata   0x00050d       data   0x000001
+    UD_abs_KF8A100GQS_50e      udata   0x00050e       data   0x000001
+    UD_abs_KF8A100GQS_50f      udata   0x00050f       data   0x000001
+    UD_abs_KF8A100GQS_510      udata   0x000510       data   0x000001
+    UD_abs_KF8A100GQS_512      udata   0x000512       data   0x000001
+    UD_abs_KF8A100GQS_515      udata   0x000515       data   0x000001
+    UD_abs_KF8A100GQS_516      udata   0x000516       data   0x000001
+    UD_abs_KF8A100GQS_518      udata   0x000518       data   0x000001
+    UD_abs_KF8A100GQS_519      udata   0x000519       data   0x000001
+    UD_abs_KF8A100GQS_51a      udata   0x00051a       data   0x000001
+    UD_abs_KF8A100GQS_51b      udata   0x00051b       data   0x000001
+    UD_abs_KF8A100GQS_51c      udata   0x00051c       data   0x000001
+    UD_abs_KF8A100GQS_51d      udata   0x00051d       data   0x000001
+    UD_abs_KF8A100GQS_530      udata   0x000530       data   0x000001
+    UD_abs_KF8A100GQS_531      udata   0x000531       data   0x000001
+    UD_abs_KF8A100GQS_532      udata   0x000532       data   0x000001
+    UD_abs_KF8A100GQS_533      udata   0x000533       data   0x000001
+    UD_abs_KF8A100GQS_534      udata   0x000534       data   0x000001
+    UD_abs_KF8A100GQS_535      udata   0x000535       data   0x000001
+    UD_abs_KF8A100GQS_536      udata   0x000536       data   0x000001
+    UD_abs_KF8A100GQS_537      udata   0x000537       data   0x000001
+    UD_abs_KF8A100GQS_538      udata   0x000538       data   0x000001
+    UD_abs_KF8A100GQS_539      udata   0x000539       data   0x000001
+    UD_abs_KF8A100GQS_53a      udata   0x00053a       data   0x000001
+    UD_abs_KF8A100GQS_53b      udata   0x00053b       data   0x000001
+    UD_abs_KF8A100GQS_53c      udata   0x00053c       data   0x000001
+    UD_abs_KF8A100GQS_53d      udata   0x00053d       data   0x000001
+    UD_abs_KF8A100GQS_53e      udata   0x00053e       data   0x000001
+    UD_abs_KF8A100GQS_53f      udata   0x00053f       data   0x000001
+    UD_abs_KF8A100GQS_540      udata   0x000540       data   0x000001
+    UD_abs_KF8A100GQS_541      udata   0x000541       data   0x000001
+    UD_abs_KF8A100GQS_542      udata   0x000542       data   0x000001
+    UD_abs_KF8A100GQS_543      udata   0x000543       data   0x000001
+    UD_abs_KF8A100GQS_544      udata   0x000544       data   0x000001
+    UD_abs_KF8A100GQS_545      udata   0x000545       data   0x000001
+    UD_abs_KF8A100GQS_546      udata   0x000546       data   0x000001
+    UD_abs_KF8A100GQS_547      udata   0x000547       data   0x000001
+    UD_abs_KF8A100GQS_548      udata   0x000548       data   0x000001
+    UD_abs_KF8A100GQS_549      udata   0x000549       data   0x000001
+    UD_abs_KF8A100GQS_54a      udata   0x00054a       data   0x000001
+    UD_abs_KF8A100GQS_54b      udata   0x00054b       data   0x000001
+    UD_abs_KF8A100GQS_54c      udata   0x00054c       data   0x000001
+    UD_abs_KF8A100GQS_54d      udata   0x00054d       data   0x000001
+    UD_abs_KF8A100GQS_54e      udata   0x00054e       data   0x000001
+    UD_abs_KF8A100GQS_54f      udata   0x00054f       data   0x000001
+    UD_abs_KF8A100GQS_550      udata   0x000550       data   0x000001
+    UD_abs_KF8A100GQS_551      udata   0x000551       data   0x000001
+    UD_abs_KF8A100GQS_552      udata   0x000552       data   0x000001
+    UD_abs_KF8A100GQS_553      udata   0x000553       data   0x000001
+    UD_abs_KF8A100GQS_554      udata   0x000554       data   0x000001
+    UD_abs_KF8A100GQS_555      udata   0x000555       data   0x000001
+    UD_abs_KF8A100GQS_556      udata   0x000556       data   0x000001
+    UD_abs_KF8A100GQS_55a      udata   0x00055a       data   0x000001
+    UD_abs_KF8A100GQS_55b      udata   0x00055b       data   0x000001
+    UD_abs_KF8A100GQS_55c      udata   0x00055c       data   0x000001
+    UD_abs_KF8A100GQS_55d      udata   0x00055d       data   0x000001
+    UD_abs_KF8A100GQS_55e      udata   0x00055e       data   0x000001
+    UD_abs_KF8A100GQS_55f      udata   0x00055f       data   0x000001
+    UD_abs_KF8A100GQS_563      udata   0x000563       data   0x000001
+    UD_abs_KF8A100GQS_564      udata   0x000564       data   0x000001
+    UD_abs_KF8A100GQS_565      udata   0x000565       data   0x000001
+    UD_abs_KF8A100GQS_566      udata   0x000566       data   0x000001
+    UD_abs_KF8A100GQS_567      udata   0x000567       data   0x000001
+    UD_abs_KF8A100GQS_568      udata   0x000568       data   0x000001
+    UD_abs_KF8A100GQS_56a      udata   0x00056a       data   0x000001
+    UD_abs_KF8A100GQS_56b      udata   0x00056b       data   0x000001
+    UD_abs_KF8A100GQS_56d      udata   0x00056d       data   0x000001
+    UD_abs_KF8A100GQS_620      udata   0x000620       data   0x000001
+    UD_abs_KF8A100GQS_621      udata   0x000621       data   0x000001
+    UD_abs_KF8A100GQS_622      udata   0x000622       data   0x000001
+    UD_abs_KF8A100GQS_623      udata   0x000623       data   0x000001
+    UD_abs_KF8A100GQS_624      udata   0x000624       data   0x000001
+    UD_abs_KF8A100GQS_625      udata   0x000625       data   0x000001
+    UD_abs_KF8A100GQS_626      udata   0x000626       data   0x000001
+    UD_abs_KF8A100GQS_627      udata   0x000627       data   0x000001
+    UD_abs_KF8A100GQS_628      udata   0x000628       data   0x000001
+    UD_abs_KF8A100GQS_629      udata   0x000629       data   0x000001
+    UD_abs_KF8A100GQS_62a      udata   0x00062a       data   0x000001
+    UD_abs_KF8A100GQS_62b      udata   0x00062b       data   0x000001
+    UD_abs_KF8A100GQS_62c      udata   0x00062c       data   0x000001
+    UD_abs_KF8A100GQS_62d      udata   0x00062d       data   0x000001
+    UD_abs_KF8A100GQS_62e      udata   0x00062e       data   0x000001
+    UD_abs_KF8A100GQS_62f      udata   0x00062f       data   0x000001
+    UD_abs_KF8A100GQS_630      udata   0x000630       data   0x000001
+    UD_abs_KF8A100GQS_631      udata   0x000631       data   0x000001
+    UD_abs_KF8A100GQS_632      udata   0x000632       data   0x000001
+    UD_abs_KF8A100GQS_633      udata   0x000633       data   0x000001
+    UD_abs_KF8A100GQS_634      udata   0x000634       data   0x000001
+    UD_abs_KF8A100GQS_635      udata   0x000635       data   0x000001
+    UD_abs_KF8A100GQS_636      udata   0x000636       data   0x000001
+    UD_abs_KF8A100GQS_637      udata   0x000637       data   0x000001
+    UD_abs_KF8A100GQS_638      udata   0x000638       data   0x000001
+    UD_abs_KF8A100GQS_639      udata   0x000639       data   0x000001
+    UD_abs_KF8A100GQS_63a      udata   0x00063a       data   0x000001
+    UD_abs_KF8A100GQS_63b      udata   0x00063b       data   0x000001
+    UD_abs_KF8A100GQS_63c      udata   0x00063c       data   0x000001
+    UD_abs_KF8A100GQS_63d      udata   0x00063d       data   0x000001
+    UD_abs_KF8A100GQS_63e      udata   0x00063e       data   0x000001
+    UD_abs_KF8A100GQS_63f      udata   0x00063f       data   0x000001
+ 
+                              Program Memory Usage
+                               Start         End
+                           ---------   ---------
+                            0x007ef0    0x007ff2
+                            0x008004    0x008004
+                            0x007445    0x00748a
+                            0x00748b    0x0074d0
+                            0x0074d1    0x007516
+                            0x0070ac    0x007156
+                            0x007517    0x00755c
+                            0x00777d    0x007783
+                            0x007765    0x00776c
+                            0x007784    0x00778a
+                            0x007257    0x0072b9
+                            0x0072ba    0x00731c
+                            0x00731d    0x00737f
+                            0x007380    0x0073e2
+                            0x007692    0x0076b5
+                            0x007610    0x007641
+                            0x0076da    0x0076fc
+                            0x0076fd    0x00771f
+                            0x007720    0x007740
+                            0x007741    0x00774f
+                            0x007750    0x00775b
+                            0x00775c    0x007764
+                            0x0073e3    0x007444
+                            0x007157    0x0071e8
+                            0x0075db    0x00760f
+                            0x0071e9    0x007256
+                            0x0076b6    0x0076d9
+                            0x007642    0x00766c
+                            0x008007    0x008008
+                            00000000    0x000003
+                            0x00776d    0x007774
+                            0x000004    0x00000f
+                            0x007000    0x0070ab
+                            0x00755d    0x00759d
+                            0x007775    0x00777c
+                            0x00766d    0x007691
+                            0x00759e    0x0075da
+ 
+                            2209 program addresses used
+ 
+                              Symbols
+                     Name    Address   Location    Storage File
+                ---------  ---------  ---------  --------- ---------
+                  ICDS_R0   0x000070       data     static KF8A6000k32d1c2_monitor.asm
+                ICDS_IPEN   0x000071       data     static KF8A6000k32d1c2_monitor.asm
+                ICDS_AIEL   0x000072       data     static KF8A6000k32d1c2_monitor.asm
+                 ICDS_buf   0x00007f       data     static KF8A6000k32d1c2_monitor.asm
+                 ICD_FLAG   0x0000f3       data     static KF8A6000k32d1c2_monitor.asm
+                  ICDS_R1   0x0000f4       data     static KF8A6000k32d1c2_monitor.asm
+                ICDS_BANK   0x0000f5       data     static KF8A6000k32d1c2_monitor.asm
+                 ICDS_PSW   0x0000f6       data     static KF8A6000k32d1c2_monitor.asm
+                 ICDS_PCH   0x0000f7       data     static KF8A6000k32d1c2_monitor.asm
+            ICDS_NVMADDRL   0x0000f8       data     static KF8A6000k32d1c2_monitor.asm
+            ICDS_NVMDATAL   0x0000f9       data     static KF8A6000k32d1c2_monitor.asm
+             ICDS_NVMCTL0   0x0000fa       data     static KF8A6000k32d1c2_monitor.asm
+                 ICD_DATA   0x0000fb       data     static KF8A6000k32d1c2_monitor.asm
+                 ICD_LOOP   0x0000fc       data     static KF8A6000k32d1c2_monitor.asm
+                  ICD_PCL   0x0000fd       data     static KF8A6000k32d1c2_monitor.asm
+                 ICD_BANK   0x0000fe       data     static KF8A6000k32d1c2_monitor.asm
+                ICD_MLOOP   0x0000ff       data     static KF8A6000k32d1c2_monitor.asm
+     ICD_GetPCVaule_Flag0   0x007f0a    program     static KF8A6000k32d1c2_monitor.asm
+     ICD_GetPCVaule_Flag1   0x007f0e    program     static KF8A6000k32d1c2_monitor.asm
+     ICD_GetPCVaule_Flag2   0x007f12    program     static KF8A6000k32d1c2_monitor.asm
+      ICD_GetPCVaule_Flag   0x007f13    program     static KF8A6000k32d1c2_monitor.asm
+   ICD_GetPCVaule_EndFlag   0x007f16    program     static KF8A6000k32d1c2_monitor.asm
+            ICD_MAIN_LOOP   0x007f1c    program     static KF8A6000k32d1c2_monitor.asm
+                 ICD_CMD0   0x007f32    program     static KF8A6000k32d1c2_monitor.asm
+          _.org_7ef0_7F33   0x007f33    program     static KF8A6000k32d1c2_monitor.asm
+                 ICD_CMD1   0x007f34    program     static KF8A6000k32d1c2_monitor.asm
+               ICD_RAM_OP   0x007f48    program     static KF8A6000k32d1c2_monitor.asm
+             ICD_READ_RAM   0x007f4a    program     static KF8A6000k32d1c2_monitor.asm
+            ICD_WRITE_RAM   0x007f56    program     static KF8A6000k32d1c2_monitor.asm
+          ICD_RAM_OP_LOOP   0x007f60    program     static KF8A6000k32d1c2_monitor.asm
+                 ICD_CMD2   0x007f64    program     static KF8A6000k32d1c2_monitor.asm
+         ICD_READ_EE_LOOP   0x007f74    program     static KF8A6000k32d1c2_monitor.asm
+                 ICD_CMD3   0x007f88    program     static KF8A6000k32d1c2_monitor.asm
+        ICD_REGISTER_SEND   0x007fac    program     static KF8A6000k32d1c2_monitor.asm
+                 ICD_CMD4   0x007fb3    program     static KF8A6000k32d1c2_monitor.asm
+                 ICD_CMD5   0x007fb5    program     static KF8A6000k32d1c2_monitor.asm
+               ICD_RETURN   0x007fb6    program     static KF8A6000k32d1c2_monitor.asm
+          _.org_7ef0_7FBF   0x007fbf    program     static KF8A6000k32d1c2_monitor.asm
+                 ICD_ICSP   0x007fc8    program     static KF8A6000k32d1c2_monitor.asm
+          _.org_7ef0_7FCC   0x007fcc    program     static KF8A6000k32d1c2_monitor.asm
+          _.org_7ef0_7FCE   0x007fce    program     static KF8A6000k32d1c2_monitor.asm
+            ICD_ICSP_RECV   0x007fd6    program     static KF8A6000k32d1c2_monitor.asm
+          _.org_7ef0_7FD7   0x007fd7    program     static KF8A6000k32d1c2_monitor.asm
+          _.org_7ef0_7FD8   0x007fd8    program     static KF8A6000k32d1c2_monitor.asm
+          _.org_7ef0_7FD9   0x007fd9    program     static KF8A6000k32d1c2_monitor.asm
+            ICD_ICSP_SEND   0x007fe3    program     static KF8A6000k32d1c2_monitor.asm
+          _.org_7ef0_7FE4   0x007fe4    program     static KF8A6000k32d1c2_monitor.asm
+          _.org_7ef0_7FEC   0x007fec    program     static KF8A6000k32d1c2_monitor.asm
+             ICD_ICSP_END   0x007ff0    program     static KF8A6000k32d1c2_monitor.asm
+                  r0x1008   0x0000aa       data     static Led.asm
+                  r0x1007   0x0000ab       data     static Led.asm
+                  r0x1006   0x0000ac       data     static Led.asm
+                  r0x1005   0x0000ad       data     static Led.asm
+                  r0x1004   0x0000ae       data     static Led.asm
+       _Led_Tail_AllClose   0x007445    program     extern Led.asm
+               _00095_DS_   0x007448    program     static Led.asm
+_func._Led_Tail_AllClose_0014   0x007455    program     static Led.asm
+_func._Led_Tail_AllClose_0015   0x007456    program     static Led.asm
+_func._Led_Tail_AllClose_0016   0x007457    program     static Led.asm
+_func._Led_Tail_AllClose_0022   0x007462    program     static Led.asm
+_func._Led_Tail_AllClose_0023   0x007463    program     static Led.asm
+_func._Led_Tail_AllClose_0024   0x007464    program     static Led.asm
+               _00098_DS_   0x007468    program     static Led.asm
+               _00099_DS_   0x00746a    program     static Led.asm
+_func._Led_Tail_AllClose_003C   0x007477    program     static Led.asm
+_func._Led_Tail_AllClose_003D   0x007478    program     static Led.asm
+_func._Led_Tail_AllClose_003E   0x007479    program     static Led.asm
+_func._Led_Tail_AllClose_004A   0x007484    program     static Led.asm
+_func._Led_Tail_AllClose_004B   0x007485    program     static Led.asm
+_func._Led_Tail_AllClose_004C   0x007486    program     static Led.asm
+               _00103_DS_   0x00748a    program     static Led.asm
+        _Led_Tail_AllOpen   0x00748b    program     extern Led.asm
+               _00077_DS_   0x00748e    program     static Led.asm
+_func._Led_Tail_AllOpen_0014   0x00749b    program     static Led.asm
+_func._Led_Tail_AllOpen_0015   0x00749c    program     static Led.asm
+_func._Led_Tail_AllOpen_0016   0x00749d    program     static Led.asm
+_func._Led_Tail_AllOpen_0022   0x0074a8    program     static Led.asm
+_func._Led_Tail_AllOpen_0023   0x0074a9    program     static Led.asm
+_func._Led_Tail_AllOpen_0024   0x0074aa    program     static Led.asm
+               _00080_DS_   0x0074ae    program     static Led.asm
+               _00081_DS_   0x0074b0    program     static Led.asm
+_func._Led_Tail_AllOpen_003C   0x0074bd    program     static Led.asm
+_func._Led_Tail_AllOpen_003D   0x0074be    program     static Led.asm
+_func._Led_Tail_AllOpen_003E   0x0074bf    program     static Led.asm
+_func._Led_Tail_AllOpen_004A   0x0074ca    program     static Led.asm
+_func._Led_Tail_AllOpen_004B   0x0074cb    program     static Led.asm
+_func._Led_Tail_AllOpen_004C   0x0074cc    program     static Led.asm
+               _00085_DS_   0x0074d0    program     static Led.asm
+         _Led_RT_AllClose   0x0074d1    program     extern Led.asm
+               _00059_DS_   0x0074d4    program     static Led.asm
+_func._Led_RT_AllClose_0014   0x0074e1    program     static Led.asm
+_func._Led_RT_AllClose_0015   0x0074e2    program     static Led.asm
+_func._Led_RT_AllClose_0016   0x0074e3    program     static Led.asm
+_func._Led_RT_AllClose_0022   0x0074ee    program     static Led.asm
+_func._Led_RT_AllClose_0023   0x0074ef    program     static Led.asm
+_func._Led_RT_AllClose_0024   0x0074f0    program     static Led.asm
+               _00062_DS_   0x0074f4    program     static Led.asm
+               _00063_DS_   0x0074f6    program     static Led.asm
+_func._Led_RT_AllClose_003C   0x007503    program     static Led.asm
+_func._Led_RT_AllClose_003D   0x007504    program     static Led.asm
+_func._Led_RT_AllClose_003E   0x007505    program     static Led.asm
+_func._Led_RT_AllClose_004A   0x007510    program     static Led.asm
+_func._Led_RT_AllClose_004B   0x007511    program     static Led.asm
+_func._Led_RT_AllClose_004C   0x007512    program     static Led.asm
+               _00067_DS_   0x007516    program     static Led.asm
+        _Led_RT_WaterOpen   0x0070ac    program     extern Led.asm
+               _00025_DS_   0x0070af    program     static Led.asm
+_func._Led_RT_WaterOpen_0014   0x0070bc    program     static Led.asm
+_func._Led_RT_WaterOpen_0015   0x0070bd    program     static Led.asm
+_func._Led_RT_WaterOpen_0016   0x0070be    program     static Led.asm
+_func._Led_RT_WaterOpen_0022   0x0070c9    program     static Led.asm
+_func._Led_RT_WaterOpen_0023   0x0070ca    program     static Led.asm
+_func._Led_RT_WaterOpen_0024   0x0070cb    program     static Led.asm
+               _00028_DS_   0x0070cf    program     static Led.asm
+               _00029_DS_   0x0070d1    program     static Led.asm
+_func._Led_RT_WaterOpen_003C   0x0070de    program     static Led.asm
+_func._Led_RT_WaterOpen_003D   0x0070df    program     static Led.asm
+_func._Led_RT_WaterOpen_003E   0x0070e0    program     static Led.asm
+_func._Led_RT_WaterOpen_004A   0x0070eb    program     static Led.asm
+_func._Led_RT_WaterOpen_004B   0x0070ec    program     static Led.asm
+_func._Led_RT_WaterOpen_004C   0x0070ed    program     static Led.asm
+               _00032_DS_   0x0070f1    program     static Led.asm
+_func._Led_RT_WaterOpen_0058   0x0070f8    program     static Led.asm
+_func._Led_RT_WaterOpen_0059   0x0070f9    program     static Led.asm
+_func._Led_RT_WaterOpen_005A   0x0070fa    program     static Led.asm
+               _00033_DS_   0x0070fe    program     static Led.asm
+_func._Led_RT_WaterOpen_006F   0x00710b    program     static Led.asm
+_func._Led_RT_WaterOpen_0070   0x00710c    program     static Led.asm
+_func._Led_RT_WaterOpen_0071   0x00710d    program     static Led.asm
+_func._Led_RT_WaterOpen_007D   0x007118    program     static Led.asm
+_func._Led_RT_WaterOpen_007E   0x007119    program     static Led.asm
+_func._Led_RT_WaterOpen_007F   0x00711a    program     static Led.asm
+_func._Led_RT_WaterOpen_0088   0x007123    program     static Led.asm
+_func._Led_RT_WaterOpen_0089   0x007124    program     static Led.asm
+_func._Led_RT_WaterOpen_008A   0x007125    program     static Led.asm
+               _00036_DS_   0x007129    program     static Led.asm
+               _00037_DS_   0x00712b    program     static Led.asm
+_func._Led_RT_WaterOpen_00A2   0x007138    program     static Led.asm
+_func._Led_RT_WaterOpen_00A3   0x007139    program     static Led.asm
+_func._Led_RT_WaterOpen_00A4   0x00713a    program     static Led.asm
+_func._Led_RT_WaterOpen_00B0   0x007145    program     static Led.asm
+_func._Led_RT_WaterOpen_00B1   0x007146    program     static Led.asm
+_func._Led_RT_WaterOpen_00B2   0x007147    program     static Led.asm
+_func._Led_RT_WaterOpen_00BB   0x007150    program     static Led.asm
+_func._Led_RT_WaterOpen_00BC   0x007151    program     static Led.asm
+_func._Led_RT_WaterOpen_00BD   0x007152    program     static Led.asm
+               _00041_DS_   0x007156    program     static Led.asm
+          _Led_RT_AllOpen   0x007517    program     extern Led.asm
+               _00007_DS_   0x00751a    program     static Led.asm
+_func._Led_RT_AllOpen_0014   0x007527    program     static Led.asm
+_func._Led_RT_AllOpen_0015   0x007528    program     static Led.asm
+_func._Led_RT_AllOpen_0016   0x007529    program     static Led.asm
+_func._Led_RT_AllOpen_0022   0x007534    program     static Led.asm
+_func._Led_RT_AllOpen_0023   0x007535    program     static Led.asm
+_func._Led_RT_AllOpen_0024   0x007536    program     static Led.asm
+               _00010_DS_   0x00753a    program     static Led.asm
+               _00011_DS_   0x00753c    program     static Led.asm
+_func._Led_RT_AllOpen_003C   0x007549    program     static Led.asm
+_func._Led_RT_AllOpen_003D   0x00754a    program     static Led.asm
+_func._Led_RT_AllOpen_003E   0x00754b    program     static Led.asm
+_func._Led_RT_AllOpen_004A   0x007556    program     static Led.asm
+_func._Led_RT_AllOpen_004B   0x007557    program     static Led.asm
+_func._Led_RT_AllOpen_004C   0x007558    program     static Led.asm
+               _00015_DS_   0x00755c    program     static Led.asm
+       _LED_Stop_AllClose   0x00777d    program     extern Led.asm
+        _LED_Stop_PWMOpen   0x007765    program     extern Led.asm
+        _LED_Stop_AllOpen   0x007784    program     extern Led.asm
+                  r0x1004   0x0000af       data     static SoftSpi.asm
+                  r0x1005   0x0000b0       data     static SoftSpi.asm
+                  r0x1006   0x0000b1       data     static SoftSpi.asm
+                  r0x101A   0x0000b2       data     static SoftSpi.asm
+                  r0x101B   0x0000b3       data     static SoftSpi.asm
+                  r0x1018   0x0000b4       data     static SoftSpi.asm
+                  r0x1019   0x0000b5       data     static SoftSpi.asm
+                  r0x1016   0x0000b6       data     static SoftSpi.asm
+                  r0x1017   0x0000b7       data     static SoftSpi.asm
+                  r0x1014   0x0000b8       data     static SoftSpi.asm
+                  r0x1015   0x0000b9       data     static SoftSpi.asm
+_SPI_Write_2Byte_SPI_adr_1_1   0x0000ba       data     static SoftSpi.asm
+_SPI_Write_2Byte_SPI_data_1_1   0x0000bb       data     static SoftSpi.asm
+ _SPI_Write_2Byte_buf_1_1   0x000094       data     static SoftSpi.asm
+             _Rt_Two_Init   0x007257    program     extern SoftSpi.asm
+  _func._Rt_Two_Init_000B   0x007261    program     static SoftSpi.asm
+  _func._Rt_Two_Init_000C   0x007262    program     static SoftSpi.asm
+  _func._Rt_Two_Init_000D   0x007263    program     static SoftSpi.asm
+               _00095_DS_   0x007267    program     static SoftSpi.asm
+  _func._Rt_Two_Init_0025   0x007276    program     static SoftSpi.asm
+  _func._Rt_Two_Init_0026   0x007277    program     static SoftSpi.asm
+  _func._Rt_Two_Init_0027   0x007278    program     static SoftSpi.asm
+               _00098_DS_   0x00727c    program     static SoftSpi.asm
+               _00099_DS_   0x00727e    program     static SoftSpi.asm
+  _func._Rt_Two_Init_0042   0x00728d    program     static SoftSpi.asm
+  _func._Rt_Two_Init_0043   0x00728e    program     static SoftSpi.asm
+  _func._Rt_Two_Init_0044   0x00728f    program     static SoftSpi.asm
+               _00102_DS_   0x007293    program     static SoftSpi.asm
+  _func._Rt_Two_Init_0053   0x00729c    program     static SoftSpi.asm
+  _func._Rt_Two_Init_0054   0x00729d    program     static SoftSpi.asm
+  _func._Rt_Two_Init_0055   0x00729e    program     static SoftSpi.asm
+  _func._Rt_Two_Init_0061   0x0072a9    program     static SoftSpi.asm
+  _func._Rt_Two_Init_0062   0x0072aa    program     static SoftSpi.asm
+  _func._Rt_Two_Init_0063   0x0072ab    program     static SoftSpi.asm
+  _func._Rt_Two_Init_006F   0x0072b6    program     static SoftSpi.asm
+  _func._Rt_Two_Init_0070   0x0072b7    program     static SoftSpi.asm
+  _func._Rt_Two_Init_0071   0x0072b8    program     static SoftSpi.asm
+             _Rt_One_Init   0x0072ba    program     extern SoftSpi.asm
+  _func._Rt_One_Init_000B   0x0072c4    program     static SoftSpi.asm
+  _func._Rt_One_Init_000C   0x0072c5    program     static SoftSpi.asm
+  _func._Rt_One_Init_000D   0x0072c6    program     static SoftSpi.asm
+               _00077_DS_   0x0072ca    program     static SoftSpi.asm
+  _func._Rt_One_Init_0025   0x0072d9    program     static SoftSpi.asm
+  _func._Rt_One_Init_0026   0x0072da    program     static SoftSpi.asm
+  _func._Rt_One_Init_0027   0x0072db    program     static SoftSpi.asm
+               _00080_DS_   0x0072df    program     static SoftSpi.asm
+               _00081_DS_   0x0072e1    program     static SoftSpi.asm
+  _func._Rt_One_Init_0042   0x0072f0    program     static SoftSpi.asm
+  _func._Rt_One_Init_0043   0x0072f1    program     static SoftSpi.asm
+  _func._Rt_One_Init_0044   0x0072f2    program     static SoftSpi.asm
+               _00084_DS_   0x0072f6    program     static SoftSpi.asm
+  _func._Rt_One_Init_0053   0x0072ff    program     static SoftSpi.asm
+  _func._Rt_One_Init_0054   0x007300    program     static SoftSpi.asm
+  _func._Rt_One_Init_0055   0x007301    program     static SoftSpi.asm
+  _func._Rt_One_Init_0061   0x00730c    program     static SoftSpi.asm
+  _func._Rt_One_Init_0062   0x00730d    program     static SoftSpi.asm
+  _func._Rt_One_Init_0063   0x00730e    program     static SoftSpi.asm
+  _func._Rt_One_Init_006F   0x007319    program     static SoftSpi.asm
+  _func._Rt_One_Init_0070   0x00731a    program     static SoftSpi.asm
+  _func._Rt_One_Init_0071   0x00731b    program     static SoftSpi.asm
+           _Tail_Two_Init   0x00731d    program     extern SoftSpi.asm
+_func._Tail_Two_Init_000B   0x007327    program     static SoftSpi.asm
+_func._Tail_Two_Init_000C   0x007328    program     static SoftSpi.asm
+_func._Tail_Two_Init_000D   0x007329    program     static SoftSpi.asm
+               _00059_DS_   0x00732d    program     static SoftSpi.asm
+_func._Tail_Two_Init_0025   0x00733c    program     static SoftSpi.asm
+_func._Tail_Two_Init_0026   0x00733d    program     static SoftSpi.asm
+_func._Tail_Two_Init_0027   0x00733e    program     static SoftSpi.asm
+               _00062_DS_   0x007342    program     static SoftSpi.asm
+               _00063_DS_   0x007344    program     static SoftSpi.asm
+_func._Tail_Two_Init_0042   0x007353    program     static SoftSpi.asm
+_func._Tail_Two_Init_0043   0x007354    program     static SoftSpi.asm
+_func._Tail_Two_Init_0044   0x007355    program     static SoftSpi.asm
+               _00066_DS_   0x007359    program     static SoftSpi.asm
+_func._Tail_Two_Init_0053   0x007362    program     static SoftSpi.asm
+_func._Tail_Two_Init_0054   0x007363    program     static SoftSpi.asm
+_func._Tail_Two_Init_0055   0x007364    program     static SoftSpi.asm
+_func._Tail_Two_Init_0061   0x00736f    program     static SoftSpi.asm
+_func._Tail_Two_Init_0062   0x007370    program     static SoftSpi.asm
+_func._Tail_Two_Init_0063   0x007371    program     static SoftSpi.asm
+_func._Tail_Two_Init_006F   0x00737c    program     static SoftSpi.asm
+_func._Tail_Two_Init_0070   0x00737d    program     static SoftSpi.asm
+_func._Tail_Two_Init_0071   0x00737e    program     static SoftSpi.asm
+           _Tail_One_Init   0x007380    program     extern SoftSpi.asm
+_func._Tail_One_Init_000B   0x00738a    program     static SoftSpi.asm
+_func._Tail_One_Init_000C   0x00738b    program     static SoftSpi.asm
+_func._Tail_One_Init_000D   0x00738c    program     static SoftSpi.asm
+               _00041_DS_   0x007390    program     static SoftSpi.asm
+_func._Tail_One_Init_0025   0x00739f    program     static SoftSpi.asm
+_func._Tail_One_Init_0026   0x0073a0    program     static SoftSpi.asm
+_func._Tail_One_Init_0027   0x0073a1    program     static SoftSpi.asm
+               _00044_DS_   0x0073a5    program     static SoftSpi.asm
+               _00045_DS_   0x0073a7    program     static SoftSpi.asm
+_func._Tail_One_Init_0042   0x0073b6    program     static SoftSpi.asm
+_func._Tail_One_Init_0043   0x0073b7    program     static SoftSpi.asm
+_func._Tail_One_Init_0044   0x0073b8    program     static SoftSpi.asm
+               _00048_DS_   0x0073bc    program     static SoftSpi.asm
+_func._Tail_One_Init_0053   0x0073c5    program     static SoftSpi.asm
+_func._Tail_One_Init_0054   0x0073c6    program     static SoftSpi.asm
+_func._Tail_One_Init_0055   0x0073c7    program     static SoftSpi.asm
+_func._Tail_One_Init_0061   0x0073d2    program     static SoftSpi.asm
+_func._Tail_One_Init_0062   0x0073d3    program     static SoftSpi.asm
+_func._Tail_One_Init_0063   0x0073d4    program     static SoftSpi.asm
+_func._Tail_One_Init_006F   0x0073df    program     static SoftSpi.asm
+_func._Tail_One_Init_0070   0x0073e0    program     static SoftSpi.asm
+_func._Tail_One_Init_0071   0x0073e1    program     static SoftSpi.asm
+        _IS31FL3265B_Init   0x007692    program     extern SoftSpi.asm
+_func._IS31FL3265B_Init_0004   0x007696    program     static SoftSpi.asm
+_func._IS31FL3265B_Init_0005   0x007697    program     static SoftSpi.asm
+_func._IS31FL3265B_Init_0006   0x007698    program     static SoftSpi.asm
+_func._IS31FL3265B_Init_000B   0x00769d    program     static SoftSpi.asm
+_func._IS31FL3265B_Init_000C   0x00769e    program     static SoftSpi.asm
+_func._IS31FL3265B_Init_000D   0x00769f    program     static SoftSpi.asm
+_func._IS31FL3265B_Init_0012   0x0076a4    program     static SoftSpi.asm
+_func._IS31FL3265B_Init_0013   0x0076a5    program     static SoftSpi.asm
+_func._IS31FL3265B_Init_0014   0x0076a6    program     static SoftSpi.asm
+_func._IS31FL3265B_Init_0019   0x0076ab    program     static SoftSpi.asm
+_func._IS31FL3265B_Init_001A   0x0076ac    program     static SoftSpi.asm
+_func._IS31FL3265B_Init_001B   0x0076ad    program     static SoftSpi.asm
+_func._IS31FL3265B_Init_0020   0x0076b2    program     static SoftSpi.asm
+_func._IS31FL3265B_Init_0021   0x0076b3    program     static SoftSpi.asm
+_func._IS31FL3265B_Init_0022   0x0076b4    program     static SoftSpi.asm
+         _SPI_Write_2Byte   0x007610    program     extern SoftSpi.asm
+_func._SPI_Write_2Byte_0012   0x00761c    program     static SoftSpi.asm
+_func._SPI_Write_2Byte_0013   0x00761d    program     static SoftSpi.asm
+_func._SPI_Write_2Byte_0014   0x00761e    program     static SoftSpi.asm
+               _00027_DS_   0x007623    program     static SoftSpi.asm
+               _00030_DS_   0x00762f    program     static SoftSpi.asm
+_func._SPI_Write_2Byte_003B   0x00763e    program     static SoftSpi.asm
+_func._SPI_Write_2Byte_003C   0x00763f    program     static SoftSpi.asm
+_func._SPI_Write_2Byte_003D   0x007640    program     static SoftSpi.asm
+              _Spi_CS_Low   0x0076da    program     extern SoftSpi.asm
+   _func._Spi_CS_Low_0016   0x0076ec    program     static SoftSpi.asm
+               _00026_DS_   0x0076ef    program     static SoftSpi.asm
+               _00015_DS_   0x0076f3    program     static SoftSpi.asm
+               _00016_DS_   0x0076f5    program     static SoftSpi.asm
+               _00017_DS_   0x0076f8    program     static SoftSpi.asm
+               _00018_DS_   0x0076fb    program     static SoftSpi.asm
+               _00020_DS_   0x0076fc    program     static SoftSpi.asm
+             _Spi_CS_High   0x0076fd    program     extern SoftSpi.asm
+  _func._Spi_CS_High_0016   0x00770f    program     static SoftSpi.asm
+               _00014_DS_   0x007712    program     static SoftSpi.asm
+               _00003_DS_   0x007716    program     static SoftSpi.asm
+               _00004_DS_   0x007718    program     static SoftSpi.asm
+               _00005_DS_   0x00771b    program     static SoftSpi.asm
+               _00006_DS_   0x00771e    program     static SoftSpi.asm
+               _00008_DS_   0x00771f    program     static SoftSpi.asm
+                _spi_init   0x007720    program     extern SoftSpi.asm
+             _Timer2_Init   0x007741    program     extern Timer.asm
+             _Timer1_Init   0x007750    program     extern Timer.asm
+             _Timer0_Init   0x00775c    program     extern Timer.asm
+                  r0x1019   0x0000bc       data     static Work.asm
+                  r0x1018   0x0000bd       data     static Work.asm
+                  r0x101A   0x0000be       data     static Work.asm
+                  r0x101B   0x0000bf       data     static Work.asm
+                  r0x1014   0x0000c0       data     static Work.asm
+                  r0x1015   0x0000c1       data     static Work.asm
+                  r0x1012   0x0000c2       data     static Work.asm
+                  r0x1013   0x0000c3       data     static Work.asm
+          _delay_ms_i_1_1   0x000096       data     static Work.asm
+          _delay_ms_j_1_1   0x000098       data     static Work.asm
+                _PastMode   0x00009a       data     extern Work.asm
+                 _NowMode   0x00009c       data     extern Work.asm
+                 _ActMode   0x00009e       data     extern Work.asm
+             _RT_PastMode   0x0000a0       data     extern Work.asm
+              _RT_NowMode   0x0000a2       data     extern Work.asm
+              _RT_ActMode   0x0000a4       data     extern Work.asm
+                _Mode_Act   0x0073e3    program     extern Work.asm
+               _00118_DS_   0x0073ed    program     static Work.asm
+               _00119_DS_   0x0073f6    program     static Work.asm
+               _00120_DS_   0x0073ff    program     static Work.asm
+               _00121_DS_   0x007408    program     static Work.asm
+               _00106_DS_   0x007409    program     static Work.asm
+     _func._Mode_Act_0031   0x00740d    program     static Work.asm
+     _func._Mode_Act_0032   0x00740e    program     static Work.asm
+     _func._Mode_Act_0033   0x00740f    program     static Work.asm
+     _func._Mode_Act_0038   0x007414    program     static Work.asm
+     _func._Mode_Act_0039   0x007415    program     static Work.asm
+     _func._Mode_Act_003A   0x007416    program     static Work.asm
+               _00107_DS_   0x007418    program     static Work.asm
+     _func._Mode_Act_0040   0x00741c    program     static Work.asm
+     _func._Mode_Act_0041   0x00741d    program     static Work.asm
+     _func._Mode_Act_0042   0x00741e    program     static Work.asm
+     _func._Mode_Act_0047   0x007423    program     static Work.asm
+     _func._Mode_Act_0048   0x007424    program     static Work.asm
+     _func._Mode_Act_0049   0x007425    program     static Work.asm
+               _00108_DS_   0x007427    program     static Work.asm
+     _func._Mode_Act_004F   0x00742b    program     static Work.asm
+     _func._Mode_Act_0050   0x00742c    program     static Work.asm
+     _func._Mode_Act_0051   0x00742d    program     static Work.asm
+     _func._Mode_Act_0056   0x007432    program     static Work.asm
+     _func._Mode_Act_0057   0x007433    program     static Work.asm
+     _func._Mode_Act_0058   0x007434    program     static Work.asm
+               _00109_DS_   0x007436    program     static Work.asm
+     _func._Mode_Act_005E   0x00743a    program     static Work.asm
+     _func._Mode_Act_005F   0x00743b    program     static Work.asm
+     _func._Mode_Act_0060   0x00743c    program     static Work.asm
+     _func._Mode_Act_0065   0x007441    program     static Work.asm
+     _func._Mode_Act_0066   0x007442    program     static Work.asm
+     _func._Mode_Act_0067   0x007443    program     static Work.asm
+               _00112_DS_   0x007444    program     static Work.asm
+   _Tail_Stop_Check_Input   0x007157    program     extern Work.asm
+               _00122_DS_   0x007165    program     static Work.asm
+               _00123_DS_   0x00716c    program     static Work.asm
+               _00069_DS_   0x007187    program     static Work.asm
+               _00072_DS_   0x00718a    program     static Work.asm
+               _00075_DS_   0x0071a4    program     static Work.asm
+               _00078_DS_   0x0071a7    program     static Work.asm
+               _00081_DS_   0x0071c1    program     static Work.asm
+               _00084_DS_   0x0071c4    program     static Work.asm
+               _00087_DS_   0x0071de    program     static Work.asm
+               _00090_DS_   0x0071e1    program     static Work.asm
+_func._Tail_Stop_Check_Input_00C7   0x0071e5    program     static Work.asm
+_func._Tail_Stop_Check_Input_00C8   0x0071e6    program     static Work.asm
+_func._Tail_Stop_Check_Input_00C9   0x0071e7    program     static Work.asm
+             _RT_Mode_Act   0x0075db    program     extern Work.asm
+               _00065_DS_   0x0075e5    program     static Work.asm
+               _00066_DS_   0x0075ee    program     static Work.asm
+               _00067_DS_   0x0075f7    program     static Work.asm
+               _00055_DS_   0x0075f8    program     static Work.asm
+  _func._RT_Mode_Act_0026   0x0075fc    program     static Work.asm
+  _func._RT_Mode_Act_0027   0x0075fd    program     static Work.asm
+  _func._RT_Mode_Act_0028   0x0075fe    program     static Work.asm
+               _00056_DS_   0x007600    program     static Work.asm
+  _func._RT_Mode_Act_002E   0x007604    program     static Work.asm
+  _func._RT_Mode_Act_002F   0x007605    program     static Work.asm
+  _func._RT_Mode_Act_0030   0x007606    program     static Work.asm
+               _00057_DS_   0x007608    program     static Work.asm
+  _func._RT_Mode_Act_0036   0x00760c    program     static Work.asm
+  _func._RT_Mode_Act_0037   0x00760d    program     static Work.asm
+  _func._RT_Mode_Act_0038   0x00760e    program     static Work.asm
+               _00060_DS_   0x00760f    program     static Work.asm
+          _RT_Check_Input   0x0071e9    program     extern Work.asm
+               _00124_DS_   0x0071f0    program     static Work.asm
+               _00125_DS_   0x0071f7    program     static Work.asm
+               _00027_DS_   0x007212    program     static Work.asm
+               _00030_DS_   0x007215    program     static Work.asm
+               _00033_DS_   0x00722f    program     static Work.asm
+               _00036_DS_   0x007232    program     static Work.asm
+               _00039_DS_   0x00724c    program     static Work.asm
+               _00042_DS_   0x00724f    program     static Work.asm
+_func._RT_Check_Input_0093   0x007253    program     static Work.asm
+_func._RT_Check_Input_0094   0x007254    program     static Work.asm
+_func._RT_Check_Input_0095   0x007255    program     static Work.asm
+                _delay_ms   0x0076b6    program     extern Work.asm
+               _00006_DS_   0x0076bc    program     static Work.asm
+               _00016_DS_   0x0076c2    program     static Work.asm
+               _00003_DS_   0x0076c7    program     static Work.asm
+               _00127_DS_   0x0076d0    program     static Work.asm
+               _00128_DS_   0x0076d8    program     static Work.asm
+               _00010_DS_   0x0076d9    program     static Work.asm
+                 _Init_IO   0x007642    program     extern Work.asm
+                     I0R1   0x000080       data     extern main.asm
+                     I0R7   0x000081       data     extern main.asm
+                    I0PSW   0x000082       data     extern main.asm
+                    I0PCH   0x000083       data     extern main.asm
+                     I1R1   0x000084       data     extern main.asm
+                     I1R7   0x000085       data     extern main.asm
+                    I1PSW   0x000086       data     extern main.asm
+                    I1PCH   0x000087       data     extern main.asm
+                    STK11   0x000088       data     extern main.asm
+                    STK10   0x000089       data     extern main.asm
+                    STK09   0x00008a       data     extern main.asm
+                    STK08   0x00008b       data     extern main.asm
+                    STK07   0x00008c       data     extern main.asm
+                    STK06   0x00008d       data     extern main.asm
+                    STK05   0x00008e       data     extern main.asm
+                    STK04   0x00008f       data     extern main.asm
+                    STK03   0x000090       data     extern main.asm
+                    STK02   0x000091       data     extern main.asm
+                    STK01   0x000092       data     extern main.asm
+                    STK00   0x000093       data     extern main.asm
+                 TRAPRx73   0x000073       data     extern main.asm
+                 TRAPRx74   0x000074       data     extern main.asm
+                 TRAPRx75   0x000075       data     extern main.asm
+                 TRAPRx76   0x000076       data     extern main.asm
+                 TRAPRx77   0x000077       data     extern main.asm
+          _Stop_High_Addr   0x0000a6       data     extern main.asm
+          _PWM_Timer_Flag   0x0000c4       data     extern main.asm
+           _Stop_Low_Addr   0x0000a8       data     extern main.asm
+                 init_imp   0x00776d    program     extern main.asm
+                _int_fun0   0x007000    program     extern main.asm
+interrupt_service_routine_0x04   0x007000    program     static main.asm
+               _00096_DS_   0x007005    program     static main.asm
+               _00008_DS_   0x007012    program     static main.asm
+               _00097_DS_   0x007016    program     static main.asm
+               _00098_DS_   0x00701a    program     static main.asm
+               _00010_DS_   0x007021    program     static main.asm
+               _00099_DS_   0x007025    program     static main.asm
+               _00100_DS_   0x007029    program     static main.asm
+               _00012_DS_   0x00703c    program     static main.asm
+               _00014_DS_   0x00703f    program     static main.asm
+               _00016_DS_   0x007042    program     static main.asm
+               _00018_DS_   0x007045    program     static main.asm
+               _00020_DS_   0x007049    program     static main.asm
+               _00022_DS_   0x00704e    program     static main.asm
+               _00024_DS_   0x007053    program     static main.asm
+               _00026_DS_   0x007058    program     static main.asm
+               _00028_DS_   0x00705d    program     static main.asm
+               _00030_DS_   0x007062    program     static main.asm
+               _00032_DS_   0x007066    program     static main.asm
+               _00060_DS_   0x00706a    program     static main.asm
+               _00036_DS_   0x007073    program     static main.asm
+               _00038_DS_   0x007076    program     static main.asm
+               _00040_DS_   0x007079    program     static main.asm
+               _00042_DS_   0x00707c    program     static main.asm
+               _00044_DS_   0x007080    program     static main.asm
+               _00046_DS_   0x007085    program     static main.asm
+               _00048_DS_   0x00708a    program     static main.asm
+               _00050_DS_   0x00708f    program     static main.asm
+               _00052_DS_   0x007094    program     static main.asm
+               _00054_DS_   0x007099    program     static main.asm
+               _00056_DS_   0x00709d    program     static main.asm
+               _00064_DS_   0x0070a0    program     static main.asm
+                    _main   0x00755d    program     extern main.asm
+         _func._main_000A   0x007566    program     static main.asm
+         _func._main_000B   0x007567    program     static main.asm
+         _func._main_000C   0x007568    program     static main.asm
+         _func._main_0011   0x00756d    program     static main.asm
+         _func._main_0012   0x00756e    program     static main.asm
+         _func._main_0013   0x00756f    program     static main.asm
+         _func._main_0018   0x007574    program     static main.asm
+         _func._main_0019   0x007575    program     static main.asm
+         _func._main_001A   0x007576    program     static main.asm
+         _func._main_001F   0x00757b    program     static main.asm
+         _func._main_0020   0x00757c    program     static main.asm
+         _func._main_0021   0x00757d    program     static main.asm
+         _func._main_0026   0x007582    program     static main.asm
+         _func._main_0027   0x007583    program     static main.asm
+         _func._main_0028   0x007584    program     static main.asm
+               _00002_DS_   0x00758e    program     static main.asm
+         _func._main_003B   0x007592    program     static main.asm
+         _func._main_003C   0x007593    program     static main.asm
+         _func._main_003D   0x007594    program     static main.asm
+         _func._main_0042   0x007599    program     static main.asm
+         _func._main_0043   0x00759a    program     static main.asm
+         _func._main_0044   0x00759b    program     static main.asm
+         __gsinit_startup   0x007775    program     extern idata.asm
+_func.__gsinit_startup_0004   0x007779    program     static idata.asm
+_func.__gsinit_startup_0005   0x00777a    program     static idata.asm
+_func.__gsinit_startup_0006   0x00777b    program     static idata.asm
+                    _IDLR   00000000       data     extern KF8A100GQS.asm
+                      _T0   0x000001       data     extern KF8A100GQS.asm
+                     _PCL   0x000002       data     extern KF8A100GQS.asm
+                _PSW_bits   0x000003       data     extern KF8A100GQS.asm
+                     _PSW   0x000003       data     extern KF8A100GQS.asm
+                      _IR   0x000004       data     extern KF8A100GQS.asm
+                 _P0_bits   0x000005       data     extern KF8A100GQS.asm
+                      _P0   0x000005       data     extern KF8A100GQS.asm
+                 _P2_bits   0x000006       data     extern KF8A100GQS.asm
+                      _P2   0x000006       data     extern KF8A100GQS.asm
+                 _P1_bits   0x000007       data     extern KF8A100GQS.asm
+                      _P1   0x000007       data     extern KF8A100GQS.asm
+                 _P3_bits   0x000008       data     extern KF8A100GQS.asm
+                      _P3   0x000008       data     extern KF8A100GQS.asm
+                 _P4_bits   0x000009       data     extern KF8A100GQS.asm
+                      _P4   0x000009       data     extern KF8A100GQS.asm
+                     _PCH   0x00000a       data     extern KF8A100GQS.asm
+             _INTCTL_bits   0x00000b       data     extern KF8A100GQS.asm
+                  _INTCTL   0x00000b       data     extern KF8A100GQS.asm
+               _EIF1_bits   0x00000c       data     extern KF8A100GQS.asm
+                    _EIF1   0x00000c       data     extern KF8A100GQS.asm
+               _EIF2_bits   0x00000d       data     extern KF8A100GQS.asm
+                    _EIF2   0x00000d       data     extern KF8A100GQS.asm
+                     _T1L   0x00000e       data     extern KF8A100GQS.asm
+                     _T1H   0x00000f       data     extern KF8A100GQS.asm
+              _T1CTL_bits   0x000010       data     extern KF8A100GQS.asm
+                   _T1CTL   0x000010       data     extern KF8A100GQS.asm
+                     _T2L   0x000011       data     extern KF8A100GQS.asm
+             _T2CTL0_bits   0x000012       data     extern KF8A100GQS.asm
+                  _T2CTL0   0x000012       data     extern KF8A100GQS.asm
+                   _PWM1L   0x000013       data     extern KF8A100GQS.asm
+             _PWMCTL_bits   0x000015       data     extern KF8A100GQS.asm
+                  _PWMCTL   0x000015       data     extern KF8A100GQS.asm
+                     _PP1   0x000016       data     extern KF8A100GQS.asm
+               _BANK_bits   0x000017       data     extern KF8A100GQS.asm
+                    _BANK   0x000017       data     extern KF8A100GQS.asm
+             _CMCTL0_bits   0x000019       data     extern KF8A100GQS.asm
+                  _CMCTL0   0x000019       data     extern KF8A100GQS.asm
+              _C1CTL_bits   0x00001a       data     extern KF8A100GQS.asm
+                   _C1CTL   0x00001a       data     extern KF8A100GQS.asm
+               _COUT_bits   0x00001d       data     extern KF8A100GQS.asm
+                    _COUT   0x00001d       data     extern KF8A100GQS.asm
+               _ADCDATA0H   0x00001e       data     extern KF8A100GQS.asm
+            _ADCCTL0_bits   0x00001f       data     extern KF8A100GQS.asm
+                 _ADCCTL0   0x00001f       data     extern KF8A100GQS.asm
+               _OPTR_bits   0x000021       data     extern KF8A100GQS.asm
+                    _OPTR   0x000021       data     extern KF8A100GQS.asm
+                _IP0_bits   0x000022       data     extern KF8A100GQS.asm
+                     _IP0   0x000022       data     extern KF8A100GQS.asm
+                _IP1_bits   0x000023       data     extern KF8A100GQS.asm
+                     _IP1   0x000023       data     extern KF8A100GQS.asm
+                _IP2_bits   0x000024       data     extern KF8A100GQS.asm
+                     _IP2   0x000024       data     extern KF8A100GQS.asm
+                _TR0_bits   0x000025       data     extern KF8A100GQS.asm
+                     _TR0   0x000025       data     extern KF8A100GQS.asm
+                _TR2_bits   0x000026       data     extern KF8A100GQS.asm
+                     _TR2   0x000026       data     extern KF8A100GQS.asm
+                _TR1_bits   0x000027       data     extern KF8A100GQS.asm
+                     _TR1   0x000027       data     extern KF8A100GQS.asm
+                _TR3_bits   0x000028       data     extern KF8A100GQS.asm
+                     _TR3   0x000028       data     extern KF8A100GQS.asm
+                _TR4_bits   0x000029       data     extern KF8A100GQS.asm
+                     _TR4   0x000029       data     extern KF8A100GQS.asm
+             _VRECTL_bits   0x00002b       data     extern KF8A100GQS.asm
+                  _VRECTL   0x00002b       data     extern KF8A100GQS.asm
+               _EIE1_bits   0x00002c       data     extern KF8A100GQS.asm
+                    _EIE1   0x00002c       data     extern KF8A100GQS.asm
+               _EIE2_bits   0x00002d       data     extern KF8A100GQS.asm
+                    _EIE2   0x00002d       data     extern KF8A100GQS.asm
+               _PCTL_bits   0x00002e       data     extern KF8A100GQS.asm
+                    _PCTL   0x00002e       data     extern KF8A100GQS.asm
+                 _OSCCAL2   0x000030       data     extern KF8A100GQS.asm
+              _C2CTL_bits   0x000031       data     extern KF8A100GQS.asm
+                   _C2CTL   0x000031       data     extern KF8A100GQS.asm
+                     _PP2   0x000032       data     extern KF8A100GQS.asm
+                   _PWM2L   0x000033       data     extern KF8A100GQS.asm
+               _PUR0_bits   0x000035       data     extern KF8A100GQS.asm
+                    _PUR0   0x000035       data     extern KF8A100GQS.asm
+              _IOCL0_bits   0x000036       data     extern KF8A100GQS.asm
+                   _IOCL0   0x000036       data     extern KF8A100GQS.asm
+                 _OSCCAL1   0x000037       data     extern KF8A100GQS.asm
+                _NVMDATAH   0x000038       data     extern KF8A100GQS.asm
+                _NVMDATAL   0x000039       data     extern KF8A100GQS.asm
+                _NVMADDRH   0x00003a       data     extern KF8A100GQS.asm
+                _NVMADDRL   0x00003b       data     extern KF8A100GQS.asm
+                 _NVMCTL0   0x00003c       data     extern KF8A100GQS.asm
+                 _NVMCTL1   0x00003d       data     extern KF8A100GQS.asm
+               _ADCDATA0L   0x00003e       data     extern KF8A100GQS.asm
+            _ADCCTL1_bits   0x00003f       data     extern KF8A100GQS.asm
+                 _ADCCTL1   0x00003f       data     extern KF8A100GQS.asm
+              _WDTPS_bits   0x000040       data     extern KF8A100GQS.asm
+                   _WDTPS   0x000040       data     extern KF8A100GQS.asm
+                     _T2H   0x000041       data     extern KF8A100GQS.asm
+                   _PP60H   0x000042       data     extern KF8A100GQS.asm
+                  _PWM6L0   0x000043       data     extern KF8A100GQS.asm
+                  _PWM6H0   0x000044       data     extern KF8A100GQS.asm
+               _P0LR_bits   0x000045       data     extern KF8A100GQS.asm
+                    _P0LR   0x000045       data     extern KF8A100GQS.asm
+               _P2LR_bits   0x000046       data     extern KF8A100GQS.asm
+                    _P2LR   0x000046       data     extern KF8A100GQS.asm
+               _P1LR_bits   0x000047       data     extern KF8A100GQS.asm
+                    _P1LR   0x000047       data     extern KF8A100GQS.asm
+               _P3LR_bits   0x000048       data     extern KF8A100GQS.asm
+                    _P3LR   0x000048       data     extern KF8A100GQS.asm
+               _P4LR_bits   0x000049       data     extern KF8A100GQS.asm
+                    _P4LR   0x000049       data     extern KF8A100GQS.asm
+               _ANS0_bits   0x00004a       data     extern KF8A100GQS.asm
+                    _ANS0   0x00004a       data     extern KF8A100GQS.asm
+               _ANS1_bits   0x00004b       data     extern KF8A100GQS.asm
+                    _ANS1   0x00004b       data     extern KF8A100GQS.asm
+               _ANS2_bits   0x00004c       data     extern KF8A100GQS.asm
+                    _ANS2   0x00004c       data     extern KF8A100GQS.asm
+               _ANS3_bits   0x00004d       data     extern KF8A100GQS.asm
+                    _ANS3   0x00004d       data     extern KF8A100GQS.asm
+               _ANS4_bits   0x00004e       data     extern KF8A100GQS.asm
+                    _ANS4   0x00004e       data     extern KF8A100GQS.asm
+              _T0CTL_bits   0x00004f       data     extern KF8A100GQS.asm
+                   _T0CTL   0x00004f       data     extern KF8A100GQS.asm
+            _ADCCTL2_bits   0x000050       data     extern KF8A100GQS.asm
+                 _ADCCTL2   0x000050       data     extern KF8A100GQS.asm
+             _T2CTL1_bits   0x000051       data     extern KF8A100GQS.asm
+                  _T2CTL1   0x000051       data     extern KF8A100GQS.asm
+                   _PP60L   0x000052       data     extern KF8A100GQS.asm
+             _BKPCTL_bits   0x000053       data     extern KF8A100GQS.asm
+                  _BKPCTL   0x000053       data     extern KF8A100GQS.asm
+            _SCLKSTU_bits   0x000054       data     extern KF8A100GQS.asm
+                 _SCLKSTU   0x000054       data     extern KF8A100GQS.asm
+                  _PWM6H1   0x000055       data     extern KF8A100GQS.asm
+                  _PWM6L1   0x000056       data     extern KF8A100GQS.asm
+           _PWM6CTL0_bits   0x000057       data     extern KF8A100GQS.asm
+                _PWM6CTL0   0x000057       data     extern KF8A100GQS.asm
+           _P6ATRCTL_bits   0x00005d       data     extern KF8A100GQS.asm
+                _P6ATRCTL   0x00005d       data     extern KF8A100GQS.asm
+           _PWM6CTL2_bits   0x00005e       data     extern KF8A100GQS.asm
+                _PWM6CTL2   0x00005e       data     extern KF8A100GQS.asm
+             _PWM6PC_bits   0x000060       data     extern KF8A100GQS.asm
+                  _PWM6PC   0x000060       data     extern KF8A100GQS.asm
+                  _PWM6H2   0x000062       data     extern KF8A100GQS.asm
+                  _PWM6L2   0x000063       data     extern KF8A100GQS.asm
+                  _PWM6H3   0x000064       data     extern KF8A100GQS.asm
+                  _PWM6L3   0x000065       data     extern KF8A100GQS.asm
+             _CCTCTL_bits   0x000068       data     extern KF8A100GQS.asm
+                  _CCTCTL   0x000068       data     extern KF8A100GQS.asm
+            _SCLKCTL_bits   0x000069       data     extern KF8A100GQS.asm
+                 _SCLKCTL   0x000069       data     extern KF8A100GQS.asm
+            _HFCKCTL_bits   0x00006a       data     extern KF8A100GQS.asm
+                 _HFCKCTL   0x00006a       data     extern KF8A100GQS.asm
+            _LFCKCTL_bits   0x00006b       data     extern KF8A100GQS.asm
+                 _LFCKCTL   0x00006b       data     extern KF8A100GQS.asm
+                 _P5_bits   0x000105       data     extern KF8A100GQS.asm
+                      _P5   0x000105       data     extern KF8A100GQS.asm
+                 _P6_bits   0x000106       data     extern KF8A100GQS.asm
+                      _P6   0x000106       data     extern KF8A100GQS.asm
+                 _P7_bits   0x000107       data     extern KF8A100GQS.asm
+                      _P7   0x000107       data     extern KF8A100GQS.asm
+                 _P9_bits   0x000109       data     extern KF8A100GQS.asm
+                      _P9   0x000109       data     extern KF8A100GQS.asm
+                _IP5_bits   0x00010c       data     extern KF8A100GQS.asm
+                     _IP5   0x00010c       data     extern KF8A100GQS.asm
+               _EIF4_bits   0x00010d       data     extern KF8A100GQS.asm
+                    _EIF4   0x00010d       data     extern KF8A100GQS.asm
+               _EIE4_bits   0x00010e       data     extern KF8A100GQS.asm
+                    _EIE4   0x00010e       data     extern KF8A100GQS.asm
+               _EIF5_bits   0x00010f       data     extern KF8A100GQS.asm
+                    _EIF5   0x00010f       data     extern KF8A100GQS.asm
+               _EIE5_bits   0x000110       data     extern KF8A100GQS.asm
+                    _EIE5   0x000110       data     extern KF8A100GQS.asm
+                     _T4L   0x000111       data     extern KF8A100GQS.asm
+             _T4CTL0_bits   0x000112       data     extern KF8A100GQS.asm
+                  _T4CTL0   0x000112       data     extern KF8A100GQS.asm
+               _WCFR_bits   0x000113       data     extern KF8A100GQS.asm
+                    _WCFR   0x000113       data     extern KF8A100GQS.asm
+               _WCNT_bits   0x000114       data     extern KF8A100GQS.asm
+                    _WCNT   0x000114       data     extern KF8A100GQS.asm
+               _WCTL_bits   0x000115       data     extern KF8A100GQS.asm
+                    _WCTL   0x000115       data     extern KF8A100GQS.asm
+                   _T3REH   0x000116       data     extern KF8A100GQS.asm
+             _T1CTL2_bits   0x000118       data     extern KF8A100GQS.asm
+                  _T1CTL2   0x000118       data     extern KF8A100GQS.asm
+              _T3CTL_bits   0x000119       data     extern KF8A100GQS.asm
+                   _T3CTL   0x000119       data     extern KF8A100GQS.asm
+                     _T3H   0x00011a       data     extern KF8A100GQS.asm
+                   _T3REL   0x00011b       data     extern KF8A100GQS.asm
+                     _T3L   0x00011c       data     extern KF8A100GQS.asm
+           _UPINSET2_bits   0x000123       data     extern KF8A100GQS.asm
+                _UPINSET2   0x000123       data     extern KF8A100GQS.asm
+                _IP4_bits   0x000124       data     extern KF8A100GQS.asm
+                     _IP4   0x000124       data     extern KF8A100GQS.asm
+                _TR5_bits   0x000125       data     extern KF8A100GQS.asm
+                     _TR5   0x000125       data     extern KF8A100GQS.asm
+                _TR6_bits   0x000126       data     extern KF8A100GQS.asm
+                     _TR6   0x000126       data     extern KF8A100GQS.asm
+                _TR7_bits   0x000127       data     extern KF8A100GQS.asm
+                     _TR7   0x000127       data     extern KF8A100GQS.asm
+                _TR9_bits   0x000129       data     extern KF8A100GQS.asm
+                     _TR9   0x000129       data     extern KF8A100GQS.asm
+              _T7CTL_bits   0x00012a       data     extern KF8A100GQS.asm
+                   _T7CTL   0x00012a       data     extern KF8A100GQS.asm
+                     _T7L   0x00012b       data     extern KF8A100GQS.asm
+                     _T7H   0x00012c       data     extern KF8A100GQS.asm
+                   _T7REL   0x00012d       data     extern KF8A100GQS.asm
+                   _T7REH   0x00012e       data     extern KF8A100GQS.asm
+              _VRES0_bits   0x00012f       data     extern KF8A100GQS.asm
+                   _VRES0   0x00012f       data     extern KF8A100GQS.asm
+                   _DIVRH   0x000130       data     extern KF8A100GQS.asm
+                 _OSCCAL0   0x000131       data     extern KF8A100GQS.asm
+                 _OSCCAL3   0x000132       data     extern KF8A100GQS.asm
+          _SSCI1CTL1_bits   0x000133       data     extern KF8A100GQS.asm
+               _SSCI1CTL1   0x000133       data     extern KF8A100GQS.asm
+           _SSCI1STA_bits   0x000134       data     extern KF8A100GQS.asm
+                _SSCI1STA   0x000134       data     extern KF8A100GQS.asm
+          _SSCI1CTL0_bits   0x000135       data     extern KF8A100GQS.asm
+               _SSCI1CTL0   0x000135       data     extern KF8A100GQS.asm
+               _SSCI1BUFR   0x000136       data     extern KF8A100GQS.asm
+           _SSCI1ADD_bits   0x000137       data     extern KF8A100GQS.asm
+           _SSCI1MSK_bits   0x000137       data     extern KF8A100GQS.asm
+                _SSCI1ADD   0x000137       data     extern KF8A100GQS.asm
+                _SSCI1MSK   0x000137       data     extern KF8A100GQS.asm
+          _SSCI1CTL2_bits   0x000138       data     extern KF8A100GQS.asm
+               _SSCI1CTL2   0x000138       data     extern KF8A100GQS.asm
+                   _DIVBH   0x000139       data     extern KF8A100GQS.asm
+             _DIVCTL_bits   0x00013a       data     extern KF8A100GQS.asm
+                  _DIVCTL   0x00013a       data     extern KF8A100GQS.asm
+                   _DIVAH   0x00013b       data     extern KF8A100GQS.asm
+                   _DIVAL   0x00013c       data     extern KF8A100GQS.asm
+                   _DIVBL   0x00013d       data     extern KF8A100GQS.asm
+                   _DIVQH   0x00013e       data     extern KF8A100GQS.asm
+                   _DIVQL   0x00013f       data     extern KF8A100GQS.asm
+                   _DIVRL   0x000140       data     extern KF8A100GQS.asm
+                     _T4H   0x000141       data     extern KF8A100GQS.asm
+                   _PP61H   0x000142       data     extern KF8A100GQS.asm
+               _P5LR_bits   0x000145       data     extern KF8A100GQS.asm
+                    _P5LR   0x000145       data     extern KF8A100GQS.asm
+               _P6LR_bits   0x000146       data     extern KF8A100GQS.asm
+                    _P6LR   0x000146       data     extern KF8A100GQS.asm
+               _P7LR_bits   0x000147       data     extern KF8A100GQS.asm
+                    _P7LR   0x000147       data     extern KF8A100GQS.asm
+               _P9LR_bits   0x000149       data     extern KF8A100GQS.asm
+                    _P9LR   0x000149       data     extern KF8A100GQS.asm
+               _ANS5_bits   0x00014a       data     extern KF8A100GQS.asm
+                    _ANS5   0x00014a       data     extern KF8A100GQS.asm
+               _ANS6_bits   0x00014b       data     extern KF8A100GQS.asm
+                    _ANS6   0x00014b       data     extern KF8A100GQS.asm
+               _ANS7_bits   0x00014c       data     extern KF8A100GQS.asm
+                    _ANS7   0x00014c       data     extern KF8A100GQS.asm
+               _ANS8_bits   0x00014d       data     extern KF8A100GQS.asm
+                    _ANS8   0x00014d       data     extern KF8A100GQS.asm
+               _ANS9_bits   0x00014e       data     extern KF8A100GQS.asm
+                    _ANS9   0x00014e       data     extern KF8A100GQS.asm
+              _VRES1_bits   0x00014f       data     extern KF8A100GQS.asm
+                   _VRES1   0x00014f       data     extern KF8A100GQS.asm
+             _T4CTL1_bits   0x000151       data     extern KF8A100GQS.asm
+                  _T4CTL1   0x000151       data     extern KF8A100GQS.asm
+                   _PP61L   0x000152       data     extern KF8A100GQS.asm
+                 _T2CCR0L   0x000154       data     extern KF8A100GQS.asm
+                 _T2CCR0H   0x000155       data     extern KF8A100GQS.asm
+                 _T2CCR1L   0x000156       data     extern KF8A100GQS.asm
+                 _T2CCR1H   0x000157       data     extern KF8A100GQS.asm
+                 _T4CCR0L   0x000158       data     extern KF8A100GQS.asm
+                 _EUBRGH2   0x000159       data     extern KF8A100GQS.asm
+                 _T4CCR0H   0x00015a       data     extern KF8A100GQS.asm
+          _UADMATCH2_bits   0x000160       data     extern KF8A100GQS.asm
+               _UADMATCH2   0x000160       data     extern KF8A100GQS.asm
+        _U7816TXCTL2_bits   0x000163       data     extern KF8A100GQS.asm
+             _U7816TXCTL2   0x000163       data     extern KF8A100GQS.asm
+            _EGTCTL2_bits   0x000164       data     extern KF8A100GQS.asm
+                 _EGTCTL2   0x000164       data     extern KF8A100GQS.asm
+            _CLKDIV2_bits   0x000165       data     extern KF8A100GQS.asm
+                 _CLKDIV2   0x000165       data     extern KF8A100GQS.asm
+          _U7816CTL2_bits   0x000166       data     extern KF8A100GQS.asm
+               _U7816CTL2   0x000166       data     extern KF8A100GQS.asm
+        _U7816RXCTL2_bits   0x000167       data     extern KF8A100GQS.asm
+             _U7816RXCTL2   0x000167       data     extern KF8A100GQS.asm
+             _RSCTL2_bits   0x000168       data     extern KF8A100GQS.asm
+                  _RSCTL2   0x000168       data     extern KF8A100GQS.asm
+                  _TXSDR2   0x000169       data     extern KF8A100GQS.asm
+                  _RXSDR2   0x00016a       data     extern KF8A100GQS.asm
+             _BRCTL2_bits   0x00016b       data     extern KF8A100GQS.asm
+                  _BRCTL2   0x00016b       data     extern KF8A100GQS.asm
+             _TSCTL2_bits   0x00016c       data     extern KF8A100GQS.asm
+                  _TSCTL2   0x00016c       data     extern KF8A100GQS.asm
+                 _EUBRGL2   0x00016d       data     extern KF8A100GQS.asm
+           _SSCI2STA_bits   0x000205       data     extern KF8A100GQS.asm
+                _SSCI2STA   0x000205       data     extern KF8A100GQS.asm
+          _SSCI2CTL0_bits   0x000206       data     extern KF8A100GQS.asm
+               _SSCI2CTL0   0x000206       data     extern KF8A100GQS.asm
+               _SSCI2BUFR   0x000207       data     extern KF8A100GQS.asm
+           _SSCI2ADD_bits   0x000208       data     extern KF8A100GQS.asm
+           _SSCI2MSK_bits   0x000208       data     extern KF8A100GQS.asm
+                _SSCI2ADD   0x000208       data     extern KF8A100GQS.asm
+                _SSCI2MSK   0x000208       data     extern KF8A100GQS.asm
+          _SSCI2CTL2_bits   0x000209       data     extern KF8A100GQS.asm
+               _SSCI2CTL2   0x000209       data     extern KF8A100GQS.asm
+             _RSCTL3_bits   0x00020c       data     extern KF8A100GQS.asm
+                  _RSCTL3   0x00020c       data     extern KF8A100GQS.asm
+                  _TXSDR3   0x00020d       data     extern KF8A100GQS.asm
+                  _RXSDR3   0x00020e       data     extern KF8A100GQS.asm
+             _BRCTL3_bits   0x00020f       data     extern KF8A100GQS.asm
+                  _BRCTL3   0x00020f       data     extern KF8A100GQS.asm
+            _CCP3CTL_bits   0x000210       data     extern KF8A100GQS.asm
+                 _CCP3CTL   0x000210       data     extern KF8A100GQS.asm
+                   _CCP3H   0x000211       data     extern KF8A100GQS.asm
+                   _CCP3L   0x000212       data     extern KF8A100GQS.asm
+            _CCP7CTL_bits   0x000213       data     extern KF8A100GQS.asm
+                 _CCP7CTL   0x000213       data     extern KF8A100GQS.asm
+                   _CCP7H   0x000214       data     extern KF8A100GQS.asm
+                   _CCP7L   0x000215       data     extern KF8A100GQS.asm
+             _TSCTL3_bits   0x000216       data     extern KF8A100GQS.asm
+                  _TSCTL3   0x000216       data     extern KF8A100GQS.asm
+                 _EUBRGL3   0x000218       data     extern KF8A100GQS.asm
+                 _EUBRGH3   0x000219       data     extern KF8A100GQS.asm
+               _EIF3_bits   0x00021a       data     extern KF8A100GQS.asm
+                    _EIF3   0x00021a       data     extern KF8A100GQS.asm
+               _EIE3_bits   0x00021b       data     extern KF8A100GQS.asm
+                    _EIE3   0x00021b       data     extern KF8A100GQS.asm
+          _UADMATCH3_bits   0x00021c       data     extern KF8A100GQS.asm
+               _UADMATCH3   0x00021c       data     extern KF8A100GQS.asm
+            _SLEPEN3_bits   0x00021d       data     extern KF8A100GQS.asm
+                 _SLEPEN3   0x00021d       data     extern KF8A100GQS.asm
+           _UPINSET3_bits   0x00021e       data     extern KF8A100GQS.asm
+                _UPINSET3   0x00021e       data     extern KF8A100GQS.asm
+          _SSCI2CTL1_bits   0x00021f       data     extern KF8A100GQS.asm
+               _SSCI2CTL1   0x00021f       data     extern KF8A100GQS.asm
+                _IP3_bits   0x00022a       data     extern KF8A100GQS.asm
+                     _IP3   0x00022a       data     extern KF8A100GQS.asm
+           _FILT1CTL_bits   0x000231       data     extern KF8A100GQS.asm
+                _FILT1CTL   0x000231       data     extern KF8A100GQS.asm
+           _FILT1PER_bits   0x000232       data     extern KF8A100GQS.asm
+                _FILT1PER   0x000232       data     extern KF8A100GQS.asm
+           _FILT2CTL_bits   0x000233       data     extern KF8A100GQS.asm
+                _FILT2CTL   0x000233       data     extern KF8A100GQS.asm
+           _FILT2PER_bits   0x000234       data     extern KF8A100GQS.asm
+                _FILT2PER   0x000234       data     extern KF8A100GQS.asm
+           _FILT3CTL_bits   0x000235       data     extern KF8A100GQS.asm
+                _FILT3CTL   0x000235       data     extern KF8A100GQS.asm
+           _FILT3PER_bits   0x000236       data     extern KF8A100GQS.asm
+                _FILT3PER   0x000236       data     extern KF8A100GQS.asm
+           _FILT4CTL_bits   0x000237       data     extern KF8A100GQS.asm
+                _FILT4CTL   0x000237       data     extern KF8A100GQS.asm
+           _FILT4PER_bits   0x000238       data     extern KF8A100GQS.asm
+                _FILT4PER   0x000238       data     extern KF8A100GQS.asm
+              _C3CTL_bits   0x000239       data     extern KF8A100GQS.asm
+                   _C3CTL   0x000239       data     extern KF8A100GQS.asm
+              _C4CTL_bits   0x00023a       data     extern KF8A100GQS.asm
+                   _C4CTL   0x00023a       data     extern KF8A100GQS.asm
+                 _VRECAL2   0x00023b       data     extern KF8A100GQS.asm
+                 _VRECAL3   0x00023c       data     extern KF8A100GQS.asm
+               _PUR9_bits   0x000240       data     extern KF8A100GQS.asm
+                    _PUR9   0x000240       data     extern KF8A100GQS.asm
+               _PUR1_bits   0x000241       data     extern KF8A100GQS.asm
+                    _PUR1   0x000241       data     extern KF8A100GQS.asm
+               _PUR2_bits   0x000242       data     extern KF8A100GQS.asm
+                    _PUR2   0x000242       data     extern KF8A100GQS.asm
+               _PUR3_bits   0x000243       data     extern KF8A100GQS.asm
+                    _PUR3   0x000243       data     extern KF8A100GQS.asm
+               _PUR4_bits   0x000244       data     extern KF8A100GQS.asm
+                    _PUR4   0x000244       data     extern KF8A100GQS.asm
+               _PUR5_bits   0x000245       data     extern KF8A100GQS.asm
+                    _PUR5   0x000245       data     extern KF8A100GQS.asm
+               _PUR6_bits   0x000246       data     extern KF8A100GQS.asm
+                    _PUR6   0x000246       data     extern KF8A100GQS.asm
+               _PUR7_bits   0x000247       data     extern KF8A100GQS.asm
+                    _PUR7   0x000247       data     extern KF8A100GQS.asm
+                   _MULAL   0x000248       data     extern KF8A100GQS.asm
+                   _MULBH   0x000249       data     extern KF8A100GQS.asm
+                 _MULRES3   0x00024a       data     extern KF8A100GQS.asm
+                 _MULRES2   0x00024b       data     extern KF8A100GQS.asm
+                 _MULRES1   0x00024c       data     extern KF8A100GQS.asm
+                 _MULRES0   0x00024d       data     extern KF8A100GQS.asm
+                   _MULBL   0x00024e       data     extern KF8A100GQS.asm
+             _MULCTL_bits   0x00024f       data     extern KF8A100GQS.asm
+                  _MULCTL   0x00024f       data     extern KF8A100GQS.asm
+                   _MULAH   0x000250       data     extern KF8A100GQS.asm
+               _ADCDATA1L   0x000251       data     extern KF8A100GQS.asm
+               _ADCDATA1H   0x000252       data     extern KF8A100GQS.asm
+               _ADCDATA2L   0x000253       data     extern KF8A100GQS.asm
+               _ADCDATA2H   0x000254       data     extern KF8A100GQS.asm
+               _ADCDATA3L   0x000255       data     extern KF8A100GQS.asm
+               _ADCDATA3H   0x000256       data     extern KF8A100GQS.asm
+           _UPINSET1_bits   0x000257       data     extern KF8A100GQS.asm
+                _UPINSET1   0x000257       data     extern KF8A100GQS.asm
+            _USLPEN1_bits   0x000258       data     extern KF8A100GQS.asm
+                 _USLPEN1   0x000258       data     extern KF8A100GQS.asm
+                 _EUBRGH1   0x000259       data     extern KF8A100GQS.asm
+          _ADCINTCTL_bits   0x00025a       data     extern KF8A100GQS.asm
+               _ADCINTCTL   0x00025a       data     extern KF8A100GQS.asm
+          _ADSCANCTL_bits   0x00025b       data     extern KF8A100GQS.asm
+               _ADSCANCTL   0x00025b       data     extern KF8A100GQS.asm
+               _EIE7_bits   0x00025c       data     extern KF8A100GQS.asm
+                    _EIE7   0x00025c       data     extern KF8A100GQS.asm
+               _EIF7_bits   0x00025d       data     extern KF8A100GQS.asm
+                    _EIF7   0x00025d       data     extern KF8A100GQS.asm
+                _IP7_bits   0x00025e       data     extern KF8A100GQS.asm
+                     _IP7   0x00025e       data     extern KF8A100GQS.asm
+            _HLVDCTL_bits   0x00025f       data     extern KF8A100GQS.asm
+                 _HLVDCTL   0x00025f       data     extern KF8A100GQS.asm
+             _RTCSRT_bits   0x000318       data     extern KF8A100GQS.asm
+                  _RTCSRT   0x000318       data     extern KF8A100GQS.asm
+             _RTCSTU_bits   0x000319       data     extern KF8A100GQS.asm
+                  _RTCSTU   0x000319       data     extern KF8A100GQS.asm
+            _RTCALRS_bits   0x00031c       data     extern KF8A100GQS.asm
+                 _RTCALRS   0x00031c       data     extern KF8A100GQS.asm
+            _RTCALRM_bits   0x00031d       data     extern KF8A100GQS.asm
+                 _RTCALRM   0x00031d       data     extern KF8A100GQS.asm
+            _RTCALRH_bits   0x00031e       data     extern KF8A100GQS.asm
+                 _RTCALRH   0x00031e       data     extern KF8A100GQS.asm
+            _RTCALRW_bits   0x00031f       data     extern KF8A100GQS.asm
+                 _RTCALRW   0x00031f       data     extern KF8A100GQS.asm
+             _RTCTTR_bits   0x000320       data     extern KF8A100GQS.asm
+                  _RTCTTR   0x000320       data     extern KF8A100GQS.asm
+             _RTCFCR_bits   0x000321       data     extern KF8A100GQS.asm
+                  _RTCFCR   0x000321       data     extern KF8A100GQS.asm
+             _RTCSEC_bits   0x000322       data     extern KF8A100GQS.asm
+                  _RTCSEC   0x000322       data     extern KF8A100GQS.asm
+             _RTCMIN_bits   0x000323       data     extern KF8A100GQS.asm
+                  _RTCMIN   0x000323       data     extern KF8A100GQS.asm
+            _RTCHOUR_bits   0x000324       data     extern KF8A100GQS.asm
+                 _RTCHOUR   0x000324       data     extern KF8A100GQS.asm
+             _RTCWEK_bits   0x000325       data     extern KF8A100GQS.asm
+                  _RTCWEK   0x000325       data     extern KF8A100GQS.asm
+             _RTCDAY_bits   0x000326       data     extern KF8A100GQS.asm
+                  _RTCDAY   0x000326       data     extern KF8A100GQS.asm
+             _RTCMTH_bits   0x000327       data     extern KF8A100GQS.asm
+                  _RTCMTH   0x000327       data     extern KF8A100GQS.asm
+            _RTCYEAR_bits   0x000328       data     extern KF8A100GQS.asm
+                 _RTCYEAR   0x000328       data     extern KF8A100GQS.asm
+          _RTCTMRCTL_bits   0x00032c       data     extern KF8A100GQS.asm
+               _RTCTMRCTL   0x00032c       data     extern KF8A100GQS.asm
+           _RTCTMREN_bits   0x00032d       data     extern KF8A100GQS.asm
+                _RTCTMREN   0x00032d       data     extern KF8A100GQS.asm
+                 _RTCTMR1   0x00032e       data     extern KF8A100GQS.asm
+                 _RTCTMR0   0x00032f       data     extern KF8A100GQS.asm
+             _POWCTL_bits   0x000360       data     extern KF8A100GQS.asm
+                  _POWCTL   0x000360       data     extern KF8A100GQS.asm
+               _PCAL_bits   0x000361       data     extern KF8A100GQS.asm
+                    _PCAL   0x000361       data     extern KF8A100GQS.asm
+                 _XTALCAL   0x000362       data     extern KF8A100GQS.asm
+            _BWDTCTL_bits   0x000363       data     extern KF8A100GQS.asm
+                 _BWDTCTL   0x000363       data     extern KF8A100GQS.asm
+              _PHCLR_bits   0x000364       data     extern KF8A100GQS.asm
+                   _PHCLR   0x000364       data     extern KF8A100GQS.asm
+                 _LPRCCAL   0x000365       data     extern KF8A100GQS.asm
+            _LPRCCTL_bits   0x000366       data     extern KF8A100GQS.asm
+                 _LPRCCTL   0x000366       data     extern KF8A100GQS.asm
+            _BBODCTL_bits   0x000368       data     extern KF8A100GQS.asm
+                 _BBODCTL   0x000368       data     extern KF8A100GQS.asm
+              _IOCAF_bits   0x000410       data     extern KF8A100GQS.asm
+                   _IOCAF   0x000410       data     extern KF8A100GQS.asm
+              _IOCBF_bits   0x000411       data     extern KF8A100GQS.asm
+                   _IOCBF   0x000411       data     extern KF8A100GQS.asm
+              _IOCCF_bits   0x000412       data     extern KF8A100GQS.asm
+                   _IOCCF   0x000412       data     extern KF8A100GQS.asm
+            _IOCAPOS_bits   0x000413       data     extern KF8A100GQS.asm
+                 _IOCAPOS   0x000413       data     extern KF8A100GQS.asm
+            _IOCBPOS_bits   0x000414       data     extern KF8A100GQS.asm
+                 _IOCBPOS   0x000414       data     extern KF8A100GQS.asm
+            _IOCCPOS_bits   0x000415       data     extern KF8A100GQS.asm
+                 _IOCCPOS   0x000415       data     extern KF8A100GQS.asm
+            _IOCANEG_bits   0x000416       data     extern KF8A100GQS.asm
+                 _IOCANEG   0x000416       data     extern KF8A100GQS.asm
+            _IOCBNEG_bits   0x000418       data     extern KF8A100GQS.asm
+                 _IOCBNEG   0x000418       data     extern KF8A100GQS.asm
+            _IOCCNEG_bits   0x000419       data     extern KF8A100GQS.asm
+                 _IOCCNEG   0x000419       data     extern KF8A100GQS.asm
+             _IOCMOD_bits   0x00041a       data     extern KF8A100GQS.asm
+                  _IOCMOD   0x00041a       data     extern KF8A100GQS.asm
+             _SRCTL0_bits   0x00041b       data     extern KF8A100GQS.asm
+                  _SRCTL0   0x00041b       data     extern KF8A100GQS.asm
+             _SRCTL1_bits   0x00041c       data     extern KF8A100GQS.asm
+                  _SRCTL1   0x00041c       data     extern KF8A100GQS.asm
+             _T8CTL1_bits   0x00041d       data     extern KF8A100GQS.asm
+                  _T8CTL1   0x00041d       data     extern KF8A100GQS.asm
+             _T9CTL1_bits   0x00041e       data     extern KF8A100GQS.asm
+                  _T9CTL1   0x00041e       data     extern KF8A100GQS.asm
+                 _PA_bits   0x000424       data     extern KF8A100GQS.asm
+                      _PA   0x000424       data     extern KF8A100GQS.asm
+               _PALR_bits   0x000425       data     extern KF8A100GQS.asm
+                    _PALR   0x000425       data     extern KF8A100GQS.asm
+                _TRA_bits   0x000426       data     extern KF8A100GQS.asm
+                     _TRA   0x000426       data     extern KF8A100GQS.asm
+               _PURA_bits   0x000427       data     extern KF8A100GQS.asm
+                    _PURA   0x000427       data     extern KF8A100GQS.asm
+               _ANSA_bits   0x000428       data     extern KF8A100GQS.asm
+                    _ANSA   0x000428       data     extern KF8A100GQS.asm
+                 _PB_bits   0x000429       data     extern KF8A100GQS.asm
+                      _PB   0x000429       data     extern KF8A100GQS.asm
+               _PBLR_bits   0x00042a       data     extern KF8A100GQS.asm
+                    _PBLR   0x00042a       data     extern KF8A100GQS.asm
+                _TRB_bits   0x00042b       data     extern KF8A100GQS.asm
+                     _TRB   0x00042b       data     extern KF8A100GQS.asm
+               _PURB_bits   0x00042c       data     extern KF8A100GQS.asm
+                    _PURB   0x00042c       data     extern KF8A100GQS.asm
+               _ANSB_bits   0x00042d       data     extern KF8A100GQS.asm
+                    _ANSB   0x00042d       data     extern KF8A100GQS.asm
+             _RSCTL4_bits   0x000430       data     extern KF8A100GQS.asm
+                  _RSCTL4   0x000430       data     extern KF8A100GQS.asm
+                  _TXSDR4   0x000431       data     extern KF8A100GQS.asm
+                  _RXSDR4   0x000432       data     extern KF8A100GQS.asm
+             _BRCTL4_bits   0x000433       data     extern KF8A100GQS.asm
+                  _BRCTL4   0x000433       data     extern KF8A100GQS.asm
+             _TSCTL4_bits   0x000434       data     extern KF8A100GQS.asm
+                  _TSCTL4   0x000434       data     extern KF8A100GQS.asm
+                 _EUBRGL4   0x000435       data     extern KF8A100GQS.asm
+                 _EUBRGH4   0x000436       data     extern KF8A100GQS.asm
+          _UADMATCH4_bits   0x000438       data     extern KF8A100GQS.asm
+               _UADMATCH4   0x000438       data     extern KF8A100GQS.asm
+             _SLPEN4_bits   0x000439       data     extern KF8A100GQS.asm
+                  _SLPEN4   0x000439       data     extern KF8A100GQS.asm
+           _UPINSET4_bits   0x00043a       data     extern KF8A100GQS.asm
+                _UPINSET4   0x00043a       data     extern KF8A100GQS.asm
+            _P3ASCTL_bits   0x000440       data     extern KF8A100GQS.asm
+                 _P3ASCTL   0x000440       data     extern KF8A100GQS.asm
+           _P3ATRCTL_bits   0x000441       data     extern KF8A100GQS.asm
+                _P3ATRCTL   0x000441       data     extern KF8A100GQS.asm
+                    _PP3H   0x000442       data     extern KF8A100GQS.asm
+                    _PP3L   0x000443       data     extern KF8A100GQS.asm
+           _PWM3CTL0_bits   0x000444       data     extern KF8A100GQS.asm
+                _PWM3CTL0   0x000444       data     extern KF8A100GQS.asm
+           _PWM3CTL1_bits   0x000445       data     extern KF8A100GQS.asm
+                _PWM3CTL1   0x000445       data     extern KF8A100GQS.asm
+                  _PWM3H0   0x000446       data     extern KF8A100GQS.asm
+                  _PWM3H1   0x000447       data     extern KF8A100GQS.asm
+                  _PWM3L0   0x000448       data     extern KF8A100GQS.asm
+                  _PWM3L1   0x000449       data     extern KF8A100GQS.asm
+                  _T8CCRH   0x00044a       data     extern KF8A100GQS.asm
+                  _T8CCRL   0x00044b       data     extern KF8A100GQS.asm
+              _T8CTL_bits   0x00044c       data     extern KF8A100GQS.asm
+                   _T8CTL   0x00044c       data     extern KF8A100GQS.asm
+                     _T8H   0x00044d       data     extern KF8A100GQS.asm
+                     _T8L   0x00044e       data     extern KF8A100GQS.asm
+            _P4ASCTL_bits   0x00044f       data     extern KF8A100GQS.asm
+                 _P4ASCTL   0x00044f       data     extern KF8A100GQS.asm
+           _P4ATRCTL_bits   0x000450       data     extern KF8A100GQS.asm
+                _P4ATRCTL   0x000450       data     extern KF8A100GQS.asm
+                    _PP4H   0x000451       data     extern KF8A100GQS.asm
+                    _PP4L   0x000452       data     extern KF8A100GQS.asm
+           _PWM4CTL0_bits   0x000453       data     extern KF8A100GQS.asm
+                _PWM4CTL0   0x000453       data     extern KF8A100GQS.asm
+           _PWM4CTL1_bits   0x000454       data     extern KF8A100GQS.asm
+                _PWM4CTL1   0x000454       data     extern KF8A100GQS.asm
+                  _PWM4H0   0x000455       data     extern KF8A100GQS.asm
+                  _PWM4H1   0x000456       data     extern KF8A100GQS.asm
+                  _PWM4L0   0x000457       data     extern KF8A100GQS.asm
+                  _PWM4L1   0x000458       data     extern KF8A100GQS.asm
+                  _T9CCRH   0x000459       data     extern KF8A100GQS.asm
+                  _T9CCRL   0x00045a       data     extern KF8A100GQS.asm
+              _T9CTL_bits   0x00045b       data     extern KF8A100GQS.asm
+                   _T9CTL   0x00045b       data     extern KF8A100GQS.asm
+                     _T9H   0x00045c       data     extern KF8A100GQS.asm
+                     _T9L   0x00045d       data     extern KF8A100GQS.asm
+            _APFCTL2_bits   0x00045e       data     extern KF8A100GQS.asm
+                 _APFCTL2   0x00045e       data     extern KF8A100GQS.asm
+            _APFCTL3_bits   0x00045f       data     extern KF8A100GQS.asm
+                 _APFCTL3   0x00045f       data     extern KF8A100GQS.asm
+            _APFCTL4_bits   0x000460       data     extern KF8A100GQS.asm
+                 _APFCTL4   0x000460       data     extern KF8A100GQS.asm
+            _APFCTL5_bits   0x000461       data     extern KF8A100GQS.asm
+                 _APFCTL5   0x000461       data     extern KF8A100GQS.asm
+            _APFCTL6_bits   0x000462       data     extern KF8A100GQS.asm
+                 _APFCTL6   0x000462       data     extern KF8A100GQS.asm
+            _APFCTL7_bits   0x000463       data     extern KF8A100GQS.asm
+                 _APFCTL7   0x000463       data     extern KF8A100GQS.asm
+            _APFCTL8_bits   0x000464       data     extern KF8A100GQS.asm
+                 _APFCTL8   0x000464       data     extern KF8A100GQS.asm
+            _APFCTL9_bits   0x000465       data     extern KF8A100GQS.asm
+                 _APFCTL9   0x000465       data     extern KF8A100GQS.asm
+           _APFCTL10_bits   0x000466       data     extern KF8A100GQS.asm
+                _APFCTL10   0x000466       data     extern KF8A100GQS.asm
+           _APFCTL11_bits   0x000467       data     extern KF8A100GQS.asm
+                _APFCTL11   0x000467       data     extern KF8A100GQS.asm
+           _APFCTL12_bits   0x000468       data     extern KF8A100GQS.asm
+                _APFCTL12   0x000468       data     extern KF8A100GQS.asm
+          _ADCOFFSET_bits   0x000505       data     extern KF8A100GQS.asm
+               _ADCOFFSET   0x000505       data     extern KF8A100GQS.asm
+           _P7ATRCTL_bits   0x000509       data     extern KF8A100GQS.asm
+                _P7ATRCTL   0x000509       data     extern KF8A100GQS.asm
+                   _PP70H   0x00050c       data     extern KF8A100GQS.asm
+                   _PP70L   0x00050d       data     extern KF8A100GQS.asm
+                   _PP71H   0x00050e       data     extern KF8A100GQS.asm
+                   _PP71L   0x00050f       data     extern KF8A100GQS.asm
+           _PWM7CTL0_bits   0x000510       data     extern KF8A100GQS.asm
+                _PWM7CTL0   0x000510       data     extern KF8A100GQS.asm
+           _PWM7CTL2_bits   0x000512       data     extern KF8A100GQS.asm
+                _PWM7CTL2   0x000512       data     extern KF8A100GQS.asm
+             _T5CTL1_bits   0x000515       data     extern KF8A100GQS.asm
+                  _T5CTL1   0x000515       data     extern KF8A100GQS.asm
+             _PLLCTL_bits   0x000516       data     extern KF8A100GQS.asm
+                  _PLLCTL   0x000516       data     extern KF8A100GQS.asm
+              _CANIE_bits   0x000518       data     extern KF8A100GQS.asm
+                   _CANIE   0x000518       data     extern KF8A100GQS.asm
+              _CANIF_bits   0x000519       data     extern KF8A100GQS.asm
+                   _CANIF   0x000519       data     extern KF8A100GQS.asm
+               _CANP_bits   0x00051a       data     extern KF8A100GQS.asm
+                    _CANP   0x00051a       data     extern KF8A100GQS.asm
+               _EIE6_bits   0x00051b       data     extern KF8A100GQS.asm
+                    _EIE6   0x00051b       data     extern KF8A100GQS.asm
+               _EIF6_bits   0x00051c       data     extern KF8A100GQS.asm
+                    _EIF6   0x00051c       data     extern KF8A100GQS.asm
+                _IP6_bits   0x00051d       data     extern KF8A100GQS.asm
+                     _IP6   0x00051d       data     extern KF8A100GQS.asm
+           _CANTXINF_bits   0x000530       data     extern KF8A100GQS.asm
+                _CANTXINF   0x000530       data     extern KF8A100GQS.asm
+           _CANTXID0_bits   0x000531       data     extern KF8A100GQS.asm
+                _CANTXID0   0x000531       data     extern KF8A100GQS.asm
+           _CANTXID1_bits   0x000532       data     extern KF8A100GQS.asm
+                _CANTXID1   0x000532       data     extern KF8A100GQS.asm
+           _CANTXID2_bits   0x000533       data     extern KF8A100GQS.asm
+                _CANTXID2   0x000533       data     extern KF8A100GQS.asm
+           _CANTXID3_bits   0x000534       data     extern KF8A100GQS.asm
+                _CANTXID3   0x000534       data     extern KF8A100GQS.asm
+                _CANTXDT0   0x000535       data     extern KF8A100GQS.asm
+                _CANTXDT1   0x000536       data     extern KF8A100GQS.asm
+                _CANTXDT2   0x000537       data     extern KF8A100GQS.asm
+                _CANTXDT3   0x000538       data     extern KF8A100GQS.asm
+                _CANTXDT4   0x000539       data     extern KF8A100GQS.asm
+                _CANTXDT5   0x00053a       data     extern KF8A100GQS.asm
+                _CANTXDT6   0x00053b       data     extern KF8A100GQS.asm
+                _CANTXDT7   0x00053c       data     extern KF8A100GQS.asm
+             _CANMOD_bits   0x00053d       data     extern KF8A100GQS.asm
+                  _CANMOD   0x00053d       data     extern KF8A100GQS.asm
+             _CANCMR_bits   0x00053e       data     extern KF8A100GQS.asm
+                  _CANCMR   0x00053e       data     extern KF8A100GQS.asm
+             _CANSTA_bits   0x00053f       data     extern KF8A100GQS.asm
+                  _CANSTA   0x00053f       data     extern KF8A100GQS.asm
+             _CANBTR_bits   0x000540       data     extern KF8A100GQS.asm
+                  _CANBTR   0x000540       data     extern KF8A100GQS.asm
+             _CANSEG_bits   0x000541       data     extern KF8A100GQS.asm
+                  _CANSEG   0x000541       data     extern KF8A100GQS.asm
+             _CANALC_bits   0x000542       data     extern KF8A100GQS.asm
+                  _CANALC   0x000542       data     extern KF8A100GQS.asm
+             _CANECC_bits   0x000543       data     extern KF8A100GQS.asm
+                  _CANECC   0x000543       data     extern KF8A100GQS.asm
+             _CANEWL_bits   0x000544       data     extern KF8A100GQS.asm
+                  _CANEWL   0x000544       data     extern KF8A100GQS.asm
+             _CANRXE_bits   0x000545       data     extern KF8A100GQS.asm
+                  _CANRXE   0x000545       data     extern KF8A100GQS.asm
+             _CANTXE_bits   0x000546       data     extern KF8A100GQS.asm
+                  _CANTXE   0x000546       data     extern KF8A100GQS.asm
+             _CANRMC_bits   0x000547       data     extern KF8A100GQS.asm
+                  _CANRMC   0x000547       data     extern KF8A100GQS.asm
+            _CANACR0_bits   0x000548       data     extern KF8A100GQS.asm
+                 _CANACR0   0x000548       data     extern KF8A100GQS.asm
+            _CANACR1_bits   0x000549       data     extern KF8A100GQS.asm
+                 _CANACR1   0x000549       data     extern KF8A100GQS.asm
+            _CANACR2_bits   0x00054a       data     extern KF8A100GQS.asm
+                 _CANACR2   0x00054a       data     extern KF8A100GQS.asm
+            _CANACR3_bits   0x00054b       data     extern KF8A100GQS.asm
+                 _CANACR3   0x00054b       data     extern KF8A100GQS.asm
+            _CANMSK0_bits   0x00054c       data     extern KF8A100GQS.asm
+                 _CANMSK0   0x00054c       data     extern KF8A100GQS.asm
+            _CANMSK1_bits   0x00054d       data     extern KF8A100GQS.asm
+                 _CANMSK1   0x00054d       data     extern KF8A100GQS.asm
+            _CANMSK2_bits   0x00054e       data     extern KF8A100GQS.asm
+                 _CANMSK2   0x00054e       data     extern KF8A100GQS.asm
+            _CANMSK3_bits   0x00054f       data     extern KF8A100GQS.asm
+                 _CANMSK3   0x00054f       data     extern KF8A100GQS.asm
+             _T5CTL0_bits   0x000550       data     extern KF8A100GQS.asm
+                  _T5CTL0   0x000550       data     extern KF8A100GQS.asm
+                     _T5H   0x000551       data     extern KF8A100GQS.asm
+                     _T5L   0x000552       data     extern KF8A100GQS.asm
+             _T6CTL1_bits   0x000553       data     extern KF8A100GQS.asm
+                  _T6CTL1   0x000553       data     extern KF8A100GQS.asm
+             _T6CTL0_bits   0x000554       data     extern KF8A100GQS.asm
+                  _T6CTL0   0x000554       data     extern KF8A100GQS.asm
+                     _T6H   0x000555       data     extern KF8A100GQS.asm
+                     _T6L   0x000556       data     extern KF8A100GQS.asm
+                  _PWM7L0   0x00055a       data     extern KF8A100GQS.asm
+                  _PWM7H0   0x00055b       data     extern KF8A100GQS.asm
+                  _PWM7L1   0x00055c       data     extern KF8A100GQS.asm
+                  _PWM7H1   0x00055d       data     extern KF8A100GQS.asm
+                  _PWM7L2   0x00055e       data     extern KF8A100GQS.asm
+                  _PWM7H2   0x00055f       data     extern KF8A100GQS.asm
+                 _T5CCR0H   0x000563       data     extern KF8A100GQS.asm
+                 _T5CCR0L   0x000564       data     extern KF8A100GQS.asm
+                 _T5CCR1H   0x000565       data     extern KF8A100GQS.asm
+                 _T5CCR1L   0x000566       data     extern KF8A100GQS.asm
+                 _T6CCR0H   0x000567       data     extern KF8A100GQS.asm
+                 _T6CCR0L   0x000568       data     extern KF8A100GQS.asm
+                  _PWM7L3   0x00056a       data     extern KF8A100GQS.asm
+                  _PWM7H3   0x00056b       data     extern KF8A100GQS.asm
+             _PWM7PC_bits   0x00056d       data     extern KF8A100GQS.asm
+                  _PWM7PC   0x00056d       data     extern KF8A100GQS.asm
+                  _PWM5H2   0x000620       data     extern KF8A100GQS.asm
+                  _PWM5H3   0x000621       data     extern KF8A100GQS.asm
+                  _PWM5L0   0x000622       data     extern KF8A100GQS.asm
+                  _PWM5L1   0x000623       data     extern KF8A100GQS.asm
+                  _PWM5L2   0x000624       data     extern KF8A100GQS.asm
+                  _PWM5L3   0x000625       data     extern KF8A100GQS.asm
+             _PWM5OC_bits   0x000626       data     extern KF8A100GQS.asm
+                  _PWM5OC   0x000626       data     extern KF8A100GQS.asm
+             _PWM5PC_bits   0x000627       data     extern KF8A100GQS.asm
+                  _PWM5PC   0x000627       data     extern KF8A100GQS.asm
+            _T10CTL1_bits   0x000628       data     extern KF8A100GQS.asm
+                 _T10CTL1   0x000628       data     extern KF8A100GQS.asm
+                _T10CCR0H   0x000629       data     extern KF8A100GQS.asm
+                _T10CCR0L   0x00062a       data     extern KF8A100GQS.asm
+                _T10CCR1H   0x00062b       data     extern KF8A100GQS.asm
+                _T10CCR1L   0x00062c       data     extern KF8A100GQS.asm
+            _T10CTL0_bits   0x00062d       data     extern KF8A100GQS.asm
+                 _T10CTL0   0x00062d       data     extern KF8A100GQS.asm
+                    _T10H   0x00062e       data     extern KF8A100GQS.asm
+                    _T10L   0x00062f       data     extern KF8A100GQS.asm
+               _EIF8_bits   0x000630       data     extern KF8A100GQS.asm
+                    _EIF8   0x000630       data     extern KF8A100GQS.asm
+               _EIE8_bits   0x000631       data     extern KF8A100GQS.asm
+                    _EIE8   0x000631       data     extern KF8A100GQS.asm
+                _IP8_bits   0x000632       data     extern KF8A100GQS.asm
+                     _IP8   0x000632       data     extern KF8A100GQS.asm
+            _ADCCTL3_bits   0x000633       data     extern KF8A100GQS.asm
+                 _ADCCTL3   0x000633       data     extern KF8A100GQS.asm
+           _P5ASCTL0_bits   0x000634       data     extern KF8A100GQS.asm
+                _P5ASCTL0   0x000634       data     extern KF8A100GQS.asm
+           _P5ASCTL1_bits   0x000635       data     extern KF8A100GQS.asm
+                _P5ASCTL1   0x000635       data     extern KF8A100GQS.asm
+          _P5STRCTL0_bits   0x000636       data     extern KF8A100GQS.asm
+               _P5STRCTL0   0x000636       data     extern KF8A100GQS.asm
+          _P5STRCTL1_bits   0x000637       data     extern KF8A100GQS.asm
+               _P5STRCTL1   0x000637       data     extern KF8A100GQS.asm
+                    _PP5H   0x000638       data     extern KF8A100GQS.asm
+                    _PP5L   0x000639       data     extern KF8A100GQS.asm
+           _PWM5CTL0_bits   0x00063a       data     extern KF8A100GQS.asm
+                _PWM5CTL0   0x00063a       data     extern KF8A100GQS.asm
+           _PWM5CTL1_bits   0x00063b       data     extern KF8A100GQS.asm
+                _PWM5CTL1   0x00063b       data     extern KF8A100GQS.asm
+           _PWM5CTL2_bits   0x00063c       data     extern KF8A100GQS.asm
+                _PWM5CTL2   0x00063c       data     extern KF8A100GQS.asm
+             _PWM5FC_bits   0x00063d       data     extern KF8A100GQS.asm
+                  _PWM5FC   0x00063d       data     extern KF8A100GQS.asm
+                  _PWM5H0   0x00063e       data     extern KF8A100GQS.asm
+                  _PWM5H1   0x00063f       data     extern KF8A100GQS.asm
+                 _startup   0x00766d    program     extern startup_KF8A100GQS.S
+                  r1x1005   0x0000c5       data     static  
+                  r1x1006   0x0000c6       data     static  
+                  r1x1007   0x0000c7       data     static  
+                   _cinit   0x00759e    program     extern  
+            clearbssblock   0x0075d5    program     extern  
+ 

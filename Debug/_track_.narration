@@ -1,0 +1,154 @@
+##############################################
+##########				ISR 0:func._int_fun0
+##############################################
+	#find	r0x1005		in	func._int_fun0 , renamed  r1x1005 
+	#find	r0x1006		in	func._int_fun0 , renamed  r1x1006 
+	#find	r0x1007		in	func._int_fun0 , renamed  r1x1007 
+endfun2:func._int_fun0
+
+
+##############################################
+##########				MAIN:func._main
+##############################################
+
+
+###########Call  function :func._Init_IO
+###########Return function:func._Init_IO
+
+
+
+###########Call  function :func._IS31FL3265B_Init
+
+
+###########Call  function :func._spi_init
+###########Return function:func._spi_init
+
+
+
+###########Call  function :func._Tail_One_Init
+	*find		STK01		in 	func._Tail_One_Init
+
+
+###########Call  function :func._SPI_Write_2Byte
+
+
+@@@@@@@@@@@@@@@风险RAM识别到:r0x1005 in func._SPI_Write_2Byte 
+
+
+@@@@@@@@@@@@@@@风险RAM识别到:r0x1006 in func._SPI_Write_2Byte 
+
+
+###########Call  function :func._Spi_CS_Low
+###########Return function:func._Spi_CS_Low
+
+
+
+###########Call  function :func._Spi_CS_High
+###########Return function:func._Spi_CS_High
+
+###########Return function:func._SPI_Write_2Byte
+
+###########Return function:func._Tail_One_Init
+
+
+
+###########Call  function :func._Tail_Two_Init
+###########Return function:func._Tail_Two_Init
+
+
+
+###########Call  function :func._Rt_One_Init
+###########Return function:func._Rt_One_Init
+
+
+
+###########Call  function :func._Rt_Two_Init
+###########Return function:func._Rt_Two_Init
+
+###########Return function:func._IS31FL3265B_Init
+
+
+
+###########Call  function :func._Timer0_Init
+###########Return function:func._Timer0_Init
+
+
+
+###########Call  function :func._Timer1_Init
+###########Return function:func._Timer1_Init
+
+
+
+###########Call  function :func._Timer2_Init
+###########Return function:func._Timer2_Init
+
+
+
+###########Call  function :func._RT_Check_Input
+
+
+###########Call  function :func._RT_Mode_Act
+
+
+###########Call  function :func._Led_RT_AllClose
+###########Return function:func._Led_RT_AllClose
+
+
+
+###########Call  function :func._Led_RT_AllOpen
+###########Return function:func._Led_RT_AllOpen
+
+
+
+###########Call  function :func._Led_RT_WaterOpen
+
+
+@@@@@@@@@@@@@@@风险RAM识别到:r0x1007 in func._Led_RT_WaterOpen 
+
+
+###########Call  function :func._delay_ms
+###########Return function:func._delay_ms
+
+###########Return function:func._Led_RT_WaterOpen
+
+###########Return function:func._RT_Mode_Act
+
+###########Return function:func._RT_Check_Input
+
+
+
+###########Call  function :func._Tail_Stop_Check_Input
+
+
+###########Call  function :func._Mode_Act
+
+
+###########Call  function :func._Led_Tail_AllClose
+###########Return function:func._Led_Tail_AllClose
+
+
+
+###########Call  function :func._LED_Stop_AllClose
+###########Return function:func._LED_Stop_AllClose
+
+
+
+###########Call  function :func._Led_Tail_AllOpen
+###########Return function:func._Led_Tail_AllOpen
+
+
+
+###########Call  function :func._LED_Stop_PWMOpen
+###########Return function:func._LED_Stop_PWMOpen
+
+
+
+###########Call  function :func._LED_Stop_AllOpen
+###########Return function:func._LED_Stop_AllOpen
+
+###########Return function:func._Mode_Act
+
+###########Return function:func._Tail_Stop_Check_Input
+
+###########Return function:func._main
+
