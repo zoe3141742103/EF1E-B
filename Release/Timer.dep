@@ -1,2 +1,0 @@
-Timer.o: ../Timer.c ../includes.h ../KF8_Type_Define.h \
- C:/Users/Rick/Desktop/KF1008AGST/Timer.h

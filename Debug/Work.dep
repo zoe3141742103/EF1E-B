@@ -1,2 +1,0 @@
-Work.o: ../Work.c ../includes.h ../KF8_Type_Define.h ../PinConfig.h \
- ../Work.h ../Led.h

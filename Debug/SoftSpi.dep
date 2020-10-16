@@ -1,2 +1,0 @@
-SoftSpi.o: ../SoftSpi.c ../includes.h ../KF8_Type_Define.h ../PinConfig.h \
- ../SoftSpi.h ../Work.h
