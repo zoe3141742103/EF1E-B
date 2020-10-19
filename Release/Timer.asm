@@ -1061,43 +1061,42 @@ func._Timer2_Init	.code
 _Timer2_Init	;Function start
 ; 2 exit points
 ;	::->op : =
-;	.line	47; "../Timer.c"	T2CTL1 =0x02;
+;	.line	47; "../Timer.c"	T2CTL0 = 0;	//	64m/16/10
+	BANKSEL	_T2CTL0
+	CLR	_T2CTL0
+;	::->op : =
+;	.line	48; "../Timer.c"	T2CTL1 = TIMER2_UP_UPOverflow|T2CLK_SEL_SCLK;
 	MOV	R0,# 0x02
 	BANKSEL	_T2CTL1
 	MOV	_T2CTL1, R0
 ;	::->op : =
-;	.line	48; "../Timer.c"	T2H =0;
+;	.line	49; "../Timer.c"	T2H=0;
 	BANKSEL	_T2H
 	CLR	_T2H
 ;	::->op : =
-;	.line	49; "../Timer.c"	T2L =0;
+;	.line	50; "../Timer.c"	T2L=0;
 	BANKSEL	_T2L
 	CLR	_T2L
 ;	::->op : =
-;	.line	50; "../Timer.c"	PP60H =0x02;
-	MOV	R0,# 0x02
+;	.line	51; "../Timer.c"	PP60H=0x11;		//400-1
+	MOV	R0,# 0x11
 	BANKSEL	_PP60H
 	MOV	_PP60H, R0
 ;	::->op : =
-;	.line	51; "../Timer.c"	PP60L =0x26;
-	MOV	R0,# 0x26
+;	.line	52; "../Timer.c"	PP60L=0x80-1;
+	MOV	R0,# 0x7f
 	BANKSEL	_PP60L
 	MOV	_PP60L, R0
-;	::->op : =
-;	.line	52; "../Timer.c"	T2CTL0 =0x03; //1M
-	MOV	R0,# 0x03
-	BANKSEL	_T2CTL0
-	MOV	_T2CTL0, R0
 ;	::->op :*  =
-;	.line	53; "../Timer.c"	T2ON =1;
+;	.line	53; "../Timer.c"	T2ON = 1;		//T2¶¨Ê±Æ÷Æô¶¯
 	BANKSEL	_T2CTL0_bits
 	SET	_T2CTL0_bits, 2
 ;	::->op :*  =
-;	.line	54; "../Timer.c"	T2IF =0;
+;	.line	54; "../Timer.c"	T2IF = 0;
 	BANKSEL	_EIF1_bits
 	CLR	_EIF1_bits, 1
 ;	::->op :*  =
-;	.line	55; "../Timer.c"	T2IE =1;
+;	.line	55; "../Timer.c"	T2IE = 1;
 	BANKSEL	_EIE1_bits
 	SET	_EIE1_bits, 1
 ;	::->op : LABEL
@@ -1195,7 +1194,7 @@ _Timer0_Init	;Function start
 
 
 ;	code size estimation:
-;	   84+   55 =   139 instructions (  388 byte)
+;	   83+   55 =   138 instructions (  386 byte)
 
 
 	.end

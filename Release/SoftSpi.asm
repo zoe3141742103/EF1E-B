@@ -10,8 +10,6 @@
 ; external declarations
 ;--------------------------------------------------------
 	.extern	_spi_read
-	.extern	_Rt_One_Init
-	.extern	_Rt_Two_Init
 	.extern	_Tail_One_Work
 	.extern	_Tail_Two_Work
 	.extern	_Rt_One_Work
@@ -23,12 +21,10 @@
 	.extern	_Tail_Stop_Check_Input
 	.extern	_Mode_Act
 	.extern	_RT_Mode_Act
-	.extern	_RT_Water_Act
 	.extern	_delay_ms
 	.extern	_delay_us
 	.extern	_Timer_PWM_Callback
 	.extern	_Led_Hello_Check
-	.extern	_RT_Timer_PWM_Callback
 	.extern	_STKR0
 	.extern	_STK00
 	.extern	_STK01
@@ -800,6 +796,8 @@
 ;--------------------------------------------------------
 ; global declarations
 ;--------------------------------------------------------
+	.global	_Rt_Two_Init
+	.global	_Rt_One_Init
 	.global	_Tail_Two_Init
 	.global	_Tail_One_Init
 	.global	_IS31FL3265B_Init
@@ -840,18 +838,26 @@ r0x1005	.res	1
 UDL_SoftSpi_2	.udata
 r0x1006	.res	1
 UDL_SoftSpi_3	.udata
-r0x1009	.res	1
+r0x100D	.res	1
 UDL_SoftSpi_4	.udata
-r0x100A	.res	1
+r0x100E	.res	1
 UDL_SoftSpi_5	.udata
-r0x1007	.res	1
+r0x100B	.res	1
 UDL_SoftSpi_6	.udata
-r0x1008	.res	1
+r0x100C	.res	1
 UDL_SoftSpi_7	.udata
-_SPI_Write_2Byte_SPI_adr_1_1	.res	1
+r0x1009	.res	1
 UDL_SoftSpi_8	.udata
-_SPI_Write_2Byte_SPI_data_1_1	.res	1
+r0x100A	.res	1
 UDL_SoftSpi_9	.udata
+r0x1007	.res	1
+UDL_SoftSpi_10	.udata
+r0x1008	.res	1
+UDL_SoftSpi_11	.udata
+_SPI_Write_2Byte_SPI_adr_1_1	.res	1
+UDL_SoftSpi_12	.udata
+_SPI_Write_2Byte_SPI_data_1_1	.res	1
+UDL_SoftSpi_13	.udata
 _SPI_Write_2Byte_buf_1_1	.res	2
 ;--------------------------------------------------------
 ; initialized data
@@ -860,6 +866,432 @@ _SPI_Write_2Byte_buf_1_1	.res	2
 ; overlayable items in internal ram 
 ;--------------------------------------------------------
 ;	.udata_ovr
+
+
+func._Rt_Two_Init	.code
+;***
+;  PostBlock Stats: dbName = C
+;***
+;entry:  _Rt_Two_Init	;Function start
+; 2 exit points
+;has an exit
+;functions called:
+;   _SPI_Write_2Byte
+;   _SPI_Write_2Byte
+;   _SPI_Write_2Byte
+;   _SPI_Write_2Byte
+;   _SPI_Write_2Byte
+;   _SPI_Write_2Byte
+;   _SPI_Write_2Byte
+;   _SPI_Write_2Byte
+;   _SPI_Write_2Byte
+;   _SPI_Write_2Byte
+;   _SPI_Write_2Byte
+;   _SPI_Write_2Byte
+;4 compiler assigned registers:
+;   STK01
+;   STK00
+;   r0x1007
+;   r0x1008
+;; Starting PostCode block
+;	::->op : LABEL
+;	::->op : FUNCTION
+_Rt_Two_Init	;Function start
+; 2 exit points
+;	::->op : SEND
+;	::->op : SEND
+;	::->op : SEND
+;	::->op : CALL
+;	.line	146; "../SoftSpi.c"	SPI_Write_2Byte(4,0x00,0x01);
+	MOV	R0,# 0x01
+	BANKSEL	STK01
+	MOV	STK01, R0
+	MOV	R0,# 0x00
+	BANKSEL	STK00
+	MOV	STK00, R0
+	MOV	R0,# 0x04
+	TRAPPC1	_SPI_Write_2Byte
+	TRAPPC2	_SPI_Write_2Byte
+	PAGESEL	_SPI_Write_2Byte
+	CALL	_SPI_Write_2Byte
+	TRAPPC1	$+2
+	TRAPPC2	$+1
+	PAGESEL	$
+;	::->op : =
+;	.line	148; "../SoftSpi.c"	for(i=0x02;i<=0x13;i++)
+	MOV	R0,# 0x02
+	BANKSEL	r0x1007
+	MOV	r0x1007, R0
+;	::->op : LABEL
+;	::->op : >
+;swapping arguments (AOP_TYPEs 1/2)
+;signed compare: left >= lit(0x14=20), size=1, mask=ff
+_00095_DS_
+	BANKSEL	r0x1007
+	MOVZ	R0, r0x1007
+	ADD	R0,# 0x80
+	ADD	R0,# 0x6c
+;comparing bytes at offset 0
+	JNB	PSW, 0
+	JMP	_00098_DS_
+;	::->op : CAST
+;;117	MOVZ	R0, r0x1007
+;	::->op : SEND
+;	::->op : SEND
+;	::->op : SEND
+;	::->op : CALL
+;	.line	150; "../SoftSpi.c"	SPI_Write_2Byte(4,i,0xFF);//SL
+	MOV	R0,# 0xff
+	BANKSEL	STK01
+	MOV	STK01, R0
+;;116	MOVZ	R0, r0x1008
+	BANKSEL	r0x1007
+	MOVZ	R0, r0x1007
+	BANKSEL	r0x1008
+	MOV	r0x1008, R0
+	BANKSEL	STK00
+	MOV	STK00, R0
+	MOV	R0,# 0x04
+	TRAPPC1	_SPI_Write_2Byte
+	TRAPPC2	_SPI_Write_2Byte
+	PAGESEL	_SPI_Write_2Byte
+	CALL	_SPI_Write_2Byte
+	TRAPPC1	$+2
+	TRAPPC2	$+1
+	PAGESEL	$
+;	::->op : +
+;	.line	148; "../SoftSpi.c"	for(i=0x02;i<=0x13;i++)
+	BANKSEL	r0x1007
+	INC	r0x1007
+;	::->op : GOTO
+	JMP	_00095_DS_
+;	::->op : LABEL
+;	::->op : =
+_00098_DS_
+;	.line	153; "../SoftSpi.c"	for(i=0x1F;i<=0x30;i++)
+	MOV	R0,# 0x1f
+	BANKSEL	r0x1007
+	MOV	r0x1007, R0
+;	::->op : LABEL
+;	::->op : >
+;swapping arguments (AOP_TYPEs 1/2)
+;signed compare: left >= lit(0x31=49), size=1, mask=ff
+_00099_DS_
+	BANKSEL	r0x1007
+	MOVZ	R0, r0x1007
+	ADD	R0,# 0x80
+	ADD	R0,# 0x4f
+;comparing bytes at offset 0
+	JNB	PSW, 0
+	JMP	_00102_DS_
+;	::->op : CAST
+;;109	MOVZ	R0, r0x1007
+;	::->op : SEND
+;	::->op : SEND
+;	::->op : SEND
+;	::->op : CALL
+;	.line	155; "../SoftSpi.c"	SPI_Write_2Byte(4,i,InitBright);//PWM
+	MOV	R0,# 0x00
+	BANKSEL	STK01
+	MOV	STK01, R0
+;;108	MOVZ	R0, r0x1008
+	BANKSEL	r0x1007
+	MOVZ	R0, r0x1007
+	BANKSEL	r0x1008
+	MOV	r0x1008, R0
+	BANKSEL	STK00
+	MOV	STK00, R0
+	MOV	R0,# 0x04
+	TRAPPC1	_SPI_Write_2Byte
+	TRAPPC2	_SPI_Write_2Byte
+	PAGESEL	_SPI_Write_2Byte
+	CALL	_SPI_Write_2Byte
+	TRAPPC1	$+2
+	TRAPPC2	$+1
+	PAGESEL	$
+;	::->op : +
+;	.line	153; "../SoftSpi.c"	for(i=0x1F;i<=0x30;i++)
+	BANKSEL	r0x1007
+	INC	r0x1007
+;	::->op : GOTO
+	JMP	_00099_DS_
+;	::->op : LABEL
+;	::->op : SEND
+;	::->op : SEND
+;	::->op : SEND
+;	::->op : CALL
+_00102_DS_
+;	.line	158; "../SoftSpi.c"	SPI_Write_2Byte(4,0x36,0x00);//update
+	MOV	R0,# 0x00
+	BANKSEL	STK01
+	MOV	STK01, R0
+	MOV	R0,# 0x36
+	BANKSEL	STK00
+	MOV	STK00, R0
+	MOV	R0,# 0x04
+	TRAPPC1	_SPI_Write_2Byte
+	TRAPPC2	_SPI_Write_2Byte
+	PAGESEL	_SPI_Write_2Byte
+	CALL	_SPI_Write_2Byte
+	TRAPPC1	$+2
+	TRAPPC2	$+1
+	PAGESEL	$
+;	::->op : SEND
+;	::->op : SEND
+;	::->op : SEND
+;	::->op : CALL
+;	.line	159; "../SoftSpi.c"	SPI_Write_2Byte(4,0x37,0x00);//update
+	MOV	R0,# 0x00
+	BANKSEL	STK01
+	MOV	STK01, R0
+	MOV	R0,# 0x37
+	BANKSEL	STK00
+	MOV	STK00, R0
+	MOV	R0,# 0x04
+	TRAPPC1	_SPI_Write_2Byte
+	TRAPPC2	_SPI_Write_2Byte
+	PAGESEL	_SPI_Write_2Byte
+	CALL	_SPI_Write_2Byte
+	TRAPPC1	$+2
+	TRAPPC2	$+1
+	PAGESEL	$
+;	::->op : SEND
+;	::->op : SEND
+;	::->op : SEND
+;	::->op : CALL
+;	.line	160; "../SoftSpi.c"	SPI_Write_2Byte(4,0x01,0x20);
+	MOV	R0,# 0x20
+	BANKSEL	STK01
+	MOV	STK01, R0
+	MOV	R0,# 0x01
+	BANKSEL	STK00
+	MOV	STK00, R0
+	MOV	R0,# 0x04
+	TRAPPC1	_SPI_Write_2Byte
+	TRAPPC2	_SPI_Write_2Byte
+	PAGESEL	_SPI_Write_2Byte
+	CALL	_SPI_Write_2Byte
+	TRAPPC1	$+2
+	TRAPPC2	$+1
+	PAGESEL	$
+;	::->op : LABEL
+;	::->op : ENDFUNCTION
+	CRET	
+; exit point of _Rt_Two_Init
+
+
+
+func._Rt_One_Init	.code
+;***
+;  PostBlock Stats: dbName = C
+;***
+;entry:  _Rt_One_Init	;Function start
+; 2 exit points
+;has an exit
+;functions called:
+;   _SPI_Write_2Byte
+;   _SPI_Write_2Byte
+;   _SPI_Write_2Byte
+;   _SPI_Write_2Byte
+;   _SPI_Write_2Byte
+;   _SPI_Write_2Byte
+;   _SPI_Write_2Byte
+;   _SPI_Write_2Byte
+;   _SPI_Write_2Byte
+;   _SPI_Write_2Byte
+;   _SPI_Write_2Byte
+;   _SPI_Write_2Byte
+;4 compiler assigned registers:
+;   STK01
+;   STK00
+;   r0x1009
+;   r0x100A
+;; Starting PostCode block
+;	::->op : LABEL
+;	::->op : FUNCTION
+_Rt_One_Init	;Function start
+; 2 exit points
+;	::->op : SEND
+;	::->op : SEND
+;	::->op : SEND
+;	::->op : CALL
+;	.line	127; "../SoftSpi.c"	SPI_Write_2Byte(3,0x00,0x01);
+	MOV	R0,# 0x01
+	BANKSEL	STK01
+	MOV	STK01, R0
+	MOV	R0,# 0x00
+	BANKSEL	STK00
+	MOV	STK00, R0
+	MOV	R0,# 0x03
+	TRAPPC1	_SPI_Write_2Byte
+	TRAPPC2	_SPI_Write_2Byte
+	PAGESEL	_SPI_Write_2Byte
+	CALL	_SPI_Write_2Byte
+	TRAPPC1	$+2
+	TRAPPC2	$+1
+	PAGESEL	$
+;	::->op : =
+;	.line	129; "../SoftSpi.c"	for(i=0x02;i<=0x13;i++)
+	MOV	R0,# 0x02
+	BANKSEL	r0x1009
+	MOV	r0x1009, R0
+;	::->op : LABEL
+;	::->op : >
+;swapping arguments (AOP_TYPEs 1/2)
+;signed compare: left >= lit(0x14=20), size=1, mask=ff
+_00077_DS_
+	BANKSEL	r0x1009
+	MOVZ	R0, r0x1009
+	ADD	R0,# 0x80
+	ADD	R0,# 0x6c
+;comparing bytes at offset 0
+	JNB	PSW, 0
+	JMP	_00080_DS_
+;	::->op : CAST
+;;115	MOVZ	R0, r0x1009
+;	::->op : SEND
+;	::->op : SEND
+;	::->op : SEND
+;	::->op : CALL
+;	.line	131; "../SoftSpi.c"	SPI_Write_2Byte(3,i,0xFF);//SL
+	MOV	R0,# 0xff
+	BANKSEL	STK01
+	MOV	STK01, R0
+;;114	MOVZ	R0, r0x100A
+	BANKSEL	r0x1009
+	MOVZ	R0, r0x1009
+	BANKSEL	r0x100A
+	MOV	r0x100A, R0
+	BANKSEL	STK00
+	MOV	STK00, R0
+	MOV	R0,# 0x03
+	TRAPPC1	_SPI_Write_2Byte
+	TRAPPC2	_SPI_Write_2Byte
+	PAGESEL	_SPI_Write_2Byte
+	CALL	_SPI_Write_2Byte
+	TRAPPC1	$+2
+	TRAPPC2	$+1
+	PAGESEL	$
+;	::->op : +
+;	.line	129; "../SoftSpi.c"	for(i=0x02;i<=0x13;i++)
+	BANKSEL	r0x1009
+	INC	r0x1009
+;	::->op : GOTO
+	JMP	_00077_DS_
+;	::->op : LABEL
+;	::->op : =
+_00080_DS_
+;	.line	134; "../SoftSpi.c"	for(i=0x1F;i<=0x30;i++)
+	MOV	R0,# 0x1f
+	BANKSEL	r0x1009
+	MOV	r0x1009, R0
+;	::->op : LABEL
+;	::->op : >
+;swapping arguments (AOP_TYPEs 1/2)
+;signed compare: left >= lit(0x31=49), size=1, mask=ff
+_00081_DS_
+	BANKSEL	r0x1009
+	MOVZ	R0, r0x1009
+	ADD	R0,# 0x80
+	ADD	R0,# 0x4f
+;comparing bytes at offset 0
+	JNB	PSW, 0
+	JMP	_00084_DS_
+;	::->op : CAST
+;;107	MOVZ	R0, r0x1009
+;	::->op : SEND
+;	::->op : SEND
+;	::->op : SEND
+;	::->op : CALL
+;	.line	136; "../SoftSpi.c"	SPI_Write_2Byte(3,i,InitBright);//PWM
+	MOV	R0,# 0x00
+	BANKSEL	STK01
+	MOV	STK01, R0
+;;106	MOVZ	R0, r0x100A
+	BANKSEL	r0x1009
+	MOVZ	R0, r0x1009
+	BANKSEL	r0x100A
+	MOV	r0x100A, R0
+	BANKSEL	STK00
+	MOV	STK00, R0
+	MOV	R0,# 0x03
+	TRAPPC1	_SPI_Write_2Byte
+	TRAPPC2	_SPI_Write_2Byte
+	PAGESEL	_SPI_Write_2Byte
+	CALL	_SPI_Write_2Byte
+	TRAPPC1	$+2
+	TRAPPC2	$+1
+	PAGESEL	$
+;	::->op : +
+;	.line	134; "../SoftSpi.c"	for(i=0x1F;i<=0x30;i++)
+	BANKSEL	r0x1009
+	INC	r0x1009
+;	::->op : GOTO
+	JMP	_00081_DS_
+;	::->op : LABEL
+;	::->op : SEND
+;	::->op : SEND
+;	::->op : SEND
+;	::->op : CALL
+_00084_DS_
+;	.line	139; "../SoftSpi.c"	SPI_Write_2Byte(3,0x36,0x00);//update
+	MOV	R0,# 0x00
+	BANKSEL	STK01
+	MOV	STK01, R0
+	MOV	R0,# 0x36
+	BANKSEL	STK00
+	MOV	STK00, R0
+	MOV	R0,# 0x03
+	TRAPPC1	_SPI_Write_2Byte
+	TRAPPC2	_SPI_Write_2Byte
+	PAGESEL	_SPI_Write_2Byte
+	CALL	_SPI_Write_2Byte
+	TRAPPC1	$+2
+	TRAPPC2	$+1
+	PAGESEL	$
+;	::->op : SEND
+;	::->op : SEND
+;	::->op : SEND
+;	::->op : CALL
+;	.line	140; "../SoftSpi.c"	SPI_Write_2Byte(3,0x37,0x00);//update
+	MOV	R0,# 0x00
+	BANKSEL	STK01
+	MOV	STK01, R0
+	MOV	R0,# 0x37
+	BANKSEL	STK00
+	MOV	STK00, R0
+	MOV	R0,# 0x03
+	TRAPPC1	_SPI_Write_2Byte
+	TRAPPC2	_SPI_Write_2Byte
+	PAGESEL	_SPI_Write_2Byte
+	CALL	_SPI_Write_2Byte
+	TRAPPC1	$+2
+	TRAPPC2	$+1
+	PAGESEL	$
+;	::->op : SEND
+;	::->op : SEND
+;	::->op : SEND
+;	::->op : CALL
+;	.line	141; "../SoftSpi.c"	SPI_Write_2Byte(3,0x01,0x20);
+	MOV	R0,# 0x20
+	BANKSEL	STK01
+	MOV	STK01, R0
+	MOV	R0,# 0x01
+	BANKSEL	STK00
+	MOV	STK00, R0
+	MOV	R0,# 0x03
+	TRAPPC1	_SPI_Write_2Byte
+	TRAPPC2	_SPI_Write_2Byte
+	PAGESEL	_SPI_Write_2Byte
+	CALL	_SPI_Write_2Byte
+	TRAPPC1	$+2
+	TRAPPC2	$+1
+	PAGESEL	$
+;	::->op : LABEL
+;	::->op : ENDFUNCTION
+	CRET	
+; exit point of _Rt_One_Init
+
 
 
 func._Tail_Two_Init	.code
@@ -885,8 +1317,8 @@ func._Tail_Two_Init	.code
 ;4 compiler assigned registers:
 ;   STK01
 ;   STK00
-;   r0x1007
-;   r0x1008
+;   r0x100B
+;   r0x100C
 ;; Starting PostCode block
 ;	::->op : LABEL
 ;	::->op : FUNCTION
@@ -896,7 +1328,7 @@ _Tail_Two_Init	;Function start
 ;	::->op : SEND
 ;	::->op : SEND
 ;	::->op : CALL
-;	.line	99; "../SoftSpi.c"	SPI_Write_2Byte(2,0x00,0x01);
+;	.line	108; "../SoftSpi.c"	SPI_Write_2Byte(2,0x00,0x01);
 	MOV	R0,# 0x01
 	BANKSEL	STK01
 	MOV	STK01, R0
@@ -912,37 +1344,37 @@ _Tail_Two_Init	;Function start
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : =
-;	.line	101; "../SoftSpi.c"	for(i=0x02;i<=0x13;i++)
+;	.line	110; "../SoftSpi.c"	for(i=0x02;i<=0x13;i++)
 	MOV	R0,# 0x02
-	BANKSEL	r0x1007
-	MOV	r0x1007, R0
+	BANKSEL	r0x100B
+	MOV	r0x100B, R0
 ;	::->op : LABEL
 ;	::->op : >
 ;swapping arguments (AOP_TYPEs 1/2)
 ;signed compare: left >= lit(0x14=20), size=1, mask=ff
-_00053_DS_
-	BANKSEL	r0x1007
-	MOVZ	R0, r0x1007
+_00059_DS_
+	BANKSEL	r0x100B
+	MOVZ	R0, r0x100B
 	ADD	R0,# 0x80
 	ADD	R0,# 0x6c
 ;comparing bytes at offset 0
 	JNB	PSW, 0
-	JMP	_00056_DS_
+	JMP	_00062_DS_
 ;	::->op : CAST
-;;109	MOVZ	R0, r0x1007
+;;113	MOVZ	R0, r0x100B
 ;	::->op : SEND
 ;	::->op : SEND
 ;	::->op : SEND
 ;	::->op : CALL
-;	.line	103; "../SoftSpi.c"	SPI_Write_2Byte(2,i,0xFF);//SL
+;	.line	112; "../SoftSpi.c"	SPI_Write_2Byte(2,i,0xFF);//SL
 	MOV	R0,# 0xff
 	BANKSEL	STK01
 	MOV	STK01, R0
-;;108	MOVZ	R0, r0x1008
-	BANKSEL	r0x1007
-	MOVZ	R0, r0x1007
-	BANKSEL	r0x1008
-	MOV	r0x1008, R0
+;;112	MOVZ	R0, r0x100C
+	BANKSEL	r0x100B
+	MOVZ	R0, r0x100B
+	BANKSEL	r0x100C
+	MOV	r0x100C, R0
 	BANKSEL	STK00
 	MOV	STK00, R0
 	MOV	R0,# 0x02
@@ -954,45 +1386,45 @@ _00053_DS_
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : +
-;	.line	101; "../SoftSpi.c"	for(i=0x02;i<=0x13;i++)
-	BANKSEL	r0x1007
-	INC	r0x1007
+;	.line	110; "../SoftSpi.c"	for(i=0x02;i<=0x13;i++)
+	BANKSEL	r0x100B
+	INC	r0x100B
 ;	::->op : GOTO
-	JMP	_00053_DS_
+	JMP	_00059_DS_
 ;	::->op : LABEL
 ;	::->op : =
-_00056_DS_
-;	.line	106; "../SoftSpi.c"	for(i=0x1F;i<=0x30;i++)
+_00062_DS_
+;	.line	115; "../SoftSpi.c"	for(i=0x1F;i<=0x30;i++)
 	MOV	R0,# 0x1f
-	BANKSEL	r0x1007
-	MOV	r0x1007, R0
+	BANKSEL	r0x100B
+	MOV	r0x100B, R0
 ;	::->op : LABEL
 ;	::->op : >
 ;swapping arguments (AOP_TYPEs 1/2)
 ;signed compare: left >= lit(0x31=49), size=1, mask=ff
-_00057_DS_
-	BANKSEL	r0x1007
-	MOVZ	R0, r0x1007
+_00063_DS_
+	BANKSEL	r0x100B
+	MOVZ	R0, r0x100B
 	ADD	R0,# 0x80
 	ADD	R0,# 0x4f
 ;comparing bytes at offset 0
 	JNB	PSW, 0
-	JMP	_00060_DS_
+	JMP	_00066_DS_
 ;	::->op : CAST
-;;105	MOVZ	R0, r0x1007
+;;105	MOVZ	R0, r0x100B
 ;	::->op : SEND
 ;	::->op : SEND
 ;	::->op : SEND
 ;	::->op : CALL
-;	.line	108; "../SoftSpi.c"	SPI_Write_2Byte(2,i,InitBright);//PWM
+;	.line	117; "../SoftSpi.c"	SPI_Write_2Byte(2,i,InitBright);//PWM
 	MOV	R0,# 0x00
 	BANKSEL	STK01
 	MOV	STK01, R0
-;;104	MOVZ	R0, r0x1008
-	BANKSEL	r0x1007
-	MOVZ	R0, r0x1007
-	BANKSEL	r0x1008
-	MOV	r0x1008, R0
+;;104	MOVZ	R0, r0x100C
+	BANKSEL	r0x100B
+	MOVZ	R0, r0x100B
+	BANKSEL	r0x100C
+	MOV	r0x100C, R0
 	BANKSEL	STK00
 	MOV	STK00, R0
 	MOV	R0,# 0x02
@@ -1004,18 +1436,18 @@ _00057_DS_
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : +
-;	.line	106; "../SoftSpi.c"	for(i=0x1F;i<=0x30;i++)
-	BANKSEL	r0x1007
-	INC	r0x1007
+;	.line	115; "../SoftSpi.c"	for(i=0x1F;i<=0x30;i++)
+	BANKSEL	r0x100B
+	INC	r0x100B
 ;	::->op : GOTO
-	JMP	_00057_DS_
+	JMP	_00063_DS_
 ;	::->op : LABEL
 ;	::->op : SEND
 ;	::->op : SEND
 ;	::->op : SEND
 ;	::->op : CALL
-_00060_DS_
-;	.line	111; "../SoftSpi.c"	SPI_Write_2Byte(2,0x36,0x00);//update
+_00066_DS_
+;	.line	120; "../SoftSpi.c"	SPI_Write_2Byte(2,0x36,0x00);//update
 	MOV	R0,# 0x00
 	BANKSEL	STK01
 	MOV	STK01, R0
@@ -1034,7 +1466,7 @@ _00060_DS_
 ;	::->op : SEND
 ;	::->op : SEND
 ;	::->op : CALL
-;	.line	112; "../SoftSpi.c"	SPI_Write_2Byte(2,0x37,0x00);//update
+;	.line	121; "../SoftSpi.c"	SPI_Write_2Byte(2,0x37,0x00);//update
 	MOV	R0,# 0x00
 	BANKSEL	STK01
 	MOV	STK01, R0
@@ -1053,7 +1485,7 @@ _00060_DS_
 ;	::->op : SEND
 ;	::->op : SEND
 ;	::->op : CALL
-;	.line	113; "../SoftSpi.c"	SPI_Write_2Byte(2,0x01,0x20);
+;	.line	122; "../SoftSpi.c"	SPI_Write_2Byte(2,0x01,0x20);
 	MOV	R0,# 0x20
 	BANKSEL	STK01
 	MOV	STK01, R0
@@ -1098,8 +1530,8 @@ func._Tail_One_Init	.code
 ;4 compiler assigned registers:
 ;   STK01
 ;   STK00
-;   r0x1009
-;   r0x100A
+;   r0x100D
+;   r0x100E
 ;; Starting PostCode block
 ;	::->op : LABEL
 ;	::->op : FUNCTION
@@ -1109,7 +1541,7 @@ _Tail_One_Init	;Function start
 ;	::->op : SEND
 ;	::->op : SEND
 ;	::->op : CALL
-;	.line	80; "../SoftSpi.c"	SPI_Write_2Byte(1,0x00,0x01);
+;	.line	89; "../SoftSpi.c"	SPI_Write_2Byte(1,0x00,0x01);
 	MOV	R0,# 0x01
 	BANKSEL	STK01
 	MOV	STK01, R0
@@ -1125,37 +1557,37 @@ _Tail_One_Init	;Function start
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : =
-;	.line	82; "../SoftSpi.c"	for(i=0x02;i<=0x13;i++)
+;	.line	91; "../SoftSpi.c"	for(i=0x02;i<=0x13;i++)
 	MOV	R0,# 0x02
-	BANKSEL	r0x1009
-	MOV	r0x1009, R0
+	BANKSEL	r0x100D
+	MOV	r0x100D, R0
 ;	::->op : LABEL
 ;	::->op : >
 ;swapping arguments (AOP_TYPEs 1/2)
 ;signed compare: left >= lit(0x14=20), size=1, mask=ff
-_00035_DS_
-	BANKSEL	r0x1009
-	MOVZ	R0, r0x1009
+_00041_DS_
+	BANKSEL	r0x100D
+	MOVZ	R0, r0x100D
 	ADD	R0,# 0x80
 	ADD	R0,# 0x6c
 ;comparing bytes at offset 0
 	JNB	PSW, 0
-	JMP	_00038_DS_
+	JMP	_00044_DS_
 ;	::->op : CAST
-;;107	MOVZ	R0, r0x1009
+;;111	MOVZ	R0, r0x100D
 ;	::->op : SEND
 ;	::->op : SEND
 ;	::->op : SEND
 ;	::->op : CALL
-;	.line	84; "../SoftSpi.c"	SPI_Write_2Byte(1,i,0xFF);//SL
+;	.line	93; "../SoftSpi.c"	SPI_Write_2Byte(1,i,0xFF);//SL
 	MOV	R0,# 0xff
 	BANKSEL	STK01
 	MOV	STK01, R0
-;;106	MOVZ	R0, r0x100A
-	BANKSEL	r0x1009
-	MOVZ	R0, r0x1009
-	BANKSEL	r0x100A
-	MOV	r0x100A, R0
+;;110	MOVZ	R0, r0x100E
+	BANKSEL	r0x100D
+	MOVZ	R0, r0x100D
+	BANKSEL	r0x100E
+	MOV	r0x100E, R0
 	BANKSEL	STK00
 	MOV	STK00, R0
 	MOV	R0,# 0x01
@@ -1167,45 +1599,45 @@ _00035_DS_
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : +
-;	.line	82; "../SoftSpi.c"	for(i=0x02;i<=0x13;i++)
-	BANKSEL	r0x1009
-	INC	r0x1009
+;	.line	91; "../SoftSpi.c"	for(i=0x02;i<=0x13;i++)
+	BANKSEL	r0x100D
+	INC	r0x100D
 ;	::->op : GOTO
-	JMP	_00035_DS_
+	JMP	_00041_DS_
 ;	::->op : LABEL
 ;	::->op : =
-_00038_DS_
-;	.line	87; "../SoftSpi.c"	for(i=0x1F;i<=0x30;i++)
+_00044_DS_
+;	.line	96; "../SoftSpi.c"	for(i=0x1F;i<=0x30;i++)
 	MOV	R0,# 0x1f
-	BANKSEL	r0x1009
-	MOV	r0x1009, R0
+	BANKSEL	r0x100D
+	MOV	r0x100D, R0
 ;	::->op : LABEL
 ;	::->op : >
 ;swapping arguments (AOP_TYPEs 1/2)
 ;signed compare: left >= lit(0x31=49), size=1, mask=ff
-_00039_DS_
-	BANKSEL	r0x1009
-	MOVZ	R0, r0x1009
+_00045_DS_
+	BANKSEL	r0x100D
+	MOVZ	R0, r0x100D
 	ADD	R0,# 0x80
 	ADD	R0,# 0x4f
 ;comparing bytes at offset 0
 	JNB	PSW, 0
-	JMP	_00042_DS_
+	JMP	_00048_DS_
 ;	::->op : CAST
-;;103	MOVZ	R0, r0x1009
+;;103	MOVZ	R0, r0x100D
 ;	::->op : SEND
 ;	::->op : SEND
 ;	::->op : SEND
 ;	::->op : CALL
-;	.line	89; "../SoftSpi.c"	SPI_Write_2Byte(1,i,InitBright);//PWM
+;	.line	98; "../SoftSpi.c"	SPI_Write_2Byte(1,i,InitBright);//PWM
 	MOV	R0,# 0x00
 	BANKSEL	STK01
 	MOV	STK01, R0
-;;102	MOVZ	R0, r0x100A
-	BANKSEL	r0x1009
-	MOVZ	R0, r0x1009
-	BANKSEL	r0x100A
-	MOV	r0x100A, R0
+;;102	MOVZ	R0, r0x100E
+	BANKSEL	r0x100D
+	MOVZ	R0, r0x100D
+	BANKSEL	r0x100E
+	MOV	r0x100E, R0
 	BANKSEL	STK00
 	MOV	STK00, R0
 	MOV	R0,# 0x01
@@ -1217,18 +1649,18 @@ _00039_DS_
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : +
-;	.line	87; "../SoftSpi.c"	for(i=0x1F;i<=0x30;i++)
-	BANKSEL	r0x1009
-	INC	r0x1009
+;	.line	96; "../SoftSpi.c"	for(i=0x1F;i<=0x30;i++)
+	BANKSEL	r0x100D
+	INC	r0x100D
 ;	::->op : GOTO
-	JMP	_00039_DS_
+	JMP	_00045_DS_
 ;	::->op : LABEL
 ;	::->op : SEND
 ;	::->op : SEND
 ;	::->op : SEND
 ;	::->op : CALL
-_00042_DS_
-;	.line	92; "../SoftSpi.c"	SPI_Write_2Byte(1,0x36,0x00);//update
+_00048_DS_
+;	.line	101; "../SoftSpi.c"	SPI_Write_2Byte(1,0x36,0x00);//update
 	MOV	R0,# 0x00
 	BANKSEL	STK01
 	MOV	STK01, R0
@@ -1247,7 +1679,7 @@ _00042_DS_
 ;	::->op : SEND
 ;	::->op : SEND
 ;	::->op : CALL
-;	.line	93; "../SoftSpi.c"	SPI_Write_2Byte(1,0x37,0x00);//update
+;	.line	102; "../SoftSpi.c"	SPI_Write_2Byte(1,0x37,0x00);//update
 	MOV	R0,# 0x00
 	BANKSEL	STK01
 	MOV	STK01, R0
@@ -1266,7 +1698,7 @@ _00042_DS_
 ;	::->op : SEND
 ;	::->op : SEND
 ;	::->op : CALL
-;	.line	94; "../SoftSpi.c"	SPI_Write_2Byte(1,0x01,0x20);
+;	.line	103; "../SoftSpi.c"	SPI_Write_2Byte(1,0x01,0x20);
 	MOV	R0,# 0x20
 	BANKSEL	STK01
 	MOV	STK01, R0
@@ -1299,16 +1731,20 @@ func._IS31FL3265B_Init	.code
 ;   _spi_init
 ;   _Tail_One_Init
 ;   _Tail_Two_Init
+;   _Rt_One_Init
+;   _Rt_Two_Init
 ;   _spi_init
 ;   _Tail_One_Init
 ;   _Tail_Two_Init
+;   _Rt_One_Init
+;   _Rt_Two_Init
 ;; Starting PostCode block
 ;	::->op : LABEL
 ;	::->op : FUNCTION
 _IS31FL3265B_Init	;Function start
 ; 2 exit points
 ;	::->op : CALL
-;	.line	73; "../SoftSpi.c"	spi_init();
+;	.line	80; "../SoftSpi.c"	spi_init();
 	TRAPPC1	_spi_init
 	TRAPPC2	_spi_init
 	PAGESEL	_spi_init
@@ -1317,7 +1753,7 @@ _IS31FL3265B_Init	;Function start
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : CALL
-;	.line	74; "../SoftSpi.c"	Tail_One_Init();
+;	.line	81; "../SoftSpi.c"	Tail_One_Init();
 	TRAPPC1	_Tail_One_Init
 	TRAPPC2	_Tail_One_Init
 	PAGESEL	_Tail_One_Init
@@ -1326,11 +1762,29 @@ _IS31FL3265B_Init	;Function start
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : CALL
-;	.line	75; "../SoftSpi.c"	Tail_Two_Init();
+;	.line	82; "../SoftSpi.c"	Tail_Two_Init();
 	TRAPPC1	_Tail_Two_Init
 	TRAPPC2	_Tail_Two_Init
 	PAGESEL	_Tail_Two_Init
 	CALL	_Tail_Two_Init
+	TRAPPC1	$+2
+	TRAPPC2	$+1
+	PAGESEL	$
+;	::->op : CALL
+;	.line	83; "../SoftSpi.c"	Rt_One_Init();
+	TRAPPC1	_Rt_One_Init
+	TRAPPC2	_Rt_One_Init
+	PAGESEL	_Rt_One_Init
+	CALL	_Rt_One_Init
+	TRAPPC1	$+2
+	TRAPPC2	$+1
+	PAGESEL	$
+;	::->op : CALL
+;	.line	84; "../SoftSpi.c"	Rt_Two_Init();
+	TRAPPC1	_Rt_Two_Init
+	TRAPPC2	_Rt_Two_Init
+	PAGESEL	_Rt_Two_Init
+	CALL	_Rt_Two_Init
 	TRAPPC1	$+2
 	TRAPPC2	$+1
 	PAGESEL	$
@@ -1364,7 +1818,7 @@ func._SPI_Write_2Byte	.code
 _SPI_Write_2Byte	;Function start
 ; 2 exit points
 ;	::->op : RECEIVE
-;	.line	52; "../SoftSpi.c"	void SPI_Write_2Byte(unsigned char id,unsigned char addr,unsigned char dat)
+;	.line	59; "../SoftSpi.c"	void SPI_Write_2Byte(unsigned char id,unsigned char addr,unsigned char dat)
 	BANKSEL	r0x1005
 	MOV	r0x1005, R0
 	BANKSEL	r0x1006
@@ -1383,7 +1837,7 @@ _SPI_Write_2Byte	;Function start
 ;;99	MOVZ	R0, r0x1005
 ;	::->op : SEND
 ;	::->op : CALL
-;	.line	59; "../SoftSpi.c"	Spi_CS_Low(id);
+;	.line	66; "../SoftSpi.c"	Spi_CS_Low(id);
 	BANKSEL	r0x1006
 	MOVZ	R0, r0x1006
 	TRAPPC1	_Spi_CS_Low
@@ -1394,24 +1848,24 @@ _SPI_Write_2Byte	;Function start
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : =
-;	.line	60; "../SoftSpi.c"	SSCI2BUFR=SPI_adr; //将待发送的字节放入发送缓存中
+;	.line	67; "../SoftSpi.c"	SSCI2BUFR=SPI_adr; //将待发送的字节放入发送缓存中
 	BANKSEL	_SPI_Write_2Byte_SPI_adr_1_1
 	MOVZ	R0, _SPI_Write_2Byte_SPI_adr_1_1
 	BANKSEL	_SSCI2BUFR
 	MOV	_SSCI2BUFR, R0
 ;	::->op : LABEL
 ;	::->op : GET_VALUE_AT_ADDRESS
-_00021_DS_
-;	.line	61; "../SoftSpi.c"	while(!SSCI2IF); //等待发送完毕后SSCIIF置位，
+_00027_DS_
+;	.line	68; "../SoftSpi.c"	while(!SSCI2IF); //等待发送完毕后SSCIIF置位，
 	BANKSEL	_EIF6_bits
 	JB	_EIF6_bits, 4
-	JMP	_00021_DS_
+	JMP	_00027_DS_
 ;	::->op :*  =
-;	.line	62; "../SoftSpi.c"	SSCI2IF=0;
+;	.line	69; "../SoftSpi.c"	SSCI2IF=0;
 	BANKSEL	_EIF6_bits
 	CLR	_EIF6_bits, 4
 ;	::->op : CAST
-;	.line	63; "../SoftSpi.c"	buf =SSCI2BUFR;
+;	.line	70; "../SoftSpi.c"	buf =SSCI2BUFR;
 	BANKSEL	_SSCI2BUFR
 	MOVZ	R0, _SSCI2BUFR
 	BANKSEL	_SPI_Write_2Byte_buf_1_1
@@ -1419,24 +1873,24 @@ _00021_DS_
 	BANKSEL	_SPI_Write_2Byte_buf_1_1
 	CLR	(_SPI_Write_2Byte_buf_1_1 + 1)
 ;	::->op : =
-;	.line	65; "../SoftSpi.c"	SSCI2BUFR=SPI_data; //将待发送的字节放入发送缓存中
+;	.line	72; "../SoftSpi.c"	SSCI2BUFR=SPI_data; //将待发送的字节放入发送缓存中
 	BANKSEL	_SPI_Write_2Byte_SPI_data_1_1
 	MOVZ	R0, _SPI_Write_2Byte_SPI_data_1_1
 	BANKSEL	_SSCI2BUFR
 	MOV	_SSCI2BUFR, R0
 ;	::->op : LABEL
 ;	::->op : GET_VALUE_AT_ADDRESS
-_00024_DS_
-;	.line	66; "../SoftSpi.c"	while(!SSCI2IF); //等待发送完毕后SSCIIF置位，
+_00030_DS_
+;	.line	73; "../SoftSpi.c"	while(!SSCI2IF); //等待发送完毕后SSCIIF置位，
 	BANKSEL	_EIF6_bits
 	JB	_EIF6_bits, 4
-	JMP	_00024_DS_
+	JMP	_00030_DS_
 ;	::->op :*  =
-;	.line	67; "../SoftSpi.c"	SSCI2IF=0;
+;	.line	74; "../SoftSpi.c"	SSCI2IF=0;
 	BANKSEL	_EIF6_bits
 	CLR	_EIF6_bits, 4
 ;	::->op : CAST
-;	.line	68; "../SoftSpi.c"	buf =SSCI2BUFR;
+;	.line	75; "../SoftSpi.c"	buf =SSCI2BUFR;
 	BANKSEL	_SSCI2BUFR
 	MOVZ	R0, _SSCI2BUFR
 	BANKSEL	_SPI_Write_2Byte_buf_1_1
@@ -1448,7 +1902,7 @@ _00024_DS_
 ;	::->op : SEND
 ;	::->op : CALL
 ;;100	MOVZ	R0, r0x1006
-;	.line	69; "../SoftSpi.c"	Spi_CS_High(id);
+;	.line	76; "../SoftSpi.c"	Spi_CS_High(id);
 	BANKSEL	r0x1005
 	MOVZ	R0, r0x1005
 	BANKSEL	r0x1006
@@ -1482,38 +1936,81 @@ func._Spi_CS_Low	.code
 _Spi_CS_Low	;Function start
 ; 2 exit points
 ;	::->op : RECEIVE
-;	.line	44; "../SoftSpi.c"	void Spi_CS_Low(char id)
+;	.line	49; "../SoftSpi.c"	void Spi_CS_Low(char id)
 	BANKSEL	r0x1004
 	MOV	r0x1004, R0
-;	::->op : EQ_OP
-;	.line	46; "../SoftSpi.c"	switch(id)
+;	::->op : <
+;signed compare: left < lit(0x1=1), size=1, mask=ff
+;	.line	51; "../SoftSpi.c"	switch(id)
 	BANKSEL	r0x1004
 	MOVZ	R0, r0x1004
-	XOR	R0,# 0x01
-	JNB	PSW, 2
-	JMP	_00012_DS_
+	ADD	R0,# 0x80
+	ADD	R0,# 0x7f
+;comparing bytes at offset 0
+	JB	PSW, 0
+	JMP	_00020_DS_
+;	::->op : >
+;swapping arguments (AOP_TYPEs 1/2)
+;signed compare: left >= lit(0x5=5), size=1, mask=ff
 	BANKSEL	r0x1004
 	MOVZ	R0, r0x1004
-	XOR	R0,# 0x02
-	JNB	PSW, 2
-	JMP	_00013_DS_
+	ADD	R0,# 0x80
+	ADD	R0,# 0x7b
+;comparing bytes at offset 0
+	JNB	PSW, 0
+	JMP	_00020_DS_
+;	::->op : -
+	BANKSEL	r0x1004
+	DEC	r0x1004
+;	::->op : JUMPTABLE
+	MOV	R1,#high _00026_DS_
+	MOV	R0,#_00026_DS_
+	BANKSEL	r0x1004
+	ADD	R0, r0x1004
+	JNB	PSW, 0
+	INC	R1
+	TRAPPC3	$
+	MOV	PCH, R1
+	MOV	PCL, R0
+_00026_DS_
 	JMP	_00015_DS_
-_00012_DS_
-;	.line	48; "../SoftSpi.c"	case 1:CS1LOW;break;
+	JMP	_00016_DS_
+	JMP	_00017_DS_
+	JMP	_00018_DS_
+;	::->op : LABEL
+;	::->op :*  =
+_00015_DS_
+;	.line	53; "../SoftSpi.c"	case 1:CS1LOW;break;
 	BANKSEL	_P0LR_bits
 	CLR	_P0LR_bits, 4
 ;	::->op : GOTO
-	JMP	_00015_DS_
+	JMP	_00020_DS_
 ;	::->op : LABEL
 ;	::->op :*  =
-_00013_DS_
-;	.line	49; "../SoftSpi.c"	case 2:CS2LOW;break;
+_00016_DS_
+;	.line	54; "../SoftSpi.c"	case 2:CS2LOW;break;
 	BANKSEL	_P6LR_bits
 	CLR	_P6LR_bits, 2
+;	::->op : GOTO
+	JMP	_00020_DS_
+;	::->op : LABEL
+;	::->op :*  =
+_00017_DS_
+;	.line	55; "../SoftSpi.c"	case 3:CS4LOW;break;
+	BANKSEL	_PALR_bits
+	CLR	_PALR_bits, 1
+;	::->op : GOTO
+	JMP	_00020_DS_
+;	::->op : LABEL
+;	::->op :*  =
+_00018_DS_
+;	.line	56; "../SoftSpi.c"	case 4:CS3LOW;break;
+	BANKSEL	_P1LR_bits
+	CLR	_P1LR_bits, 0
 ;	::->op : LABEL
 ;	::->op : ENDFUNCTION
-_00015_DS_
-;	.line	50; "../SoftSpi.c"	}
+_00020_DS_
+;	.line	57; "../SoftSpi.c"	}
 	CRET	
 ; exit point of _Spi_CS_Low
 
@@ -1534,38 +2031,81 @@ func._Spi_CS_High	.code
 _Spi_CS_High	;Function start
 ; 2 exit points
 ;	::->op : RECEIVE
-;	.line	36; "../SoftSpi.c"	void Spi_CS_High(char id)
+;	.line	39; "../SoftSpi.c"	void Spi_CS_High(char id)
 	BANKSEL	r0x1004
 	MOV	r0x1004, R0
-;	::->op : EQ_OP
-;	.line	38; "../SoftSpi.c"	switch(id)
+;	::->op : <
+;signed compare: left < lit(0x1=1), size=1, mask=ff
+;	.line	41; "../SoftSpi.c"	switch(id)
 	BANKSEL	r0x1004
 	MOVZ	R0, r0x1004
-	XOR	R0,# 0x01
-	JNB	PSW, 2
+	ADD	R0,# 0x80
+	ADD	R0,# 0x7f
+;comparing bytes at offset 0
+	JB	PSW, 0
+	JMP	_00008_DS_
+;	::->op : >
+;swapping arguments (AOP_TYPEs 1/2)
+;signed compare: left >= lit(0x5=5), size=1, mask=ff
+	BANKSEL	r0x1004
+	MOVZ	R0, r0x1004
+	ADD	R0,# 0x80
+	ADD	R0,# 0x7b
+;comparing bytes at offset 0
+	JNB	PSW, 0
+	JMP	_00008_DS_
+;	::->op : -
+	BANKSEL	r0x1004
+	DEC	r0x1004
+;	::->op : JUMPTABLE
+	MOV	R1,#high _00014_DS_
+	MOV	R0,#_00014_DS_
+	BANKSEL	r0x1004
+	ADD	R0, r0x1004
+	JNB	PSW, 0
+	INC	R1
+	TRAPPC3	$
+	MOV	PCH, R1
+	MOV	PCL, R0
+_00014_DS_
 	JMP	_00003_DS_
-	BANKSEL	r0x1004
-	MOVZ	R0, r0x1004
-	XOR	R0,# 0x02
-	JNB	PSW, 2
 	JMP	_00004_DS_
-	JMP	_00006_DS_
-_00003_DS_
-;	.line	40; "../SoftSpi.c"	case 1:CS1HIGH;break;
-	BANKSEL	_P0LR_bits
-	SET	_P0LR_bits, 4
-;	::->op : GOTO
+	JMP	_00005_DS_
 	JMP	_00006_DS_
 ;	::->op : LABEL
 ;	::->op :*  =
+_00003_DS_
+;	.line	43; "../SoftSpi.c"	case 1:CS1HIGH;break;
+	BANKSEL	_P0LR_bits
+	SET	_P0LR_bits, 4
+;	::->op : GOTO
+	JMP	_00008_DS_
+;	::->op : LABEL
+;	::->op :*  =
 _00004_DS_
-;	.line	41; "../SoftSpi.c"	case 2:CS2HIGH;break;
+;	.line	44; "../SoftSpi.c"	case 2:CS2HIGH;break;
 	BANKSEL	_P6LR_bits
 	SET	_P6LR_bits, 2
+;	::->op : GOTO
+	JMP	_00008_DS_
+;	::->op : LABEL
+;	::->op :*  =
+_00005_DS_
+;	.line	45; "../SoftSpi.c"	case 3:CS4HIGH;break;
+	BANKSEL	_PALR_bits
+	SET	_PALR_bits, 1
+;	::->op : GOTO
+	JMP	_00008_DS_
+;	::->op : LABEL
+;	::->op :*  =
+_00006_DS_
+;	.line	46; "../SoftSpi.c"	case 4:CS3HIGH;break;
+	BANKSEL	_P1LR_bits
+	SET	_P1LR_bits, 0
 ;	::->op : LABEL
 ;	::->op : ENDFUNCTION
-_00006_DS_
-;	.line	42; "../SoftSpi.c"	}
+_00008_DS_
+;	.line	47; "../SoftSpi.c"	}
 	CRET	
 ; exit point of _Spi_CS_High
 
@@ -1639,13 +2179,25 @@ _spi_init	;Function start
 	BANKSEL	_P1LR_bits
 	SET	_P1LR_bits, 2
 ;	::->op :*  =
-;	.line	33; "../SoftSpi.c"	CS1HIGH;
+;	.line	33; "../SoftSpi.c"	SDB2=1;
+	BANKSEL	_P5LR_bits
+	SET	_P5LR_bits, 5
+;	::->op :*  =
+;	.line	34; "../SoftSpi.c"	CS1HIGH;
 	BANKSEL	_P0LR_bits
 	SET	_P0LR_bits, 4
 ;	::->op :*  =
-;	.line	34; "../SoftSpi.c"	CS2HIGH;
+;	.line	35; "../SoftSpi.c"	CS2HIGH;
 	BANKSEL	_P6LR_bits
 	SET	_P6LR_bits, 2
+;	::->op :*  =
+;	.line	36; "../SoftSpi.c"	CS3HIGH;
+	BANKSEL	_P1LR_bits
+	SET	_P1LR_bits, 0
+;	::->op :*  =
+;	.line	37; "../SoftSpi.c"	CS4HIGH;
+	BANKSEL	_PALR_bits
+	SET	_PALR_bits, 1
 ;	::->op : LABEL
 ;	::->op : ENDFUNCTION
 	CRET	
@@ -1653,7 +2205,7 @@ _spi_init	;Function start
 
 
 ;	code size estimation:
-;	  295+   92 =   387 instructions (  958 byte)
+;	  534+  147 =   681 instructions ( 1656 byte)
 
 
 	.end

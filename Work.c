@@ -9,7 +9,7 @@
 #include "PinConfig.h"
 #include "Work.h"
 #include "Led.h"
-
+#include "SoftSpi.h"
 
 
 int PastMode=0;
@@ -300,6 +300,7 @@ void Led_Hello(void)
 	Tail_LowWater_Open();
 	delay_ms(300);
 	Tail_HighWater_Open();
+	delay_ms(1300);
 	Stop_HighBackWater_Open();
 	Tail1_FullBackWater_Open();
 	Tail2_Stop_FullWater_Open();
@@ -315,11 +316,11 @@ void Led_Bye(void)
 	Led_RT_AllClose();
 	delay_ms(200);
 	Tail_LowWater_Blinky();
-	delay_ms(200);
+	delay_ms(1700);
 	Tail1_2_Stop_BackWater_Close();
-	Tail12_Breath_CloseTo10();
+	delay_ms(1160);
 	Tail1_2_Stop_FullWater_Close();
-	delay_ms(2000);
+	delay_ms(1000);
 	Tail12_Breath_Close();
 	for(;;);
 }

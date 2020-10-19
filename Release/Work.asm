@@ -13,15 +13,11 @@
 	.extern	_LED_Stop_Open
 	.extern	_LED_Stop_AllOpen
 	.extern	_LED_Stop_AllClose
-	.extern	_LED_Stop_PWM5Open
-	.extern	_LED_Stop_PWM10Open
+	.extern	_LED_Stop_PWMOpen
 	.extern	_Led_RT_AllOpen
 	.extern	_Led_RT_AllClose
-	.extern	_Led_RT_PWMOpen
-	.extern	_Led_RT_Water100
-	.extern	_Led_RT_Water55
+	.extern	_Led_RT_WaterOpen
 	.extern	_Led_Tail_AllOpen
-	.extern	_Led_Tail_55Open
 	.extern	_Led_Tail_AllClose
 	.extern	_Tail12_Breath_Open
 	.extern	_Tail12_Breath_Close
@@ -34,6 +30,18 @@
 	.extern	_Tail_LowWater_Blinky
 	.extern	_Tail1_2_Stop_BackWater_Close
 	.extern	_Tail1_2_Stop_FullWater_Close
+	.extern	_spi_init
+	.extern	_spi_read
+	.extern	_SPI_Write_2Byte
+	.extern	_IS31FL3265B_Init
+	.extern	_Tail_One_Init
+	.extern	_Tail_Two_Init
+	.extern	_Rt_One_Init
+	.extern	_Rt_Two_Init
+	.extern	_Tail_One_Work
+	.extern	_Tail_Two_Work
+	.extern	_Rt_One_Work
+	.extern	_Rt_Two_Work
 	.extern	_STKR0
 	.extern	_STK00
 	.extern	_STK01
@@ -806,12 +814,10 @@
 ; global declarations
 ;--------------------------------------------------------
 	.global	_Led_Hello_Check
-	.global	_RT_Timer_PWM_Callback
 	.global	_Timer_PWM_Callback
 	.global	_Mode_Act
 	.global	_Tail_Stop_Check_Input
 	.global	_RT_Mode_Act
-	.global	_RT_Water_Act
 	.global	_RT_Check_Input
 	.global	_delay_us
 	.global	_delay_ms
@@ -826,20 +832,12 @@
 	.global	_RT_ActMode
 	.global	_LED_Stop_PWM_Flag
 	.global	_PWM_Timer_Flag
-	.global	_RT_Timer_Flag
-	.global	_RT_Timer_PWM_Flag
 	.global	_Stop_High_Addr
 	.global	_Stop_Low_Addr
-	.global	_RT_High_Addr
-	.global	_RT_Low_Addr
-	.global	_RT_Water_Flag
-	.global	_RT_WATER_FULL
-	.global	_RT_CNT
 	.global	_Tail_Status
 	.global	_Stop_Status
 	.global	_RT_Status
 	.global	_RT_EN_Status
-	.global	_LOW_EN_Status
 	.define _STK11	STK11
 	.define _STK10	STK10
 	.define _STK09	STK09
@@ -860,34 +858,16 @@ UD_Work_0	.udata
 _LED_Stop_PWM_Flag	.res	1
 
 UD_Work_1	.udata
-_PWM_Timer_Flag	.res	1
-
-UD_Work_2	.udata
-_RT_Timer_Flag	.res	1
-
-UD_Work_3	.udata
 _Stop_High_Addr	.res	2
 
-UD_Work_4	.udata
-_RT_High_Addr	.res	2
-
-UD_Work_5	.udata
-_RT_Low_Addr	.res	2
-
-UD_Work_6	.udata
-_RT_Water_Flag	.res	2
-
-UD_Work_7	.udata
+UD_Work_2	.udata
 _Tail_Status	.res	1
 
-UD_Work_8	.udata
+UD_Work_3	.udata
 _Stop_Status	.res	1
 
-UD_Work_9	.udata
+UD_Work_4	.udata
 _RT_Status	.res	1
-
-UD_Work_10	.udata
-_RT_EN_Status	.res	1
 
 ;--------------------------------------------------------
 ; absolute symbol definitions
@@ -896,38 +876,28 @@ _RT_EN_Status	.res	1
 ; compiler-defined variables
 ;--------------------------------------------------------
 UDL_Work_0	.udata
-r0x102B	.res	1
+r0x101C	.res	1
 UDL_Work_1	.udata
-r0x102A	.res	1
+r0x101B	.res	1
 UDL_Work_2	.udata
-r0x102C	.res	1
+r0x101D	.res	1
 UDL_Work_3	.udata
-r0x102D	.res	1
+r0x101E	.res	1
 UDL_Work_4	.udata
-r0x1037	.res	1
+r0x1023	.res	1
 UDL_Work_5	.udata
-r0x1036	.res	1
+r0x1022	.res	1
 UDL_Work_6	.udata
-r0x1034	.res	1
+r0x1021	.res	1
 UDL_Work_7	.udata
-r0x1035	.res	1
+r0x1020	.res	1
 UDL_Work_8	.udata
-r0x1030	.res	1
+r0x101F	.res	1
 UDL_Work_9	.udata
-r0x1031	.res	1
-UDL_Work_10	.udata
-r0x1032	.res	1
-UDL_Work_11	.udata
-r0x1033	.res	1
-UDL_Work_12	.udata
-r0x102F	.res	1
-UDL_Work_13	.udata
-r0x102E	.res	1
-UDL_Work_14	.udata
 _delay_ms_i_1_1	.res	2
-UDL_Work_15	.udata
+UDL_Work_10	.udata
 _delay_ms_j_1_1	.res	2
-UDL_Work_16	.udata
+UDL_Work_11	.udata
 _delay_us_i_1_1	.res	2
 ;--------------------------------------------------------
 ; initialized data
@@ -964,7 +934,7 @@ _RT_ActMode
 
 
 ID_Work_6	.idata
-_RT_Timer_PWM_Flag
+_PWM_Timer_Flag
 	.db	0x00
 
 
@@ -974,17 +944,7 @@ _Stop_Low_Addr
 
 
 ID_Work_8	.idata
-_RT_WATER_FULL
-	.db	0x00, 0x00
-
-
-ID_Work_9	.idata
-_RT_CNT
-	.db	0x00, 0x00, 0x00, 0x00
-
-
-ID_Work_10	.idata
-_LOW_EN_Status
+_RT_EN_Status
 	.db	0x00
 
 ;--------------------------------------------------------
@@ -1006,99 +966,99 @@ func._Led_Hello_Check	.code
 ;   _Led_Hello
 ;   _Led_Bye
 ;1 compiler assigned register :
-;   r0x102E
+;   r0x101F
 ;; Starting PostCode block
 ;	::->op : LABEL
 ;	::->op : FUNCTION
 _Led_Hello_Check	;Function start
 ; 2 exit points
 ;	::->op : GET_VALUE_AT_ADDRESS
-;	.line	424; "../Work.c"	Tail_Status = Tail;
-	BANKSEL	r0x102E
-	CLR	r0x102E
+;	.line	329; "../Work.c"	Tail_Status = Tail;
+	BANKSEL	r0x101F
+	CLR	r0x101F
 	BANKSEL	_P7_bits
 	JB	_P7_bits, 1
-	JMP	_00298_DS_
-	BANKSEL	r0x102E
-	INC	r0x102E
+	JMP	_00230_DS_
+	BANKSEL	r0x101F
+	INC	r0x101F
 ;	::->op : =
-_00298_DS_
-	BANKSEL	r0x102E
-	MOVZ	R0, r0x102E
+_00230_DS_
+	BANKSEL	r0x101F
+	MOVZ	R0, r0x101F
 	BANKSEL	_Tail_Status
 	MOV	_Tail_Status, R0
 ;	::->op : GET_VALUE_AT_ADDRESS
-;	.line	425; "../Work.c"	Stop_Status = Stop;
-	BANKSEL	r0x102E
-	CLR	r0x102E
+;	.line	330; "../Work.c"	Stop_Status = Stop;
+	BANKSEL	r0x101F
+	CLR	r0x101F
 	BANKSEL	_P7_bits
 	JB	_P7_bits, 2
-	JMP	_00299_DS_
-	BANKSEL	r0x102E
-	INC	r0x102E
+	JMP	_00231_DS_
+	BANKSEL	r0x101F
+	INC	r0x101F
 ;	::->op : =
-_00299_DS_
-	BANKSEL	r0x102E
-	MOVZ	R0, r0x102E
+_00231_DS_
+	BANKSEL	r0x101F
+	MOVZ	R0, r0x101F
 	BANKSEL	_Stop_Status
 	MOV	_Stop_Status, R0
 ;	::->op : GET_VALUE_AT_ADDRESS
-;	.line	426; "../Work.c"	RT_Status = RT;
-	BANKSEL	r0x102E
-	CLR	r0x102E
+;	.line	331; "../Work.c"	RT_Status = RT;
+	BANKSEL	r0x101F
+	CLR	r0x101F
 	BANKSEL	_PA_bits
 	JB	_PA_bits, 0
-	JMP	_00300_DS_
-	BANKSEL	r0x102E
-	INC	r0x102E
+	JMP	_00232_DS_
+	BANKSEL	r0x101F
+	INC	r0x101F
 ;	::->op : =
-_00300_DS_
-	BANKSEL	r0x102E
-	MOVZ	R0, r0x102E
+_00232_DS_
+	BANKSEL	r0x101F
+	MOVZ	R0, r0x101F
 	BANKSEL	_RT_Status
 	MOV	_RT_Status, R0
 ;	::->op : GET_VALUE_AT_ADDRESS
-;	.line	427; "../Work.c"	RT_EN_Status = RT_EN;
-	BANKSEL	r0x102E
-	CLR	r0x102E
+;	.line	332; "../Work.c"	RT_EN_Status = RT_EN;
+	BANKSEL	r0x101F
+	CLR	r0x101F
 	BANKSEL	_P5_bits
 	JB	_P5_bits, 1
-	JMP	_00301_DS_
-	BANKSEL	r0x102E
-	INC	r0x102E
+	JMP	_00233_DS_
+	BANKSEL	r0x101F
+	INC	r0x101F
 ;	::->op : =
-_00301_DS_
-	BANKSEL	r0x102E
-	MOVZ	R0, r0x102E
+_00233_DS_
+	BANKSEL	r0x101F
+	MOVZ	R0, r0x101F
 	BANKSEL	_RT_EN_Status
 	MOV	_RT_EN_Status, R0
 ;	::->op : EQ_OP
-;	.line	428; "../Work.c"	if(Tail_Status==1&&Stop_Status==1&&RT_Status==1&&RT_EN_Status==0)
+;	.line	333; "../Work.c"	if(Tail_Status==1&&Stop_Status==1&&RT_Status==1&&RT_EN_Status==0)
 	BANKSEL	_Tail_Status
 	MOVZ	R0, _Tail_Status
 	XOR	R0,# 0x01
 	JB	PSW, 2
-	JMP	_00279_DS_
+	JMP	_00211_DS_
 ;	::->op : EQ_OP
 	BANKSEL	_Stop_Status
 	MOVZ	R0, _Stop_Status
 	XOR	R0,# 0x01
 	JB	PSW, 2
-	JMP	_00279_DS_
+	JMP	_00211_DS_
 ;	::->op : EQ_OP
 	BANKSEL	_RT_Status
 	MOVZ	R0, _RT_Status
 	XOR	R0,# 0x01
 	JB	PSW, 2
-	JMP	_00279_DS_
+	JMP	_00211_DS_
 ;	::->op : IFX
 	MOV	R0,# 0x00
 	BANKSEL	_RT_EN_Status
 	ORL	R0, _RT_EN_Status
 	JB	PSW, 2
-	JMP	_00279_DS_
+	JMP	_00211_DS_
 ;	::->op : CALL
-;	.line	430; "../Work.c"	Led_Hello();
+;	.line	335; "../Work.c"	Led_Hello();
 	TRAPPC1	_Led_Hello
 	TRAPPC2	_Led_Hello
 	PAGESEL	_Led_Hello
@@ -1108,33 +1068,33 @@ _00301_DS_
 	PAGESEL	$
 ;	::->op : LABEL
 ;	::->op : EQ_OP
-_00279_DS_
-;	.line	432; "../Work.c"	if(Tail_Status==1&&Stop_Status==1&&RT_Status==1&&RT_EN_Status==1)
+_00211_DS_
+;	.line	337; "../Work.c"	if(Tail_Status==1&&Stop_Status==1&&RT_Status==1&&RT_EN_Status==1)
 	BANKSEL	_Tail_Status
 	MOVZ	R0, _Tail_Status
 	XOR	R0,# 0x01
 	JB	PSW, 2
-	JMP	_00288_DS_
+	JMP	_00220_DS_
 ;	::->op : EQ_OP
 	BANKSEL	_Stop_Status
 	MOVZ	R0, _Stop_Status
 	XOR	R0,# 0x01
 	JB	PSW, 2
-	JMP	_00288_DS_
+	JMP	_00220_DS_
 ;	::->op : EQ_OP
 	BANKSEL	_RT_Status
 	MOVZ	R0, _RT_Status
 	XOR	R0,# 0x01
 	JB	PSW, 2
-	JMP	_00288_DS_
+	JMP	_00220_DS_
 ;	::->op : EQ_OP
 	BANKSEL	_RT_EN_Status
 	MOVZ	R0, _RT_EN_Status
 	XOR	R0,# 0x01
 	JB	PSW, 2
-	JMP	_00288_DS_
+	JMP	_00220_DS_
 ;	::->op : CALL
-;	.line	434; "../Work.c"	Led_Bye();
+;	.line	339; "../Work.c"	Led_Bye();
 	TRAPPC1	_Led_Bye
 	TRAPPC2	_Led_Bye
 	PAGESEL	_Led_Bye
@@ -1144,7 +1104,7 @@ _00279_DS_
 	PAGESEL	$
 ;	::->op : LABEL
 ;	::->op : ENDFUNCTION
-_00288_DS_
+_00220_DS_
 	CRET	
 ; exit point of _Led_Hello_Check
 
@@ -1161,28 +1121,28 @@ func._Led_Bye	.code
 ;   _Led_Tail_AllOpen
 ;   _LED_Stop_AllOpen
 ;   _delay_ms
-;   _Led_RT_Water100
+;   _Led_RT_WaterOpen
 ;   _delay_ms
 ;   _Led_RT_AllClose
 ;   _delay_ms
 ;   _Tail_LowWater_Blinky
 ;   _delay_ms
 ;   _Tail1_2_Stop_BackWater_Close
-;   _Tail12_Breath_CloseTo10
+;   _delay_ms
 ;   _Tail1_2_Stop_FullWater_Close
 ;   _delay_ms
 ;   _Tail12_Breath_Close
 ;   _Led_Tail_AllOpen
 ;   _LED_Stop_AllOpen
 ;   _delay_ms
-;   _Led_RT_Water100
+;   _Led_RT_WaterOpen
 ;   _delay_ms
 ;   _Led_RT_AllClose
 ;   _delay_ms
 ;   _Tail_LowWater_Blinky
 ;   _delay_ms
 ;   _Tail1_2_Stop_BackWater_Close
-;   _Tail12_Breath_CloseTo10
+;   _delay_ms
 ;   _Tail1_2_Stop_FullWater_Close
 ;   _delay_ms
 ;   _Tail12_Breath_Close
@@ -1194,7 +1154,7 @@ func._Led_Bye	.code
 _Led_Bye	;Function start
 ; 2 exit points
 ;	::->op : CALL
-;	.line	406; "../Work.c"	Led_Tail_AllOpen();
+;	.line	311; "../Work.c"	Led_Tail_AllOpen();
 	TRAPPC1	_Led_Tail_AllOpen
 	TRAPPC2	_Led_Tail_AllOpen
 	PAGESEL	_Led_Tail_AllOpen
@@ -1203,7 +1163,7 @@ _Led_Bye	;Function start
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : CALL
-;	.line	407; "../Work.c"	LED_Stop_AllOpen();
+;	.line	312; "../Work.c"	LED_Stop_AllOpen();
 	TRAPPC1	_LED_Stop_AllOpen
 	TRAPPC2	_LED_Stop_AllOpen
 	PAGESEL	_LED_Stop_AllOpen
@@ -1213,7 +1173,7 @@ _Led_Bye	;Function start
 	PAGESEL	$
 ;	::->op : SEND
 ;	::->op : CALL
-;	.line	408; "../Work.c"	delay_ms(1000);
+;	.line	313; "../Work.c"	delay_ms(1000);
 	MOV	R0,# 0xe8
 	BANKSEL	STK00
 	MOV	STK00, R0
@@ -1226,17 +1186,17 @@ _Led_Bye	;Function start
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : CALL
-;	.line	409; "../Work.c"	Led_RT_Water100();
-	TRAPPC1	_Led_RT_Water100
-	TRAPPC2	_Led_RT_Water100
-	PAGESEL	_Led_RT_Water100
-	CALL	_Led_RT_Water100
+;	.line	314; "../Work.c"	Led_RT_WaterOpen();
+	TRAPPC1	_Led_RT_WaterOpen
+	TRAPPC2	_Led_RT_WaterOpen
+	PAGESEL	_Led_RT_WaterOpen
+	CALL	_Led_RT_WaterOpen
 	TRAPPC1	$+2
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : SEND
 ;	::->op : CALL
-;	.line	410; "../Work.c"	delay_ms(200);
+;	.line	315; "../Work.c"	delay_ms(200);
 	MOV	R0,# 0xc8
 	BANKSEL	STK00
 	MOV	STK00, R0
@@ -1249,7 +1209,7 @@ _Led_Bye	;Function start
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : CALL
-;	.line	411; "../Work.c"	Led_RT_AllClose();
+;	.line	316; "../Work.c"	Led_RT_AllClose();
 	TRAPPC1	_Led_RT_AllClose
 	TRAPPC2	_Led_RT_AllClose
 	PAGESEL	_Led_RT_AllClose
@@ -1259,7 +1219,7 @@ _Led_Bye	;Function start
 	PAGESEL	$
 ;	::->op : SEND
 ;	::->op : CALL
-;	.line	412; "../Work.c"	delay_ms(200);
+;	.line	317; "../Work.c"	delay_ms(200);
 	MOV	R0,# 0xc8
 	BANKSEL	STK00
 	MOV	STK00, R0
@@ -1272,7 +1232,7 @@ _Led_Bye	;Function start
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : CALL
-;	.line	413; "../Work.c"	Tail_LowWater_Blinky();
+;	.line	318; "../Work.c"	Tail_LowWater_Blinky();
 	TRAPPC1	_Tail_LowWater_Blinky
 	TRAPPC2	_Tail_LowWater_Blinky
 	PAGESEL	_Tail_LowWater_Blinky
@@ -1282,11 +1242,11 @@ _Led_Bye	;Function start
 	PAGESEL	$
 ;	::->op : SEND
 ;	::->op : CALL
-;	.line	414; "../Work.c"	delay_ms(200);
-	MOV	R0,# 0xc8
+;	.line	319; "../Work.c"	delay_ms(1700);
+	MOV	R0,# 0xa4
 	BANKSEL	STK00
 	MOV	STK00, R0
-	MOV	R0,# 0x00
+	MOV	R0,# 0x06
 	TRAPPC1	_delay_ms
 	TRAPPC2	_delay_ms
 	PAGESEL	_delay_ms
@@ -1295,7 +1255,7 @@ _Led_Bye	;Function start
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : CALL
-;	.line	415; "../Work.c"	Tail1_2_Stop_BackWater_Close();
+;	.line	320; "../Work.c"	Tail1_2_Stop_BackWater_Close();
 	TRAPPC1	_Tail1_2_Stop_BackWater_Close
 	TRAPPC2	_Tail1_2_Stop_BackWater_Close
 	PAGESEL	_Tail1_2_Stop_BackWater_Close
@@ -1303,17 +1263,22 @@ _Led_Bye	;Function start
 	TRAPPC1	$+2
 	TRAPPC2	$+1
 	PAGESEL	$
+;	::->op : SEND
 ;	::->op : CALL
-;	.line	416; "../Work.c"	Tail12_Breath_CloseTo10();
-	TRAPPC1	_Tail12_Breath_CloseTo10
-	TRAPPC2	_Tail12_Breath_CloseTo10
-	PAGESEL	_Tail12_Breath_CloseTo10
-	CALL	_Tail12_Breath_CloseTo10
+;	.line	321; "../Work.c"	delay_ms(1160);
+	MOV	R0,# 0x88
+	BANKSEL	STK00
+	MOV	STK00, R0
+	MOV	R0,# 0x04
+	TRAPPC1	_delay_ms
+	TRAPPC2	_delay_ms
+	PAGESEL	_delay_ms
+	CALL	_delay_ms
 	TRAPPC1	$+2
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : CALL
-;	.line	417; "../Work.c"	Tail1_2_Stop_FullWater_Close();
+;	.line	322; "../Work.c"	Tail1_2_Stop_FullWater_Close();
 	TRAPPC1	_Tail1_2_Stop_FullWater_Close
 	TRAPPC2	_Tail1_2_Stop_FullWater_Close
 	PAGESEL	_Tail1_2_Stop_FullWater_Close
@@ -1323,11 +1288,11 @@ _Led_Bye	;Function start
 	PAGESEL	$
 ;	::->op : SEND
 ;	::->op : CALL
-;	.line	418; "../Work.c"	delay_ms(2000);
-	MOV	R0,# 0xd0
+;	.line	323; "../Work.c"	delay_ms(1000);
+	MOV	R0,# 0xe8
 	BANKSEL	STK00
 	MOV	STK00, R0
-	MOV	R0,# 0x07
+	MOV	R0,# 0x03
 	TRAPPC1	_delay_ms
 	TRAPPC2	_delay_ms
 	PAGESEL	_delay_ms
@@ -1336,7 +1301,7 @@ _Led_Bye	;Function start
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : CALL
-;	.line	419; "../Work.c"	Tail12_Breath_Close();
+;	.line	324; "../Work.c"	Tail12_Breath_Close();
 	TRAPPC1	_Tail12_Breath_Close
 	TRAPPC2	_Tail12_Breath_Close
 	PAGESEL	_Tail12_Breath_Close
@@ -1346,8 +1311,8 @@ _Led_Bye	;Function start
 	PAGESEL	$
 ;	::->op : LABEL
 ;	::->op : GOTO
-_00273_DS_
-	JMP	_00273_DS_
+_00205_DS_
+	JMP	_00205_DS_
 ;	::->op : LABEL
 ;	::->op : ENDFUNCTION
 	CRET	
@@ -1363,11 +1328,11 @@ func._Led_Hello	.code
 ; 2 exit points
 ;has an exit
 ;functions called:
-;   _Led_RT_Water100
+;   _Led_RT_WaterOpen
 ;   _delay_ms
 ;   _Led_RT_AllClose
 ;   _delay_ms
-;   _Led_RT_Water100
+;   _Led_RT_WaterOpen
 ;   _delay_ms
 ;   _Led_RT_AllClose
 ;   _delay_ms
@@ -1376,14 +1341,15 @@ func._Led_Hello	.code
 ;   _Tail_LowWater_Open
 ;   _delay_ms
 ;   _Tail_HighWater_Open
+;   _delay_ms
 ;   _Stop_HighBackWater_Open
 ;   _Tail1_FullBackWater_Open
 ;   _Tail2_Stop_FullWater_Open
-;   _Led_RT_Water100
+;   _Led_RT_WaterOpen
 ;   _delay_ms
 ;   _Led_RT_AllClose
 ;   _delay_ms
-;   _Led_RT_Water100
+;   _Led_RT_WaterOpen
 ;   _delay_ms
 ;   _Led_RT_AllClose
 ;   _delay_ms
@@ -1392,6 +1358,7 @@ func._Led_Hello	.code
 ;   _Tail_LowWater_Open
 ;   _delay_ms
 ;   _Tail_HighWater_Open
+;   _delay_ms
 ;   _Stop_HighBackWater_Open
 ;   _Tail1_FullBackWater_Open
 ;   _Tail2_Stop_FullWater_Open
@@ -1403,17 +1370,17 @@ func._Led_Hello	.code
 _Led_Hello	;Function start
 ; 2 exit points
 ;	::->op : CALL
-;	.line	386; "../Work.c"	Led_RT_Water100();
-	TRAPPC1	_Led_RT_Water100
-	TRAPPC2	_Led_RT_Water100
-	PAGESEL	_Led_RT_Water100
-	CALL	_Led_RT_Water100
+;	.line	290; "../Work.c"	Led_RT_WaterOpen();
+	TRAPPC1	_Led_RT_WaterOpen
+	TRAPPC2	_Led_RT_WaterOpen
+	PAGESEL	_Led_RT_WaterOpen
+	CALL	_Led_RT_WaterOpen
 	TRAPPC1	$+2
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : SEND
 ;	::->op : CALL
-;	.line	387; "../Work.c"	delay_ms(200);
+;	.line	291; "../Work.c"	delay_ms(200);
 	MOV	R0,# 0xc8
 	BANKSEL	STK00
 	MOV	STK00, R0
@@ -1426,7 +1393,7 @@ _Led_Hello	;Function start
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : CALL
-;	.line	388; "../Work.c"	Led_RT_AllClose();
+;	.line	292; "../Work.c"	Led_RT_AllClose();
 	TRAPPC1	_Led_RT_AllClose
 	TRAPPC2	_Led_RT_AllClose
 	PAGESEL	_Led_RT_AllClose
@@ -1436,7 +1403,7 @@ _Led_Hello	;Function start
 	PAGESEL	$
 ;	::->op : SEND
 ;	::->op : CALL
-;	.line	389; "../Work.c"	delay_ms(300);
+;	.line	293; "../Work.c"	delay_ms(300);
 	MOV	R0,# 0x2c
 	BANKSEL	STK00
 	MOV	STK00, R0
@@ -1449,17 +1416,17 @@ _Led_Hello	;Function start
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : CALL
-;	.line	390; "../Work.c"	Led_RT_Water100();
-	TRAPPC1	_Led_RT_Water100
-	TRAPPC2	_Led_RT_Water100
-	PAGESEL	_Led_RT_Water100
-	CALL	_Led_RT_Water100
+;	.line	294; "../Work.c"	Led_RT_WaterOpen();
+	TRAPPC1	_Led_RT_WaterOpen
+	TRAPPC2	_Led_RT_WaterOpen
+	PAGESEL	_Led_RT_WaterOpen
+	CALL	_Led_RT_WaterOpen
 	TRAPPC1	$+2
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : SEND
 ;	::->op : CALL
-;	.line	391; "../Work.c"	delay_ms(200);
+;	.line	295; "../Work.c"	delay_ms(200);
 	MOV	R0,# 0xc8
 	BANKSEL	STK00
 	MOV	STK00, R0
@@ -1472,7 +1439,7 @@ _Led_Hello	;Function start
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : CALL
-;	.line	392; "../Work.c"	Led_RT_AllClose();
+;	.line	296; "../Work.c"	Led_RT_AllClose();
 	TRAPPC1	_Led_RT_AllClose
 	TRAPPC2	_Led_RT_AllClose
 	PAGESEL	_Led_RT_AllClose
@@ -1482,7 +1449,7 @@ _Led_Hello	;Function start
 	PAGESEL	$
 ;	::->op : SEND
 ;	::->op : CALL
-;	.line	393; "../Work.c"	delay_ms(300);
+;	.line	297; "../Work.c"	delay_ms(300);
 	MOV	R0,# 0x2c
 	BANKSEL	STK00
 	MOV	STK00, R0
@@ -1495,7 +1462,7 @@ _Led_Hello	;Function start
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : CALL
-;	.line	394; "../Work.c"	Tail12_Breath_Open();
+;	.line	298; "../Work.c"	Tail12_Breath_Open();
 	TRAPPC1	_Tail12_Breath_Open
 	TRAPPC2	_Tail12_Breath_Open
 	PAGESEL	_Tail12_Breath_Open
@@ -1505,7 +1472,7 @@ _Led_Hello	;Function start
 	PAGESEL	$
 ;	::->op : SEND
 ;	::->op : CALL
-;	.line	395; "../Work.c"	delay_ms(200);
+;	.line	299; "../Work.c"	delay_ms(200);
 	MOV	R0,# 0xc8
 	BANKSEL	STK00
 	MOV	STK00, R0
@@ -1518,7 +1485,7 @@ _Led_Hello	;Function start
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : CALL
-;	.line	396; "../Work.c"	Tail_LowWater_Open();
+;	.line	300; "../Work.c"	Tail_LowWater_Open();
 	TRAPPC1	_Tail_LowWater_Open
 	TRAPPC2	_Tail_LowWater_Open
 	PAGESEL	_Tail_LowWater_Open
@@ -1528,7 +1495,7 @@ _Led_Hello	;Function start
 	PAGESEL	$
 ;	::->op : SEND
 ;	::->op : CALL
-;	.line	397; "../Work.c"	delay_ms(300);
+;	.line	301; "../Work.c"	delay_ms(300);
 	MOV	R0,# 0x2c
 	BANKSEL	STK00
 	MOV	STK00, R0
@@ -1541,7 +1508,7 @@ _Led_Hello	;Function start
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : CALL
-;	.line	398; "../Work.c"	Tail_HighWater_Open();
+;	.line	302; "../Work.c"	Tail_HighWater_Open();
 	TRAPPC1	_Tail_HighWater_Open
 	TRAPPC2	_Tail_HighWater_Open
 	PAGESEL	_Tail_HighWater_Open
@@ -1549,8 +1516,22 @@ _Led_Hello	;Function start
 	TRAPPC1	$+2
 	TRAPPC2	$+1
 	PAGESEL	$
+;	::->op : SEND
 ;	::->op : CALL
-;	.line	399; "../Work.c"	Stop_HighBackWater_Open();
+;	.line	303; "../Work.c"	delay_ms(1300);
+	MOV	R0,# 0x14
+	BANKSEL	STK00
+	MOV	STK00, R0
+	MOV	R0,# 0x05
+	TRAPPC1	_delay_ms
+	TRAPPC2	_delay_ms
+	PAGESEL	_delay_ms
+	CALL	_delay_ms
+	TRAPPC1	$+2
+	TRAPPC2	$+1
+	PAGESEL	$
+;	::->op : CALL
+;	.line	304; "../Work.c"	Stop_HighBackWater_Open();
 	TRAPPC1	_Stop_HighBackWater_Open
 	TRAPPC2	_Stop_HighBackWater_Open
 	PAGESEL	_Stop_HighBackWater_Open
@@ -1559,7 +1540,7 @@ _Led_Hello	;Function start
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : CALL
-;	.line	400; "../Work.c"	Tail1_FullBackWater_Open();
+;	.line	305; "../Work.c"	Tail1_FullBackWater_Open();
 	TRAPPC1	_Tail1_FullBackWater_Open
 	TRAPPC2	_Tail1_FullBackWater_Open
 	PAGESEL	_Tail1_FullBackWater_Open
@@ -1568,7 +1549,7 @@ _Led_Hello	;Function start
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : CALL
-;	.line	401; "../Work.c"	Tail2_Stop_FullWater_Open();
+;	.line	306; "../Work.c"	Tail2_Stop_FullWater_Open();
 	TRAPPC1	_Tail2_Stop_FullWater_Open
 	TRAPPC2	_Tail2_Stop_FullWater_Open
 	PAGESEL	_Tail2_Stop_FullWater_Open
@@ -1578,136 +1559,12 @@ _Led_Hello	;Function start
 	PAGESEL	$
 ;	::->op : LABEL
 ;	::->op : GOTO
-_00267_DS_
-	JMP	_00267_DS_
+_00199_DS_
+	JMP	_00199_DS_
 ;	::->op : LABEL
 ;	::->op : ENDFUNCTION
 	CRET	
 ; exit point of _Led_Hello
-
-
-
-func._RT_Timer_PWM_Callback	.code
-;***
-;  PostBlock Stats: dbName = C
-;***
-;entry:  _RT_Timer_PWM_Callback	;Function start
-; 2 exit points
-;has an exit
-;; Starting PostCode block
-;	::->op : LABEL
-;	::->op : FUNCTION
-_RT_Timer_PWM_Callback	;Function start
-; 2 exit points
-;	::->op : IFX
-;	.line	355; "../Work.c"	if(RT_Timer_Flag)
-	MOV	R0,# 0x00
-	BANKSEL	_RT_Timer_Flag
-	ORL	R0, _RT_Timer_Flag
-	JNB	PSW, 2
-	JMP	_00255_DS_
-;	::->op : =
-;	.line	357; "../Work.c"	RT_Timer_Flag =0;
-	BANKSEL	_RT_Timer_Flag
-	CLR	_RT_Timer_Flag
-;	::->op :*  =
-;	.line	358; "../Work.c"	T2ON =0;
-	BANKSEL	_T2CTL0_bits
-	CLR	_T2CTL0_bits, 2
-;	::->op : =
-;	.line	359; "../Work.c"	PP60H =0x02;
-	MOV	R0,# 0x02
-	BANKSEL	_PP60H
-	MOV	_PP60H, R0
-;	::->op : =
-;	.line	360; "../Work.c"	PP60L =0x26;
-	MOV	R0,# 0x26
-	BANKSEL	_PP60L
-	MOV	_PP60L, R0
-;	::->op :*  =
-;	.line	361; "../Work.c"	T2ON =1;
-	BANKSEL	_T2CTL0_bits
-	SET	_T2CTL0_bits, 2
-;	.line	362; "../Work.c"	if(RT_High_Addr & RT_1_ADDR)
-	BANKSEL	_RT_High_Addr
-	JB	_RT_High_Addr, 0
-	JMP	_00302_DS_
-;	.line	363; "../Work.c"	RT_1=0;
-	BANKSEL	_P6LR_bits
-	CLR	_P6LR_bits, 6
-_00302_DS_
-;	.line	364; "../Work.c"	if(RT_High_Addr & RT_2_ADDR)
-	BANKSEL	_RT_High_Addr
-	JB	_RT_High_Addr, 1
-	JMP	_00303_DS_
-;	.line	365; "../Work.c"	RT_2=0;
-	BANKSEL	_P6LR_bits
-	CLR	_P6LR_bits, 5
-_00303_DS_
-;	.line	366; "../Work.c"	if(RT_High_Addr & RT_3_ADDR)
-	BANKSEL	_RT_High_Addr
-	JB	_RT_High_Addr, 2
-	JMP	_00257_DS_
-;	::->op :*  =
-;	.line	367; "../Work.c"	RT_3=0;
-	BANKSEL	_P6LR_bits
-	CLR	_P6LR_bits, 3
-;	::->op : GOTO
-	JMP	_00257_DS_
-;	::->op : LABEL
-;	::->op : =
-_00255_DS_
-;	.line	371; "../Work.c"	RT_Timer_Flag =1;
-	MOV	R0,# 0x01
-	BANKSEL	_RT_Timer_Flag
-	MOV	_RT_Timer_Flag, R0
-;	::->op :*  =
-;	.line	372; "../Work.c"	T2ON =0;
-	BANKSEL	_T2CTL0_bits
-	CLR	_T2CTL0_bits, 2
-;	::->op : =
-;	.line	373; "../Work.c"	PP60H =0x01;
-	MOV	R0,# 0x01
-	BANKSEL	_PP60H
-	MOV	_PP60H, R0
-;	::->op : =
-;	.line	374; "../Work.c"	PP60L =0xc2;
-	MOV	R0,# 0xc2
-	BANKSEL	_PP60L
-	MOV	_PP60L, R0
-;	::->op :*  =
-;	.line	375; "../Work.c"	T2ON =1;
-	BANKSEL	_T2CTL0_bits
-	SET	_T2CTL0_bits, 2
-;	.line	376; "../Work.c"	if(RT_Low_Addr & RT_1_ADDR)
-	BANKSEL	_RT_Low_Addr
-	JB	_RT_Low_Addr, 0
-	JMP	_00304_DS_
-;	.line	377; "../Work.c"	RT_1=1;
-	BANKSEL	_P6LR_bits
-	SET	_P6LR_bits, 6
-_00304_DS_
-;	.line	378; "../Work.c"	if(RT_Low_Addr & RT_2_ADDR)
-	BANKSEL	_RT_Low_Addr
-	JB	_RT_Low_Addr, 1
-	JMP	_00305_DS_
-;	.line	379; "../Work.c"	RT_2=1;
-	BANKSEL	_P6LR_bits
-	SET	_P6LR_bits, 5
-_00305_DS_
-;	.line	380; "../Work.c"	if(RT_Low_Addr & RT_3_ADDR)
-	BANKSEL	_RT_Low_Addr
-	JB	_RT_Low_Addr, 2
-	JMP	_00257_DS_
-;	::->op :*  =
-;	.line	381; "../Work.c"	RT_3=1;
-	BANKSEL	_P6LR_bits
-	SET	_P6LR_bits, 3
-;	::->op : LABEL
-;	::->op : ENDFUNCTION
-_00257_DS_
-	CRET	
-; exit point of _RT_Timer_PWM_Callback
 
 
 
@@ -1724,178 +1581,294 @@ func._Timer_PWM_Callback	.code
 _Timer_PWM_Callback	;Function start
 ; 2 exit points
 ;	::->op : IFX
-;	.line	308; "../Work.c"	if(PWM_Timer_Flag)
+;	.line	227; "../Work.c"	if(PWM_Timer_Flag)
 	MOV	R0,# 0x00
 	BANKSEL	_PWM_Timer_Flag
 	ORL	R0, _PWM_Timer_Flag
 	JNB	PSW, 2
-	JMP	_00227_DS_
+	JMP	_00169_DS_
 ;	::->op : =
-;	.line	310; "../Work.c"	PWM_Timer_Flag =0;
+;	.line	229; "../Work.c"	PWM_Timer_Flag =0;
 	BANKSEL	_PWM_Timer_Flag
 	CLR	_PWM_Timer_Flag
-;	::->op : IFX
-;	.line	311; "../Work.c"	if(RT_Timer_PWM_Flag)//5%
-	MOV	R0,# 0x00
-	BANKSEL	_RT_Timer_PWM_Flag
-	ORL	R0, _RT_Timer_PWM_Flag
-	JNB	PSW, 2
-	JMP	_00205_DS_
 ;	::->op : =
-;	.line	313; "../Work.c"	T1H = 0xBC;
-	MOV	R0,# 0xbc
+;	.line	230; "../Work.c"	T1H = 0xF1;
+	MOV	R0,# 0xf1
 	BANKSEL	_T1H
 	MOV	_T1H, R0
 ;	::->op : =
-;	.line	314; "../Work.c"	T1L = 0x58;
-	MOV	R0,# 0x58
+;	.line	231; "../Work.c"	T1L = 0x60;
+	MOV	R0,# 0x60
+;	.line	232; "../Work.c"	if(Stop_High_Addr & LED1ADDR)
 	BANKSEL	_T1L
 	MOV	_T1L, R0
-;	::->op : GOTO
-	JMP	_00206_DS_
-;	::->op : LABEL
-;	::->op : =
-_00205_DS_
-;	.line	318; "../Work.c"	T1H = 0xB9;
-	MOV	R0,# 0xb9
-	BANKSEL	_T1H
-	MOV	_T1H, R0
-;	::->op : =
-;	.line	319; "../Work.c"	T1L = 0xB0;
-	MOV	R0,# 0xb0
-	BANKSEL	_T1L
-	MOV	_T1L, R0
-;	::->op : LABEL
-;	::->op : BITWISEAND
-_00206_DS_
-;	.line	321; "../Work.c"	if(Stop_High_Addr & LED1ADDR)
+;	.line	233; "../Work.c"	LED1LOW;
 	BANKSEL	_Stop_High_Addr
 	JB	_Stop_High_Addr, 0
-	JMP	_00208_DS_
-;	::->op :*  =
-;	.line	322; "../Work.c"	LED1LOW;
+	JMP	_00234_DS_
+;	.line	234; "../Work.c"	if(Stop_High_Addr & LED2ADDR)
 	BANKSEL	_P2LR_bits
 	CLR	_P2LR_bits, 3
-;	::->op : LABEL
-;	::->op : BITWISEAND
-_00208_DS_
-;	.line	323; "../Work.c"	if(Stop_High_Addr & LED2ADDR)
+_00234_DS_
+;	.line	235; "../Work.c"	LED2LOW;
 	BANKSEL	_Stop_High_Addr
 	JB	_Stop_High_Addr, 1
-	JMP	_00210_DS_
-;	::->op :*  =
-;	.line	324; "../Work.c"	LED2LOW;
+	JMP	_00235_DS_
+;	.line	236; "../Work.c"	if(Stop_High_Addr & LED3ADDR)
 	BANKSEL	_P2LR_bits
 	CLR	_P2LR_bits, 4
-;	::->op : LABEL
-;	::->op : BITWISEAND
-_00210_DS_
-;	.line	325; "../Work.c"	if(Stop_High_Addr & LED3ADDR)
+_00235_DS_
 	BANKSEL	_Stop_High_Addr
 	JB	_Stop_High_Addr, 2
-	JMP	_00212_DS_
+	JMP	_00125_DS_
 ;	::->op :*  =
-;	.line	326; "../Work.c"	LED3LOW;
+;	.line	237; "../Work.c"	LED3LOW;
 	BANKSEL	_P2LR_bits
 	CLR	_P2LR_bits, 0
 ;	::->op : LABEL
 ;	::->op : BITWISEAND
-_00212_DS_
-;	.line	327; "../Work.c"	if(Stop_High_Addr & LED4ADDR)
+_00125_DS_
+;	.line	238; "../Work.c"	if(Stop_High_Addr & LED4ADDR)
 	BANKSEL	_Stop_High_Addr
 	JB	_Stop_High_Addr, 3
-	JMP	_00229_DS_
+	JMP	_00127_DS_
 ;	::->op :*  =
-;	.line	328; "../Work.c"	LED4LOW;
+;	.line	239; "../Work.c"	LED4LOW;
 	BANKSEL	_P2LR_bits
 	CLR	_P2LR_bits, 1
+;	::->op : LABEL
+;	::->op : BITWISEAND
+_00127_DS_
+;	.line	240; "../Work.c"	if(Stop_High_Addr & LED5ADDR)
+	BANKSEL	_Stop_High_Addr
+	JB	_Stop_High_Addr, 4
+	JMP	_00129_DS_
+;	::->op :*  =
+;	.line	241; "../Work.c"	LED5LOW;
+	BANKSEL	_P6LR_bits
+	CLR	_P6LR_bits, 1
+;	::->op : LABEL
+;	::->op : BITWISEAND
+_00129_DS_
+;	.line	242; "../Work.c"	if(Stop_High_Addr & LED6ADDR)
+	BANKSEL	_Stop_High_Addr
+	JB	_Stop_High_Addr, 5
+	JMP	_00131_DS_
+;	::->op :*  =
+;	.line	243; "../Work.c"	LED6LOW;
+	BANKSEL	_P6LR_bits
+	CLR	_P6LR_bits, 3
+;	::->op : LABEL
+;	::->op : BITWISEAND
+_00131_DS_
+;	.line	244; "../Work.c"	if(Stop_High_Addr & LED7ADDR)
+	BANKSEL	_Stop_High_Addr
+	JB	_Stop_High_Addr, 6
+	JMP	_00133_DS_
+;	::->op :*  =
+;	.line	245; "../Work.c"	LED7LOW;
+	BANKSEL	_P6LR_bits
+	CLR	_P6LR_bits, 5
+;	::->op : LABEL
+;	::->op : BITWISEAND
+_00133_DS_
+;	.line	246; "../Work.c"	if(Stop_High_Addr & LED8ADDR)
+	BANKSEL	_Stop_High_Addr
+	JB	_Stop_High_Addr, 7
+	JMP	_00135_DS_
+;	::->op :*  =
+;	.line	247; "../Work.c"	LED8LOW;
+	BANKSEL	_P6LR_bits
+	CLR	_P6LR_bits, 6
+;	::->op : LABEL
+;	::->op : BITWISEAND
+_00135_DS_
+;	.line	248; "../Work.c"	if(Stop_High_Addr & LED9ADDR)
+	BANKSEL	(_Stop_High_Addr + 1)
+	JB	(_Stop_High_Addr + 1), 0
+	JMP	_00137_DS_
+;	::->op :*  =
+;	.line	249; "../Work.c"	LED9LOW;
+	BANKSEL	_P9LR_bits
+	CLR	_P9LR_bits, 5
+;	::->op : LABEL
+;	::->op : BITWISEAND
+_00137_DS_
+;	.line	250; "../Work.c"	if(Stop_High_Addr & LED10ADDR)
+	BANKSEL	(_Stop_High_Addr + 1)
+	JB	(_Stop_High_Addr + 1), 1
+	JMP	_00139_DS_
+;	::->op :*  =
+;	.line	251; "../Work.c"	LED10LOW;
+	BANKSEL	_P9LR_bits
+	CLR	_P9LR_bits, 4
+;	::->op : LABEL
+;	::->op : BITWISEAND
+_00139_DS_
+;	.line	252; "../Work.c"	if(Stop_High_Addr & LED11ADDR)
+	BANKSEL	(_Stop_High_Addr + 1)
+	JB	(_Stop_High_Addr + 1), 2
+	JMP	_00141_DS_
+;	::->op :*  =
+;	.line	253; "../Work.c"	LED11LOW;
+	BANKSEL	_P4LR_bits
+	CLR	_P4LR_bits, 3
+;	::->op : LABEL
+;	::->op : BITWISEAND
+_00141_DS_
+;	.line	254; "../Work.c"	if(Stop_High_Addr & LED12ADDR)
+	BANKSEL	(_Stop_High_Addr + 1)
+	JB	(_Stop_High_Addr + 1), 3
+	JMP	_00171_DS_
+;	::->op :*  =
+;	.line	255; "../Work.c"	LED12LOW;
+	BANKSEL	_P4LR_bits
+	CLR	_P4LR_bits, 5
 ;	::->op : GOTO
-	JMP	_00229_DS_
+	JMP	_00171_DS_
 ;	::->op : LABEL
 ;	::->op : =
-_00227_DS_
-;	.line	332; "../Work.c"	PWM_Timer_Flag =1;
+_00169_DS_
+;	.line	259; "../Work.c"	PWM_Timer_Flag =1;
 	MOV	R0,# 0x01
 	BANKSEL	_PWM_Timer_Flag
 	MOV	_PWM_Timer_Flag, R0
-;	::->op : IFX
-;	.line	333; "../Work.c"	if(RT_Timer_PWM_Flag)//5%
-	MOV	R0,# 0x00
-	BANKSEL	_RT_Timer_PWM_Flag
-	ORL	R0, _RT_Timer_PWM_Flag
-	JNB	PSW, 2
-	JMP	_00216_DS_
 ;	::->op : =
-;	.line	335; "../Work.c"	T1H = 0xFC;
-	MOV	R0,# 0xfc
+;	.line	260; "../Work.c"	T1H = 0xFF;
+	MOV	R0,# 0xff
 	BANKSEL	_T1H
 	MOV	_T1H, R0
 ;	::->op : =
-;	.line	336; "../Work.c"	T1L = 0x18;
-	MOV	R0,# 0x18
+;	.line	261; "../Work.c"	T1L = 0x98;
+	MOV	R0,# 0x98
+;	.line	262; "../Work.c"	if(Stop_Low_Addr & LED1ADDR)
 	BANKSEL	_T1L
 	MOV	_T1L, R0
-;	::->op : GOTO
-	JMP	_00217_DS_
-;	::->op : LABEL
-;	::->op : =
-_00216_DS_
-;	.line	340; "../Work.c"	T1H = 0xF8;
-	MOV	R0,# 0xf8
-	BANKSEL	_T1H
-	MOV	_T1H, R0
-;	::->op : =
-;	.line	341; "../Work.c"	T1L = 0x30;
-	MOV	R0,# 0x30
-	BANKSEL	_T1L
-	MOV	_T1L, R0
-;	::->op : LABEL
-;	::->op : BITWISEAND
-_00217_DS_
-;	.line	343; "../Work.c"	if(Stop_Low_Addr & LED1ADDR)
+;	.line	263; "../Work.c"	LED1HIGH;
 	BANKSEL	_Stop_Low_Addr
 	JB	_Stop_Low_Addr, 0
-	JMP	_00219_DS_
-;	::->op :*  =
-;	.line	344; "../Work.c"	LED1HIGH;
+	JMP	_00236_DS_
+;	.line	264; "../Work.c"	if(Stop_Low_Addr & LED2ADDR)
 	BANKSEL	_P2LR_bits
 	SET	_P2LR_bits, 3
-;	::->op : LABEL
-;	::->op : BITWISEAND
-_00219_DS_
-;	.line	345; "../Work.c"	if(Stop_Low_Addr & LED2ADDR)
+_00236_DS_
+;	.line	265; "../Work.c"	LED2HIGH;
 	BANKSEL	_Stop_Low_Addr
 	JB	_Stop_Low_Addr, 1
-	JMP	_00221_DS_
-;	::->op :*  =
-;	.line	346; "../Work.c"	LED2HIGH;
+	JMP	_00237_DS_
+;	.line	266; "../Work.c"	if(Stop_Low_Addr & LED3ADDR)
 	BANKSEL	_P2LR_bits
 	SET	_P2LR_bits, 4
-;	::->op : LABEL
-;	::->op : BITWISEAND
-_00221_DS_
-;	.line	347; "../Work.c"	if(Stop_Low_Addr & LED3ADDR)
+_00237_DS_
 	BANKSEL	_Stop_Low_Addr
 	JB	_Stop_Low_Addr, 2
-	JMP	_00223_DS_
+	JMP	_00149_DS_
 ;	::->op :*  =
-;	.line	348; "../Work.c"	LED3HIGH;
+;	.line	267; "../Work.c"	LED3HIGH;
 	BANKSEL	_P2LR_bits
 	SET	_P2LR_bits, 0
 ;	::->op : LABEL
 ;	::->op : BITWISEAND
-_00223_DS_
-;	.line	349; "../Work.c"	if(Stop_Low_Addr & LED4ADDR)
+_00149_DS_
+;	.line	268; "../Work.c"	if(Stop_Low_Addr & LED4ADDR)
 	BANKSEL	_Stop_Low_Addr
 	JB	_Stop_Low_Addr, 3
-	JMP	_00229_DS_
+	JMP	_00151_DS_
 ;	::->op :*  =
-;	.line	350; "../Work.c"	LED4HIGH;
+;	.line	269; "../Work.c"	LED4HIGH;
 	BANKSEL	_P2LR_bits
 	SET	_P2LR_bits, 1
 ;	::->op : LABEL
+;	::->op : BITWISEAND
+_00151_DS_
+;	.line	270; "../Work.c"	if(Stop_Low_Addr & LED5ADDR)
+	BANKSEL	_Stop_Low_Addr
+	JB	_Stop_Low_Addr, 4
+	JMP	_00153_DS_
+;	::->op :*  =
+;	.line	271; "../Work.c"	LED5HIGH;
+	BANKSEL	_P6LR_bits
+	SET	_P6LR_bits, 1
+;	::->op : LABEL
+;	::->op : BITWISEAND
+_00153_DS_
+;	.line	272; "../Work.c"	if(Stop_Low_Addr & LED6ADDR)
+	BANKSEL	_Stop_Low_Addr
+	JB	_Stop_Low_Addr, 5
+	JMP	_00155_DS_
+;	::->op :*  =
+;	.line	273; "../Work.c"	LED6HIGH;
+	BANKSEL	_P6LR_bits
+	SET	_P6LR_bits, 3
+;	::->op : LABEL
+;	::->op : BITWISEAND
+_00155_DS_
+;	.line	274; "../Work.c"	if(Stop_Low_Addr & LED7ADDR)
+	BANKSEL	_Stop_Low_Addr
+	JB	_Stop_Low_Addr, 6
+	JMP	_00157_DS_
+;	::->op :*  =
+;	.line	275; "../Work.c"	LED7HIGH;
+	BANKSEL	_P6LR_bits
+	SET	_P6LR_bits, 5
+;	::->op : LABEL
+;	::->op : BITWISEAND
+_00157_DS_
+;	.line	276; "../Work.c"	if(Stop_Low_Addr & LED8ADDR)
+	BANKSEL	_Stop_Low_Addr
+	JB	_Stop_Low_Addr, 7
+	JMP	_00159_DS_
+;	::->op :*  =
+;	.line	277; "../Work.c"	LED8HIGH;
+	BANKSEL	_P6LR_bits
+	SET	_P6LR_bits, 6
+;	::->op : LABEL
+;	::->op : BITWISEAND
+_00159_DS_
+;	.line	278; "../Work.c"	if(Stop_Low_Addr & LED9ADDR)
+	BANKSEL	(_Stop_Low_Addr + 1)
+	JB	(_Stop_Low_Addr + 1), 0
+	JMP	_00161_DS_
+;	::->op :*  =
+;	.line	279; "../Work.c"	LED9HIGH;
+	BANKSEL	_P9LR_bits
+	SET	_P9LR_bits, 5
+;	::->op : LABEL
+;	::->op : BITWISEAND
+_00161_DS_
+;	.line	280; "../Work.c"	if(Stop_Low_Addr & LED10ADDR)
+	BANKSEL	(_Stop_Low_Addr + 1)
+	JB	(_Stop_Low_Addr + 1), 1
+	JMP	_00163_DS_
+;	::->op :*  =
+;	.line	281; "../Work.c"	LED10HIGH;
+	BANKSEL	_P9LR_bits
+	SET	_P9LR_bits, 4
+;	::->op : LABEL
+;	::->op : BITWISEAND
+_00163_DS_
+;	.line	282; "../Work.c"	if(Stop_Low_Addr & LED11ADDR)
+	BANKSEL	(_Stop_Low_Addr + 1)
+	JB	(_Stop_Low_Addr + 1), 2
+	JMP	_00165_DS_
+;	::->op :*  =
+;	.line	283; "../Work.c"	LED11HIGH;
+	BANKSEL	_P4LR_bits
+	SET	_P4LR_bits, 3
+;	::->op : LABEL
+;	::->op : BITWISEAND
+_00165_DS_
+;	.line	284; "../Work.c"	if(Stop_Low_Addr & LED12ADDR)
+	BANKSEL	(_Stop_Low_Addr + 1)
+	JB	(_Stop_Low_Addr + 1), 3
+	JMP	_00171_DS_
+;	::->op :*  =
+;	.line	285; "../Work.c"	LED12HIGH;
+	BANKSEL	_P4LR_bits
+	SET	_P4LR_bits, 5
+;	::->op : LABEL
 ;	::->op : ENDFUNCTION
-_00229_DS_
+_00171_DS_
 	CRET	
 ; exit point of _Timer_PWM_Callback
 
@@ -1911,23 +1884,19 @@ func._Mode_Act	.code
 ;functions called:
 ;   _Led_Tail_AllClose
 ;   _LED_Stop_AllClose
-;   _Led_Tail_55Open
-;   _LED_Stop_PWM5Open
-;   _Led_Tail_55Open
-;   _LED_Stop_PWM10Open
+;   _Led_Tail_AllOpen
+;   _LED_Stop_PWMOpen
 ;   _Led_Tail_AllClose
 ;   _LED_Stop_AllOpen
-;   _Led_Tail_55Open
+;   _Led_Tail_AllOpen
 ;   _LED_Stop_AllOpen
 ;   _Led_Tail_AllClose
 ;   _LED_Stop_AllClose
-;   _Led_Tail_55Open
-;   _LED_Stop_PWM5Open
-;   _Led_Tail_55Open
-;   _LED_Stop_PWM10Open
+;   _Led_Tail_AllOpen
+;   _LED_Stop_PWMOpen
 ;   _Led_Tail_AllClose
 ;   _LED_Stop_AllOpen
-;   _Led_Tail_55Open
+;   _Led_Tail_AllOpen
 ;   _LED_Stop_AllOpen
 ;; Starting PostCode block
 ;	::->op : LABEL
@@ -1935,65 +1904,54 @@ func._Mode_Act	.code
 _Mode_Act	;Function start
 ; 2 exit points
 ;	::->op : EQ_OP
-;	.line	281; "../Work.c"	switch(ActMode)
+;	.line	204; "../Work.c"	switch(ActMode)
 	BANKSEL	_ActMode
 	MOVZ	R0, _ActMode
 	XOR	R0,# 0x01
 	JB	PSW, 2
-	JMP	_00199_DS_
+	JMP	_00116_DS_
 	BANKSEL	_ActMode
 	MOVZ	R0, (_ActMode + 1)
 	XOR	R0,# 0x00
 	JNB	PSW, 2
-	JMP	_00185_DS_
-_00199_DS_
+	JMP	_00104_DS_
+_00116_DS_
 	BANKSEL	_ActMode
 	MOVZ	R0, _ActMode
 	XOR	R0,# 0x02
 	JB	PSW, 2
-	JMP	_00200_DS_
+	JMP	_00117_DS_
 	BANKSEL	_ActMode
 	MOVZ	R0, (_ActMode + 1)
 	XOR	R0,# 0x00
 	JNB	PSW, 2
-	JMP	_00186_DS_
-_00200_DS_
+	JMP	_00105_DS_
+_00117_DS_
 	BANKSEL	_ActMode
 	MOVZ	R0, _ActMode
 	XOR	R0,# 0x04
 	JB	PSW, 2
-	JMP	_00201_DS_
+	JMP	_00118_DS_
 	BANKSEL	_ActMode
 	MOVZ	R0, (_ActMode + 1)
 	XOR	R0,# 0x00
 	JNB	PSW, 2
-	JMP	_00187_DS_
-_00201_DS_
+	JMP	_00106_DS_
+_00118_DS_
 	BANKSEL	_ActMode
 	MOVZ	R0, _ActMode
 	XOR	R0,# 0x08
 	JB	PSW, 2
-	JMP	_00202_DS_
+	JMP	_00119_DS_
 	BANKSEL	_ActMode
 	MOVZ	R0, (_ActMode + 1)
 	XOR	R0,# 0x00
 	JNB	PSW, 2
-	JMP	_00188_DS_
-_00202_DS_
-	BANKSEL	_ActMode
-	MOVZ	R0, _ActMode
-	XOR	R0,# 0x10
-	JB	PSW, 2
-	JMP	_00203_DS_
-	BANKSEL	_ActMode
-	MOVZ	R0, (_ActMode + 1)
-	XOR	R0,# 0x00
-	JNB	PSW, 2
-	JMP	_00189_DS_
-_00203_DS_
-	JMP	_00192_DS_
-_00185_DS_
-;	.line	284; "../Work.c"	Led_Tail_AllClose();	//位置灯全关闭
+	JMP	_00107_DS_
+_00119_DS_
+	JMP	_00110_DS_
+_00104_DS_
+;	.line	207; "../Work.c"	Led_Tail_AllClose();	//位置灯全关闭
 	TRAPPC1	_Led_Tail_AllClose
 	TRAPPC2	_Led_Tail_AllClose
 	PAGESEL	_Led_Tail_AllClose
@@ -2002,7 +1960,7 @@ _00185_DS_
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : CALL
-;	.line	285; "../Work.c"	LED_Stop_AllClose();	//制动灯全关闭
+;	.line	208; "../Work.c"	LED_Stop_AllClose();	//制动灯全关闭
 	TRAPPC1	_LED_Stop_AllClose
 	TRAPPC2	_LED_Stop_AllClose
 	PAGESEL	_LED_Stop_AllClose
@@ -2011,58 +1969,35 @@ _00185_DS_
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : GOTO
-;	.line	286; "../Work.c"	break;
-	JMP	_00192_DS_
+;	.line	209; "../Work.c"	break;
+	JMP	_00110_DS_
 ;	::->op : LABEL
 ;	::->op : CALL
-_00186_DS_
-;	.line	288; "../Work.c"	Led_Tail_55Open();		//位置灯55%开启
-	TRAPPC1	_Led_Tail_55Open
-	TRAPPC2	_Led_Tail_55Open
-	PAGESEL	_Led_Tail_55Open
-	CALL	_Led_Tail_55Open
+_00105_DS_
+;	.line	211; "../Work.c"	Led_Tail_AllOpen();		//位置灯全开启
+	TRAPPC1	_Led_Tail_AllOpen
+	TRAPPC2	_Led_Tail_AllOpen
+	PAGESEL	_Led_Tail_AllOpen
+	CALL	_Led_Tail_AllOpen
 	TRAPPC1	$+2
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : CALL
-;	.line	289; "../Work.c"	LED_Stop_PWM5Open();	//制动灯5%PWM开启
-	TRAPPC1	_LED_Stop_PWM5Open
-	TRAPPC2	_LED_Stop_PWM5Open
-	PAGESEL	_LED_Stop_PWM5Open
-	CALL	_LED_Stop_PWM5Open
+;	.line	212; "../Work.c"	LED_Stop_PWMOpen();		//制动灯5%PWM开启
+	TRAPPC1	_LED_Stop_PWMOpen
+	TRAPPC2	_LED_Stop_PWMOpen
+	PAGESEL	_LED_Stop_PWMOpen
+	CALL	_LED_Stop_PWMOpen
 	TRAPPC1	$+2
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : GOTO
-;	.line	290; "../Work.c"	break;
-	JMP	_00192_DS_
+;	.line	213; "../Work.c"	break;
+	JMP	_00110_DS_
 ;	::->op : LABEL
 ;	::->op : CALL
-_00187_DS_
-;	.line	292; "../Work.c"	Led_Tail_55Open();		//位置灯55%开启
-	TRAPPC1	_Led_Tail_55Open
-	TRAPPC2	_Led_Tail_55Open
-	PAGESEL	_Led_Tail_55Open
-	CALL	_Led_Tail_55Open
-	TRAPPC1	$+2
-	TRAPPC2	$+1
-	PAGESEL	$
-;	::->op : CALL
-;	.line	293; "../Work.c"	LED_Stop_PWM10Open();	//制动灯10%PWM开启
-	TRAPPC1	_LED_Stop_PWM10Open
-	TRAPPC2	_LED_Stop_PWM10Open
-	PAGESEL	_LED_Stop_PWM10Open
-	CALL	_LED_Stop_PWM10Open
-	TRAPPC1	$+2
-	TRAPPC2	$+1
-	PAGESEL	$
-;	::->op : GOTO
-;	.line	294; "../Work.c"	break;
-	JMP	_00192_DS_
-;	::->op : LABEL
-;	::->op : CALL
-_00188_DS_
-;	.line	296; "../Work.c"	Led_Tail_AllClose();	//位置灯全关闭
+_00106_DS_
+;	.line	215; "../Work.c"	Led_Tail_AllClose();	//位置灯全关闭
 	TRAPPC1	_Led_Tail_AllClose
 	TRAPPC2	_Led_Tail_AllClose
 	PAGESEL	_Led_Tail_AllClose
@@ -2071,7 +2006,7 @@ _00188_DS_
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : CALL
-;	.line	297; "../Work.c"	LED_Stop_AllOpen();		//制动灯全开启
+;	.line	216; "../Work.c"	LED_Stop_AllOpen();		//制动灯全开启
 	TRAPPC1	_LED_Stop_AllOpen
 	TRAPPC2	_LED_Stop_AllOpen
 	PAGESEL	_LED_Stop_AllOpen
@@ -2080,21 +2015,21 @@ _00188_DS_
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : GOTO
-;	.line	298; "../Work.c"	break;
-	JMP	_00192_DS_
+;	.line	217; "../Work.c"	break;
+	JMP	_00110_DS_
 ;	::->op : LABEL
 ;	::->op : CALL
-_00189_DS_
-;	.line	300; "../Work.c"	Led_Tail_55Open();		//位置灯55%开启
-	TRAPPC1	_Led_Tail_55Open
-	TRAPPC2	_Led_Tail_55Open
-	PAGESEL	_Led_Tail_55Open
-	CALL	_Led_Tail_55Open
+_00107_DS_
+;	.line	219; "../Work.c"	Led_Tail_AllOpen();		//位置灯全开启
+	TRAPPC1	_Led_Tail_AllOpen
+	TRAPPC2	_Led_Tail_AllOpen
+	PAGESEL	_Led_Tail_AllOpen
+	CALL	_Led_Tail_AllOpen
 	TRAPPC1	$+2
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : CALL
-;	.line	301; "../Work.c"	LED_Stop_AllOpen();		//制动灯全开启
+;	.line	220; "../Work.c"	LED_Stop_AllOpen();		//制动灯全开启
 	TRAPPC1	_LED_Stop_AllOpen
 	TRAPPC2	_LED_Stop_AllOpen
 	PAGESEL	_LED_Stop_AllOpen
@@ -2104,8 +2039,8 @@ _00189_DS_
 	PAGESEL	$
 ;	::->op : LABEL
 ;	::->op : ENDFUNCTION
-_00192_DS_
-;	.line	304; "../Work.c"	}
+_00110_DS_
+;	.line	223; "../Work.c"	}
 	CRET	
 ; exit point of _Mode_Act
 
@@ -2122,72 +2057,57 @@ func._Tail_Stop_Check_Input	.code
 ;   _Mode_Act
 ;   _Mode_Act
 ;1 compiler assigned register :
-;   r0x102F
+;   r0x1020
 ;; Starting PostCode block
 ;	::->op : LABEL
 ;	::->op : FUNCTION
 _Tail_Stop_Check_Input	;Function start
 ; 2 exit points
 ;	::->op : GET_VALUE_AT_ADDRESS
-;	.line	212; "../Work.c"	Tail_Status = Tail;
-	BANKSEL	r0x102F
-	CLR	r0x102F
+;	.line	148; "../Work.c"	Tail_Status = Tail;
+	BANKSEL	r0x1020
+	CLR	r0x1020
 	BANKSEL	_P7_bits
 	JB	_P7_bits, 1
-	JMP	_00306_DS_
-	BANKSEL	r0x102F
-	INC	r0x102F
+	JMP	_00238_DS_
+	BANKSEL	r0x1020
+	INC	r0x1020
 ;	::->op : =
-_00306_DS_
-	BANKSEL	r0x102F
-	MOVZ	R0, r0x102F
+_00238_DS_
+	BANKSEL	r0x1020
+	MOVZ	R0, r0x1020
 	BANKSEL	_Tail_Status
 	MOV	_Tail_Status, R0
 ;	::->op : GET_VALUE_AT_ADDRESS
-;	.line	213; "../Work.c"	Stop_Status = Stop;
-	BANKSEL	r0x102F
-	CLR	r0x102F
+;	.line	149; "../Work.c"	Stop_Status = Stop;
+	BANKSEL	r0x1020
+	CLR	r0x1020
 	BANKSEL	_P7_bits
 	JB	_P7_bits, 2
-	JMP	_00307_DS_
-	BANKSEL	r0x102F
-	INC	r0x102F
+	JMP	_00239_DS_
+	BANKSEL	r0x1020
+	INC	r0x1020
 ;	::->op : =
-_00307_DS_
-	BANKSEL	r0x102F
-	MOVZ	R0, r0x102F
+_00239_DS_
+	BANKSEL	r0x1020
+	MOVZ	R0, r0x1020
 	BANKSEL	_Stop_Status
 	MOV	_Stop_Status, R0
-;	::->op : GET_VALUE_AT_ADDRESS
-;	.line	214; "../Work.c"	LOW_EN_Status = Open_EN;
-	BANKSEL	r0x102F
-	CLR	r0x102F
-	BANKSEL	_P1_bits
-	JB	_P1_bits, 0
-	JMP	_00308_DS_
-	BANKSEL	r0x102F
-	INC	r0x102F
-;	::->op : =
-_00308_DS_
-	BANKSEL	r0x102F
-	MOVZ	R0, r0x102F
-	BANKSEL	_LOW_EN_Status
-	MOV	_LOW_EN_Status, R0
 ;	::->op : IFX
-;	.line	216; "../Work.c"	if(Tail_Status==0&&Stop_Status==0)//位置低，制动低,无低亮使能
+;	.line	151; "../Work.c"	if(Tail_Status==0&&Stop_Status==0)//位置低，制动低
 	MOV	R0,# 0x00
 	BANKSEL	_Tail_Status
 	ORL	R0, _Tail_Status
 	JB	PSW, 2
-	JMP	_00163_DS_
+	JMP	_00070_DS_
 ;	::->op : IFX
 	MOV	R0,# 0x00
 	BANKSEL	_Stop_Status
 	ORL	R0, _Stop_Status
 	JB	PSW, 2
-	JMP	_00163_DS_
+	JMP	_00070_DS_
 ;	::->op : =
-;	.line	218; "../Work.c"	PastMode = NowMode;NowMode = Mode1_Status;
+;	.line	153; "../Work.c"	PastMode = NowMode;NowMode = Mode1_Status;
 	BANKSEL	_NowMode
 	MOVZ	R0, _NowMode
 	BANKSEL	_PastMode
@@ -2203,59 +2123,51 @@ _00308_DS_
 	BANKSEL	_NowMode
 	CLR	(_NowMode + 1)
 ;	::->op : EQ_OP
-;	.line	219; "../Work.c"	if(NowMode==PastMode)
+;	.line	154; "../Work.c"	if(NowMode==PastMode)
 	BANKSEL	_PastMode
 	MOVZ	R0, _PastMode
 	XOR	R0,# 0x01
 	JB	PSW, 2
-	JMP	_00131_DS_
+	JMP	_00067_DS_
 	BANKSEL	_PastMode
 	MOVZ	R0, (_PastMode + 1)
 	XOR	R0,# 0x00
 	JB	PSW, 2
-	JMP	_00131_DS_
+	JMP	_00067_DS_
 ;	::->op : =
-;	.line	221; "../Work.c"	ActMode=0;
+;	.line	156; "../Work.c"	ActMode=0;
 	BANKSEL	_ActMode
 	CLR	_ActMode
 	BANKSEL	_ActMode
 	CLR	(_ActMode + 1)
 ;	::->op : GOTO
-	JMP	_00164_DS_
+	JMP	_00070_DS_
 ;	::->op : LABEL
 ;	::->op : =
-_00131_DS_
-;	.line	225; "../Work.c"	ActMode=NowMode;
+_00067_DS_
+;	.line	160; "../Work.c"	ActMode=NowMode;
 	MOV	R0,# 0x01
 	BANKSEL	_ActMode
 	MOV	_ActMode, R0
 	BANKSEL	_ActMode
 	CLR	(_ActMode + 1)
-;	::->op : GOTO
-	JMP	_00164_DS_
 ;	::->op : LABEL
 ;	::->op : EQ_OP
-_00163_DS_
-;	.line	228; "../Work.c"	else if(Tail_Status==1&&Stop_Status==0&&LOW_EN_Status==1)//位置高，制动低,低亮使能高
+_00070_DS_
+;	.line	163; "../Work.c"	if(Tail_Status==1&&Stop_Status==0)//位置高，制动低
 	BANKSEL	_Tail_Status
 	MOVZ	R0, _Tail_Status
 	XOR	R0,# 0x01
 	JB	PSW, 2
-	JMP	_00158_DS_
+	JMP	_00076_DS_
 ;	::->op : IFX
 	MOV	R0,# 0x00
 	BANKSEL	_Stop_Status
 	ORL	R0, _Stop_Status
 	JB	PSW, 2
-	JMP	_00158_DS_
-;	::->op : EQ_OP
-	BANKSEL	_LOW_EN_Status
-	MOVZ	R0, _LOW_EN_Status
-	XOR	R0,# 0x01
-	JB	PSW, 2
-	JMP	_00158_DS_
+	JMP	_00076_DS_
 ;	::->op : =
-;	.line	230; "../Work.c"	PastMode = NowMode;NowMode = Mode2_Status;
+;	.line	165; "../Work.c"	PastMode = NowMode;NowMode = Mode2_Status;
 	BANKSEL	_NowMode
 	MOVZ	R0, _NowMode
 	BANKSEL	_PastMode
@@ -2271,121 +2183,51 @@ _00163_DS_
 	BANKSEL	_NowMode
 	CLR	(_NowMode + 1)
 ;	::->op : EQ_OP
-;	.line	231; "../Work.c"	if(NowMode==PastMode)
+;	.line	166; "../Work.c"	if(NowMode==PastMode)
 	BANKSEL	_PastMode
 	MOVZ	R0, _PastMode
 	XOR	R0,# 0x02
 	JB	PSW, 2
-	JMP	_00134_DS_
+	JMP	_00073_DS_
 	BANKSEL	_PastMode
 	MOVZ	R0, (_PastMode + 1)
 	XOR	R0,# 0x00
 	JB	PSW, 2
-	JMP	_00134_DS_
+	JMP	_00073_DS_
 ;	::->op : =
-;	.line	233; "../Work.c"	ActMode=0;
+;	.line	168; "../Work.c"	ActMode=0;
 	BANKSEL	_ActMode
 	CLR	_ActMode
 	BANKSEL	_ActMode
 	CLR	(_ActMode + 1)
 ;	::->op : GOTO
-	JMP	_00164_DS_
+	JMP	_00076_DS_
 ;	::->op : LABEL
 ;	::->op : =
-_00134_DS_
-;	.line	237; "../Work.c"	ActMode=NowMode;
+_00073_DS_
+;	.line	172; "../Work.c"	ActMode=NowMode;
 	MOV	R0,# 0x02
 	BANKSEL	_ActMode
 	MOV	_ActMode, R0
 	BANKSEL	_ActMode
 	CLR	(_ActMode + 1)
-;	::->op : GOTO
-	JMP	_00164_DS_
-;	::->op : LABEL
-;	::->op : EQ_OP
-_00158_DS_
-;	.line	240; "../Work.c"	else if(Tail_Status==1&&Stop_Status==0&&LOW_EN_Status==0)//位置高，制动低,低亮使能低
-	BANKSEL	_Tail_Status
-	MOVZ	R0, _Tail_Status
-	XOR	R0,# 0x01
-	JB	PSW, 2
-	JMP	_00153_DS_
-;	::->op : IFX
-	MOV	R0,# 0x00
-	BANKSEL	_Stop_Status
-	ORL	R0, _Stop_Status
-	JB	PSW, 2
-	JMP	_00153_DS_
-;	::->op : IFX
-	MOV	R0,# 0x00
-	BANKSEL	_LOW_EN_Status
-	ORL	R0, _LOW_EN_Status
-	JB	PSW, 2
-	JMP	_00153_DS_
-;	::->op : =
-;	.line	242; "../Work.c"	PastMode = NowMode;NowMode = Mode3_Status;
-	BANKSEL	_NowMode
-	MOVZ	R0, _NowMode
-	BANKSEL	_PastMode
-	MOV	_PastMode, R0
-	BANKSEL	_NowMode
-	MOVZ	R0, (_NowMode + 1)
-	BANKSEL	_PastMode
-	MOV	(_PastMode + 1), R0
-;	::->op : =
-	MOV	R0,# 0x04
-	BANKSEL	_NowMode
-	MOV	_NowMode, R0
-	BANKSEL	_NowMode
-	CLR	(_NowMode + 1)
-;	::->op : EQ_OP
-;	.line	243; "../Work.c"	if(NowMode==PastMode)
-	BANKSEL	_PastMode
-	MOVZ	R0, _PastMode
-	XOR	R0,# 0x04
-	JB	PSW, 2
-	JMP	_00137_DS_
-	BANKSEL	_PastMode
-	MOVZ	R0, (_PastMode + 1)
-	XOR	R0,# 0x00
-	JB	PSW, 2
-	JMP	_00137_DS_
-;	::->op : =
-;	.line	245; "../Work.c"	ActMode=0;
-	BANKSEL	_ActMode
-	CLR	_ActMode
-	BANKSEL	_ActMode
-	CLR	(_ActMode + 1)
-;	::->op : GOTO
-	JMP	_00164_DS_
-;	::->op : LABEL
-;	::->op : =
-_00137_DS_
-;	.line	249; "../Work.c"	ActMode=NowMode;
-	MOV	R0,# 0x04
-	BANKSEL	_ActMode
-	MOV	_ActMode, R0
-	BANKSEL	_ActMode
-	CLR	(_ActMode + 1)
-;	::->op : GOTO
-	JMP	_00164_DS_
 ;	::->op : LABEL
 ;	::->op : IFX
-_00153_DS_
-;	.line	252; "../Work.c"	else if(Tail_Status==0&&Stop_Status==1)//位置低，制动高
+_00076_DS_
+;	.line	175; "../Work.c"	if(Tail_Status==0&&Stop_Status==1)//位置低，制动高
 	MOV	R0,# 0x00
 	BANKSEL	_Tail_Status
 	ORL	R0, _Tail_Status
 	JB	PSW, 2
-	JMP	_00149_DS_
+	JMP	_00082_DS_
 ;	::->op : EQ_OP
 	BANKSEL	_Stop_Status
 	MOVZ	R0, _Stop_Status
 	XOR	R0,# 0x01
 	JB	PSW, 2
-	JMP	_00149_DS_
+	JMP	_00082_DS_
 ;	::->op : =
-;	.line	254; "../Work.c"	PastMode = NowMode;NowMode = Mode4_Status;
+;	.line	177; "../Work.c"	PastMode = NowMode;NowMode = Mode3_Status;
 	BANKSEL	_NowMode
 	MOVZ	R0, _NowMode
 	BANKSEL	_PastMode
@@ -2395,59 +2237,57 @@ _00153_DS_
 	BANKSEL	_PastMode
 	MOV	(_PastMode + 1), R0
 ;	::->op : =
-	MOV	R0,# 0x08
+	MOV	R0,# 0x04
 	BANKSEL	_NowMode
 	MOV	_NowMode, R0
 	BANKSEL	_NowMode
 	CLR	(_NowMode + 1)
 ;	::->op : EQ_OP
-;	.line	255; "../Work.c"	if(NowMode==PastMode)
+;	.line	178; "../Work.c"	if(NowMode==PastMode)
 	BANKSEL	_PastMode
 	MOVZ	R0, _PastMode
-	XOR	R0,# 0x08
+	XOR	R0,# 0x04
 	JB	PSW, 2
-	JMP	_00140_DS_
+	JMP	_00079_DS_
 	BANKSEL	_PastMode
 	MOVZ	R0, (_PastMode + 1)
 	XOR	R0,# 0x00
 	JB	PSW, 2
-	JMP	_00140_DS_
+	JMP	_00079_DS_
 ;	::->op : =
-;	.line	257; "../Work.c"	ActMode=0;
+;	.line	180; "../Work.c"	ActMode=0;
 	BANKSEL	_ActMode
 	CLR	_ActMode
 	BANKSEL	_ActMode
 	CLR	(_ActMode + 1)
 ;	::->op : GOTO
-	JMP	_00164_DS_
+	JMP	_00082_DS_
 ;	::->op : LABEL
 ;	::->op : =
-_00140_DS_
-;	.line	261; "../Work.c"	ActMode=NowMode;
-	MOV	R0,# 0x08
+_00079_DS_
+;	.line	184; "../Work.c"	ActMode=NowMode;
+	MOV	R0,# 0x04
 	BANKSEL	_ActMode
 	MOV	_ActMode, R0
 	BANKSEL	_ActMode
 	CLR	(_ActMode + 1)
-;	::->op : GOTO
-	JMP	_00164_DS_
 ;	::->op : LABEL
 ;	::->op : EQ_OP
-_00149_DS_
-;	.line	264; "../Work.c"	else if(Tail_Status==1&&Stop_Status==1)//位置高，制动高
+_00082_DS_
+;	.line	187; "../Work.c"	if(Tail_Status==1&&Stop_Status==1)//位置高，制动高
 	BANKSEL	_Tail_Status
 	MOVZ	R0, _Tail_Status
 	XOR	R0,# 0x01
 	JB	PSW, 2
-	JMP	_00164_DS_
+	JMP	_00088_DS_
 ;	::->op : EQ_OP
 	BANKSEL	_Stop_Status
 	MOVZ	R0, _Stop_Status
 	XOR	R0,# 0x01
 	JB	PSW, 2
-	JMP	_00164_DS_
+	JMP	_00088_DS_
 ;	::->op : =
-;	.line	266; "../Work.c"	PastMode = NowMode;NowMode = Mode5_Status;
+;	.line	189; "../Work.c"	PastMode = NowMode;NowMode = Mode4_Status;
 	BANKSEL	_NowMode
 	MOVZ	R0, _NowMode
 	BANKSEL	_PastMode
@@ -2457,44 +2297,44 @@ _00149_DS_
 	BANKSEL	_PastMode
 	MOV	(_PastMode + 1), R0
 ;	::->op : =
-	MOV	R0,# 0x10
+	MOV	R0,# 0x08
 	BANKSEL	_NowMode
 	MOV	_NowMode, R0
 	BANKSEL	_NowMode
 	CLR	(_NowMode + 1)
 ;	::->op : EQ_OP
-;	.line	267; "../Work.c"	if(NowMode==PastMode)
+;	.line	190; "../Work.c"	if(NowMode==PastMode)
 	BANKSEL	_PastMode
 	MOVZ	R0, _PastMode
-	XOR	R0,# 0x10
+	XOR	R0,# 0x08
 	JB	PSW, 2
-	JMP	_00143_DS_
+	JMP	_00085_DS_
 	BANKSEL	_PastMode
 	MOVZ	R0, (_PastMode + 1)
 	XOR	R0,# 0x00
 	JB	PSW, 2
-	JMP	_00143_DS_
+	JMP	_00085_DS_
 ;	::->op : =
-;	.line	269; "../Work.c"	ActMode=0;
+;	.line	192; "../Work.c"	ActMode=0;
 	BANKSEL	_ActMode
 	CLR	_ActMode
 	BANKSEL	_ActMode
 	CLR	(_ActMode + 1)
 ;	::->op : GOTO
-	JMP	_00164_DS_
+	JMP	_00088_DS_
 ;	::->op : LABEL
 ;	::->op : =
-_00143_DS_
-;	.line	273; "../Work.c"	ActMode=NowMode;
-	MOV	R0,# 0x10
+_00085_DS_
+;	.line	196; "../Work.c"	ActMode=NowMode;
+	MOV	R0,# 0x08
 	BANKSEL	_ActMode
 	MOV	_ActMode, R0
 	BANKSEL	_ActMode
 	CLR	(_ActMode + 1)
 ;	::->op : LABEL
 ;	::->op : CALL
-_00164_DS_
-;	.line	276; "../Work.c"	Mode_Act();
+_00088_DS_
+;	.line	199; "../Work.c"	Mode_Act();
 	TRAPPC1	_Mode_Act
 	TRAPPC2	_Mode_Act
 	PAGESEL	_Mode_Act
@@ -2519,79 +2359,53 @@ func._RT_Mode_Act	.code
 ;functions called:
 ;   _Led_RT_AllClose
 ;   _Led_RT_AllOpen
-;   _Led_RT_PWMOpen
-;   _Led_RT_Water100
-;   _Led_RT_Water55
+;   _Led_RT_WaterOpen
 ;   _Led_RT_AllClose
 ;   _Led_RT_AllOpen
-;   _Led_RT_PWMOpen
-;   _Led_RT_Water100
-;   _Led_RT_Water55
+;   _Led_RT_WaterOpen
 ;; Starting PostCode block
 ;	::->op : LABEL
 ;	::->op : FUNCTION
 _RT_Mode_Act	;Function start
 ; 2 exit points
 ;	::->op : EQ_OP
-;	.line	186; "../Work.c"	switch(RT_ActMode)
+;	.line	132; "../Work.c"	switch(RT_ActMode)
 	BANKSEL	_RT_ActMode
 	MOVZ	R0, _RT_ActMode
 	XOR	R0,# 0x01
 	JB	PSW, 2
-	JMP	_00125_DS_
+	JMP	_00063_DS_
 	BANKSEL	_RT_ActMode
 	MOVZ	R0, (_RT_ActMode + 1)
 	XOR	R0,# 0x00
 	JNB	PSW, 2
-	JMP	_00111_DS_
-_00125_DS_
+	JMP	_00053_DS_
+_00063_DS_
 	BANKSEL	_RT_ActMode
 	MOVZ	R0, _RT_ActMode
 	XOR	R0,# 0x02
 	JB	PSW, 2
-	JMP	_00126_DS_
+	JMP	_00064_DS_
 	BANKSEL	_RT_ActMode
 	MOVZ	R0, (_RT_ActMode + 1)
 	XOR	R0,# 0x00
 	JNB	PSW, 2
-	JMP	_00112_DS_
-_00126_DS_
+	JMP	_00054_DS_
+_00064_DS_
 	BANKSEL	_RT_ActMode
 	MOVZ	R0, _RT_ActMode
 	XOR	R0,# 0x04
 	JB	PSW, 2
-	JMP	_00127_DS_
+	JMP	_00065_DS_
 	BANKSEL	_RT_ActMode
 	MOVZ	R0, (_RT_ActMode + 1)
 	XOR	R0,# 0x00
 	JNB	PSW, 2
-	JMP	_00113_DS_
-_00127_DS_
-	BANKSEL	_RT_ActMode
-	MOVZ	R0, _RT_ActMode
-	XOR	R0,# 0x08
-	JB	PSW, 2
-	JMP	_00128_DS_
-	BANKSEL	_RT_ActMode
-	MOVZ	R0, (_RT_ActMode + 1)
-	XOR	R0,# 0x00
-	JNB	PSW, 2
-	JMP	_00114_DS_
-_00128_DS_
-	BANKSEL	_RT_ActMode
-	MOVZ	R0, _RT_ActMode
-	XOR	R0,# 0x10
-	JB	PSW, 2
-	JMP	_00129_DS_
-	BANKSEL	_RT_ActMode
-	MOVZ	R0, (_RT_ActMode + 1)
-	XOR	R0,# 0x00
-	JNB	PSW, 2
-	JMP	_00115_DS_
-_00129_DS_
-	JMP	_00118_DS_
-_00111_DS_
-;	.line	189; "../Work.c"	Led_RT_AllClose();		//关灯
+	JMP	_00055_DS_
+_00065_DS_
+	JMP	_00058_DS_
+_00053_DS_
+;	.line	135; "../Work.c"	Led_RT_AllClose();		//转向低，转向使能低，关灯
 	TRAPPC1	_Led_RT_AllClose
 	TRAPPC2	_Led_RT_AllClose
 	PAGESEL	_Led_RT_AllClose
@@ -2600,12 +2414,12 @@ _00111_DS_
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : GOTO
-;	.line	190; "../Work.c"	break;
-	JMP	_00118_DS_
+;	.line	136; "../Work.c"	break;
+	JMP	_00058_DS_
 ;	::->op : LABEL
 ;	::->op : CALL
-_00112_DS_
-;	.line	192; "../Work.c"	Led_RT_AllOpen();		//100%全亮
+_00054_DS_
+;	.line	138; "../Work.c"	Led_RT_AllOpen();		//转向高，转向使能高，常亮
 	TRAPPC1	_Led_RT_AllOpen
 	TRAPPC2	_Led_RT_AllOpen
 	PAGESEL	_Led_RT_AllOpen
@@ -2614,310 +2428,25 @@ _00112_DS_
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : GOTO
-;	.line	193; "../Work.c"	break;
-	JMP	_00118_DS_
+;	.line	139; "../Work.c"	break;
+	JMP	_00058_DS_
 ;	::->op : LABEL
 ;	::->op : CALL
-_00113_DS_
-;	.line	195; "../Work.c"	Led_RT_PWMOpen();		//55%全亮
-	TRAPPC1	_Led_RT_PWMOpen
-	TRAPPC2	_Led_RT_PWMOpen
-	PAGESEL	_Led_RT_PWMOpen
-	CALL	_Led_RT_PWMOpen
-	TRAPPC1	$+2
-	TRAPPC2	$+1
-	PAGESEL	$
-;	::->op : GOTO
-;	.line	196; "../Work.c"	break;
-	JMP	_00118_DS_
-;	::->op : LABEL
-;	::->op : =
-_00114_DS_
-;	.line	198; "../Work.c"	RT_WATER_FULL = 1;
-	MOV	R0,# 0x01
-	BANKSEL	_RT_WATER_FULL
-	MOV	_RT_WATER_FULL, R0
-	BANKSEL	_RT_WATER_FULL
-	CLR	(_RT_WATER_FULL + 1)
-;	::->op : CALL
-;	.line	199; "../Work.c"	Led_RT_Water100();		//100%流水
-	TRAPPC1	_Led_RT_Water100
-	TRAPPC2	_Led_RT_Water100
-	PAGESEL	_Led_RT_Water100
-	CALL	_Led_RT_Water100
-	TRAPPC1	$+2
-	TRAPPC2	$+1
-	PAGESEL	$
-;	::->op : GOTO
-;	.line	201; "../Work.c"	break;
-	JMP	_00118_DS_
-;	::->op : LABEL
-;	::->op : =
-_00115_DS_
-;	.line	203; "../Work.c"	RT_WATER_FULL = 0;
-	BANKSEL	_RT_WATER_FULL
-	CLR	_RT_WATER_FULL
-	BANKSEL	_RT_WATER_FULL
-	CLR	(_RT_WATER_FULL + 1)
-;	::->op : CALL
-;	.line	204; "../Work.c"	Led_RT_Water55();		//55%流水
-	TRAPPC1	_Led_RT_Water55
-	TRAPPC2	_Led_RT_Water55
-	PAGESEL	_Led_RT_Water55
-	CALL	_Led_RT_Water55
+_00055_DS_
+;	.line	141; "../Work.c"	Led_RT_WaterOpen();		//转向高，转向使能低，流水
+	TRAPPC1	_Led_RT_WaterOpen
+	TRAPPC2	_Led_RT_WaterOpen
+	PAGESEL	_Led_RT_WaterOpen
+	CALL	_Led_RT_WaterOpen
 	TRAPPC1	$+2
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : LABEL
 ;	::->op : ENDFUNCTION
-_00118_DS_
-;	.line	208; "../Work.c"	}
+_00058_DS_
+;	.line	144; "../Work.c"	}
 	CRET	
 ; exit point of _RT_Mode_Act
-
-
-
-func._RT_Water_Act	.code
-;***
-;  PostBlock Stats: dbName = C
-;***
-;entry:  _RT_Water_Act	;Function start
-; 2 exit points
-;has an exit
-;4 compiler assigned registers:
-;   r0x1030
-;   r0x1031
-;   r0x1032
-;   r0x1033
-;; Starting PostCode block
-;	::->op : LABEL
-;	::->op : FUNCTION
-_RT_Water_Act	;Function start
-; 2 exit points
-;	::->op : IFX
-;	.line	162; "../Work.c"	if(RT_Water_Flag)
-	BANKSEL	_RT_Water_Flag
-	MOVZ	R0, _RT_Water_Flag
-	BANKSEL	_RT_Water_Flag
-	ORL	R0, (_RT_Water_Flag + 1)
-	JNB	PSW, 2
-	JMP	_00099_DS_
-;	::->op : +
-;	.line	164; "../Work.c"	RT_CNT++;
-	BANKSEL	_RT_CNT
-	INC	_RT_CNT
-	JB	PSW, 2
-	JMP	_00309_DS_
-	BANKSEL	_RT_CNT
-	INC	(_RT_CNT + 1)
-_00309_DS_
-	JB	PSW, 2
-	JMP	_00310_DS_
-	BANKSEL	_RT_CNT
-	INC	(_RT_CNT + 2)
-_00310_DS_
-	JB	PSW, 2
-	JMP	_00311_DS_
-	BANKSEL	_RT_CNT
-	INC	(_RT_CNT + 3)
-;	::->op : =
-_00311_DS_
-;	.line	165; "../Work.c"	switch(RT_CNT)
-	BANKSEL	_RT_CNT
-	MOVZ	R0, _RT_CNT
-	BANKSEL	r0x1030
-	MOV	r0x1030, R0
-	BANKSEL	_RT_CNT
-	MOVZ	R0, (_RT_CNT + 1)
-	BANKSEL	r0x1031
-	MOV	r0x1031, R0
-	BANKSEL	_RT_CNT
-	MOVZ	R0, (_RT_CNT + 2)
-	BANKSEL	r0x1032
-	MOV	r0x1032, R0
-	BANKSEL	_RT_CNT
-	MOVZ	R0, (_RT_CNT + 3)
-	BANKSEL	r0x1033
-	MOV	r0x1033, R0
-;	::->op : EQ_OP
-	BANKSEL	r0x1030
-	MOVZ	R0, r0x1030
-	XOR	R0,# 0xf4
-	JB	PSW, 2
-	JMP	_00108_DS_
-	BANKSEL	r0x1031
-	MOVZ	R0, r0x1031
-	XOR	R0,# 0x01
-	JB	PSW, 2
-	JMP	_00108_DS_
-	BANKSEL	r0x1032
-	MOVZ	R0, r0x1032
-	XOR	R0,# 0x00
-	JB	PSW, 2
-	JMP	_00108_DS_
-	BANKSEL	r0x1033
-	MOVZ	R0, r0x1033
-	XOR	R0,# 0x00
-	JNB	PSW, 2
-	JMP	_00083_DS_
-_00108_DS_
-	BANKSEL	r0x1030
-	MOVZ	R0, r0x1030
-	XOR	R0,# 0xe8
-	JB	PSW, 2
-	JMP	_00109_DS_
-	BANKSEL	r0x1031
-	MOVZ	R0, r0x1031
-	XOR	R0,# 0x03
-	JB	PSW, 2
-	JMP	_00109_DS_
-	BANKSEL	r0x1032
-	MOVZ	R0, r0x1032
-	XOR	R0,# 0x00
-	JB	PSW, 2
-	JMP	_00109_DS_
-	BANKSEL	r0x1033
-	MOVZ	R0, r0x1033
-	XOR	R0,# 0x00
-	JNB	PSW, 2
-	JMP	_00087_DS_
-_00109_DS_
-	BANKSEL	r0x1030
-	MOVZ	R0, r0x1030
-	XOR	R0,# 0xdc
-	JB	PSW, 2
-	JMP	_00110_DS_
-	BANKSEL	r0x1031
-	MOVZ	R0, r0x1031
-	XOR	R0,# 0x05
-	JB	PSW, 2
-	JMP	_00110_DS_
-	BANKSEL	r0x1032
-	MOVZ	R0, r0x1032
-	XOR	R0,# 0x00
-	JB	PSW, 2
-	JMP	_00110_DS_
-	BANKSEL	r0x1033
-	MOVZ	R0, r0x1033
-	XOR	R0,# 0x00
-	JNB	PSW, 2
-	JMP	_00091_DS_
-_00110_DS_
-	JMP	_00099_DS_
-_00083_DS_
-;	.line	168; "../Work.c"	RT_High_Addr=1;
-	MOV	R0,# 0x01
-	BANKSEL	_RT_High_Addr
-	MOV	_RT_High_Addr, R0
-	BANKSEL	_RT_High_Addr
-	CLR	(_RT_High_Addr + 1)
-;	::->op : IFX
-;	.line	169; "../Work.c"	if(RT_WATER_FULL==0)RT_Low_Addr=1;else RT_Low_Addr=0;
-	BANKSEL	_RT_WATER_FULL
-	MOVZ	R0, _RT_WATER_FULL
-	BANKSEL	_RT_WATER_FULL
-	ORL	R0, (_RT_WATER_FULL + 1)
-	JB	PSW, 2
-	JMP	_00085_DS_
-;	::->op : =
-	MOV	R0,# 0x01
-	BANKSEL	_RT_Low_Addr
-	MOV	_RT_Low_Addr, R0
-	BANKSEL	_RT_Low_Addr
-	CLR	(_RT_Low_Addr + 1)
-;	::->op : GOTO
-	JMP	_00099_DS_
-;	::->op : LABEL
-;	::->op : =
-_00085_DS_
-	BANKSEL	_RT_Low_Addr
-	CLR	_RT_Low_Addr
-	BANKSEL	_RT_Low_Addr
-	CLR	(_RT_Low_Addr + 1)
-;	::->op : GOTO
-;	.line	170; "../Work.c"	break;
-	JMP	_00099_DS_
-;	::->op : LABEL
-;	::->op : =
-_00087_DS_
-;	.line	172; "../Work.c"	RT_High_Addr=3;
-	MOV	R0,# 0x03
-	BANKSEL	_RT_High_Addr
-	MOV	_RT_High_Addr, R0
-	BANKSEL	_RT_High_Addr
-	CLR	(_RT_High_Addr + 1)
-;	::->op : IFX
-;	.line	173; "../Work.c"	if(RT_WATER_FULL==0)RT_Low_Addr=3;else RT_Low_Addr=0;
-	BANKSEL	_RT_WATER_FULL
-	MOVZ	R0, _RT_WATER_FULL
-	BANKSEL	_RT_WATER_FULL
-	ORL	R0, (_RT_WATER_FULL + 1)
-	JB	PSW, 2
-	JMP	_00089_DS_
-;	::->op : =
-	MOV	R0,# 0x03
-	BANKSEL	_RT_Low_Addr
-	MOV	_RT_Low_Addr, R0
-	BANKSEL	_RT_Low_Addr
-	CLR	(_RT_Low_Addr + 1)
-;	::->op : GOTO
-	JMP	_00099_DS_
-;	::->op : LABEL
-;	::->op : =
-_00089_DS_
-	BANKSEL	_RT_Low_Addr
-	CLR	_RT_Low_Addr
-	BANKSEL	_RT_Low_Addr
-	CLR	(_RT_Low_Addr + 1)
-;	::->op : GOTO
-;	.line	174; "../Work.c"	break;
-	JMP	_00099_DS_
-;	::->op : LABEL
-;	::->op : =
-_00091_DS_
-;	.line	176; "../Work.c"	RT_High_Addr=7;
-	MOV	R0,# 0x07
-	BANKSEL	_RT_High_Addr
-	MOV	_RT_High_Addr, R0
-	BANKSEL	_RT_High_Addr
-	CLR	(_RT_High_Addr + 1)
-;	::->op : IFX
-;	.line	177; "../Work.c"	if(RT_WATER_FULL==0)RT_Low_Addr=7;else RT_Low_Addr=0;
-	BANKSEL	_RT_WATER_FULL
-	MOVZ	R0, _RT_WATER_FULL
-	BANKSEL	_RT_WATER_FULL
-	ORL	R0, (_RT_WATER_FULL + 1)
-	JB	PSW, 2
-	JMP	_00093_DS_
-;	::->op : =
-	MOV	R0,# 0x07
-	BANKSEL	_RT_Low_Addr
-	MOV	_RT_Low_Addr, R0
-	BANKSEL	_RT_Low_Addr
-	CLR	(_RT_Low_Addr + 1)
-;	::->op : GOTO
-	JMP	_00094_DS_
-;	::->op : LABEL
-;	::->op : =
-_00093_DS_
-	BANKSEL	_RT_Low_Addr
-	CLR	_RT_Low_Addr
-	BANKSEL	_RT_Low_Addr
-	CLR	(_RT_Low_Addr + 1)
-;	::->op : LABEL
-;	::->op : =
-_00094_DS_
-;	.line	178; "../Work.c"	RT_Water_Flag=0;
-	BANKSEL	_RT_Water_Flag
-	CLR	_RT_Water_Flag
-	BANKSEL	_RT_Water_Flag
-	CLR	(_RT_Water_Flag + 1)
-;	::->op : LABEL
-;	::->op : ENDFUNCTION
-_00099_DS_
-;	.line	181; "../Work.c"	}
-	CRET	
-; exit point of _RT_Water_Act
 
 
 
@@ -2930,71 +2459,53 @@ func._RT_Check_Input	.code
 ;has an exit
 ;functions called:
 ;   _RT_Mode_Act
-;   _RT_Water_Act
 ;   _RT_Mode_Act
-;   _RT_Water_Act
-;2 compiler assigned registers:
-;   r0x1034
-;   r0x1035
+;1 compiler assigned register :
+;   r0x1021
 ;; Starting PostCode block
 ;	::->op : LABEL
 ;	::->op : FUNCTION
 _RT_Check_Input	;Function start
 ; 2 exit points
 ;	::->op : GET_VALUE_AT_ADDRESS
-;	.line	93; "../Work.c"	RT_Status = RT;
-	BANKSEL	r0x1034
-	CLR	r0x1034
+;	.line	90; "../Work.c"	RT_Status = RT;
+	BANKSEL	r0x1021
+	CLR	r0x1021
 	BANKSEL	_PA_bits
 	JB	_PA_bits, 0
-	JMP	_00312_DS_
-	BANKSEL	r0x1034
-	INC	r0x1034
+	JMP	_00240_DS_
+	BANKSEL	r0x1021
+	INC	r0x1021
 ;	::->op : =
-_00312_DS_
-	BANKSEL	r0x1034
-	MOVZ	R0, r0x1034
+_00240_DS_
+	BANKSEL	r0x1021
+	MOVZ	R0, r0x1021
 	BANKSEL	_RT_Status
 	MOV	_RT_Status, R0
 ;	::->op : GET_VALUE_AT_ADDRESS
-;	.line	94; "../Work.c"	RT_EN_Status = RT_EN;
-	BANKSEL	r0x1034
-	CLR	r0x1034
+;	.line	91; "../Work.c"	RT_EN_Status = RT_EN;
+	BANKSEL	r0x1021
+	CLR	r0x1021
 	BANKSEL	_P5_bits
 	JB	_P5_bits, 1
-	JMP	_00313_DS_
-	BANKSEL	r0x1034
-	INC	r0x1034
+	JMP	_00241_DS_
+	BANKSEL	r0x1021
+	INC	r0x1021
 ;	::->op : =
-_00313_DS_
-	BANKSEL	r0x1034
-	MOVZ	R0, r0x1034
+_00241_DS_
+	BANKSEL	r0x1021
+	MOVZ	R0, r0x1021
 	BANKSEL	_RT_EN_Status
 	MOV	_RT_EN_Status, R0
-;	::->op : GET_VALUE_AT_ADDRESS
-;	.line	95; "../Work.c"	LOW_EN_Status = Open_EN;
-	BANKSEL	r0x1034
-	CLR	r0x1034
-	BANKSEL	_P1_bits
-	JB	_P1_bits, 0
-	JMP	_00314_DS_
-	BANKSEL	r0x1034
-	INC	r0x1034
-;	::->op : =
-_00314_DS_
-	BANKSEL	r0x1034
-	MOVZ	R0, r0x1034
-	BANKSEL	_LOW_EN_Status
-	MOV	_LOW_EN_Status, R0
 ;	::->op : IFX
-;	.line	97; "../Work.c"	if(RT_Status==0)		//转向低关灯
+;	.line	92; "../Work.c"	if(RT_Status==0)		//转向低关灯
 	MOV	R0,# 0x00
 	BANKSEL	_RT_Status
 	ORL	R0, _RT_Status
 	JB	PSW, 2
-	JMP	_00061_DS_
+	JMP	_00030_DS_
 ;	::->op : =
-;	.line	99; "../Work.c"	RT_PastMode = RT_NowMode;RT_NowMode = RT_Mode1_Status;
+;	.line	94; "../Work.c"	RT_PastMode = RT_NowMode;RT_NowMode = RT_Mode1_Status;
 	BANKSEL	_RT_NowMode
 	MOVZ	R0, _RT_NowMode
 	BANKSEL	_RT_PastMode
@@ -3010,7 +2521,7 @@ _00314_DS_
 	BANKSEL	_RT_NowMode
 	CLR	(_RT_NowMode + 1)
 ;	::->op : EQ_OP
-;	.line	100; "../Work.c"	if(RT_NowMode==RT_PastMode)
+;	.line	95; "../Work.c"	if(RT_NowMode==RT_PastMode)
 	BANKSEL	_RT_PastMode
 	MOVZ	R0, _RT_PastMode
 	XOR	R0,# 0x01
@@ -3022,45 +2533,39 @@ _00314_DS_
 	JB	PSW, 2
 	JMP	_00027_DS_
 ;	::->op : =
-;	.line	102; "../Work.c"	RT_ActMode=0;
+;	.line	97; "../Work.c"	RT_ActMode=0;
 	BANKSEL	_RT_ActMode
 	CLR	_RT_ActMode
 	BANKSEL	_RT_ActMode
 	CLR	(_RT_ActMode + 1)
 ;	::->op : GOTO
-	JMP	_00062_DS_
+	JMP	_00030_DS_
 ;	::->op : LABEL
 ;	::->op : =
 _00027_DS_
-;	.line	106; "../Work.c"	RT_ActMode=RT_NowMode;
+;	.line	101; "../Work.c"	RT_ActMode=RT_NowMode;
 	MOV	R0,# 0x01
 	BANKSEL	_RT_ActMode
 	MOV	_RT_ActMode, R0
 	BANKSEL	_RT_ActMode
 	CLR	(_RT_ActMode + 1)
-;	::->op : GOTO
-	JMP	_00062_DS_
 ;	::->op : LABEL
 ;	::->op : EQ_OP
-_00061_DS_
-;	.line	109; "../Work.c"	else if(RT_Status==1&&RT_EN_Status==1&&Open_EN==0)		//转向高，转向使能高，低亮使能低,100%全亮
+_00030_DS_
+;	.line	104; "../Work.c"	if(RT_Status==1&&RT_EN_Status==1)		//转向高，转向使能高，常亮
 	BANKSEL	_RT_Status
 	MOVZ	R0, _RT_Status
 	XOR	R0,# 0x01
 	JB	PSW, 2
-	JMP	_00056_DS_
+	JMP	_00035_DS_
 ;	::->op : EQ_OP
 	BANKSEL	_RT_EN_Status
 	MOVZ	R0, _RT_EN_Status
 	XOR	R0,# 0x01
 	JB	PSW, 2
-	JMP	_00056_DS_
-;	::->op : GET_VALUE_AT_ADDRESS
-	BANKSEL	_P1_bits
-	JNB	_P1_bits, 0
-	JMP	_00056_DS_
+	JMP	_00035_DS_
 ;	::->op : =
-;	.line	111; "../Work.c"	RT_PastMode = RT_NowMode;RT_NowMode = RT_Mode2_Status;
+;	.line	106; "../Work.c"	RT_PastMode = RT_NowMode;RT_NowMode = RT_Mode2_Status;
 	BANKSEL	_RT_NowMode
 	MOVZ	R0, _RT_NowMode
 	BANKSEL	_RT_PastMode
@@ -3076,67 +2581,51 @@ _00061_DS_
 	BANKSEL	_RT_NowMode
 	CLR	(_RT_NowMode + 1)
 ;	::->op : EQ_OP
-;	.line	112; "../Work.c"	if(RT_NowMode==RT_PastMode)
+;	.line	107; "../Work.c"	if(RT_NowMode==RT_PastMode)
 	BANKSEL	_RT_PastMode
 	MOVZ	R0, _RT_PastMode
 	XOR	R0,# 0x02
 	JB	PSW, 2
-	JMP	_00030_DS_
+	JMP	_00032_DS_
 	BANKSEL	_RT_PastMode
 	MOVZ	R0, (_RT_PastMode + 1)
 	XOR	R0,# 0x00
 	JB	PSW, 2
-	JMP	_00030_DS_
+	JMP	_00032_DS_
 ;	::->op : =
-;	.line	114; "../Work.c"	RT_ActMode=0;
+;	.line	109; "../Work.c"	RT_ActMode=0;
 	BANKSEL	_RT_ActMode
 	CLR	_RT_ActMode
 	BANKSEL	_RT_ActMode
 	CLR	(_RT_ActMode + 1)
 ;	::->op : GOTO
-	JMP	_00062_DS_
+	JMP	_00035_DS_
 ;	::->op : LABEL
 ;	::->op : =
-_00030_DS_
-;	.line	118; "../Work.c"	RT_ActMode=RT_NowMode;
+_00032_DS_
+;	.line	113; "../Work.c"	RT_ActMode=RT_NowMode;
 	MOV	R0,# 0x02
 	BANKSEL	_RT_ActMode
 	MOV	_RT_ActMode, R0
 	BANKSEL	_RT_ActMode
 	CLR	(_RT_ActMode + 1)
-;	::->op : GOTO
-	JMP	_00062_DS_
 ;	::->op : LABEL
 ;	::->op : EQ_OP
-_00056_DS_
-;	.line	121; "../Work.c"	else if(RT_Status==1&&RT_EN_Status==1&&Open_EN==1)		//转向高，转向使能高，低亮使能高,55%全亮
+_00035_DS_
+;	.line	116; "../Work.c"	if(RT_Status==1&&RT_EN_Status==0)		//转向高，转向使能低，流水
 	BANKSEL	_RT_Status
 	MOVZ	R0, _RT_Status
 	XOR	R0,# 0x01
 	JB	PSW, 2
-	JMP	_00051_DS_
-;	::->op : EQ_OP
-	BANKSEL	_RT_EN_Status
-	MOVZ	R0, _RT_EN_Status
-	XOR	R0,# 0x01
-	JB	PSW, 2
-	JMP	_00051_DS_
-;	::->op : GET_VALUE_AT_ADDRESS
-;	::->op : CAST
+	JMP	_00041_DS_
+;	::->op : IFX
 	MOV	R0,# 0x00
-	BANKSEL	_P1_bits
-	JNB	_P1_bits, 0
-	MOV	R0,# 0x01
-	BANKSEL	r0x1035
-	MOV	r0x1035, R0
-;	::->op : EQ_OP
-	BANKSEL	r0x1035
-	MOVZ	R0, r0x1035
-	XOR	R0,# 0x01
+	BANKSEL	_RT_EN_Status
+	ORL	R0, _RT_EN_Status
 	JB	PSW, 2
-	JMP	_00051_DS_
+	JMP	_00041_DS_
 ;	::->op : =
-;	.line	123; "../Work.c"	RT_PastMode = RT_NowMode;RT_NowMode = RT_Mode3_Status;
+;	.line	118; "../Work.c"	RT_PastMode = RT_NowMode;RT_NowMode = RT_Mode3_Status;
 	BANKSEL	_RT_NowMode
 	MOVZ	R0, _RT_NowMode
 	BANKSEL	_RT_PastMode
@@ -3152,193 +2641,42 @@ _00056_DS_
 	BANKSEL	_RT_NowMode
 	CLR	(_RT_NowMode + 1)
 ;	::->op : EQ_OP
-;	.line	124; "../Work.c"	if(RT_NowMode==RT_PastMode)
+;	.line	119; "../Work.c"	if(RT_NowMode==RT_PastMode)
 	BANKSEL	_RT_PastMode
 	MOVZ	R0, _RT_PastMode
 	XOR	R0,# 0x04
 	JB	PSW, 2
-	JMP	_00033_DS_
+	JMP	_00038_DS_
 	BANKSEL	_RT_PastMode
 	MOVZ	R0, (_RT_PastMode + 1)
 	XOR	R0,# 0x00
 	JB	PSW, 2
-	JMP	_00033_DS_
+	JMP	_00038_DS_
 ;	::->op : =
-;	.line	126; "../Work.c"	RT_ActMode=0;
+;	.line	121; "../Work.c"	RT_ActMode=0;
 	BANKSEL	_RT_ActMode
 	CLR	_RT_ActMode
 	BANKSEL	_RT_ActMode
 	CLR	(_RT_ActMode + 1)
 ;	::->op : GOTO
-	JMP	_00062_DS_
+	JMP	_00041_DS_
 ;	::->op : LABEL
 ;	::->op : =
-_00033_DS_
-;	.line	130; "../Work.c"	RT_ActMode=RT_NowMode;
+_00038_DS_
+;	.line	125; "../Work.c"	RT_ActMode=RT_NowMode;
 	MOV	R0,# 0x04
 	BANKSEL	_RT_ActMode
 	MOV	_RT_ActMode, R0
 	BANKSEL	_RT_ActMode
 	CLR	(_RT_ActMode + 1)
-;	::->op : GOTO
-	JMP	_00062_DS_
-;	::->op : LABEL
-;	::->op : EQ_OP
-_00051_DS_
-;	.line	133; "../Work.c"	else if(RT_Status==1&&RT_EN_Status==0&&Open_EN==0)		//转向高，转向使能低，低亮使能低,100%流水
-	BANKSEL	_RT_Status
-	MOVZ	R0, _RT_Status
-	XOR	R0,# 0x01
-	JB	PSW, 2
-	JMP	_00046_DS_
-;	::->op : IFX
-	MOV	R0,# 0x00
-	BANKSEL	_RT_EN_Status
-	ORL	R0, _RT_EN_Status
-	JB	PSW, 2
-	JMP	_00046_DS_
-;	::->op : GET_VALUE_AT_ADDRESS
-	BANKSEL	_P1_bits
-	JNB	_P1_bits, 0
-	JMP	_00046_DS_
-;	::->op : =
-;	.line	135; "../Work.c"	RT_PastMode = RT_NowMode;RT_NowMode = RT_Mode4_Status;
-	BANKSEL	_RT_NowMode
-	MOVZ	R0, _RT_NowMode
-	BANKSEL	_RT_PastMode
-	MOV	_RT_PastMode, R0
-	BANKSEL	_RT_NowMode
-	MOVZ	R0, (_RT_NowMode + 1)
-	BANKSEL	_RT_PastMode
-	MOV	(_RT_PastMode + 1), R0
-;	::->op : =
-	MOV	R0,# 0x08
-	BANKSEL	_RT_NowMode
-	MOV	_RT_NowMode, R0
-	BANKSEL	_RT_NowMode
-	CLR	(_RT_NowMode + 1)
-;	::->op : EQ_OP
-;	.line	136; "../Work.c"	if(RT_NowMode==RT_PastMode)
-	BANKSEL	_RT_PastMode
-	MOVZ	R0, _RT_PastMode
-	XOR	R0,# 0x08
-	JB	PSW, 2
-	JMP	_00036_DS_
-	BANKSEL	_RT_PastMode
-	MOVZ	R0, (_RT_PastMode + 1)
-	XOR	R0,# 0x00
-	JB	PSW, 2
-	JMP	_00036_DS_
-;	::->op : =
-;	.line	138; "../Work.c"	RT_ActMode=0;
-	BANKSEL	_RT_ActMode
-	CLR	_RT_ActMode
-	BANKSEL	_RT_ActMode
-	CLR	(_RT_ActMode + 1)
-;	::->op : GOTO
-	JMP	_00062_DS_
-;	::->op : LABEL
-;	::->op : =
-_00036_DS_
-;	.line	142; "../Work.c"	RT_ActMode=RT_NowMode;
-	MOV	R0,# 0x08
-	BANKSEL	_RT_ActMode
-	MOV	_RT_ActMode, R0
-	BANKSEL	_RT_ActMode
-	CLR	(_RT_ActMode + 1)
-;	::->op : GOTO
-	JMP	_00062_DS_
-;	::->op : LABEL
-;	::->op : EQ_OP
-_00046_DS_
-;	.line	145; "../Work.c"	else if(RT_Status==1&&RT_EN_Status==0&&Open_EN==1)		//转向高，转向使能低，低亮使能高,55%流水
-	BANKSEL	_RT_Status
-	MOVZ	R0, _RT_Status
-	XOR	R0,# 0x01
-	JB	PSW, 2
-	JMP	_00062_DS_
-;	::->op : IFX
-	MOV	R0,# 0x00
-	BANKSEL	_RT_EN_Status
-	ORL	R0, _RT_EN_Status
-	JB	PSW, 2
-	JMP	_00062_DS_
-;	::->op : GET_VALUE_AT_ADDRESS
-;	::->op : CAST
-	MOV	R0,# 0x00
-	BANKSEL	_P1_bits
-	JNB	_P1_bits, 0
-	MOV	R0,# 0x01
-	BANKSEL	r0x1035
-	MOV	r0x1035, R0
-;	::->op : EQ_OP
-	BANKSEL	r0x1035
-	MOVZ	R0, r0x1035
-	XOR	R0,# 0x01
-	JB	PSW, 2
-	JMP	_00062_DS_
-;	::->op : =
-;	.line	147; "../Work.c"	RT_PastMode = RT_NowMode;RT_NowMode = RT_Mode5_Status;
-	BANKSEL	_RT_NowMode
-	MOVZ	R0, _RT_NowMode
-	BANKSEL	_RT_PastMode
-	MOV	_RT_PastMode, R0
-	BANKSEL	_RT_NowMode
-	MOVZ	R0, (_RT_NowMode + 1)
-	BANKSEL	_RT_PastMode
-	MOV	(_RT_PastMode + 1), R0
-;	::->op : =
-	MOV	R0,# 0x10
-	BANKSEL	_RT_NowMode
-	MOV	_RT_NowMode, R0
-	BANKSEL	_RT_NowMode
-	CLR	(_RT_NowMode + 1)
-;	::->op : EQ_OP
-;	.line	148; "../Work.c"	if(RT_NowMode==RT_PastMode)
-	BANKSEL	_RT_PastMode
-	MOVZ	R0, _RT_PastMode
-	XOR	R0,# 0x10
-	JB	PSW, 2
-	JMP	_00039_DS_
-	BANKSEL	_RT_PastMode
-	MOVZ	R0, (_RT_PastMode + 1)
-	XOR	R0,# 0x00
-	JB	PSW, 2
-	JMP	_00039_DS_
-;	::->op : =
-;	.line	150; "../Work.c"	RT_ActMode=0;
-	BANKSEL	_RT_ActMode
-	CLR	_RT_ActMode
-	BANKSEL	_RT_ActMode
-	CLR	(_RT_ActMode + 1)
-;	::->op : GOTO
-	JMP	_00062_DS_
-;	::->op : LABEL
-;	::->op : =
-_00039_DS_
-;	.line	154; "../Work.c"	RT_ActMode=RT_NowMode;
-	MOV	R0,# 0x10
-	BANKSEL	_RT_ActMode
-	MOV	_RT_ActMode, R0
-	BANKSEL	_RT_ActMode
-	CLR	(_RT_ActMode + 1)
 ;	::->op : LABEL
 ;	::->op : CALL
-_00062_DS_
-;	.line	157; "../Work.c"	RT_Mode_Act();
+_00041_DS_
+;	.line	128; "../Work.c"	RT_Mode_Act();
 	TRAPPC1	_RT_Mode_Act
 	TRAPPC2	_RT_Mode_Act
 	PAGESEL	_RT_Mode_Act
 	CALL	_RT_Mode_Act
-	TRAPPC1	$+2
-	TRAPPC2	$+1
-	PAGESEL	$
-;	::->op : CALL
-;	.line	158; "../Work.c"	RT_Water_Act();
-	TRAPPC1	_RT_Water_Act
-	TRAPPC2	_RT_Water_Act
-	PAGESEL	_RT_Water_Act
-	CALL	_RT_Water_Act
 	TRAPPC1	$+2
 	TRAPPC2	$+1
 	PAGESEL	$
@@ -3357,24 +2695,24 @@ func._delay_us	.code
 ; 2 exit points
 ;has an exit
 ;3 compiler assigned registers:
-;   r0x1036
+;   r0x1022
 ;   STK00
-;   r0x1037
+;   r0x1023
 ;; Starting PostCode block
 ;	::->op : LABEL
 ;	::->op : FUNCTION
 _delay_us	;Function start
 ; 2 exit points
 ;	::->op : RECEIVE
-;	.line	86; "../Work.c"	void delay_us(uint16 num)
-	BANKSEL	r0x1036
-	MOV	r0x1036, R0
+;	.line	83; "../Work.c"	void delay_us(uint16 num)
+	BANKSEL	r0x1022
+	MOV	r0x1022, R0
 	BANKSEL	STK00
 	MOVZ	R0, STK00
-	BANKSEL	r0x1037
-	MOV	r0x1037, R0
+	BANKSEL	r0x1023
+	MOV	r0x1023, R0
 ;	::->op : =
-;	.line	89; "../Work.c"	for(i=0;i<num;i++);
+;	.line	86; "../Work.c"	for(i=0;i<num;i++);
 	BANKSEL	_delay_us_i_1_1
 	CLR	_delay_us_i_1_1
 	BANKSEL	_delay_us_i_1_1
@@ -3382,15 +2720,15 @@ _delay_us	;Function start
 ;	::->op : LABEL
 ;	::->op : <
 _00017_DS_
-	BANKSEL	r0x1036
-	MOVZ	R0, r0x1036
+	BANKSEL	r0x1022
+	MOVZ	R0, r0x1022
 	BANKSEL	_delay_us_i_1_1
 	SUB	R0, (_delay_us_i_1_1 + 1)
 ;comparing bytes at offset 1
 	JB	PSW, 2
 	JMP	_00025_DS_
-	BANKSEL	r0x1037
-	MOVZ	R0, r0x1037
+	BANKSEL	r0x1023
+	MOVZ	R0, r0x1023
 	BANKSEL	_delay_us_i_1_1
 	SUB	R0, _delay_us_i_1_1
 _00025_DS_
@@ -3400,11 +2738,11 @@ _00025_DS_
 	BANKSEL	_delay_us_i_1_1
 	INC	_delay_us_i_1_1
 	JB	PSW, 2
-	JMP	_00315_DS_
+	JMP	_00242_DS_
 	BANKSEL	_delay_us_i_1_1
 	INC	(_delay_us_i_1_1 + 1)
 ;	::->op : GOTO
-_00315_DS_
+_00242_DS_
 	JMP	_00017_DS_
 ;	::->op : LABEL
 ;	::->op : ENDFUNCTION
@@ -3422,26 +2760,26 @@ func._delay_ms	.code
 ; 2 exit points
 ;has an exit
 ;5 compiler assigned registers:
-;   r0x102A
+;   r0x101B
 ;   STK00
-;   r0x102B
-;   r0x102C
-;   r0x102D
+;   r0x101C
+;   r0x101D
+;   r0x101E
 ;; Starting PostCode block
 ;	::->op : LABEL
 ;	::->op : FUNCTION
 _delay_ms	;Function start
 ; 2 exit points
 ;	::->op : RECEIVE
-;	.line	77; "../Work.c"	void delay_ms(uint16 num)
-	BANKSEL	r0x102A
-	MOV	r0x102A, R0
+;	.line	74; "../Work.c"	void delay_ms(uint16 num)
+	BANKSEL	r0x101B
+	MOV	r0x101B, R0
 	BANKSEL	STK00
 	MOVZ	R0, STK00
-	BANKSEL	r0x102B
-	MOV	r0x102B, R0
+	BANKSEL	r0x101C
+	MOV	r0x101C, R0
 ;	::->op : =
-;	.line	80; "../Work.c"	for(i=0;i<num;i++)
+;	.line	77; "../Work.c"	for(i=0;i<num;i++)
 	BANKSEL	_delay_ms_i_1_1
 	CLR	_delay_ms_i_1_1
 	BANKSEL	_delay_ms_i_1_1
@@ -3449,22 +2787,22 @@ _delay_ms	;Function start
 ;	::->op : LABEL
 ;	::->op : <
 _00006_DS_
-	BANKSEL	r0x102A
-	MOVZ	R0, r0x102A
+	BANKSEL	r0x101B
+	MOVZ	R0, r0x101B
 	BANKSEL	_delay_ms_i_1_1
 	SUB	R0, (_delay_ms_i_1_1 + 1)
 ;comparing bytes at offset 1
 	JB	PSW, 2
 	JMP	_00016_DS_
-	BANKSEL	r0x102B
-	MOVZ	R0, r0x102B
+	BANKSEL	r0x101C
+	MOVZ	R0, r0x101C
 	BANKSEL	_delay_ms_i_1_1
 	SUB	R0, _delay_ms_i_1_1
 _00016_DS_
 	JNB	PSW, 0
 	JMP	_00010_DS_
 ;	::->op : =
-;	.line	82; "../Work.c"	j=250;
+;	.line	79; "../Work.c"	j=250;
 	MOV	R0,# 0xfa
 	BANKSEL	_delay_ms_j_1_1
 	MOV	_delay_ms_j_1_1, R0
@@ -3473,41 +2811,41 @@ _00016_DS_
 ;	::->op : LABEL
 ;	::->op : =
 _00003_DS_
-;	.line	83; "../Work.c"	while(j--);
+;	.line	80; "../Work.c"	while(j--);
 	BANKSEL	_delay_ms_j_1_1
 	MOVZ	R0, _delay_ms_j_1_1
-	BANKSEL	r0x102C
-	MOV	r0x102C, R0
+	BANKSEL	r0x101D
+	MOV	r0x101D, R0
 	BANKSEL	_delay_ms_j_1_1
 	MOVZ	R0, (_delay_ms_j_1_1 + 1)
-	BANKSEL	r0x102D
-	MOV	r0x102D, R0
+	BANKSEL	r0x101E
+	MOV	r0x101E, R0
 ;	::->op : -
 	MOV	R0,# 0xff
 	BANKSEL	_delay_ms_j_1_1
 	ADD	_delay_ms_j_1_1, R0
 	JNB	PSW, 0
-	JMP	_00316_DS_
+	JMP	_00243_DS_
 	BANKSEL	_delay_ms_j_1_1
 	DEC	(_delay_ms_j_1_1 + 1)
 ;	::->op : IFX
-_00316_DS_
-	BANKSEL	r0x102C
-	MOVZ	R0, r0x102C
-	BANKSEL	r0x102D
-	ORL	R0, r0x102D
+_00243_DS_
+	BANKSEL	r0x101D
+	MOVZ	R0, r0x101D
+	BANKSEL	r0x101E
+	ORL	R0, r0x101E
 	JB	PSW, 2
 	JMP	_00003_DS_
 ;	::->op : +
-;	.line	80; "../Work.c"	for(i=0;i<num;i++)
+;	.line	77; "../Work.c"	for(i=0;i<num;i++)
 	BANKSEL	_delay_ms_i_1_1
 	INC	_delay_ms_i_1_1
 	JB	PSW, 2
-	JMP	_00317_DS_
+	JMP	_00244_DS_
 	BANKSEL	_delay_ms_i_1_1
 	INC	(_delay_ms_i_1_1 + 1)
 ;	::->op : GOTO
-_00317_DS_
+_00244_DS_
 	JMP	_00006_DS_
 ;	::->op : LABEL
 ;	::->op : ENDFUNCTION
@@ -3530,154 +2868,146 @@ func._Init_IO	.code
 _Init_IO	;Function start
 ; 2 exit points
 ;	::->op : =
-;	.line	30; "../Work.c"	TR0 =0xFF;//仿真口设置为输入
+;	.line	28; "../Work.c"	TR0 =0xFF;//仿真口设置为输入
 	MOV	R0,# 0xff
 	BANKSEL	_TR0
 	MOV	_TR0, R0
 ;	::->op : =
-;	.line	31; "../Work.c"	ANS0 =0;
+;	.line	29; "../Work.c"	ANS0 =0;
 	BANKSEL	_ANS0
 	CLR	_ANS0
 ;	::->op : =
-;	.line	33; "../Work.c"	TR1=0x03;
-	MOV	R0,# 0x03
+;	.line	31; "../Work.c"	TR1=0x02;
+	MOV	R0,# 0x02
 	BANKSEL	_TR1
 	MOV	_TR1, R0
 ;	::->op : =
-;	.line	34; "../Work.c"	ANS1=0;
+;	.line	32; "../Work.c"	ANS1=0;
 	BANKSEL	_ANS1
 	CLR	_ANS1
 ;	::->op : =
-;	.line	35; "../Work.c"	P1LR=0;
+;	.line	33; "../Work.c"	P1LR=0;
 	BANKSEL	_P1LR
 	CLR	_P1LR
-;	::->op :*  =
-;	.line	36; "../Work.c"	PUR10=1;
-	BANKSEL	_PUR1_bits
-	SET	_PUR1_bits, 0
 ;	::->op : =
-;	.line	38; "../Work.c"	TR2=0;
+;	.line	35; "../Work.c"	TR2=0;
 	BANKSEL	_TR2
 	CLR	_TR2
 ;	::->op : =
-;	.line	39; "../Work.c"	ANS2=0;
+;	.line	36; "../Work.c"	ANS2=0;
 	BANKSEL	_ANS2
 	CLR	_ANS2
 ;	::->op : =
-;	.line	40; "../Work.c"	P2LR=0;
+;	.line	37; "../Work.c"	P2LR=0;
 	BANKSEL	_P2LR
 	CLR	_P2LR
 ;	::->op : =
-;	.line	42; "../Work.c"	TR3=0;
+;	.line	39; "../Work.c"	TR3=0;
 	BANKSEL	_TR3
 	CLR	_TR3
 ;	::->op : =
-;	.line	43; "../Work.c"	ANS3=0;
+;	.line	40; "../Work.c"	ANS3=0;
 	BANKSEL	_ANS3
 	CLR	_ANS3
 ;	::->op : =
-;	.line	44; "../Work.c"	P3LR=0;
+;	.line	41; "../Work.c"	P3LR=0;
 	BANKSEL	_P3LR
 	CLR	_P3LR
 ;	::->op : =
-;	.line	46; "../Work.c"	TR4=0X10; //lin_rxd设置为输入、lin_txd设置为输出
+;	.line	43; "../Work.c"	TR4=0X10; //lin_rxd设置为输入、lin_txd设置为输出
 	MOV	R0,# 0x10
 	BANKSEL	_TR4
 	MOV	_TR4, R0
 ;	::->op : =
-;	.line	47; "../Work.c"	ANS4=0;
+;	.line	44; "../Work.c"	ANS4=0;
 	BANKSEL	_ANS4
 	CLR	_ANS4
 ;	::->op : =
-;	.line	48; "../Work.c"	P4LR=0;
+;	.line	45; "../Work.c"	P4LR=0;
 	BANKSEL	_P4LR
 	CLR	_P4LR
 ;	::->op : =
-;	.line	50; "../Work.c"	TR5=0x02;
+;	.line	47; "../Work.c"	TR5=0x02;
 	MOV	R0,# 0x02
 	BANKSEL	_TR5
 	MOV	_TR5, R0
 ;	::->op : =
-;	.line	51; "../Work.c"	ANS5=0;
+;	.line	48; "../Work.c"	ANS5=0;
 	BANKSEL	_ANS5
 	CLR	_ANS5
 ;	::->op : =
-;	.line	52; "../Work.c"	P5LR=0;
+;	.line	49; "../Work.c"	P5LR=0;
 	BANKSEL	_P5LR
 	CLR	_P5LR
-;	::->op :*  =
-;	.line	53; "../Work.c"	PUR51=1;
-	BANKSEL	_PUR5_bits
-	SET	_PUR5_bits, 1
 ;	::->op : =
-;	.line	55; "../Work.c"	TR6=0;//按键检测口也设置为输入
+;	.line	51; "../Work.c"	TR6=0;//按键检测口也设置为输入
 	BANKSEL	_TR6
 	CLR	_TR6
 ;	::->op : =
-;	.line	56; "../Work.c"	ANS6=0;
+;	.line	52; "../Work.c"	ANS6=0;
 	BANKSEL	_ANS6
 	CLR	_ANS6
 ;	::->op : =
-;	.line	57; "../Work.c"	P6LR=0;
+;	.line	53; "../Work.c"	P6LR=0;
 	BANKSEL	_P6LR
 	CLR	_P6LR
 ;	::->op : =
-;	.line	59; "../Work.c"	TR7=0x06;
+;	.line	55; "../Work.c"	TR7=0x06;
 	MOV	R0,# 0x06
 	BANKSEL	_TR7
 	MOV	_TR7, R0
 ;	::->op : =
-;	.line	60; "../Work.c"	ANS7=0;
+;	.line	56; "../Work.c"	ANS7=0;
 	BANKSEL	_ANS7
 	CLR	_ANS7
 ;	::->op : =
-;	.line	61; "../Work.c"	P7LR=0;
+;	.line	57; "../Work.c"	P7LR=0;
 	BANKSEL	_P7LR
 	CLR	_P7LR
 ;	::->op : =
-;	.line	62; "../Work.c"	PUR7=0;
+;	.line	58; "../Work.c"	PUR7=0;
 	BANKSEL	_PUR7
 	CLR	_PUR7
 ;	::->op : =
-;	.line	64; "../Work.c"	TR9=0X0E;
+;	.line	60; "../Work.c"	TR9=0X0E;
 	MOV	R0,# 0x0e
 	BANKSEL	_TR9
 	MOV	_TR9, R0
 ;	::->op : =
-;	.line	65; "../Work.c"	ANS9=0;
+;	.line	61; "../Work.c"	ANS9=0;
 	BANKSEL	_ANS9
 	CLR	_ANS9
 ;	::->op : =
-;	.line	66; "../Work.c"	P9LR=0;
+;	.line	62; "../Work.c"	P9LR=0;
 	BANKSEL	_P9LR
 	CLR	_P9LR
 ;	::->op : =
-;	.line	68; "../Work.c"	TRA=0x01;
+;	.line	64; "../Work.c"	TRA=0x01;
 	MOV	R0,# 0x01
 	BANKSEL	_TRA
 	MOV	_TRA, R0
 ;	::->op : =
-;	.line	69; "../Work.c"	ANSA=0;
+;	.line	65; "../Work.c"	ANSA=0;
 	BANKSEL	_ANSA
 	CLR	_ANSA
 ;	::->op : =
-;	.line	70; "../Work.c"	PALR=0;
+;	.line	66; "../Work.c"	PALR=0;
 	BANKSEL	_PALR
 	CLR	_PALR
 ;	::->op : =
-;	.line	71; "../Work.c"	PURA=0;
+;	.line	67; "../Work.c"	PURA=0;
 	BANKSEL	_PURA
 	CLR	_PURA
 ;	::->op : =
-;	.line	73; "../Work.c"	TRB=0;
+;	.line	69; "../Work.c"	TRB=0;
 	BANKSEL	_TRB
 	CLR	_TRB
 ;	::->op : =
-;	.line	74; "../Work.c"	ANSB=0;
+;	.line	70; "../Work.c"	ANSB=0;
 	BANKSEL	_ANSB
 	CLR	_ANSB
 ;	::->op : =
-;	.line	75; "../Work.c"	PBLR=0;
+;	.line	71; "../Work.c"	PBLR=0;
 	BANKSEL	_PBLR
 	CLR	_PBLR
 ;	::->op : LABEL
@@ -3687,7 +3017,7 @@ _Init_IO	;Function start
 
 
 ;	code size estimation:
-;	 1212+  414 =  1626 instructions ( 4080 byte)
+;	  897+  293 =  1190 instructions ( 2966 byte)
 
 
 	.end

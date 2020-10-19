@@ -28,12 +28,10 @@
 	.extern	_Tail_Stop_Check_Input
 	.extern	_Mode_Act
 	.extern	_RT_Mode_Act
-	.extern	_RT_Water_Act
 	.extern	_delay_ms
 	.extern	_delay_us
 	.extern	_Timer_PWM_Callback
 	.extern	_Led_Hello_Check
-	.extern	_RT_Timer_PWM_Callback
 	.extern	_PWM_Init
 	.extern	_Timer0_Init
 	.extern	_Timer1_Init
@@ -42,7 +40,6 @@
 	.extern	_Timer5_Init
 	.extern	_Timer8_Init
 	.extern	_Timer10_Init
-	.extern	_test
 	.extern	_STKR0
 	.extern	_STK00
 	.extern	_STK01
@@ -955,9 +952,7 @@ func._int_fun0	.code
 ; 0 exit points
 ;functions called:
 ;   _Timer_PWM_Callback
-;   _RT_Timer_PWM_Callback
 ;   _Timer_PWM_Callback
-;   _RT_Timer_PWM_Callback
 ;3 compiler assigned registers:
 ;   r0x1001
 ;   r0x1002
@@ -970,7 +965,7 @@ _int_fun0	;Function start
 ;	::->op : GET_VALUE_AT_ADDRESS
 ; R3 resprent for wsave,R4 resprent for ssave, R5 resprent for psave
 interrupt_service_routine_0x04
-;	.line	38; "../main.c"	if(T0IF & T0IE)		//500us定时
+;	.line	46; "../main.c"	if(T0IF & T0IE)		//500us定时
 	BANKSEL	r0x1001
 	CLR	r0x1001
 	BANKSEL	_INTCTL_bits
@@ -999,18 +994,18 @@ _00023_DS_
 	JNB	PSW, 2
 	JMP	_00011_DS_
 ;	::->op :*  =
-;	.line	40; "../main.c"	T0IF= 0;
+;	.line	48; "../main.c"	T0IF= 0;
 	BANKSEL	_INTCTL_bits
 	CLR	_INTCTL_bits, 2
 ;	::->op : =
-;	.line	41; "../main.c"	T0 =8;
+;	.line	49; "../main.c"	T0 =8;
 	MOV	R0,# 0x08
 	BANKSEL	_T0
 	MOV	_T0, R0
 ;	::->op : LABEL
 ;	::->op : GET_VALUE_AT_ADDRESS
 _00011_DS_
-;	.line	43; "../main.c"	if(T1IF & T1IE)
+;	.line	51; "../main.c"	if(T1IF & T1IE)
 	BANKSEL	r0x1001
 	CLR	r0x1001
 	BANKSEL	_EIF1_bits
@@ -1040,11 +1035,11 @@ _00025_DS_
 	JNB	PSW, 2
 	JMP	_00013_DS_
 ;	::->op :*  =
-;	.line	45; "../main.c"	T1IF =0;
+;	.line	53; "../main.c"	T1IF =0;
 	BANKSEL	_EIF1_bits
 	CLR	_EIF1_bits, 0
 ;	::->op : CALL
-;	.line	46; "../main.c"	Timer_PWM_Callback();
+;	.line	54; "../main.c"	Timer_PWM_Callback();
 	TRAPPC1	_Timer_PWM_Callback
 	TRAPPC2	_Timer_PWM_Callback
 	PAGESEL	_Timer_PWM_Callback
@@ -1055,7 +1050,7 @@ _00025_DS_
 ;	::->op : LABEL
 ;	::->op : GET_VALUE_AT_ADDRESS
 _00013_DS_
-;	.line	48; "../main.c"	if(T2IF & T2IE)
+;	.line	56; "../main.c"	if(T2IF & T2IE)
 	BANKSEL	r0x1001
 	CLR	r0x1001
 	BANKSEL	_EIF1_bits
@@ -1080,26 +1075,14 @@ _00027_DS_
 	AND	r0x1001, R0
 ;	::->op : IFX
 	MOV	R0,# 0x00
+;	.line	58; "../main.c"	T2IF =0;
 	BANKSEL	r0x1001
 	ORL	R0, r0x1001
 	JNB	PSW, 2
-	JMP	_00016_DS_
-;	::->op :*  =
-;	.line	50; "../main.c"	T2IF =0;
+	JMP	_00028_DS_
 	BANKSEL	_EIF1_bits
 	CLR	_EIF1_bits, 1
-;	::->op : CALL
-;	.line	51; "../main.c"	RT_Timer_PWM_Callback();
-	TRAPPC1	_RT_Timer_PWM_Callback
-	TRAPPC2	_RT_Timer_PWM_Callback
-	PAGESEL	_RT_Timer_PWM_Callback
-	CALL	_RT_Timer_PWM_Callback
-	TRAPPC1	$+2
-	TRAPPC2	$+1
-	PAGESEL	$
-;	::->op : LABEL
-;	::->op : ENDFUNCTION
-_00016_DS_
+_00028_DS_
 	BANKSEL	I0R1
 	MOV	R1, I0R1
 	BANKSEL	I0R7
@@ -1134,7 +1117,7 @@ _int_fun1	;Function start
 ; R3 resprent for wsave,R4 resprent for ssave, R5 resprent for psave
 interrupt_service_routine_0x14
 _00021_DS_
-;	.line	59; "../main.c"	}
+;	.line	67; "../main.c"	}
 	IRET	
 
 
@@ -1169,17 +1152,17 @@ func._main	.code
 _main	;Function start
 ; 2 exit points
 ;	::->op : =
-;	.line	14; "../main.c"	SCLKCTL =0X78;//禁止输出时钟，选择内部高频作为时钟源，分频器1:1分频
+;	.line	22; "../main.c"	SCLKCTL =0X78;//禁止输出时钟，选择内部高频作为时钟源，分频器1:1分频
 	MOV	R0,# 0x78
 	BANKSEL	_SCLKCTL
 	MOV	_SCLKCTL, R0
 ;	::->op : =
-;	.line	15; "../main.c"	HFCKCTL =0x8E;//使能高频外设时钟，INTHF/64,
+;	.line	23; "../main.c"	HFCKCTL =0x8E;//使能高频外设时钟，INTHF/64,
 	MOV	R0,# 0x8e
 	BANKSEL	_HFCKCTL
 	MOV	_HFCKCTL, R0
 ;	::->op : CALL
-;	.line	16; "../main.c"	Init_IO();
+;	.line	24; "../main.c"	Init_IO();
 	TRAPPC1	_Init_IO
 	TRAPPC2	_Init_IO
 	PAGESEL	_Init_IO
@@ -1188,7 +1171,7 @@ _main	;Function start
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : CALL
-;	.line	17; "../main.c"	IS31FL3265B_Init();
+;	.line	25; "../main.c"	IS31FL3265B_Init();
 	TRAPPC1	_IS31FL3265B_Init
 	TRAPPC2	_IS31FL3265B_Init
 	PAGESEL	_IS31FL3265B_Init
@@ -1197,7 +1180,7 @@ _main	;Function start
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : CALL
-;	.line	18; "../main.c"	Timer0_Init();
+;	.line	26; "../main.c"	Timer0_Init();
 	TRAPPC1	_Timer0_Init
 	TRAPPC2	_Timer0_Init
 	PAGESEL	_Timer0_Init
@@ -1206,7 +1189,7 @@ _main	;Function start
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : CALL
-;	.line	19; "../main.c"	Timer1_Init();
+;	.line	27; "../main.c"	Timer1_Init();
 	TRAPPC1	_Timer1_Init
 	TRAPPC2	_Timer1_Init
 	PAGESEL	_Timer1_Init
@@ -1215,7 +1198,7 @@ _main	;Function start
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : CALL
-;	.line	20; "../main.c"	Timer2_Init();
+;	.line	28; "../main.c"	Timer2_Init();
 	TRAPPC1	_Timer2_Init
 	TRAPPC2	_Timer2_Init
 	PAGESEL	_Timer2_Init
@@ -1224,26 +1207,26 @@ _main	;Function start
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op :*  =
-;	.line	21; "../main.c"	PUIE =1;
+;	.line	29; "../main.c"	PUIE =1;
 	BANKSEL	_INTCTL_bits
 	SET	_INTCTL_bits, 6
 ;	::->op :*  =
-;	.line	22; "../main.c"	AIE =1;
+;	.line	30; "../main.c"	AIE =1;
 	BANKSEL	_INTCTL_bits
 	SET	_INTCTL_bits, 7
 ;	::->op : IFX
-;	.line	23; "../main.c"	if(FistBootFlag)
+;	.line	31; "../main.c"	if(FistBootFlag)
 	MOV	R0,# 0x00
 	BANKSEL	_FistBootFlag
 	ORL	R0, _FistBootFlag
 	JNB	PSW, 2
 	JMP	_00004_DS_
 ;	::->op : =
-;	.line	25; "../main.c"	FistBootFlag=0;
+;	.line	33; "../main.c"	FistBootFlag=0;
 	BANKSEL	_FistBootFlag
 	CLR	_FistBootFlag
 ;	::->op : CALL
-;	.line	26; "../main.c"	Led_Hello_Check();
+;	.line	34; "../main.c"	Led_Hello_Check();
 	TRAPPC1	_Led_Hello_Check
 	TRAPPC2	_Led_Hello_Check
 	PAGESEL	_Led_Hello_Check
@@ -1254,7 +1237,7 @@ _main	;Function start
 ;	::->op : LABEL
 ;	::->op : CALL
 _00004_DS_
-;	.line	30; "../main.c"	Tail_Stop_Check_Input();
+;	.line	38; "../main.c"	Tail_Stop_Check_Input();
 	TRAPPC1	_Tail_Stop_Check_Input
 	TRAPPC2	_Tail_Stop_Check_Input
 	PAGESEL	_Tail_Stop_Check_Input
@@ -1263,7 +1246,7 @@ _00004_DS_
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : CALL
-;	.line	31; "../main.c"	RT_Check_Input();
+;	.line	39; "../main.c"	RT_Check_Input();
 	TRAPPC1	_RT_Check_Input
 	TRAPPC2	_RT_Check_Input
 	PAGESEL	_RT_Check_Input
@@ -1280,7 +1263,7 @@ _00004_DS_
 
 
 ;	code size estimation:
-;	  143+   39 =   182 instructions (  442 byte)
+;	  136+   39 =   175 instructions (  428 byte)
 
 
 	.end
