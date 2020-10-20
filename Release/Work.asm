@@ -2802,12 +2802,13 @@ _00016_DS_
 	JNB	PSW, 0
 	JMP	_00010_DS_
 ;	::->op : =
-;	.line	79; "../Work.c"	j=250;
-	MOV	R0,# 0xfa
+;	.line	79; "../Work.c"	j=280;
+	MOV	R0,# 0x18
 	BANKSEL	_delay_ms_j_1_1
 	MOV	_delay_ms_j_1_1, R0
+	MOV	R0,# 0x01
 	BANKSEL	_delay_ms_j_1_1
-	CLR	(_delay_ms_j_1_1 + 1)
+	MOV	(_delay_ms_j_1_1 + 1), R0
 ;	::->op : LABEL
 ;	::->op : =
 _00003_DS_
@@ -3017,7 +3018,7 @@ _Init_IO	;Function start
 
 
 ;	code size estimation:
-;	  897+  293 =  1190 instructions ( 2966 byte)
+;	  898+  293 =  1191 instructions ( 2968 byte)
 
 
 	.end

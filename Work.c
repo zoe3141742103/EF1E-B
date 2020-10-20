@@ -76,7 +76,7 @@ void delay_ms(uint16 num)
 	static uint16 i,j;
 	for(i=0;i<num;i++)
 	{
-		j=250;
+		j=280;
 		while(j--);
 	}
 }
