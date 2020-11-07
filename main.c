@@ -3,11 +3,8 @@
 #include "PinConfig.h"
 #include "SoftSpi.h"
 #include "Work.h"
-#include "Pwm.h"
 #include "Timer.h"
-
-uint8 FistBootFlag=1;
-void main()
+void SYS_Init(void)
 {
 	SCLKCTL =0X78;//禁止输出时钟，选择内部高频作为时钟源，分频器1:1分频
 	HFCKCTL =0x8E;//使能高频外设时钟，INTHF/64,
@@ -18,15 +15,15 @@ void main()
 	Timer2_Init();
 	PUIE =1;
 	AIE =1;
-	if(FistBootFlag)
-	{
-		FistBootFlag=0;
-		Led_Hello_Check();
-	}
+}
+void main()
+{
+	SYS_Init();//系统初始化
+	Led_Hello_Check();//迎宾欢送检查
 	while(1)
 	{
-		Tail_Stop_Check_Input();
-		RT_Check_Input();
+		Tail_Stop_Check_Input();//位置制动检查
+		RT_Check_Input();//转向检查
 	}
 
 }

@@ -32,7 +32,6 @@
 	.extern	_delay_us
 	.extern	_Timer_PWM_Callback
 	.extern	_Led_Hello_Check
-	.extern	_PWM_Init
 	.extern	_Timer0_Init
 	.extern	_Timer1_Init
 	.extern	_Timer2_Init
@@ -788,10 +787,10 @@
 ;--------------------------------------------------------
 ; global declarations
 ;--------------------------------------------------------
+	.global	_SYS_Init
 	.global	_main
 	.global	_int_fun0
 	.global	_int_fun1
-	.global	_FistBootFlag
 
 	.global I0R1
 	.global I0R7
@@ -888,19 +887,14 @@ TRAPRx77
 ; compiler-defined variables
 ;--------------------------------------------------------
 UDL_main_0	.udata
-r0x1001	.res	1
+r0x1000	.res	1
 UDL_main_1	.udata
-r0x1003	.res	1
-UDL_main_2	.udata
 r0x1002	.res	1
+UDL_main_2	.udata
+r0x1001	.res	1
 ;--------------------------------------------------------
 ; initialized data
 ;--------------------------------------------------------
-
-ID_main_0	.idata
-_FistBootFlag
-	.db	0x01
-
 ;--------------------------------------------------------
 ; overlayable items in internal ram 
 ;--------------------------------------------------------
@@ -954,9 +948,9 @@ func._int_fun0	.code
 ;   _Timer_PWM_Callback
 ;   _Timer_PWM_Callback
 ;3 compiler assigned registers:
+;   r0x1000
 ;   r0x1001
 ;   r0x1002
-;   r0x1003
 ;; Starting PostCode block
 ;	::->op : LABEL
 ;	::->op : FUNCTION
@@ -965,81 +959,81 @@ _int_fun0	;Function start
 ;	::->op : GET_VALUE_AT_ADDRESS
 ; R3 resprent for wsave,R4 resprent for ssave, R5 resprent for psave
 interrupt_service_routine_0x04
-;	.line	46; "../main.c"	if(T0IF & T0IE)		//500us定时
-	BANKSEL	r0x1001
-	CLR	r0x1001
+;	.line	33; "../main.c"	if(T0IF & T0IE)		//500us定时
+	BANKSEL	r0x1000
+	CLR	r0x1000
 	BANKSEL	_INTCTL_bits
 	JB	_INTCTL_bits, 2
-	JMP	_00023_DS_
-	BANKSEL	r0x1001
-	INC	r0x1001
+	JMP	_00022_DS_
+	BANKSEL	r0x1000
+	INC	r0x1000
 ;	::->op : GET_VALUE_AT_ADDRESS
 ;	::->op : CAST
-_00023_DS_
+_00022_DS_
 	MOV	R0,# 0x00
 	BANKSEL	_INTCTL_bits
 	JNB	_INTCTL_bits, 5
 	MOV	R0,# 0x01
-	BANKSEL	r0x1002
-	MOV	r0x1002, R0
-;	::->op : BITWISEAND
-	BANKSEL	r0x1002
-	MOVZ	R0, r0x1002
 	BANKSEL	r0x1001
-	AND	r0x1001, R0
+	MOV	r0x1001, R0
+;	::->op : BITWISEAND
+	BANKSEL	r0x1001
+	MOVZ	R0, r0x1001
+	BANKSEL	r0x1000
+	AND	r0x1000, R0
 ;	::->op : IFX
 	MOV	R0,# 0x00
-	BANKSEL	r0x1001
-	ORL	R0, r0x1001
+	BANKSEL	r0x1000
+	ORL	R0, r0x1000
 	JNB	PSW, 2
-	JMP	_00011_DS_
+	JMP	_00010_DS_
 ;	::->op :*  =
-;	.line	48; "../main.c"	T0IF= 0;
+;	.line	35; "../main.c"	T0IF= 0;
 	BANKSEL	_INTCTL_bits
 	CLR	_INTCTL_bits, 2
 ;	::->op : =
-;	.line	49; "../main.c"	T0 =8;
+;	.line	36; "../main.c"	T0 =8;
 	MOV	R0,# 0x08
 	BANKSEL	_T0
 	MOV	_T0, R0
 ;	::->op : LABEL
 ;	::->op : GET_VALUE_AT_ADDRESS
-_00011_DS_
-;	.line	51; "../main.c"	if(T1IF & T1IE)
-	BANKSEL	r0x1001
-	CLR	r0x1001
+_00010_DS_
+;	.line	38; "../main.c"	if(T1IF & T1IE)
+	BANKSEL	r0x1000
+	CLR	r0x1000
 	BANKSEL	_EIF1_bits
 	JB	_EIF1_bits, 0
-	JMP	_00024_DS_
-	BANKSEL	r0x1001
-	INC	r0x1001
+	JMP	_00023_DS_
+	BANKSEL	r0x1000
+	INC	r0x1000
 ;	::->op : GET_VALUE_AT_ADDRESS
-_00024_DS_
-	BANKSEL	r0x1003
-	CLR	r0x1003
+_00023_DS_
+	BANKSEL	r0x1002
+	CLR	r0x1002
 	BANKSEL	_EIE1_bits
 	JB	_EIE1_bits, 0
-	JMP	_00025_DS_
-	BANKSEL	r0x1003
-	INC	r0x1003
+	JMP	_00024_DS_
+	BANKSEL	r0x1002
+	INC	r0x1002
 ;	::->op : BITWISEAND
-_00025_DS_
-	BANKSEL	r0x1003
-	MOVZ	R0, r0x1003
-	BANKSEL	r0x1001
-	AND	r0x1001, R0
+_00024_DS_
+	BANKSEL	r0x1002
+	MOVZ	R0, r0x1002
+	BANKSEL	r0x1000
+	AND	r0x1000, R0
 ;	::->op : IFX
 	MOV	R0,# 0x00
-	BANKSEL	r0x1001
-	ORL	R0, r0x1001
+	BANKSEL	r0x1000
+	ORL	R0, r0x1000
 	JNB	PSW, 2
-	JMP	_00013_DS_
+	JMP	_00012_DS_
 ;	::->op :*  =
-;	.line	53; "../main.c"	T1IF =0;
+;	.line	40; "../main.c"	T1IF =0;
 	BANKSEL	_EIF1_bits
 	CLR	_EIF1_bits, 0
 ;	::->op : CALL
-;	.line	54; "../main.c"	Timer_PWM_Callback();
+;	.line	41; "../main.c"	Timer_PWM_Callback();
 	TRAPPC1	_Timer_PWM_Callback
 	TRAPPC2	_Timer_PWM_Callback
 	PAGESEL	_Timer_PWM_Callback
@@ -1049,40 +1043,40 @@ _00025_DS_
 	PAGESEL	$
 ;	::->op : LABEL
 ;	::->op : GET_VALUE_AT_ADDRESS
-_00013_DS_
-;	.line	56; "../main.c"	if(T2IF & T2IE)
-	BANKSEL	r0x1001
-	CLR	r0x1001
+_00012_DS_
+;	.line	43; "../main.c"	if(T2IF & T2IE)
+	BANKSEL	r0x1000
+	CLR	r0x1000
 	BANKSEL	_EIF1_bits
 	JB	_EIF1_bits, 1
-	JMP	_00026_DS_
-	BANKSEL	r0x1001
-	INC	r0x1001
+	JMP	_00025_DS_
+	BANKSEL	r0x1000
+	INC	r0x1000
 ;	::->op : GET_VALUE_AT_ADDRESS
-_00026_DS_
-	BANKSEL	r0x1003
-	CLR	r0x1003
+_00025_DS_
+	BANKSEL	r0x1002
+	CLR	r0x1002
 	BANKSEL	_EIE1_bits
 	JB	_EIE1_bits, 1
-	JMP	_00027_DS_
-	BANKSEL	r0x1003
-	INC	r0x1003
+	JMP	_00026_DS_
+	BANKSEL	r0x1002
+	INC	r0x1002
 ;	::->op : BITWISEAND
-_00027_DS_
-	BANKSEL	r0x1003
-	MOVZ	R0, r0x1003
-	BANKSEL	r0x1001
-	AND	r0x1001, R0
+_00026_DS_
+	BANKSEL	r0x1002
+	MOVZ	R0, r0x1002
+	BANKSEL	r0x1000
+	AND	r0x1000, R0
 ;	::->op : IFX
 	MOV	R0,# 0x00
-;	.line	58; "../main.c"	T2IF =0;
-	BANKSEL	r0x1001
-	ORL	R0, r0x1001
+;	.line	45; "../main.c"	T2IF =0;
+	BANKSEL	r0x1000
+	ORL	R0, r0x1000
 	JNB	PSW, 2
-	JMP	_00028_DS_
+	JMP	_00027_DS_
 	BANKSEL	_EIF1_bits
 	CLR	_EIF1_bits, 1
-_00028_DS_
+_00027_DS_
 	BANKSEL	I0R1
 	MOV	R1, I0R1
 	BANKSEL	I0R7
@@ -1116,8 +1110,8 @@ _int_fun1	;Function start
 ;	::->op : ENDFUNCTION
 ; R3 resprent for wsave,R4 resprent for ssave, R5 resprent for psave
 interrupt_service_routine_0x14
-_00021_DS_
-;	.line	67; "../main.c"	}
+_00020_DS_
+;	.line	54; "../main.c"	}
 	IRET	
 
 
@@ -1130,19 +1124,11 @@ func._main	.code
 ; 2 exit points
 ;has an exit
 ;functions called:
-;   _Init_IO
-;   _IS31FL3265B_Init
-;   _Timer0_Init
-;   _Timer1_Init
-;   _Timer2_Init
+;   _SYS_Init
 ;   _Led_Hello_Check
 ;   _Tail_Stop_Check_Input
 ;   _RT_Check_Input
-;   _Init_IO
-;   _IS31FL3265B_Init
-;   _Timer0_Init
-;   _Timer1_Init
-;   _Timer2_Init
+;   _SYS_Init
 ;   _Led_Hello_Check
 ;   _Tail_Stop_Check_Input
 ;   _RT_Check_Input
@@ -1151,82 +1137,17 @@ func._main	.code
 ;	::->op : FUNCTION
 _main	;Function start
 ; 2 exit points
-;	::->op : =
-;	.line	22; "../main.c"	SCLKCTL =0X78;//禁止输出时钟，选择内部高频作为时钟源，分频器1:1分频
-	MOV	R0,# 0x78
-	BANKSEL	_SCLKCTL
-	MOV	_SCLKCTL, R0
-;	::->op : =
-;	.line	23; "../main.c"	HFCKCTL =0x8E;//使能高频外设时钟，INTHF/64,
-	MOV	R0,# 0x8e
-	BANKSEL	_HFCKCTL
-	MOV	_HFCKCTL, R0
 ;	::->op : CALL
-;	.line	24; "../main.c"	Init_IO();
-	TRAPPC1	_Init_IO
-	TRAPPC2	_Init_IO
-	PAGESEL	_Init_IO
-	CALL	_Init_IO
+;	.line	21; "../main.c"	SYS_Init();//系统初始化
+	TRAPPC1	_SYS_Init
+	TRAPPC2	_SYS_Init
+	PAGESEL	_SYS_Init
+	CALL	_SYS_Init
 	TRAPPC1	$+2
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : CALL
-;	.line	25; "../main.c"	IS31FL3265B_Init();
-	TRAPPC1	_IS31FL3265B_Init
-	TRAPPC2	_IS31FL3265B_Init
-	PAGESEL	_IS31FL3265B_Init
-	CALL	_IS31FL3265B_Init
-	TRAPPC1	$+2
-	TRAPPC2	$+1
-	PAGESEL	$
-;	::->op : CALL
-;	.line	26; "../main.c"	Timer0_Init();
-	TRAPPC1	_Timer0_Init
-	TRAPPC2	_Timer0_Init
-	PAGESEL	_Timer0_Init
-	CALL	_Timer0_Init
-	TRAPPC1	$+2
-	TRAPPC2	$+1
-	PAGESEL	$
-;	::->op : CALL
-;	.line	27; "../main.c"	Timer1_Init();
-	TRAPPC1	_Timer1_Init
-	TRAPPC2	_Timer1_Init
-	PAGESEL	_Timer1_Init
-	CALL	_Timer1_Init
-	TRAPPC1	$+2
-	TRAPPC2	$+1
-	PAGESEL	$
-;	::->op : CALL
-;	.line	28; "../main.c"	Timer2_Init();
-	TRAPPC1	_Timer2_Init
-	TRAPPC2	_Timer2_Init
-	PAGESEL	_Timer2_Init
-	CALL	_Timer2_Init
-	TRAPPC1	$+2
-	TRAPPC2	$+1
-	PAGESEL	$
-;	::->op :*  =
-;	.line	29; "../main.c"	PUIE =1;
-	BANKSEL	_INTCTL_bits
-	SET	_INTCTL_bits, 6
-;	::->op :*  =
-;	.line	30; "../main.c"	AIE =1;
-	BANKSEL	_INTCTL_bits
-	SET	_INTCTL_bits, 7
-;	::->op : IFX
-;	.line	31; "../main.c"	if(FistBootFlag)
-	MOV	R0,# 0x00
-	BANKSEL	_FistBootFlag
-	ORL	R0, _FistBootFlag
-	JNB	PSW, 2
-	JMP	_00004_DS_
-;	::->op : =
-;	.line	33; "../main.c"	FistBootFlag=0;
-	BANKSEL	_FistBootFlag
-	CLR	_FistBootFlag
-;	::->op : CALL
-;	.line	34; "../main.c"	Led_Hello_Check();
+;	.line	22; "../main.c"	Led_Hello_Check();//迎宾欢送检查
 	TRAPPC1	_Led_Hello_Check
 	TRAPPC2	_Led_Hello_Check
 	PAGESEL	_Led_Hello_Check
@@ -1237,7 +1158,7 @@ _main	;Function start
 ;	::->op : LABEL
 ;	::->op : CALL
 _00004_DS_
-;	.line	38; "../main.c"	Tail_Stop_Check_Input();
+;	.line	25; "../main.c"	Tail_Stop_Check_Input();//位置制动检查
 	TRAPPC1	_Tail_Stop_Check_Input
 	TRAPPC2	_Tail_Stop_Check_Input
 	PAGESEL	_Tail_Stop_Check_Input
@@ -1246,7 +1167,7 @@ _00004_DS_
 	TRAPPC2	$+1
 	PAGESEL	$
 ;	::->op : CALL
-;	.line	39; "../main.c"	RT_Check_Input();
+;	.line	26; "../main.c"	RT_Check_Input();//转向检查
 	TRAPPC1	_RT_Check_Input
 	TRAPPC2	_RT_Check_Input
 	PAGESEL	_RT_Check_Input
@@ -1262,8 +1183,101 @@ _00004_DS_
 ; exit point of _main
 
 
+
+func._SYS_Init	.code
+;***
+;  PostBlock Stats: dbName = C
+;***
+;entry:  _SYS_Init	;Function start
+; 2 exit points
+;has an exit
+;functions called:
+;   _Init_IO
+;   _IS31FL3265B_Init
+;   _Timer0_Init
+;   _Timer1_Init
+;   _Timer2_Init
+;   _Init_IO
+;   _IS31FL3265B_Init
+;   _Timer0_Init
+;   _Timer1_Init
+;   _Timer2_Init
+;; Starting PostCode block
+;	::->op : LABEL
+;	::->op : FUNCTION
+_SYS_Init	;Function start
+; 2 exit points
+;	::->op : =
+;	.line	9; "../main.c"	SCLKCTL =0X78;//禁止输出时钟，选择内部高频作为时钟源，分频器1:1分频
+	MOV	R0,# 0x78
+	BANKSEL	_SCLKCTL
+	MOV	_SCLKCTL, R0
+;	::->op : =
+;	.line	10; "../main.c"	HFCKCTL =0x8E;//使能高频外设时钟，INTHF/64,
+	MOV	R0,# 0x8e
+	BANKSEL	_HFCKCTL
+	MOV	_HFCKCTL, R0
+;	::->op : CALL
+;	.line	11; "../main.c"	Init_IO();
+	TRAPPC1	_Init_IO
+	TRAPPC2	_Init_IO
+	PAGESEL	_Init_IO
+	CALL	_Init_IO
+	TRAPPC1	$+2
+	TRAPPC2	$+1
+	PAGESEL	$
+;	::->op : CALL
+;	.line	12; "../main.c"	IS31FL3265B_Init();
+	TRAPPC1	_IS31FL3265B_Init
+	TRAPPC2	_IS31FL3265B_Init
+	PAGESEL	_IS31FL3265B_Init
+	CALL	_IS31FL3265B_Init
+	TRAPPC1	$+2
+	TRAPPC2	$+1
+	PAGESEL	$
+;	::->op : CALL
+;	.line	13; "../main.c"	Timer0_Init();
+	TRAPPC1	_Timer0_Init
+	TRAPPC2	_Timer0_Init
+	PAGESEL	_Timer0_Init
+	CALL	_Timer0_Init
+	TRAPPC1	$+2
+	TRAPPC2	$+1
+	PAGESEL	$
+;	::->op : CALL
+;	.line	14; "../main.c"	Timer1_Init();
+	TRAPPC1	_Timer1_Init
+	TRAPPC2	_Timer1_Init
+	PAGESEL	_Timer1_Init
+	CALL	_Timer1_Init
+	TRAPPC1	$+2
+	TRAPPC2	$+1
+	PAGESEL	$
+;	::->op : CALL
+;	.line	15; "../main.c"	Timer2_Init();
+	TRAPPC1	_Timer2_Init
+	TRAPPC2	_Timer2_Init
+	PAGESEL	_Timer2_Init
+	CALL	_Timer2_Init
+	TRAPPC1	$+2
+	TRAPPC2	$+1
+	PAGESEL	$
+;	::->op :*  =
+;	.line	16; "../main.c"	PUIE =1;
+	BANKSEL	_INTCTL_bits
+	SET	_INTCTL_bits, 6
+;	::->op :*  =
+;	.line	17; "../main.c"	AIE =1;
+	BANKSEL	_INTCTL_bits
+	SET	_INTCTL_bits, 7
+;	::->op : LABEL
+;	::->op : ENDFUNCTION
+	CRET	
+; exit point of _SYS_Init
+
+
 ;	code size estimation:
-;	  136+   39 =   175 instructions (  428 byte)
+;	  139+   37 =   176 instructions (  426 byte)
 
 
 	.end

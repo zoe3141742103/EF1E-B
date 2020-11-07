@@ -1,4 +1,4 @@
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE  1
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE  1
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -58,7 +58,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000029     00044 TR4                     .EQU                 0x29
   0000002B     00045 VRECTL                  .EQU                 0x2B
   0000002C     00046 EIE1                    .EQU                 0x2C
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE  2
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE  2
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -118,7 +118,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   0000006B     00098 LFCKCTL                 .EQU                 0x6B
   00000105     00099 P5                      .EQU                 0x105
   00000106     00100 P6                      .EQU                 0x106
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE  3
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE  3
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -178,7 +178,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000146     00152 P6LR                    .EQU                 0x146
   00000147     00153 P7LR                    .EQU                 0x147
   00000149     00154 P9LR                    .EQU                 0x149
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE  4
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE  4
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -238,7 +238,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   0000021F     00206 SSCI2CTL1               .EQU                 0x21F
   0000022A     00207 IP3                     .EQU                 0x22A
   00000231     00208 FILT1CTL                .EQU                 0x231
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE  5
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE  5
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -298,7 +298,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000322     00260 RTCSEC                  .EQU                 0x322
   00000323     00261 RTCMIN                  .EQU                 0x323
   00000324     00262 RTCHOUR                 .EQU                 0x324
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE  6
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE  6
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -358,7 +358,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000441     00314 P3ATRCTL                .EQU                 0x441
   00000442     00315 PP3H                    .EQU                 0x442
   00000443     00316 PP3L                    .EQU                 0x443
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE  7
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE  7
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -418,7 +418,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   0000051C     00368 EIF6                    .EQU                 0x51C
   0000051D     00369 IP6                     .EQU                 0x51D
   00000530     00370 CANTXINF                .EQU                 0x530
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE  8
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE  8
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -478,7 +478,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   0000056B     00422 PWM7H3                  .EQU                 0x56B
   0000056D     00423 PWM7PC                  .EQU                 0x56D
   00000620     00424 PWM5H2                  .EQU                 0x620
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE  9
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE  9
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -538,7 +538,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000002     00476 P02                     .EQU                2
   00000001     00477 P01                     .EQU                1
   00000000     00478 P00                     .EQU                0
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 10
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 10
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -598,7 +598,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000005     00530 _P35                    .EQU                5
   00000004     00531 _P34                    .EQU                4
   00000002     00532 _P32                    .EQU                2
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 11
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 11
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -658,7 +658,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00584 ;  0DH  EIF2   Bits-------------------------------------
   00000007     00585 EEIF                    .EQU                7
   00000006     00586 C2IF                    .EQU                6
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 12
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 12
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -718,7 +718,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000003     00638 PWMMODE                 .EQU                3
   00000002     00639 PWM16ON                 .EQU                2
   00000001     00640 PWM2ON                  .EQU                1
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 13
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 13
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -778,7 +778,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000001     00692 C2OUT                   .EQU                1
   00000000     00693 C1OUT                   .EQU                0
   00000007     00694 _VCEN                   .EQU                7
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 14
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 14
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -838,7 +838,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000001     00746 PT2                     .EQU                1
   00000000     00747 PT1                     .EQU                0
   00000007     00748 _PT3                    .EQU                7
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 15
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 15
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -898,7 +898,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000004     00800 _TR24                   .EQU                4
   00000003     00801 _TR23                   .EQU                3
   00000002     00802 _TR22                   .EQU                2
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 16
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 16
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -958,7 +958,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000002     00854 P18OE                   .EQU                2
   00000001     00855 VREEN                   .EQU                1
   00000007     00856 _VRESEL1                .EQU                7
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 17
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 17
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1018,7 +1018,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000000     00908 _LVR                    .EQU                0
                00909 
                00910 ;  31H  C2CTL   Bits-------------------------------------
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 18
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 18
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1078,7 +1078,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00962 ;  3FH  ADCCTL1   Bits-------------------------------------
   00000007     00963 ADCALEN                 .EQU                7
   00000006     00964 ADCS2                   .EQU                6
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 19
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 19
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1138,7 +1138,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000002     01016 _P2LR2                  .EQU                2
   00000001     01017 _P2LR1                  .EQU                1
   00000000     01018 _P2LR0                  .EQU                0
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 20
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 20
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1198,7 +1198,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000000     01070 ANS00                   .EQU                0
   00000007     01071 _ANS07                  .EQU                7
   00000006     01072 _ANS06                  .EQU                6
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 21
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 21
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1258,7 +1258,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000002     01124 _ANS32                  .EQU                2
   00000001     01125 _ANS31                  .EQU                1
   00000000     01126 _ANS30                  .EQU                0
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 22
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 22
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1318,7 +1318,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000006     01178 BKP6                    .EQU                6
   00000005     01179 BKP5                    .EQU                5
   00000004     01180 BKP4                    .EQU                4
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 23
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 23
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1378,7 +1378,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000002     01232 _P6STR1L                .EQU                2
   00000001     01233 _P6STR0H                .EQU                1
   00000000     01234 _P6STR0L                .EQU                0
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 24
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 24
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1438,7 +1438,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000002     01286 SCKS2                   .EQU                2
   00000001     01287 SCKS1                   .EQU                1
   00000000     01288 SCKS0                   .EQU                0
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 25
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 25
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1498,7 +1498,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000003     01340 P63                     .EQU                3
   00000002     01341 P62                     .EQU                2
   00000001     01342 P61                     .EQU                1
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 26
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 26
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1558,7 +1558,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000001     01394 T4IF                    .EQU                1
   00000000     01395 BCL1IF                  .EQU                0
   00000007     01396 _CCP7IF                 .EQU                7
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 27
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 27
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1618,7 +1618,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                01448 ;  112H  T4CTL0   Bits-------------------------------------
   00000007     01449 T4SLPEN                 .EQU                7
   00000006     01450 T4CKBS3                 .EQU                6
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 28
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 28
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1678,7 +1678,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000002     01502 WPS2                    .EQU                2
   00000001     01503 WPS1                    .EQU                1
   00000000     01504 WPS0                    .EQU                0
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 29
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 29
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1738,7 +1738,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000007     01556 _PCCP7                  .EQU                7
   00000006     01557 _PCCP3                  .EQU                6
   00000005     01558 _PT1G                   .EQU                5
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 30
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 30
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1798,7 +1798,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000004     01610 _TR94                   .EQU                4
   00000003     01611 _TR93                   .EQU                3
   00000002     01612 _TR92                   .EQU                2
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 31
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 31
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1858,7 +1858,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000006     01664 _CKEGE1                 .EQU                6
   00000005     01665 _SSCI1DA                .EQU                5
   00000004     01666 _SSCI1STOP              .EQU                4
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 32
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 32
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1918,7 +1918,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000006     01718 _SSCI1MSK6              .EQU                6
   00000005     01719 _SSCI1MSK5              .EQU                5
   00000004     01720 _SSCI1MSK4              .EQU                4
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 33
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 33
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1978,7 +1978,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000005     01772 _P6LR5                  .EQU                5
   00000004     01773 _P6LR4                  .EQU                4
   00000003     01774 _P6LR3                  .EQU                3
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 34
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 34
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -2038,7 +2038,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000002     01826 ANS62                   .EQU                2
   00000001     01827 ANS61                   .EQU                1
   00000000     01828 ANS60                   .EQU                0
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 35
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 35
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -2098,7 +2098,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000002     01880 _ANS92                  .EQU                2
   00000001     01881 _ANS91                  .EQU                1
   00000000     01882 _ANS90                  .EQU                0
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 36
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 36
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -2158,7 +2158,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000002     01934 _ADM22                  .EQU                2
   00000001     01935 _ADM21                  .EQU                1
   00000000     01936 _ADM20                  .EQU                0
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 37
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 37
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -2218,7 +2218,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000002     01988 _CLKDIV22               .EQU                2
   00000001     01989 _CLKDIV21               .EQU                1
   00000000     01990 _CLKDIV20               .EQU                0
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 38
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 38
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -2278,7 +2278,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000006     02042 RCIDLF2                 .EQU                6
   00000005     02043 SCKPS2                  .EQU                5
   00000004     02044 B2RG16                  .EQU                4
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 39
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 39
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -2338,7 +2338,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000006     02096 SSCI2OV                 .EQU                6
   00000005     02097 SSCI2EN                 .EQU                5
   00000004     02098 SSCI2CKP                .EQU                4
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 40
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 40
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -2398,7 +2398,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000006     02150 SSCI2ACKSTA             .EQU                6
   00000005     02151 SSCI2ACKDAT             .EQU                5
   00000004     02152 SSCI2ACKEN              .EQU                4
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 41
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 41
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -2458,7 +2458,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000003     02204 CCP3MOD3                .EQU                3
   00000002     02205 CCP3MOD2                .EQU                2
   00000001     02206 CCP3MOD1                .EQU                1
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 42
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 42
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -2518,7 +2518,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                02258 ;  21BH  EIE3   Bits-------------------------------------
   00000005     02259 TTIE                    .EQU                5
   00000004     02260 ALRIE                   .EQU                4
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 43
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 43
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -2578,7 +2578,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000004     02312 _PALRM                  .EQU                4
   00000003     02313 _PDAY                   .EQU                3
   00000002     02314 _PHOUR                  .EQU                2
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 44
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 44
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -2638,7 +2638,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000004     02366 _F2CS1                  .EQU                4
   00000003     02367 _F2CS0                  .EQU                3
   00000002     02368 _FILTCNT22              .EQU                2
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 45
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 45
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -2698,7 +2698,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000004     02420 _FP34                   .EQU                4
   00000003     02421 _FP33                   .EQU                3
   00000002     02422 _FP32                   .EQU                2
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 46
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 46
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -2758,7 +2758,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000004     02474 _C3P1                   .EQU                4
   00000003     02475 _C3P0                   .EQU                3
   00000002     02476 _C3M2                   .EQU                2
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 47
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 47
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -2818,7 +2818,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000000     02528 PUR20                   .EQU                0
   00000005     02529 _PUR25                  .EQU                5
   00000004     02530 _PUR24                  .EQU                4
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 48
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 48
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -2878,7 +2878,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000005     02582 _PUR65                  .EQU                5
   00000004     02583 _PUR64                  .EQU                4
   00000003     02584 _PUR63                  .EQU                3
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 49
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 49
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -2938,7 +2938,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000004     02636 STIM4                   .EQU                4
   00000003     02637 STIM3                   .EQU                3
   00000002     02638 STIM2                   .EQU                2
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 50
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 50
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -2998,7 +2998,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000000     02690 _PRTCT0                 .EQU                0
                02691 
                02692 ;  25FH  HLVDCTL   Bits-------------------------------------
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 51
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 51
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -3058,7 +3058,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000004     02744 ALRS4                   .EQU                4
   00000003     02745 ALRS3                   .EQU                3
   00000002     02746 ALRS2                   .EQU                2
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 52
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 52
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -3118,7 +3118,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000002     02798 _ALRW2                  .EQU                2
   00000001     02799 _ALRW1                  .EQU                1
   00000000     02800 _ALRW0                  .EQU                0
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 53
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 53
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -3178,7 +3178,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000003     02852 MIN3                    .EQU                3
   00000002     02853 MIN2                    .EQU                2
   00000001     02854 MIN1                    .EQU                1
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 54
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 54
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -3238,7 +3238,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000001     02906 MTH1                    .EQU                1
   00000000     02907 MTH0                    .EQU                0
   00000004     02908 _MTH4                   .EQU                4
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 55
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 55
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -3298,7 +3298,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                02960 ;  361H  PCAL   Bits-------------------------------------
   00000005     02961 PCAL5                   .EQU                5
   00000004     02962 PCAL4                   .EQU                4
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 56
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 56
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -3358,7 +3358,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                03014 ;  410H  IOCAF   Bits-------------------------------------
   00000007     03015 IOC7F                   .EQU                7
   00000006     03016 IOC6F                   .EQU                6
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 57
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 57
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -3418,7 +3418,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                03068 ;  413H  IOCAPOS   Bits-------------------------------------
   00000007     03069 IOC7P                   .EQU                7
   00000006     03070 IOC6P                   .EQU                6
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 58
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 58
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -3478,7 +3478,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                03122 ;  416H  IOCANEG   Bits-------------------------------------
   00000007     03123 IOC7N                   .EQU                7
   00000006     03124 IOC6N                   .EQU                6
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 59
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 59
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -3538,7 +3538,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                03176 ;  41AH  IOCMOD   Bits-------------------------------------
   00000002     03177 IOCCM                   .EQU                2
   00000001     03178 IOCBM                   .EQU                1
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 60
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 60
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -3598,7 +3598,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000000     03230 _T9CS0                  .EQU                0
                03231 
                03232 ;  424H  PA   Bits-------------------------------------
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 61
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 61
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -3658,7 +3658,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000000     03284 _PURB0                  .EQU                0
                03285 
                03286 ;  42DH  ANSB   Bits-------------------------------------
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 62
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 62
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -3718,7 +3718,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000006     03338 _T4X9                   .EQU                6
   00000005     03339 _TXEN4                  .EQU                5
   00000004     03340 _SYNC4                  .EQU                4
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 63
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 63
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -3778,7 +3778,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000003     03392 P3STREND                .EQU                3
   00000002     03393 P3STRENC                .EQU                2
   00000001     03394 P3STRENB                .EQU                1
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 64
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 64
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -3838,7 +3838,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000002     03446 _T8ON                   .EQU                2
   00000001     03447 _T8CKPS1                .EQU                1
   00000000     03448 _T8CKPS0                .EQU                0
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 65
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 65
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -3898,7 +3898,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000002     03500 P4DC2                   .EQU                2
   00000001     03501 P4DC1                   .EQU                1
   00000000     03502 P4DC0                   .EQU                0
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 66
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 66
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -3958,7 +3958,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000000     03554 CCP7SEL0                .EQU                0
   00000007     03555 _P3DSEL                 .EQU                7
   00000006     03556 _P3CSEL1                .EQU                6
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 67
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 67
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -4018,7 +4018,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000000     03608 INTCCPSEL               .EQU                0
   00000007     03609 _CCP10SEL1              .EQU                7
   00000006     03610 _CCP10SEL0              .EQU                6
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 68
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 68
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -4078,7 +4078,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000000     03662 CLKOUTSEL               .EQU                0
   00000007     03663 _SDIDA2SEL1             .EQU                7
   00000006     03664 _SDIDA2SEL0             .EQU                6
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 69
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 69
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -4138,7 +4138,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000004     03716 _C1OUTSEL               .EQU                4
   00000003     03717 _CK3TX3SEL              .EQU                3
   00000002     03718 _DT3RX3SEL              .EQU                2
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 70
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 70
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -4198,7 +4198,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000006     03770 _T5MOD0                 .EQU                6
   00000005     03771 _T5OFS1                 .EQU                5
   00000004     03772 _T5OFS0                 .EQU                4
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 71
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 71
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -4258,7 +4258,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000004     03824 _WUIF                   .EQU                4
   00000003     03825 _DOVFIF                 .EQU                3
   00000002     03826 _EAIF                   .EQU                2
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 72
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 72
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -4318,7 +4318,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000000     03878 _TX3IF                  .EQU                0
                03879 
                03880 ;  51DH  IP6   Bits-------------------------------------
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 73
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 73
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -4378,7 +4378,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000004     03932 ID17                    .EQU                4
   00000003     03933 ID16                    .EQU                3
   00000002     03934 ID15                    .EQU                2
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 74
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 74
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -4438,7 +4438,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000005     03986 _CANCKS0                .EQU                5
   00000003     03987 _SLEEP                  .EQU                3
   00000002     03988 _LBACK                  .EQU                2
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 75
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 75
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -4498,7 +4498,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000006     04040 TSEG22                  .EQU                6
   00000005     04041 TSEG21                  .EQU                5
   00000004     04042 TSEG20                  .EQU                4
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 76
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 76
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -4558,7 +4558,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000000     04094 EWL0                    .EQU                0
   00000007     04095 _EWL7                   .EQU                7
   00000006     04096 _EWL6                   .EQU                6
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 77
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 77
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -4618,7 +4618,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000000     04148 _RMC0                   .EQU                0
                04149 
                04150 ;  548H  CANACR0   Bits-------------------------------------
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 78
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 78
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -4678,7 +4678,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000000     04202 _ACR20                  .EQU                0
                04203 
                04204 ;  54BH  CANACR3   Bits-------------------------------------
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 79
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 79
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -4738,7 +4738,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000000     04256 _MSK10                  .EQU                0
                04257 
                04258 ;  54EH  CANMSK2   Bits-------------------------------------
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 80
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 80
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -4798,7 +4798,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                04310 ;  553H  T6CTL1   Bits-------------------------------------
   00000007     04311 T6MOD1                  .EQU                7
   00000006     04312 T6MOD0                  .EQU                6
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 81
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 81
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -4858,7 +4858,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000004     04364 _OCB3                   .EQU                4
   00000003     04365 _OCA2                   .EQU                3
   00000002     04366 _OCB2                   .EQU                2
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 82
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 82
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -4918,7 +4918,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                04418 ;  630H  EIF8   Bits-------------------------------------
   00000005     04419 T10IF                   .EQU                5
   00000004     04420 T9IF                    .EQU                4
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 83
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 83
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -4978,7 +4978,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000006     04472 P5ASS2                  .EQU                6
   00000005     04473 P5ASS1                  .EQU                5
   00000004     04474 P5ASS0                  .EQU                4
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 84
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 84
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -5038,7 +5038,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000000     04526 _P5STRENB2              .EQU                0
                04527 
                04528 ;  63AH  PWM5CTL0   Bits-------------------------------------
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 85
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 85
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -5098,7 +5098,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000000     04580 FCB                     .EQU                0
   00000005     04581 _FCA3                   .EQU                5
   00000004     04582 _FCB3                   .EQU                4
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 86
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 86
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -5158,7 +5158,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00049         .extern _EIF2_bits
                00050         .extern _T1CTL_bits
                00051         .extern _T2CTL0_bits
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 87
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 87
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -5218,7 +5218,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00103         .extern _IP5_bits
                00104         .extern _EIF4_bits
                00105         .extern _EIE4_bits
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 88
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 88
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -5278,7 +5278,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00157         .extern _CCP7CTL_bits
                00158         .extern _TSCTL3_bits
                00159         .extern _EIF3_bits
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 89
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 89
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -5338,7 +5338,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00211         .extern _PCAL_bits
                00212         .extern _BWDTCTL_bits
                00213         .extern _PHCLR_bits
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 90
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 90
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -5398,7 +5398,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00265         .extern _APFCTL11_bits
                00266         .extern _APFCTL12_bits
                00267         .extern _ADCOFFSET_bits
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 91
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 91
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -5458,7 +5458,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00319         .extern _PWM5CTL0_bits
                00320         .extern _PWM5CTL1_bits
                00321         .extern _PWM5CTL2_bits
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 92
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 92
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -5518,7 +5518,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00373         .extern _NVMADDRH
                00374         .extern _NVMADDRL
                00375         .extern _NVMCTL0
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 93
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 93
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -5578,7 +5578,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00427         .extern _WCTL
                00428         .extern _T3REH
                00429         .extern _T1CTL2
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 94
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 94
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -5638,7 +5638,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00481         .extern _T2CCR1H
                00482         .extern _T4CCR0L
                00483         .extern _EUBRGH2
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 95
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 95
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -5698,7 +5698,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00535         .extern _PUR9
                00536         .extern _PUR1
                00537         .extern _PUR2
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 96
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 96
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -5758,7 +5758,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00589         .extern _BWDTCTL
                00590         .extern _PHCLR
                00591         .extern _LPRCCAL
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 97
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 97
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -5818,7 +5818,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00643         .extern _P4ASCTL
                00644         .extern _P4ATRCTL
                00645         .extern _PP4H
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 98
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 98
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -5878,7 +5878,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00697         .extern _CANTXDT7
                00698         .extern _CANMOD
                00699         .extern _CANCMR
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 99
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 99
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -5938,7 +5938,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00751         .extern _T10CCR1L
                00752         .extern _T10CTL0
                00753         .extern _T10H
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 100
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 100
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -5998,7 +5998,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00805         .global _spi_init
                00806         .global _Spi_CS_High
                00807         .global _Spi_CS_Low
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 101
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 101
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -6058,7 +6058,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00859 _SPI_Write_2Byte_SPI_data_1_1   .res    1
                00860 UDL_SoftSpi_13  .udata
                00861 _SPI_Write_2Byte_buf_1_1        .res    2
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 102
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 102
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -6118,7 +6118,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0007 0000      00913         TRAPPC1 _SPI_Write_2Byte
 0008 0000      00914         TRAPPC2 _SPI_Write_2Byte
 0009 0000      00915         PAGESEL _SPI_Write_2Byte
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 103
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 103
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -6178,7 +6178,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 002A C000      00967         JMP     _00095_DS_
                00968 ;       ::->op : LABEL
                00969 ;       ::->op : =
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 104
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 104
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -6238,7 +6238,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                01021 ;       ::->op : SEND
                01022 ;       ::->op : CALL
 0048 01023 _00102_DS_
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 105
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 105
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -6298,7 +6298,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0070 0000      01075         TRAPPC2 $+1
 0071 0000      01076         PAGESEL $
                01077 ;       ::->op : LABEL
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 106
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 106
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -6358,7 +6358,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 000A D000      01129         CALL    _SPI_Write_2Byte
 000B 0000      01130         TRAPPC1 $+2
 000C 0000      01131         TRAPPC2 $+1
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 107
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 107
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -6418,7 +6418,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 002B 01183 _00080_DS_
                01184 ;       .line   134; "../SoftSpi.c"     for(i=0x1F;i<=0x30;i++)
 002B 981F      01185         MOV     R0,# 0x1f
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 108
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 108
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -6478,7 +6478,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                01237 ;       .line   139; "../SoftSpi.c"     SPI_Write_2Byte(3,0x36,0x00);//update
 0048 9800      01238         MOV     R0,# 0x00
 0049 0000      01239         BANKSEL STK01
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 109
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 109
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -6538,7 +6538,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                01291 ;       ::->op : ENDFUNCTION
 0072 0008      01292         CRET    
                01293 ; exit point of _Rt_One_Init
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 110
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 110
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -6598,7 +6598,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 000D 0000      01345         PAGESEL $
                01346 ;       ::->op : =
                01347 ;       .line   110; "../SoftSpi.c"     for(i=0x02;i<=0x13;i++)
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 111
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 111
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -6658,7 +6658,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 002C 0000      01399         BANKSEL r0x100B
 002D 5100      01400         MOV     r0x100B, R0
                01401 ;       ::->op : LABEL
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 112
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 112
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -6718,7 +6718,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 004A 5100      01453         MOV     STK01, R0
 004B 9836      01454         MOV     R0,# 0x36
 004C 0000      01455         BANKSEL STK00
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 113
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 113
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -6778,7 +6778,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                01507 
                01508 
                01509 
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 114
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 114
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -6838,7 +6838,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 000E 9802      01561         MOV     R0,# 0x02
 000F 0000      01562         BANKSEL r0x100D
 0010 5100      01563         MOV     r0x100D, R0
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 115
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 115
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -6898,7 +6898,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                01615 ;       ::->op : >
                01616 ;swapping arguments (AOP_TYPEs 1/2)
                01617 ;signed compare: left >= lit(0x31=49), size=1, mask=ff
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 116
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 116
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -6958,7 +6958,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 004D 5100      01669         MOV     STK00, R0
 004E 9801      01670         MOV     R0,# 0x01
 004F 0000      01671         TRAPPC1 _SPI_Write_2Byte
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 117
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 117
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -7018,7 +7018,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                01723 func._IS31FL3265B_Init  .code
                01724 ;***
                01725 ;  PostBlock Stats: dbName = C
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 118
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 118
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -7078,7 +7078,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0017 0000      01777         PAGESEL _Rt_One_Init
 0018 D000      01778         CALL    _Rt_One_Init
 0019 0000      01779         TRAPPC1 $+2
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 119
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 119
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -7138,7 +7138,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                01831 ;       ::->op : RECEIVE
 0008 0000      01832         BANKSEL STK01
 0009 0E00      01833         MOVZ    R0, STK01
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 120
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 120
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -7198,7 +7198,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0028 0000      01885         BANKSEL _EIF6_bits
 0029 7C00      01886         JB      _EIF6_bits, 4
 002A C000      01887         JMP     _00030_DS_
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 121
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 121
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -7258,7 +7258,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                01939 ;       .line   49; "../SoftSpi.c"      void Spi_CS_Low(char id)
 0000 0000      01940         BANKSEL r0x1004
 0001 5100      01941         MOV     r0x1004, R0
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 122
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 122
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -7318,7 +7318,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0021 6200      01993         CLR     _P6LR_bits, 2
                01994 ;       ::->op : GOTO
 0022 C000      01995         JMP     _00020_DS_
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 123
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 123
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -7378,7 +7378,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                02047 ;       ::->op : >
                02048 ;swapping arguments (AOP_TYPEs 1/2)
                02049 ;signed compare: left >= lit(0x5=5), size=1, mask=ff
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 124
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 124
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -7438,7 +7438,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0026 02101 _00006_DS_
                02102 ;       .line   46; "../SoftSpi.c"      case 4:CS3HIGH;break;
 0026 0000      02103         BANKSEL _P1LR_bits
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 125
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 125
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -7498,7 +7498,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                02155 ;       ::->op : =
                02156 ;       .line   25; "../SoftSpi.c"      SSCI2CTL0=0X01;                 //SPI 主控模式，时钟 = 工作时钟/64
 000F 9801      02157         MOV     R0,# 0x01
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 126
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 126
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -7557,7 +7557,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                02208 ;         534+  147 =   681 instructions ( 1656 byte)
                02209 
                02210 
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 127
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 127
 
 
 SYMBOL TABLE
@@ -7617,7 +7617,7 @@ ADCDATA3L                         00000255
 ADCHS0                            00000000
 ADCHS1                            00000001
 ADCHS2                            00000002
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 128
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 128
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -7677,7 +7677,7 @@ AIEL                              00000006
 ALC0                              00000000
 ALC1                              00000001
 ALC2                              00000002
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 129
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 129
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -7737,7 +7737,7 @@ ANS16                             00000006
 ANS17                             00000007
 ANS2                              0000004C
 ANS20                             00000000
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 130
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 130
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -7797,7 +7797,7 @@ ANS87                             00000007
 ANS9                              0000014E
 ANS90                             00000000
 ANS91                             00000001
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 131
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 131
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -7857,7 +7857,7 @@ BPS1                              00000004
 BPS2                              00000005
 BPS3                              00000006
 BR2CKS0                           00000002
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 132
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 132
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -7917,7 +7917,7 @@ C3IF                              00000002
 C3M0                              00000000
 C3M1                              00000001
 C3M2                              00000002
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 133
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 133
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -7977,7 +7977,7 @@ CANTXDT4                          00000539
 CANTXDT5                          0000053A
 CANTXDT6                          0000053B
 CANTXDT7                          0000053C
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 134
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 134
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -8037,7 +8037,7 @@ CCT3                              00000001
 CCT7                              00000002
 CCTCTL                            00000068
 CCTEN                             00000007
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 135
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 135
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -8097,7 +8097,7 @@ DIVBH                             00000139
 DIVBL                             0000013D
 DIVCTL                            0000013A
 DIVEN                             00000000
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 136
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 136
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -8157,7 +8157,7 @@ ERSW21                            00000007
 EUBRGH1                           00000259
 EUBRGH2                           00000159
 EUBRGH3                           00000219
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 137
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 137
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -8217,7 +8217,7 @@ FILTCNT42                         00000002
 FP10                              00000000
 FP11                              00000001
 FP12                              00000002
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 138
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 138
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -8277,7 +8277,7 @@ HUR1                              00000001
 HUR2                              00000002
 HUR3                              00000003
 HUR4                              00000004
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 139
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 139
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -8337,7 +8337,7 @@ INTLFEN                           00000000
 INV1                              00000007
 INV2                              00000007
 INV3                              00000007
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 140
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 140
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -8397,7 +8397,7 @@ IOC22F                            00000006
 IOC22N                            00000006
 IOC22P                            00000006
 IOC23F                            00000007
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 141
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 141
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -8457,7 +8457,7 @@ IOCL0                             00000036
 IOCL00                            00000000
 IOCL01                            00000001
 IOCL02                            00000002
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 142
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 142
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -8517,7 +8517,7 @@ MSK11                             00000001
 MSK12                             00000002
 MSK13                             00000003
 MSK14                             00000004
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 143
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 143
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -8577,7 +8577,7 @@ OSCCAL2                           00000030
 OSCCAL3                           00000132
 OSCFAILIF                         00000007
 OSS                               00000001
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 144
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 144
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -8637,7 +8637,7 @@ P2LR                              00000046
 P2LR0                             00000000
 P2LR1                             00000001
 P2LR2                             00000002
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 145
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 145
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -8697,7 +8697,7 @@ P4                                00000009
 P43                               00000003
 P44                               00000004
 P45                               00000005
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 146
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 146
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -8757,7 +8757,7 @@ P5ASS1                            00000005
 P5ASS2                            00000006
 P5BSEL0                           00000005
 P5BSEL1                           00000006
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 147
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 147
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -8817,7 +8817,7 @@ P62                               00000002
 P63                               00000003
 P64                               00000004
 P65                               00000005
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 148
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 148
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -8877,7 +8877,7 @@ P7LR3                             00000003
 P7LR5                             00000005
 P7MOD0                            00000000
 P7MOD1                            00000001
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 149
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 149
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -8937,7 +8937,7 @@ PC2                               00000006
 PC3                               00000002
 PC4                               00000003
 PCA                               00000001
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 150
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 150
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -8997,7 +8997,7 @@ PP1                               00000016
 PP2                               00000032
 PP3H                              00000442
 PP3L                              00000443
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 151
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 151
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -9057,7 +9057,7 @@ PTX3                              00000000
 PTX4                              00000002
 PUIE                              00000006
 PUPH                              00000007
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 152
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 152
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -9117,7 +9117,7 @@ PUR7                              00000247
 PUR71                             00000001
 PUR72                             00000002
 PUR73                             00000003
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 153
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 153
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -9177,7 +9177,7 @@ PWM5H3                            00000621
 PWM5L0                            00000622
 PWM5L1                            00000623
 PWM5L2                            00000624
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 154
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 154
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -9237,7 +9237,7 @@ RES10                             00000000
 RES11                             00000001
 RES12                             00000002
 RES13                             00000003
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 155
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 155
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -9297,7 +9297,7 @@ RTCTMRCTL                         0000032C
 RTCTMREN                          0000032D
 RTCTTR                            00000320
 RTCTTR0                           00000000
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 156
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 156
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -9357,7 +9357,7 @@ SEC5                              00000005
 SEC6                              00000006
 SECIE                             00000000
 SECIF                             00000000
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 157
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 157
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -9417,7 +9417,7 @@ SRXEN3                            00000005
 SRXEN4                            00000005
 SS1SEL                            00000002
 SS2SEL0                           00000001
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 158
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 158
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -9477,7 +9477,7 @@ SSCI2ADD                          00000208
 SSCI2ADD0                         00000000
 SSCI2ADD1                         00000001
 SSCI2ADD2                         00000002
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 159
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 159
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -9537,7 +9537,7 @@ STK03                             00000000
 STK04                             00000000
 STK05                             00000000
 STK06                             00000000
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 160
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 160
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -9597,7 +9597,7 @@ T1CKS1                            00000003
 T1CLK0                            00000000
 T1CLK1                            00000001
 T1CS                              00000001
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 161
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 161
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -9657,7 +9657,7 @@ T3CKS0                            00000004
 T3CKS1                            00000005
 T3CS0                             00000001
 T3CS1                             00000002
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 162
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 162
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -9717,7 +9717,7 @@ T5CLK0                            00000001
 T5CLK1                            00000002
 T5CTL0                            00000550
 T5CTL1                            00000515
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 163
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 163
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -9777,7 +9777,7 @@ T8CCRH                            0000044A
 T8CCRL                            0000044B
 T8CKBS0                           00000003
 T8CKBS1                           00000004
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 164
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 164
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -9837,7 +9837,7 @@ TR10                              00000000
 TR11                              00000001
 TR12                              00000002
 TR13                              00000003
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 165
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 165
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -9897,7 +9897,7 @@ TRA0                              00000000
 TRA1                              00000001
 TRAPRx73                          00000000
 TRAPRx74                          00000000
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 166
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 166
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -9957,7 +9957,7 @@ U7816EN2                          00000007
 U7816RXCTL2                       00000167
 U7816TXCTL2                       00000163
 UADMATCH2                         00000160
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 167
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 167
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -10017,7 +10017,7 @@ WEK0                              00000000
 WEK1                              00000001
 WEK2                              00000002
 WEN1                              00000006
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 168
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 168
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -10077,7 +10077,7 @@ _00020_DS_                        00000028
 _00026_DS_                        00000019
 _00027_DS_                        00000019
 _00030_DS_                        00000028
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 169
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 169
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -10137,7 +10137,7 @@ _ACR34                            00000004
 _ACR35                            00000005
 _ACR36                            00000006
 _ACR37                            00000007
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 170
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 170
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -10197,7 +10197,7 @@ _ADM34                            00000004
 _ADM35                            00000005
 _ADM36                            00000006
 _ADM37                            00000007
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 171
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 171
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -10257,7 +10257,7 @@ _ALRS6                            00000006
 _ALRSEN                           00000007
 _ALRW0                            00000000
 _ALRW1                            00000001
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 172
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 172
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -10317,7 +10317,7 @@ _ANS54                            00000004
 _ANS55                            00000005
 _ANS56                            00000006
 _ANS57                            00000007
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 173
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 173
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -10377,7 +10377,7 @@ _APFCTL12_bits                    00000000
 _APFCTL2                          00000000
 _APFCTL2_bits                     00000000
 _APFCTL3                          00000000
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 174
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 174
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -10437,7 +10437,7 @@ _BR3CKS0                          00000002
 _BR3CKS1                          00000003
 _BR4CKS0                          00000002
 _BR4CKS1                          00000003
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 175
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 175
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -10497,7 +10497,7 @@ _C3EN                             00000007
 _C3IE                             00000002
 _C3IF                             00000002
 _C3M0                             00000000
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 176
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 176
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -10557,7 +10557,7 @@ _CANMSK2_bits                     00000000
 _CANMSK3                          00000000
 _CANMSK3_bits                     00000000
 _CANP                             00000000
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 177
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 177
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -10617,7 +10617,7 @@ _CCP3MOD0                         00000000
 _CCP3MOD1                         00000001
 _CCP3MOD2                         00000002
 _CCP3MOD3                         00000003
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 178
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 178
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -10677,7 +10677,7 @@ _CLKDIV23                         00000003
 _CLKDIV24                         00000004
 _CLKDIV25                         00000005
 _CLKDIV26                         00000006
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 179
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 179
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -10737,7 +10737,7 @@ _DT3RX3SEL                        00000002
 _DT4RX4SEL                        00000000
 _EAIE                             00000002
 _EAIF                             00000002
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 180
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 180
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -10797,7 +10797,7 @@ _ERSW21                           00000007
 _EUBRGH1                          00000000
 _EUBRGH2                          00000000
 _EUBRGH3                          00000000
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 181
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 181
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -10857,7 +10857,7 @@ _FILTCNT20                        00000000
 _FILTCNT21                        00000001
 _FILTCNT22                        00000002
 _FILTCNT30                        00000000
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 182
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 182
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -10917,7 +10917,7 @@ _HLVDCTL                          00000000
 _HLVDCTL_bits                     00000000
 _HLVDEN                           00000007
 _HLVDIE                           00000002
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 183
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 183
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -10977,7 +10977,7 @@ _INTCTL0                          00000000
 _INTCTL1                          00000001
 _INTCTL_bits                      00000000
 _INTLFEN                          00000000
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 184
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 184
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -11037,7 +11037,7 @@ _IOC21F                           00000005
 _IOC21N                           00000005
 _IOC21P                           00000005
 _IOC22F                           00000006
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 185
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 185
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -11097,7 +11097,7 @@ _IOCBPOS_bits                     00000000
 _IOCBUIE                          00000004
 _IOCBUIF                          00000004
 _IOCCF                            00000000
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 186
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 186
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -11157,7 +11157,7 @@ _LFCKEN                           00000007
 _LFCKS                            00000000
 _LIF                              00000004
 _LPRC0                            00000000
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 187
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 187
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -11217,7 +11217,7 @@ _MTH1                             00000001
 _MTH2                             00000002
 _MTH3                             00000003
 _MTH4                             00000004
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 188
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 188
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -11277,7 +11277,7 @@ _P0LR1                            00000001
 _P0LR2                            00000002
 _P0LR3                            00000003
 _P0LR4                            00000004
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 189
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 189
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -11337,7 +11337,7 @@ _P3ASCTL                          00000000
 _P3ASCTL_bits                     00000000
 _P3ASE                            00000007
 _P3ASEL                           00000002
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 190
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 190
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -11397,7 +11397,7 @@ _P4ASS2                           00000006
 _P4ATRCTL                         00000000
 _P4ATRCTL_bits                    00000000
 _P4BSEL0                          00000002
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 191
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 191
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -11457,7 +11457,7 @@ _P5CH1MOD1                        00000007
 _P5CH2MOD                         00000004
 _P5CH3MOD                         00000005
 _P5CSEL                           00000007
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 192
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 192
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -11517,7 +11517,7 @@ _P63                              00000003
 _P64                              00000004
 _P65                              00000005
 _P66                              00000006
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 193
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 193
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -11577,7 +11577,7 @@ _P7LR                             00000000
 _P7LR1                            00000001
 _P7LR2                            00000002
 _P7LR3                            00000003
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 194
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 194
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -11637,7 +11637,7 @@ _PB0                              00000000
 _PB1                              00000001
 _PBCL1                            00000000
 _PBCL2                            00000005
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 195
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 195
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -11697,7 +11697,7 @@ _PINT0                            00000001
 _PINT1                            00000004
 _PIOCA                            00000003
 _PIOCB                            00000004
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 196
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 196
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -11757,7 +11757,7 @@ _PSW_bits                         00000000
 _PT0                              00000002
 _PT1                              00000000
 _PT10                             00000005
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 197
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 197
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -11817,7 +11817,7 @@ _PUR36                            00000006
 _PUR37                            00000007
 _PUR3_bits                        00000000
 _PUR4                             00000000
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 198
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 198
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -11877,7 +11877,7 @@ _PWM2OUTSEL                       00000001
 _PWM3CTL0                         00000000
 _PWM3CTL0_bits                    00000000
 _PWM3CTL1                         00000000
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 199
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 199
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -11937,7 +11937,7 @@ _PWM6L1                           00000000
 _PWM6L2                           00000000
 _PWM6L3                           00000000
 _PWM6PC                           00000000
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 200
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 200
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -11997,7 +11997,7 @@ _RES31                            00000001
 _RES32                            00000002
 _RES33                            00000003
 _RES40                            00000004
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 201
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 201
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -12057,7 +12057,7 @@ _RTCT0IE                          00000000
 _RTCT0IF                          00000000
 _RTCT1IE                          00000001
 _RTCT1IF                          00000001
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 202
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 202
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -12117,7 +12117,7 @@ _SCKS2                            00000002
 _SCLKCTL                          00000000
 _SCLKCTL_bits                     00000000
 _SCLKOE                           00000007
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 203
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 203
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -12177,7 +12177,7 @@ _SRISEL                           00000003
 _SRLEN                            00000007
 _SRNQEN                           00000002
 _SRNQSEL0                         00000000
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 204
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 204
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -12237,7 +12237,7 @@ _SSCI1CTL1_bits                   00000000
 _SSCI1CTL2                        00000000
 _SSCI1CTL2_bits                   00000000
 _SSCI1DA                          00000005
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 205
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 205
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -12297,7 +12297,7 @@ _SSCI2CTL2_bits                   00000000
 _SSCI2DA                          00000005
 _SSCI2EN                          00000005
 _SSCI2IE                          00000004
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 206
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 206
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -12357,7 +12357,7 @@ _SYNC3                            00000004
 _SYNC4                            00000004
 _Spi_CS_High                      00000000
 _Spi_CS_Low                       00000000
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 207
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 207
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -12417,7 +12417,7 @@ _T1GC1                            00000006
 _T1GEN                            00000004
 _T1GGO                            00000004
 _T1GIE                            00000005
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 208
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 208
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -12477,7 +12477,7 @@ _T3CTL_bits                       00000000
 _T3H                              00000000
 _T3IE                             00000007
 _T3IF                             00000007
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 209
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 209
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -12537,7 +12537,7 @@ _T5CTL0                           00000000
 _T5CTL0_bits                      00000000
 _T5CTL1                           00000000
 _T5CTL1_bits                      00000000
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 210
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 210
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -12597,7 +12597,7 @@ _T7REL                            00000000
 _T7REN                            00000007
 _T8CCR0ON                         00000000
 _T8CCRH                           00000000
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 211
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 211
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -12657,7 +12657,7 @@ _TR02                             00000002
 _TR03                             00000003
 _TR04                             00000004
 _TR05                             00000005
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 212
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 212
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -12717,7 +12717,7 @@ _TR6_bits                         00000000
 _TR7                              00000000
 _TR71                             00000001
 _TR72                             00000002
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 213
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 213
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -12777,7 +12777,7 @@ _TXE3                             00000003
 _TXE4                             00000004
 _TXE5                             00000005
 _TXE6                             00000006
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 214
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 214
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -12837,7 +12837,7 @@ _V1                               00000001
 _V2                               00000002
 _V3                               00000003
 _V4                               00000004
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 215
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 215
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -12897,7 +12897,7 @@ _WT1                              00000001
 _WT2                              00000002
 _WT3                              00000003
 _WT4                              00000004
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 216
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 216
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -12957,7 +12957,7 @@ _func._Rt_One_Init_0027           00000027
 _func._Rt_One_Init_0042           00000042
 _func._Rt_One_Init_0043           00000043
 _func._Rt_One_Init_0044           00000044
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 217
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 217
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -13017,7 +13017,7 @@ _func._Tail_One_Init_006F         0000006F
 _func._Tail_One_Init_0070         00000070
 _func._Tail_One_Init_0071         00000071
 _func._Tail_Two_Init_000B         0000000B
-kf8asm-2.0.0                    SoftSpi.asm 10-19-2020  08:46:14         PAGE 218
+kf8asm-2.0.0                    SoftSpi.asm 11-7-2020  08:55:19          PAGE 218
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT

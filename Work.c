@@ -199,7 +199,6 @@ void Tail_Stop_Check_Input(void)
 	Mode_Act();
 }
 void Mode_Act(void)
-
 {
 	switch(ActMode)
 	{

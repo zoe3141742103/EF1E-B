@@ -1,4 +1,4 @@
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE  1
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE  1
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -58,7 +58,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000029     00044 TR4                     .EQU                 0x29
   0000002B     00045 VRECTL                  .EQU                 0x2B
   0000002C     00046 EIE1                    .EQU                 0x2C
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE  2
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE  2
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -118,7 +118,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   0000006B     00098 LFCKCTL                 .EQU                 0x6B
   00000105     00099 P5                      .EQU                 0x105
   00000106     00100 P6                      .EQU                 0x106
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE  3
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE  3
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -178,7 +178,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000146     00152 P6LR                    .EQU                 0x146
   00000147     00153 P7LR                    .EQU                 0x147
   00000149     00154 P9LR                    .EQU                 0x149
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE  4
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE  4
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -238,7 +238,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   0000021F     00206 SSCI2CTL1               .EQU                 0x21F
   0000022A     00207 IP3                     .EQU                 0x22A
   00000231     00208 FILT1CTL                .EQU                 0x231
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE  5
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE  5
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -298,7 +298,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000322     00260 RTCSEC                  .EQU                 0x322
   00000323     00261 RTCMIN                  .EQU                 0x323
   00000324     00262 RTCHOUR                 .EQU                 0x324
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE  6
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE  6
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -358,7 +358,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000441     00314 P3ATRCTL                .EQU                 0x441
   00000442     00315 PP3H                    .EQU                 0x442
   00000443     00316 PP3L                    .EQU                 0x443
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE  7
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE  7
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -418,7 +418,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   0000051C     00368 EIF6                    .EQU                 0x51C
   0000051D     00369 IP6                     .EQU                 0x51D
   00000530     00370 CANTXINF                .EQU                 0x530
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE  8
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE  8
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -478,7 +478,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   0000056B     00422 PWM7H3                  .EQU                 0x56B
   0000056D     00423 PWM7PC                  .EQU                 0x56D
   00000620     00424 PWM5H2                  .EQU                 0x620
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE  9
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE  9
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -538,7 +538,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000002     00476 P02                     .EQU                2
   00000001     00477 P01                     .EQU                1
   00000000     00478 P00                     .EQU                0
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 10
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 10
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -598,7 +598,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000005     00530 _P35                    .EQU                5
   00000004     00531 _P34                    .EQU                4
   00000002     00532 _P32                    .EQU                2
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 11
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 11
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -658,7 +658,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00584 ;  0DH  EIF2   Bits-------------------------------------
   00000007     00585 EEIF                    .EQU                7
   00000006     00586 C2IF                    .EQU                6
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 12
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 12
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -718,7 +718,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000003     00638 PWMMODE                 .EQU                3
   00000002     00639 PWM16ON                 .EQU                2
   00000001     00640 PWM2ON                  .EQU                1
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 13
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 13
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -778,7 +778,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000001     00692 C2OUT                   .EQU                1
   00000000     00693 C1OUT                   .EQU                0
   00000007     00694 _VCEN                   .EQU                7
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 14
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 14
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -838,7 +838,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000001     00746 PT2                     .EQU                1
   00000000     00747 PT1                     .EQU                0
   00000007     00748 _PT3                    .EQU                7
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 15
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 15
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -898,7 +898,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000004     00800 _TR24                   .EQU                4
   00000003     00801 _TR23                   .EQU                3
   00000002     00802 _TR22                   .EQU                2
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 16
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 16
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -958,7 +958,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000002     00854 P18OE                   .EQU                2
   00000001     00855 VREEN                   .EQU                1
   00000007     00856 _VRESEL1                .EQU                7
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 17
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 17
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1018,7 +1018,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000000     00908 _LVR                    .EQU                0
                00909 
                00910 ;  31H  C2CTL   Bits-------------------------------------
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 18
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 18
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1078,7 +1078,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00962 ;  3FH  ADCCTL1   Bits-------------------------------------
   00000007     00963 ADCALEN                 .EQU                7
   00000006     00964 ADCS2                   .EQU                6
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 19
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 19
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1138,7 +1138,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000002     01016 _P2LR2                  .EQU                2
   00000001     01017 _P2LR1                  .EQU                1
   00000000     01018 _P2LR0                  .EQU                0
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 20
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 20
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1198,7 +1198,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000000     01070 ANS00                   .EQU                0
   00000007     01071 _ANS07                  .EQU                7
   00000006     01072 _ANS06                  .EQU                6
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 21
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 21
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1258,7 +1258,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000002     01124 _ANS32                  .EQU                2
   00000001     01125 _ANS31                  .EQU                1
   00000000     01126 _ANS30                  .EQU                0
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 22
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 22
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1318,7 +1318,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000006     01178 BKP6                    .EQU                6
   00000005     01179 BKP5                    .EQU                5
   00000004     01180 BKP4                    .EQU                4
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 23
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 23
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1378,7 +1378,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000002     01232 _P6STR1L                .EQU                2
   00000001     01233 _P6STR0H                .EQU                1
   00000000     01234 _P6STR0L                .EQU                0
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 24
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 24
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1438,7 +1438,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000002     01286 SCKS2                   .EQU                2
   00000001     01287 SCKS1                   .EQU                1
   00000000     01288 SCKS0                   .EQU                0
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 25
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 25
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1498,7 +1498,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000003     01340 P63                     .EQU                3
   00000002     01341 P62                     .EQU                2
   00000001     01342 P61                     .EQU                1
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 26
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 26
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1558,7 +1558,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000001     01394 T4IF                    .EQU                1
   00000000     01395 BCL1IF                  .EQU                0
   00000007     01396 _CCP7IF                 .EQU                7
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 27
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 27
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1618,7 +1618,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                01448 ;  112H  T4CTL0   Bits-------------------------------------
   00000007     01449 T4SLPEN                 .EQU                7
   00000006     01450 T4CKBS3                 .EQU                6
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 28
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 28
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1678,7 +1678,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000002     01502 WPS2                    .EQU                2
   00000001     01503 WPS1                    .EQU                1
   00000000     01504 WPS0                    .EQU                0
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 29
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 29
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1738,7 +1738,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000007     01556 _PCCP7                  .EQU                7
   00000006     01557 _PCCP3                  .EQU                6
   00000005     01558 _PT1G                   .EQU                5
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 30
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 30
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1798,7 +1798,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000004     01610 _TR94                   .EQU                4
   00000003     01611 _TR93                   .EQU                3
   00000002     01612 _TR92                   .EQU                2
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 31
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 31
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1858,7 +1858,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000006     01664 _CKEGE1                 .EQU                6
   00000005     01665 _SSCI1DA                .EQU                5
   00000004     01666 _SSCI1STOP              .EQU                4
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 32
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 32
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1918,7 +1918,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000006     01718 _SSCI1MSK6              .EQU                6
   00000005     01719 _SSCI1MSK5              .EQU                5
   00000004     01720 _SSCI1MSK4              .EQU                4
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 33
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 33
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1978,7 +1978,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000005     01772 _P6LR5                  .EQU                5
   00000004     01773 _P6LR4                  .EQU                4
   00000003     01774 _P6LR3                  .EQU                3
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 34
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 34
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -2038,7 +2038,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000002     01826 ANS62                   .EQU                2
   00000001     01827 ANS61                   .EQU                1
   00000000     01828 ANS60                   .EQU                0
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 35
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 35
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -2098,7 +2098,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000002     01880 _ANS92                  .EQU                2
   00000001     01881 _ANS91                  .EQU                1
   00000000     01882 _ANS90                  .EQU                0
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 36
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 36
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -2158,7 +2158,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000002     01934 _ADM22                  .EQU                2
   00000001     01935 _ADM21                  .EQU                1
   00000000     01936 _ADM20                  .EQU                0
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 37
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 37
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -2218,7 +2218,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000002     01988 _CLKDIV22               .EQU                2
   00000001     01989 _CLKDIV21               .EQU                1
   00000000     01990 _CLKDIV20               .EQU                0
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 38
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 38
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -2278,7 +2278,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000006     02042 RCIDLF2                 .EQU                6
   00000005     02043 SCKPS2                  .EQU                5
   00000004     02044 B2RG16                  .EQU                4
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 39
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 39
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -2338,7 +2338,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000006     02096 SSCI2OV                 .EQU                6
   00000005     02097 SSCI2EN                 .EQU                5
   00000004     02098 SSCI2CKP                .EQU                4
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 40
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 40
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -2398,7 +2398,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000006     02150 SSCI2ACKSTA             .EQU                6
   00000005     02151 SSCI2ACKDAT             .EQU                5
   00000004     02152 SSCI2ACKEN              .EQU                4
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 41
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 41
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -2458,7 +2458,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000003     02204 CCP3MOD3                .EQU                3
   00000002     02205 CCP3MOD2                .EQU                2
   00000001     02206 CCP3MOD1                .EQU                1
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 42
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 42
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -2518,7 +2518,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                02258 ;  21BH  EIE3   Bits-------------------------------------
   00000005     02259 TTIE                    .EQU                5
   00000004     02260 ALRIE                   .EQU                4
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 43
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 43
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -2578,7 +2578,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000004     02312 _PALRM                  .EQU                4
   00000003     02313 _PDAY                   .EQU                3
   00000002     02314 _PHOUR                  .EQU                2
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 44
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 44
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -2638,7 +2638,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000004     02366 _F2CS1                  .EQU                4
   00000003     02367 _F2CS0                  .EQU                3
   00000002     02368 _FILTCNT22              .EQU                2
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 45
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 45
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -2698,7 +2698,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000004     02420 _FP34                   .EQU                4
   00000003     02421 _FP33                   .EQU                3
   00000002     02422 _FP32                   .EQU                2
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 46
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 46
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -2758,7 +2758,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000004     02474 _C3P1                   .EQU                4
   00000003     02475 _C3P0                   .EQU                3
   00000002     02476 _C3M2                   .EQU                2
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 47
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 47
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -2818,7 +2818,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000000     02528 PUR20                   .EQU                0
   00000005     02529 _PUR25                  .EQU                5
   00000004     02530 _PUR24                  .EQU                4
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 48
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 48
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -2878,7 +2878,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000005     02582 _PUR65                  .EQU                5
   00000004     02583 _PUR64                  .EQU                4
   00000003     02584 _PUR63                  .EQU                3
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 49
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 49
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -2938,7 +2938,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000004     02636 STIM4                   .EQU                4
   00000003     02637 STIM3                   .EQU                3
   00000002     02638 STIM2                   .EQU                2
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 50
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 50
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -2998,7 +2998,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000000     02690 _PRTCT0                 .EQU                0
                02691 
                02692 ;  25FH  HLVDCTL   Bits-------------------------------------
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 51
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 51
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -3058,7 +3058,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000004     02744 ALRS4                   .EQU                4
   00000003     02745 ALRS3                   .EQU                3
   00000002     02746 ALRS2                   .EQU                2
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 52
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 52
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -3118,7 +3118,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000002     02798 _ALRW2                  .EQU                2
   00000001     02799 _ALRW1                  .EQU                1
   00000000     02800 _ALRW0                  .EQU                0
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 53
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 53
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -3178,7 +3178,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000003     02852 MIN3                    .EQU                3
   00000002     02853 MIN2                    .EQU                2
   00000001     02854 MIN1                    .EQU                1
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 54
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 54
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -3238,7 +3238,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000001     02906 MTH1                    .EQU                1
   00000000     02907 MTH0                    .EQU                0
   00000004     02908 _MTH4                   .EQU                4
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 55
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 55
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -3298,7 +3298,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                02960 ;  361H  PCAL   Bits-------------------------------------
   00000005     02961 PCAL5                   .EQU                5
   00000004     02962 PCAL4                   .EQU                4
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 56
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 56
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -3358,7 +3358,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                03014 ;  410H  IOCAF   Bits-------------------------------------
   00000007     03015 IOC7F                   .EQU                7
   00000006     03016 IOC6F                   .EQU                6
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 57
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 57
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -3418,7 +3418,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                03068 ;  413H  IOCAPOS   Bits-------------------------------------
   00000007     03069 IOC7P                   .EQU                7
   00000006     03070 IOC6P                   .EQU                6
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 58
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 58
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -3478,7 +3478,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                03122 ;  416H  IOCANEG   Bits-------------------------------------
   00000007     03123 IOC7N                   .EQU                7
   00000006     03124 IOC6N                   .EQU                6
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 59
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 59
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -3538,7 +3538,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                03176 ;  41AH  IOCMOD   Bits-------------------------------------
   00000002     03177 IOCCM                   .EQU                2
   00000001     03178 IOCBM                   .EQU                1
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 60
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 60
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -3598,7 +3598,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000000     03230 _T9CS0                  .EQU                0
                03231 
                03232 ;  424H  PA   Bits-------------------------------------
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 61
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 61
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -3658,7 +3658,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000000     03284 _PURB0                  .EQU                0
                03285 
                03286 ;  42DH  ANSB   Bits-------------------------------------
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 62
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 62
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -3718,7 +3718,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000006     03338 _T4X9                   .EQU                6
   00000005     03339 _TXEN4                  .EQU                5
   00000004     03340 _SYNC4                  .EQU                4
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 63
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 63
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -3778,7 +3778,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000003     03392 P3STREND                .EQU                3
   00000002     03393 P3STRENC                .EQU                2
   00000001     03394 P3STRENB                .EQU                1
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 64
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 64
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -3838,7 +3838,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000002     03446 _T8ON                   .EQU                2
   00000001     03447 _T8CKPS1                .EQU                1
   00000000     03448 _T8CKPS0                .EQU                0
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 65
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 65
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -3898,7 +3898,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000002     03500 P4DC2                   .EQU                2
   00000001     03501 P4DC1                   .EQU                1
   00000000     03502 P4DC0                   .EQU                0
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 66
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 66
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -3958,7 +3958,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000000     03554 CCP7SEL0                .EQU                0
   00000007     03555 _P3DSEL                 .EQU                7
   00000006     03556 _P3CSEL1                .EQU                6
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 67
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 67
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -4018,7 +4018,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000000     03608 INTCCPSEL               .EQU                0
   00000007     03609 _CCP10SEL1              .EQU                7
   00000006     03610 _CCP10SEL0              .EQU                6
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 68
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 68
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -4078,7 +4078,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000000     03662 CLKOUTSEL               .EQU                0
   00000007     03663 _SDIDA2SEL1             .EQU                7
   00000006     03664 _SDIDA2SEL0             .EQU                6
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 69
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 69
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -4138,7 +4138,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000004     03716 _C1OUTSEL               .EQU                4
   00000003     03717 _CK3TX3SEL              .EQU                3
   00000002     03718 _DT3RX3SEL              .EQU                2
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 70
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 70
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -4198,7 +4198,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000006     03770 _T5MOD0                 .EQU                6
   00000005     03771 _T5OFS1                 .EQU                5
   00000004     03772 _T5OFS0                 .EQU                4
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 71
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 71
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -4258,7 +4258,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000004     03824 _WUIF                   .EQU                4
   00000003     03825 _DOVFIF                 .EQU                3
   00000002     03826 _EAIF                   .EQU                2
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 72
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 72
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -4318,7 +4318,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000000     03878 _TX3IF                  .EQU                0
                03879 
                03880 ;  51DH  IP6   Bits-------------------------------------
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 73
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 73
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -4378,7 +4378,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000004     03932 ID17                    .EQU                4
   00000003     03933 ID16                    .EQU                3
   00000002     03934 ID15                    .EQU                2
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 74
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 74
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -4438,7 +4438,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000005     03986 _CANCKS0                .EQU                5
   00000003     03987 _SLEEP                  .EQU                3
   00000002     03988 _LBACK                  .EQU                2
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 75
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 75
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -4498,7 +4498,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000006     04040 TSEG22                  .EQU                6
   00000005     04041 TSEG21                  .EQU                5
   00000004     04042 TSEG20                  .EQU                4
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 76
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 76
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -4558,7 +4558,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000000     04094 EWL0                    .EQU                0
   00000007     04095 _EWL7                   .EQU                7
   00000006     04096 _EWL6                   .EQU                6
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 77
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 77
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -4618,7 +4618,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000000     04148 _RMC0                   .EQU                0
                04149 
                04150 ;  548H  CANACR0   Bits-------------------------------------
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 78
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 78
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -4678,7 +4678,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000000     04202 _ACR20                  .EQU                0
                04203 
                04204 ;  54BH  CANACR3   Bits-------------------------------------
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 79
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 79
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -4738,7 +4738,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000000     04256 _MSK10                  .EQU                0
                04257 
                04258 ;  54EH  CANMSK2   Bits-------------------------------------
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 80
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 80
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -4798,7 +4798,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                04310 ;  553H  T6CTL1   Bits-------------------------------------
   00000007     04311 T6MOD1                  .EQU                7
   00000006     04312 T6MOD0                  .EQU                6
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 81
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 81
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -4858,7 +4858,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000004     04364 _OCB3                   .EQU                4
   00000003     04365 _OCA2                   .EQU                3
   00000002     04366 _OCB2                   .EQU                2
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 82
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 82
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -4918,7 +4918,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                04418 ;  630H  EIF8   Bits-------------------------------------
   00000005     04419 T10IF                   .EQU                5
   00000004     04420 T9IF                    .EQU                4
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 83
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 83
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -4978,7 +4978,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000006     04472 P5ASS2                  .EQU                6
   00000005     04473 P5ASS1                  .EQU                5
   00000004     04474 P5ASS0                  .EQU                4
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 84
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 84
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -5038,7 +5038,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000000     04526 _P5STRENB2              .EQU                0
                04527 
                04528 ;  63AH  PWM5CTL0   Bits-------------------------------------
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 85
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 85
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -5098,7 +5098,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000000     04580 FCB                     .EQU                0
   00000005     04581 _FCA3                   .EQU                5
   00000004     04582 _FCB3                   .EQU                4
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 86
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 86
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -5158,7 +5158,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00049         .extern _STK03
                00050         .extern _STK04
                00051         .extern _STK05
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 87
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 87
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -5218,7 +5218,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00103         .extern _T0CTL_bits
                00104         .extern _ADCCTL2_bits
                00105         .extern _T2CTL1_bits
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 88
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 88
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -5278,7 +5278,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00157         .extern _UADMATCH2_bits
                00158         .extern _U7816TXCTL2_bits
                00159         .extern _EGTCTL2_bits
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 89
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 89
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -5338,7 +5338,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00211         .extern _RTCSTU_bits
                00212         .extern _RTCALRS_bits
                00213         .extern _RTCALRM_bits
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 90
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 90
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -5398,7 +5398,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00265         .extern _PWM3CTL0_bits
                00266         .extern _PWM3CTL1_bits
                00267         .extern _T8CTL_bits
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 91
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 91
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -5458,7 +5458,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00319         .extern _CANMSK3_bits
                00320         .extern _T5CTL0_bits
                00321         .extern _T6CTL1_bits
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 92
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 92
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -5518,7 +5518,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00373         .extern _TR2
                00374         .extern _TR1
                00375         .extern _TR3
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 93
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 93
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -5578,7 +5578,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00427         .extern _CCTCTL
                00428         .extern _SCLKCTL
                00429         .extern _HFCKCTL
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 94
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 94
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -5638,7 +5638,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00481         .extern _T4H
                00482         .extern _PP61H
                00483         .extern _P5LR
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 95
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 95
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -5698,7 +5698,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00535         .extern _UADMATCH3
                00536         .extern _SLEPEN3
                00537         .extern _UPINSET3
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 96
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 96
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -5758,7 +5758,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00589         .extern _RTCALRW
                00590         .extern _RTCTTR
                00591         .extern _RTCFCR
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 97
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 97
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -5818,7 +5818,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00643         .extern _SLPEN4
                00644         .extern _UPINSET4
                00645         .extern _P3ASCTL
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 98
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 98
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -5878,7 +5878,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00697         .extern _CANIF
                00698         .extern _CANP
                00699         .extern _EIE6
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 99
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 99
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -5938,7 +5938,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00751         .extern _T6CCR0H
                00752         .extern _T6CCR0L
                00753         .extern _PWM7L3
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 100
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 100
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -5998,7 +5998,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00805         .extern STK07
                00806         .extern STK06
                00807         .extern STK05
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 101
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 101
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -6058,7 +6058,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00859 
                00860 UD_Work_1       .udata
                00861 _Stop_High_Addr .res    2
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 102
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 102
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -6118,7 +6118,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00913         .db     0x00, 0x00
                00914 
                00915 
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 103
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 103
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -6178,7 +6178,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                00967 ;   _Led_Bye
                00968 ;1 compiler assigned register :
                00969 ;   r0x101F
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 104
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 104
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -6190,7 +6190,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0000 00973 _Led_Hello_Check        ;Function start
                00974 ; 2 exit points
                00975 ;       ::->op : GET_VALUE_AT_ADDRESS
-               00976 ;       .line   329; "../Work.c"        Tail_Status = Tail;
+               00976 ;       .line   328; "../Work.c"        Tail_Status = Tail;
 0000 0000      00977         BANKSEL r0x101F
 0001 0300      00978         CLR     r0x101F
 0002 0000      00979         BANKSEL _P7_bits
@@ -6205,7 +6205,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0009 0000      00988         BANKSEL _Tail_Status
 000A 5100      00989         MOV     _Tail_Status, R0
                00990 ;       ::->op : GET_VALUE_AT_ADDRESS
-               00991 ;       .line   330; "../Work.c"        Stop_Status = Stop;
+               00991 ;       .line   329; "../Work.c"        Stop_Status = Stop;
 000B 0000      00992         BANKSEL r0x101F
 000C 0300      00993         CLR     r0x101F
 000D 0000      00994         BANKSEL _P7_bits
@@ -6220,7 +6220,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0014 0000      01003         BANKSEL _Stop_Status
 0015 5100      01004         MOV     _Stop_Status, R0
                01005 ;       ::->op : GET_VALUE_AT_ADDRESS
-               01006 ;       .line   331; "../Work.c"        RT_Status = RT;
+               01006 ;       .line   330; "../Work.c"        RT_Status = RT;
 0016 0000      01007         BANKSEL r0x101F
 0017 0300      01008         CLR     r0x101F
 0018 0000      01009         BANKSEL _PA_bits
@@ -6235,10 +6235,10 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 001F 0000      01018         BANKSEL _RT_Status
 0020 5100      01019         MOV     _RT_Status, R0
                01020 ;       ::->op : GET_VALUE_AT_ADDRESS
-               01021 ;       .line   332; "../Work.c"        RT_EN_Status = RT_EN;
+               01021 ;       .line   331; "../Work.c"        RT_EN_Status = RT_EN;
 0021 0000      01022         BANKSEL r0x101F
 0022 0300      01023         CLR     r0x101F
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 105
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 105
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -6256,7 +6256,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 002A 0000      01033         BANKSEL _RT_EN_Status
 002B 5100      01034         MOV     _RT_EN_Status, R0
                01035 ;       ::->op : EQ_OP
-               01036 ;       .line   333; "../Work.c"        if(Tail_Status==1&&Stop_Status==1&&RT_Status==1&&RT_EN_Status==0)
+               01036 ;       .line   332; "../Work.c"        if(Tail_Status==1&&Stop_Status==1&&RT_Status==1&&RT_EN_Status==0)
 002C 0000      01037         BANKSEL _Tail_Status
 002D 0E00      01038         MOVZ    R0, _Tail_Status
 002E A801      01039         XOR     R0,# 0x01
@@ -6281,7 +6281,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 003E 7A03      01058         JB      PSW, 2
 003F C000      01059         JMP     _00211_DS_
                01060 ;       ::->op : CALL
-               01061 ;       .line   335; "../Work.c"        Led_Hello();
+               01061 ;       .line   334; "../Work.c"        Led_Hello();
 0040 0000      01062         TRAPPC1 _Led_Hello
 0041 0000      01063         TRAPPC2 _Led_Hello
 0042 0000      01064         PAGESEL _Led_Hello
@@ -6292,13 +6292,13 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                01069 ;       ::->op : LABEL
                01070 ;       ::->op : EQ_OP
 0047 01071 _00211_DS_
-               01072 ;       .line   337; "../Work.c"        if(Tail_Status==1&&Stop_Status==1&&RT_Status==1&&RT_EN_Status==1)
+               01072 ;       .line   336; "../Work.c"        if(Tail_Status==1&&Stop_Status==1&&RT_Status==1&&RT_EN_Status==1)
 0047 0000      01073         BANKSEL _Tail_Status
 0048 0E00      01074         MOVZ    R0, _Tail_Status
 0049 A801      01075         XOR     R0,# 0x01
 004A 7A03      01076         JB      PSW, 2
 004B C000      01077         JMP     _00220_DS_
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 106
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 106
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -6323,7 +6323,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0059 7A03      01094         JB      PSW, 2
 005A C000      01095         JMP     _00220_DS_
                01096 ;       ::->op : CALL
-               01097 ;       .line   339; "../Work.c"        Led_Bye();
+               01097 ;       .line   338; "../Work.c"        Led_Bye();
 005B 0000      01098         TRAPPC1 _Led_Bye
 005C 0000      01099         TRAPPC2 _Led_Bye
 005D 0000      01100         PAGESEL _Led_Bye
@@ -6358,7 +6358,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                01129 ;   _delay_ms
                01130 ;   _Tail1_2_Stop_BackWater_Close
                01131 ;   _delay_ms
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 107
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 107
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -6389,7 +6389,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0000 01154 _Led_Bye        ;Function start
                01155 ; 2 exit points
                01156 ;       ::->op : CALL
-               01157 ;       .line   311; "../Work.c"        Led_Tail_AllOpen();
+               01157 ;       .line   310; "../Work.c"        Led_Tail_AllOpen();
 0000 0000      01158         TRAPPC1 _Led_Tail_AllOpen
 0001 0000      01159         TRAPPC2 _Led_Tail_AllOpen
 0002 0000      01160         PAGESEL _Led_Tail_AllOpen
@@ -6398,7 +6398,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0005 0000      01163         TRAPPC2 $+1
 0006 0000      01164         PAGESEL $
                01165 ;       ::->op : CALL
-               01166 ;       .line   312; "../Work.c"        LED_Stop_AllOpen();
+               01166 ;       .line   311; "../Work.c"        LED_Stop_AllOpen();
 0007 0000      01167         TRAPPC1 _LED_Stop_AllOpen
 0008 0000      01168         TRAPPC2 _LED_Stop_AllOpen
 0009 0000      01169         PAGESEL _LED_Stop_AllOpen
@@ -6408,7 +6408,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 000D 0000      01173         PAGESEL $
                01174 ;       ::->op : SEND
                01175 ;       ::->op : CALL
-               01176 ;       .line   313; "../Work.c"        delay_ms(1000);
+               01176 ;       .line   312; "../Work.c"        delay_ms(1000);
 000E 98E8      01177         MOV     R0,# 0xe8
 000F 0000      01178         BANKSEL STK00
 0010 5100      01179         MOV     STK00, R0
@@ -6418,7 +6418,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0014 0000      01183         PAGESEL _delay_ms
 0015 D000      01184         CALL    _delay_ms
 0016 0000      01185         TRAPPC1 $+2
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 108
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 108
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -6427,7 +6427,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0017 0000      01186         TRAPPC2 $+1
 0018 0000      01187         PAGESEL $
                01188 ;       ::->op : CALL
-               01189 ;       .line   314; "../Work.c"        Led_RT_WaterOpen();
+               01189 ;       .line   313; "../Work.c"        Led_RT_WaterOpen();
 0019 0000      01190         TRAPPC1 _Led_RT_WaterOpen
 001A 0000      01191         TRAPPC2 _Led_RT_WaterOpen
 001B 0000      01192         PAGESEL _Led_RT_WaterOpen
@@ -6437,7 +6437,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 001F 0000      01196         PAGESEL $
                01197 ;       ::->op : SEND
                01198 ;       ::->op : CALL
-               01199 ;       .line   315; "../Work.c"        delay_ms(200);
+               01199 ;       .line   314; "../Work.c"        delay_ms(200);
 0020 98C8      01200         MOV     R0,# 0xc8
 0021 0000      01201         BANKSEL STK00
 0022 5100      01202         MOV     STK00, R0
@@ -6450,7 +6450,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0029 0000      01209         TRAPPC2 $+1
 002A 0000      01210         PAGESEL $
                01211 ;       ::->op : CALL
-               01212 ;       .line   316; "../Work.c"        Led_RT_AllClose();
+               01212 ;       .line   315; "../Work.c"        Led_RT_AllClose();
 002B 0000      01213         TRAPPC1 _Led_RT_AllClose
 002C 0000      01214         TRAPPC2 _Led_RT_AllClose
 002D 0000      01215         PAGESEL _Led_RT_AllClose
@@ -6460,7 +6460,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0031 0000      01219         PAGESEL $
                01220 ;       ::->op : SEND
                01221 ;       ::->op : CALL
-               01222 ;       .line   317; "../Work.c"        delay_ms(200);
+               01222 ;       .line   316; "../Work.c"        delay_ms(200);
 0032 98C8      01223         MOV     R0,# 0xc8
 0033 0000      01224         BANKSEL STK00
 0034 5100      01225         MOV     STK00, R0
@@ -6473,12 +6473,12 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 003B 0000      01232         TRAPPC2 $+1
 003C 0000      01233         PAGESEL $
                01234 ;       ::->op : CALL
-               01235 ;       .line   318; "../Work.c"        Tail_LowWater_Blinky();
+               01235 ;       .line   317; "../Work.c"        Tail_LowWater_Blinky();
 003D 0000      01236         TRAPPC1 _Tail_LowWater_Blinky
 003E 0000      01237         TRAPPC2 _Tail_LowWater_Blinky
 003F 0000      01238         PAGESEL _Tail_LowWater_Blinky
 0040 D000      01239         CALL    _Tail_LowWater_Blinky
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 109
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 109
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -6489,7 +6489,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0043 0000      01242         PAGESEL $
                01243 ;       ::->op : SEND
                01244 ;       ::->op : CALL
-               01245 ;       .line   319; "../Work.c"        delay_ms(1700);
+               01245 ;       .line   318; "../Work.c"        delay_ms(1700);
 0044 98A4      01246         MOV     R0,# 0xa4
 0045 0000      01247         BANKSEL STK00
 0046 5100      01248         MOV     STK00, R0
@@ -6502,7 +6502,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 004D 0000      01255         TRAPPC2 $+1
 004E 0000      01256         PAGESEL $
                01257 ;       ::->op : CALL
-               01258 ;       .line   320; "../Work.c"        Tail1_2_Stop_BackWater_Close();
+               01258 ;       .line   319; "../Work.c"        Tail1_2_Stop_BackWater_Close();
 004F 0000      01259         TRAPPC1 _Tail1_2_Stop_BackWater_Close
 0050 0000      01260         TRAPPC2 _Tail1_2_Stop_BackWater_Close
 0051 0000      01261         PAGESEL _Tail1_2_Stop_BackWater_Close
@@ -6512,7 +6512,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0055 0000      01265         PAGESEL $
                01266 ;       ::->op : SEND
                01267 ;       ::->op : CALL
-               01268 ;       .line   321; "../Work.c"        delay_ms(1160);
+               01268 ;       .line   320; "../Work.c"        delay_ms(1160);
 0056 9888      01269         MOV     R0,# 0x88
 0057 0000      01270         BANKSEL STK00
 0058 5100      01271         MOV     STK00, R0
@@ -6525,7 +6525,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 005F 0000      01278         TRAPPC2 $+1
 0060 0000      01279         PAGESEL $
                01280 ;       ::->op : CALL
-               01281 ;       .line   322; "../Work.c"        Tail1_2_Stop_FullWater_Close();
+               01281 ;       .line   321; "../Work.c"        Tail1_2_Stop_FullWater_Close();
 0061 0000      01282         TRAPPC1 _Tail1_2_Stop_FullWater_Close
 0062 0000      01283         TRAPPC2 _Tail1_2_Stop_FullWater_Close
 0063 0000      01284         PAGESEL _Tail1_2_Stop_FullWater_Close
@@ -6535,10 +6535,10 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0067 0000      01288         PAGESEL $
                01289 ;       ::->op : SEND
                01290 ;       ::->op : CALL
-               01291 ;       .line   323; "../Work.c"        delay_ms(1000);
+               01291 ;       .line   322; "../Work.c"        delay_ms(1000);
 0068 98E8      01292         MOV     R0,# 0xe8
 0069 0000      01293         BANKSEL STK00
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 110
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 110
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -6554,7 +6554,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0071 0000      01301         TRAPPC2 $+1
 0072 0000      01302         PAGESEL $
                01303 ;       ::->op : CALL
-               01304 ;       .line   324; "../Work.c"        Tail12_Breath_Close();
+               01304 ;       .line   323; "../Work.c"        Tail12_Breath_Close();
 0073 0000      01305         TRAPPC1 _Tail12_Breath_Close
 0074 0000      01306         TRAPPC2 _Tail12_Breath_Close
 0075 0000      01307         PAGESEL _Tail12_Breath_Close
@@ -6598,7 +6598,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                01345 ;   _Stop_HighBackWater_Open
                01346 ;   _Tail1_FullBackWater_Open
                01347 ;   _Tail2_Stop_FullWater_Open
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 111
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 111
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -6629,7 +6629,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0000 01370 _Led_Hello      ;Function start
                01371 ; 2 exit points
                01372 ;       ::->op : CALL
-               01373 ;       .line   290; "../Work.c"        Led_RT_WaterOpen();
+               01373 ;       .line   289; "../Work.c"        Led_RT_WaterOpen();
 0000 0000      01374         TRAPPC1 _Led_RT_WaterOpen
 0001 0000      01375         TRAPPC2 _Led_RT_WaterOpen
 0002 0000      01376         PAGESEL _Led_RT_WaterOpen
@@ -6639,7 +6639,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0006 0000      01380         PAGESEL $
                01381 ;       ::->op : SEND
                01382 ;       ::->op : CALL
-               01383 ;       .line   291; "../Work.c"        delay_ms(200);
+               01383 ;       .line   290; "../Work.c"        delay_ms(200);
 0007 98C8      01384         MOV     R0,# 0xc8
 0008 0000      01385         BANKSEL STK00
 0009 5100      01386         MOV     STK00, R0
@@ -6652,13 +6652,13 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0010 0000      01393         TRAPPC2 $+1
 0011 0000      01394         PAGESEL $
                01395 ;       ::->op : CALL
-               01396 ;       .line   292; "../Work.c"        Led_RT_AllClose();
+               01396 ;       .line   291; "../Work.c"        Led_RT_AllClose();
 0012 0000      01397         TRAPPC1 _Led_RT_AllClose
 0013 0000      01398         TRAPPC2 _Led_RT_AllClose
 0014 0000      01399         PAGESEL _Led_RT_AllClose
 0015 D000      01400         CALL    _Led_RT_AllClose
 0016 0000      01401         TRAPPC1 $+2
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 112
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 112
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -6668,7 +6668,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0018 0000      01403         PAGESEL $
                01404 ;       ::->op : SEND
                01405 ;       ::->op : CALL
-               01406 ;       .line   293; "../Work.c"        delay_ms(300);
+               01406 ;       .line   292; "../Work.c"        delay_ms(300);
 0019 982C      01407         MOV     R0,# 0x2c
 001A 0000      01408         BANKSEL STK00
 001B 5100      01409         MOV     STK00, R0
@@ -6681,7 +6681,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0022 0000      01416         TRAPPC2 $+1
 0023 0000      01417         PAGESEL $
                01418 ;       ::->op : CALL
-               01419 ;       .line   294; "../Work.c"        Led_RT_WaterOpen();
+               01419 ;       .line   293; "../Work.c"        Led_RT_WaterOpen();
 0024 0000      01420         TRAPPC1 _Led_RT_WaterOpen
 0025 0000      01421         TRAPPC2 _Led_RT_WaterOpen
 0026 0000      01422         PAGESEL _Led_RT_WaterOpen
@@ -6691,7 +6691,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 002A 0000      01426         PAGESEL $
                01427 ;       ::->op : SEND
                01428 ;       ::->op : CALL
-               01429 ;       .line   295; "../Work.c"        delay_ms(200);
+               01429 ;       .line   294; "../Work.c"        delay_ms(200);
 002B 98C8      01430         MOV     R0,# 0xc8
 002C 0000      01431         BANKSEL STK00
 002D 5100      01432         MOV     STK00, R0
@@ -6704,7 +6704,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0034 0000      01439         TRAPPC2 $+1
 0035 0000      01440         PAGESEL $
                01441 ;       ::->op : CALL
-               01442 ;       .line   296; "../Work.c"        Led_RT_AllClose();
+               01442 ;       .line   295; "../Work.c"        Led_RT_AllClose();
 0036 0000      01443         TRAPPC1 _Led_RT_AllClose
 0037 0000      01444         TRAPPC2 _Led_RT_AllClose
 0038 0000      01445         PAGESEL _Led_RT_AllClose
@@ -6714,11 +6714,11 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 003C 0000      01449         PAGESEL $
                01450 ;       ::->op : SEND
                01451 ;       ::->op : CALL
-               01452 ;       .line   297; "../Work.c"        delay_ms(300);
+               01452 ;       .line   296; "../Work.c"        delay_ms(300);
 003D 982C      01453         MOV     R0,# 0x2c
 003E 0000      01454         BANKSEL STK00
 003F 5100      01455         MOV     STK00, R0
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 113
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 113
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -6733,7 +6733,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0046 0000      01462         TRAPPC2 $+1
 0047 0000      01463         PAGESEL $
                01464 ;       ::->op : CALL
-               01465 ;       .line   298; "../Work.c"        Tail12_Breath_Open();
+               01465 ;       .line   297; "../Work.c"        Tail12_Breath_Open();
 0048 0000      01466         TRAPPC1 _Tail12_Breath_Open
 0049 0000      01467         TRAPPC2 _Tail12_Breath_Open
 004A 0000      01468         PAGESEL _Tail12_Breath_Open
@@ -6743,7 +6743,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 004E 0000      01472         PAGESEL $
                01473 ;       ::->op : SEND
                01474 ;       ::->op : CALL
-               01475 ;       .line   299; "../Work.c"        delay_ms(200);
+               01475 ;       .line   298; "../Work.c"        delay_ms(200);
 004F 98C8      01476         MOV     R0,# 0xc8
 0050 0000      01477         BANKSEL STK00
 0051 5100      01478         MOV     STK00, R0
@@ -6756,7 +6756,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0058 0000      01485         TRAPPC2 $+1
 0059 0000      01486         PAGESEL $
                01487 ;       ::->op : CALL
-               01488 ;       .line   300; "../Work.c"        Tail_LowWater_Open();
+               01488 ;       .line   299; "../Work.c"        Tail_LowWater_Open();
 005A 0000      01489         TRAPPC1 _Tail_LowWater_Open
 005B 0000      01490         TRAPPC2 _Tail_LowWater_Open
 005C 0000      01491         PAGESEL _Tail_LowWater_Open
@@ -6766,7 +6766,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0060 0000      01495         PAGESEL $
                01496 ;       ::->op : SEND
                01497 ;       ::->op : CALL
-               01498 ;       .line   301; "../Work.c"        delay_ms(300);
+               01498 ;       .line   300; "../Work.c"        delay_ms(300);
 0061 982C      01499         MOV     R0,# 0x2c
 0062 0000      01500         BANKSEL STK00
 0063 5100      01501         MOV     STK00, R0
@@ -6778,14 +6778,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0069 0000      01507         TRAPPC1 $+2
 006A 0000      01508         TRAPPC2 $+1
 006B 0000      01509         PAGESEL $
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 114
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 114
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
  
                01510 ;       ::->op : CALL
-               01511 ;       .line   302; "../Work.c"        Tail_HighWater_Open();
+               01511 ;       .line   301; "../Work.c"        Tail_HighWater_Open();
 006C 0000      01512         TRAPPC1 _Tail_HighWater_Open
 006D 0000      01513         TRAPPC2 _Tail_HighWater_Open
 006E 0000      01514         PAGESEL _Tail_HighWater_Open
@@ -6795,7 +6795,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0072 0000      01518         PAGESEL $
                01519 ;       ::->op : SEND
                01520 ;       ::->op : CALL
-               01521 ;       .line   303; "../Work.c"        delay_ms(1300);
+               01521 ;       .line   302; "../Work.c"        delay_ms(1300);
 0073 9814      01522         MOV     R0,# 0x14
 0074 0000      01523         BANKSEL STK00
 0075 5100      01524         MOV     STK00, R0
@@ -6808,7 +6808,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 007C 0000      01531         TRAPPC2 $+1
 007D 0000      01532         PAGESEL $
                01533 ;       ::->op : CALL
-               01534 ;       .line   304; "../Work.c"        Stop_HighBackWater_Open();
+               01534 ;       .line   303; "../Work.c"        Stop_HighBackWater_Open();
 007E 0000      01535         TRAPPC1 _Stop_HighBackWater_Open
 007F 0000      01536         TRAPPC2 _Stop_HighBackWater_Open
 0080 0000      01537         PAGESEL _Stop_HighBackWater_Open
@@ -6817,7 +6817,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0083 0000      01540         TRAPPC2 $+1
 0084 0000      01541         PAGESEL $
                01542 ;       ::->op : CALL
-               01543 ;       .line   305; "../Work.c"        Tail1_FullBackWater_Open();
+               01543 ;       .line   304; "../Work.c"        Tail1_FullBackWater_Open();
 0085 0000      01544         TRAPPC1 _Tail1_FullBackWater_Open
 0086 0000      01545         TRAPPC2 _Tail1_FullBackWater_Open
 0087 0000      01546         PAGESEL _Tail1_FullBackWater_Open
@@ -6826,7 +6826,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 008A 0000      01549         TRAPPC2 $+1
 008B 0000      01550         PAGESEL $
                01551 ;       ::->op : CALL
-               01552 ;       .line   306; "../Work.c"        Tail2_Stop_FullWater_Open();
+               01552 ;       .line   305; "../Work.c"        Tail2_Stop_FullWater_Open();
 008C 0000      01553         TRAPPC1 _Tail2_Stop_FullWater_Open
 008D 0000      01554         TRAPPC2 _Tail2_Stop_FullWater_Open
 008E 0000      01555         PAGESEL _Tail2_Stop_FullWater_Open
@@ -6838,7 +6838,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                01561 ;       ::->op : GOTO
 0093 01562 _00199_DS_
 0093 C000      01563         JMP     _00199_DS_
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 115
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 115
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -6864,41 +6864,41 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0000 01581 _Timer_PWM_Callback     ;Function start
                01582 ; 2 exit points
                01583 ;       ::->op : IFX
-               01584 ;       .line   227; "../Work.c"        if(PWM_Timer_Flag)
+               01584 ;       .line   226; "../Work.c"        if(PWM_Timer_Flag)
 0000 9800      01585         MOV     R0,# 0x00
 0001 0000      01586         BANKSEL _PWM_Timer_Flag
 0002 3000      01587         ORL     R0, _PWM_Timer_Flag
 0003 7203      01588         JNB     PSW, 2
 0004 C000      01589         JMP     _00169_DS_
                01590 ;       ::->op : =
-               01591 ;       .line   229; "../Work.c"        PWM_Timer_Flag =0;
+               01591 ;       .line   228; "../Work.c"        PWM_Timer_Flag =0;
 0005 0000      01592         BANKSEL _PWM_Timer_Flag
 0006 0300      01593         CLR     _PWM_Timer_Flag
                01594 ;       ::->op : =
-               01595 ;       .line   230; "../Work.c"        T1H = 0xF1;
+               01595 ;       .line   229; "../Work.c"        T1H = 0xF1;
 0007 98F1      01596         MOV     R0,# 0xf1
 0008 0000      01597         BANKSEL _T1H
 0009 5100      01598         MOV     _T1H, R0
                01599 ;       ::->op : =
-               01600 ;       .line   231; "../Work.c"        T1L = 0x60;
+               01600 ;       .line   230; "../Work.c"        T1L = 0x60;
 000A 9860      01601         MOV     R0,# 0x60
-               01602 ;       .line   232; "../Work.c"        if(Stop_High_Addr & LED1ADDR)
+               01602 ;       .line   231; "../Work.c"        if(Stop_High_Addr & LED1ADDR)
 000B 0000      01603         BANKSEL _T1L
 000C 5100      01604         MOV     _T1L, R0
-               01605 ;       .line   233; "../Work.c"        LED1LOW;
+               01605 ;       .line   232; "../Work.c"        LED1LOW;
 000D 0000      01606         BANKSEL _Stop_High_Addr
 000E 7800      01607         JB      _Stop_High_Addr, 0
 000F C000      01608         JMP     _00234_DS_
-               01609 ;       .line   234; "../Work.c"        if(Stop_High_Addr & LED2ADDR)
+               01609 ;       .line   233; "../Work.c"        if(Stop_High_Addr & LED2ADDR)
 0010 0000      01610         BANKSEL _P2LR_bits
 0011 6300      01611         CLR     _P2LR_bits, 3
 0012 01612 _00234_DS_
-               01613 ;       .line   235; "../Work.c"        LED2LOW;
+               01613 ;       .line   234; "../Work.c"        LED2LOW;
 0012 0000      01614         BANKSEL _Stop_High_Addr
 0013 7900      01615         JB      _Stop_High_Addr, 1
 0014 C000      01616         JMP     _00235_DS_
-               01617 ;       .line   236; "../Work.c"        if(Stop_High_Addr & LED3ADDR)
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 116
+               01617 ;       .line   235; "../Work.c"        if(Stop_High_Addr & LED3ADDR)
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 116
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -6911,54 +6911,54 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0018 7A00      01622         JB      _Stop_High_Addr, 2
 0019 C000      01623         JMP     _00125_DS_
                01624 ;       ::->op :*  =
-               01625 ;       .line   237; "../Work.c"        LED3LOW;
+               01625 ;       .line   236; "../Work.c"        LED3LOW;
 001A 0000      01626         BANKSEL _P2LR_bits
 001B 6000      01627         CLR     _P2LR_bits, 0
                01628 ;       ::->op : LABEL
                01629 ;       ::->op : BITWISEAND
 001C 01630 _00125_DS_
-               01631 ;       .line   238; "../Work.c"        if(Stop_High_Addr & LED4ADDR)
+               01631 ;       .line   237; "../Work.c"        if(Stop_High_Addr & LED4ADDR)
 001C 0000      01632         BANKSEL _Stop_High_Addr
 001D 7B00      01633         JB      _Stop_High_Addr, 3
 001E C000      01634         JMP     _00127_DS_
                01635 ;       ::->op :*  =
-               01636 ;       .line   239; "../Work.c"        LED4LOW;
+               01636 ;       .line   238; "../Work.c"        LED4LOW;
 001F 0000      01637         BANKSEL _P2LR_bits
 0020 6100      01638         CLR     _P2LR_bits, 1
                01639 ;       ::->op : LABEL
                01640 ;       ::->op : BITWISEAND
 0021 01641 _00127_DS_
-               01642 ;       .line   240; "../Work.c"        if(Stop_High_Addr & LED5ADDR)
+               01642 ;       .line   239; "../Work.c"        if(Stop_High_Addr & LED5ADDR)
 0021 0000      01643         BANKSEL _Stop_High_Addr
 0022 7C00      01644         JB      _Stop_High_Addr, 4
 0023 C000      01645         JMP     _00129_DS_
                01646 ;       ::->op :*  =
-               01647 ;       .line   241; "../Work.c"        LED5LOW;
+               01647 ;       .line   240; "../Work.c"        LED5LOW;
 0024 0000      01648         BANKSEL _P6LR_bits
 0025 6100      01649         CLR     _P6LR_bits, 1
                01650 ;       ::->op : LABEL
                01651 ;       ::->op : BITWISEAND
 0026 01652 _00129_DS_
-               01653 ;       .line   242; "../Work.c"        if(Stop_High_Addr & LED6ADDR)
+               01653 ;       .line   241; "../Work.c"        if(Stop_High_Addr & LED6ADDR)
 0026 0000      01654         BANKSEL _Stop_High_Addr
 0027 7D00      01655         JB      _Stop_High_Addr, 5
 0028 C000      01656         JMP     _00131_DS_
                01657 ;       ::->op :*  =
-               01658 ;       .line   243; "../Work.c"        LED6LOW;
+               01658 ;       .line   242; "../Work.c"        LED6LOW;
 0029 0000      01659         BANKSEL _P6LR_bits
 002A 6300      01660         CLR     _P6LR_bits, 3
                01661 ;       ::->op : LABEL
                01662 ;       ::->op : BITWISEAND
 002B 01663 _00131_DS_
-               01664 ;       .line   244; "../Work.c"        if(Stop_High_Addr & LED7ADDR)
+               01664 ;       .line   243; "../Work.c"        if(Stop_High_Addr & LED7ADDR)
 002B 0000      01665         BANKSEL _Stop_High_Addr
 002C 7E00      01666         JB      _Stop_High_Addr, 6
 002D C000      01667         JMP     _00133_DS_
                01668 ;       ::->op :*  =
-               01669 ;       .line   245; "../Work.c"        LED7LOW;
+               01669 ;       .line   244; "../Work.c"        LED7LOW;
 002E 0000      01670         BANKSEL _P6LR_bits
 002F 6500      01671         CLR     _P6LR_bits, 5
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 117
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 117
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -6967,58 +6967,58 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                01672 ;       ::->op : LABEL
                01673 ;       ::->op : BITWISEAND
 0030 01674 _00133_DS_
-               01675 ;       .line   246; "../Work.c"        if(Stop_High_Addr & LED8ADDR)
+               01675 ;       .line   245; "../Work.c"        if(Stop_High_Addr & LED8ADDR)
 0030 0000      01676         BANKSEL _Stop_High_Addr
 0031 7F00      01677         JB      _Stop_High_Addr, 7
 0032 C000      01678         JMP     _00135_DS_
                01679 ;       ::->op :*  =
-               01680 ;       .line   247; "../Work.c"        LED8LOW;
+               01680 ;       .line   246; "../Work.c"        LED8LOW;
 0033 0000      01681         BANKSEL _P6LR_bits
 0034 6600      01682         CLR     _P6LR_bits, 6
                01683 ;       ::->op : LABEL
                01684 ;       ::->op : BITWISEAND
 0035 01685 _00135_DS_
-               01686 ;       .line   248; "../Work.c"        if(Stop_High_Addr & LED9ADDR)
+               01686 ;       .line   247; "../Work.c"        if(Stop_High_Addr & LED9ADDR)
 0035 0000      01687         BANKSEL (_Stop_High_Addr + 1)
 0036 7800      01688         JB      (_Stop_High_Addr + 1), 0
 0037 C000      01689         JMP     _00137_DS_
                01690 ;       ::->op :*  =
-               01691 ;       .line   249; "../Work.c"        LED9LOW;
+               01691 ;       .line   248; "../Work.c"        LED9LOW;
 0038 0000      01692         BANKSEL _P9LR_bits
 0039 6500      01693         CLR     _P9LR_bits, 5
                01694 ;       ::->op : LABEL
                01695 ;       ::->op : BITWISEAND
 003A 01696 _00137_DS_
-               01697 ;       .line   250; "../Work.c"        if(Stop_High_Addr & LED10ADDR)
+               01697 ;       .line   249; "../Work.c"        if(Stop_High_Addr & LED10ADDR)
 003A 0000      01698         BANKSEL (_Stop_High_Addr + 1)
 003B 7900      01699         JB      (_Stop_High_Addr + 1), 1
 003C C000      01700         JMP     _00139_DS_
                01701 ;       ::->op :*  =
-               01702 ;       .line   251; "../Work.c"        LED10LOW;
+               01702 ;       .line   250; "../Work.c"        LED10LOW;
 003D 0000      01703         BANKSEL _P9LR_bits
 003E 6400      01704         CLR     _P9LR_bits, 4
                01705 ;       ::->op : LABEL
                01706 ;       ::->op : BITWISEAND
 003F 01707 _00139_DS_
-               01708 ;       .line   252; "../Work.c"        if(Stop_High_Addr & LED11ADDR)
+               01708 ;       .line   251; "../Work.c"        if(Stop_High_Addr & LED11ADDR)
 003F 0000      01709         BANKSEL (_Stop_High_Addr + 1)
 0040 7A00      01710         JB      (_Stop_High_Addr + 1), 2
 0041 C000      01711         JMP     _00141_DS_
                01712 ;       ::->op :*  =
-               01713 ;       .line   253; "../Work.c"        LED11LOW;
+               01713 ;       .line   252; "../Work.c"        LED11LOW;
 0042 0000      01714         BANKSEL _P4LR_bits
 0043 6300      01715         CLR     _P4LR_bits, 3
                01716 ;       ::->op : LABEL
                01717 ;       ::->op : BITWISEAND
 0044 01718 _00141_DS_
-               01719 ;       .line   254; "../Work.c"        if(Stop_High_Addr & LED12ADDR)
+               01719 ;       .line   253; "../Work.c"        if(Stop_High_Addr & LED12ADDR)
 0044 0000      01720         BANKSEL (_Stop_High_Addr + 1)
 0045 7B00      01721         JB      (_Stop_High_Addr + 1), 3
 0046 C000      01722         JMP     _00171_DS_
                01723 ;       ::->op :*  =
-               01724 ;       .line   255; "../Work.c"        LED12LOW;
+               01724 ;       .line   254; "../Work.c"        LED12LOW;
 0047 0000      01725         BANKSEL _P4LR_bits
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 118
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 118
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -7030,34 +7030,34 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                01729 ;       ::->op : LABEL
                01730 ;       ::->op : =
 004A 01731 _00169_DS_
-               01732 ;       .line   259; "../Work.c"        PWM_Timer_Flag =1;
+               01732 ;       .line   258; "../Work.c"        PWM_Timer_Flag =1;
 004A 9801      01733         MOV     R0,# 0x01
 004B 0000      01734         BANKSEL _PWM_Timer_Flag
 004C 5100      01735         MOV     _PWM_Timer_Flag, R0
                01736 ;       ::->op : =
-               01737 ;       .line   260; "../Work.c"        T1H = 0xFF;
+               01737 ;       .line   259; "../Work.c"        T1H = 0xFF;
 004D 98FF      01738         MOV     R0,# 0xff
 004E 0000      01739         BANKSEL _T1H
 004F 5100      01740         MOV     _T1H, R0
                01741 ;       ::->op : =
-               01742 ;       .line   261; "../Work.c"        T1L = 0x98;
+               01742 ;       .line   260; "../Work.c"        T1L = 0x98;
 0050 9898      01743         MOV     R0,# 0x98
-               01744 ;       .line   262; "../Work.c"        if(Stop_Low_Addr & LED1ADDR)
+               01744 ;       .line   261; "../Work.c"        if(Stop_Low_Addr & LED1ADDR)
 0051 0000      01745         BANKSEL _T1L
 0052 5100      01746         MOV     _T1L, R0
-               01747 ;       .line   263; "../Work.c"        LED1HIGH;
+               01747 ;       .line   262; "../Work.c"        LED1HIGH;
 0053 0000      01748         BANKSEL _Stop_Low_Addr
 0054 7800      01749         JB      _Stop_Low_Addr, 0
 0055 C000      01750         JMP     _00236_DS_
-               01751 ;       .line   264; "../Work.c"        if(Stop_Low_Addr & LED2ADDR)
+               01751 ;       .line   263; "../Work.c"        if(Stop_Low_Addr & LED2ADDR)
 0056 0000      01752         BANKSEL _P2LR_bits
 0057 6B00      01753         SET     _P2LR_bits, 3
 0058 01754 _00236_DS_
-               01755 ;       .line   265; "../Work.c"        LED2HIGH;
+               01755 ;       .line   264; "../Work.c"        LED2HIGH;
 0058 0000      01756         BANKSEL _Stop_Low_Addr
 0059 7900      01757         JB      _Stop_Low_Addr, 1
 005A C000      01758         JMP     _00237_DS_
-               01759 ;       .line   266; "../Work.c"        if(Stop_Low_Addr & LED3ADDR)
+               01759 ;       .line   265; "../Work.c"        if(Stop_Low_Addr & LED3ADDR)
 005B 0000      01760         BANKSEL _P2LR_bits
 005C 6C00      01761         SET     _P2LR_bits, 4
 005D 01762 _00237_DS_
@@ -7065,20 +7065,20 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 005E 7A00      01764         JB      _Stop_Low_Addr, 2
 005F C000      01765         JMP     _00149_DS_
                01766 ;       ::->op :*  =
-               01767 ;       .line   267; "../Work.c"        LED3HIGH;
+               01767 ;       .line   266; "../Work.c"        LED3HIGH;
 0060 0000      01768         BANKSEL _P2LR_bits
 0061 6800      01769         SET     _P2LR_bits, 0
                01770 ;       ::->op : LABEL
                01771 ;       ::->op : BITWISEAND
 0062 01772 _00149_DS_
-               01773 ;       .line   268; "../Work.c"        if(Stop_Low_Addr & LED4ADDR)
+               01773 ;       .line   267; "../Work.c"        if(Stop_Low_Addr & LED4ADDR)
 0062 0000      01774         BANKSEL _Stop_Low_Addr
 0063 7B00      01775         JB      _Stop_Low_Addr, 3
 0064 C000      01776         JMP     _00151_DS_
                01777 ;       ::->op :*  =
-               01778 ;       .line   269; "../Work.c"        LED4HIGH;
+               01778 ;       .line   268; "../Work.c"        LED4HIGH;
 0065 0000      01779         BANKSEL _P2LR_bits
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 119
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 119
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -7088,57 +7088,57 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                01781 ;       ::->op : LABEL
                01782 ;       ::->op : BITWISEAND
 0067 01783 _00151_DS_
-               01784 ;       .line   270; "../Work.c"        if(Stop_Low_Addr & LED5ADDR)
+               01784 ;       .line   269; "../Work.c"        if(Stop_Low_Addr & LED5ADDR)
 0067 0000      01785         BANKSEL _Stop_Low_Addr
 0068 7C00      01786         JB      _Stop_Low_Addr, 4
 0069 C000      01787         JMP     _00153_DS_
                01788 ;       ::->op :*  =
-               01789 ;       .line   271; "../Work.c"        LED5HIGH;
+               01789 ;       .line   270; "../Work.c"        LED5HIGH;
 006A 0000      01790         BANKSEL _P6LR_bits
 006B 6900      01791         SET     _P6LR_bits, 1
                01792 ;       ::->op : LABEL
                01793 ;       ::->op : BITWISEAND
 006C 01794 _00153_DS_
-               01795 ;       .line   272; "../Work.c"        if(Stop_Low_Addr & LED6ADDR)
+               01795 ;       .line   271; "../Work.c"        if(Stop_Low_Addr & LED6ADDR)
 006C 0000      01796         BANKSEL _Stop_Low_Addr
 006D 7D00      01797         JB      _Stop_Low_Addr, 5
 006E C000      01798         JMP     _00155_DS_
                01799 ;       ::->op :*  =
-               01800 ;       .line   273; "../Work.c"        LED6HIGH;
+               01800 ;       .line   272; "../Work.c"        LED6HIGH;
 006F 0000      01801         BANKSEL _P6LR_bits
 0070 6B00      01802         SET     _P6LR_bits, 3
                01803 ;       ::->op : LABEL
                01804 ;       ::->op : BITWISEAND
 0071 01805 _00155_DS_
-               01806 ;       .line   274; "../Work.c"        if(Stop_Low_Addr & LED7ADDR)
+               01806 ;       .line   273; "../Work.c"        if(Stop_Low_Addr & LED7ADDR)
 0071 0000      01807         BANKSEL _Stop_Low_Addr
 0072 7E00      01808         JB      _Stop_Low_Addr, 6
 0073 C000      01809         JMP     _00157_DS_
                01810 ;       ::->op :*  =
-               01811 ;       .line   275; "../Work.c"        LED7HIGH;
+               01811 ;       .line   274; "../Work.c"        LED7HIGH;
 0074 0000      01812         BANKSEL _P6LR_bits
 0075 6D00      01813         SET     _P6LR_bits, 5
                01814 ;       ::->op : LABEL
                01815 ;       ::->op : BITWISEAND
 0076 01816 _00157_DS_
-               01817 ;       .line   276; "../Work.c"        if(Stop_Low_Addr & LED8ADDR)
+               01817 ;       .line   275; "../Work.c"        if(Stop_Low_Addr & LED8ADDR)
 0076 0000      01818         BANKSEL _Stop_Low_Addr
 0077 7F00      01819         JB      _Stop_Low_Addr, 7
 0078 C000      01820         JMP     _00159_DS_
                01821 ;       ::->op :*  =
-               01822 ;       .line   277; "../Work.c"        LED8HIGH;
+               01822 ;       .line   276; "../Work.c"        LED8HIGH;
 0079 0000      01823         BANKSEL _P6LR_bits
 007A 6E00      01824         SET     _P6LR_bits, 6
                01825 ;       ::->op : LABEL
                01826 ;       ::->op : BITWISEAND
 007B 01827 _00159_DS_
-               01828 ;       .line   278; "../Work.c"        if(Stop_Low_Addr & LED9ADDR)
+               01828 ;       .line   277; "../Work.c"        if(Stop_Low_Addr & LED9ADDR)
 007B 0000      01829         BANKSEL (_Stop_Low_Addr + 1)
 007C 7800      01830         JB      (_Stop_Low_Addr + 1), 0
 007D C000      01831         JMP     _00161_DS_
                01832 ;       ::->op :*  =
-               01833 ;       .line   279; "../Work.c"        LED9HIGH;
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 120
+               01833 ;       .line   278; "../Work.c"        LED9HIGH;
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 120
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -7149,34 +7149,34 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                01836 ;       ::->op : LABEL
                01837 ;       ::->op : BITWISEAND
 0080 01838 _00161_DS_
-               01839 ;       .line   280; "../Work.c"        if(Stop_Low_Addr & LED10ADDR)
+               01839 ;       .line   279; "../Work.c"        if(Stop_Low_Addr & LED10ADDR)
 0080 0000      01840         BANKSEL (_Stop_Low_Addr + 1)
 0081 7900      01841         JB      (_Stop_Low_Addr + 1), 1
 0082 C000      01842         JMP     _00163_DS_
                01843 ;       ::->op :*  =
-               01844 ;       .line   281; "../Work.c"        LED10HIGH;
+               01844 ;       .line   280; "../Work.c"        LED10HIGH;
 0083 0000      01845         BANKSEL _P9LR_bits
 0084 6C00      01846         SET     _P9LR_bits, 4
                01847 ;       ::->op : LABEL
                01848 ;       ::->op : BITWISEAND
 0085 01849 _00163_DS_
-               01850 ;       .line   282; "../Work.c"        if(Stop_Low_Addr & LED11ADDR)
+               01850 ;       .line   281; "../Work.c"        if(Stop_Low_Addr & LED11ADDR)
 0085 0000      01851         BANKSEL (_Stop_Low_Addr + 1)
 0086 7A00      01852         JB      (_Stop_Low_Addr + 1), 2
 0087 C000      01853         JMP     _00165_DS_
                01854 ;       ::->op :*  =
-               01855 ;       .line   283; "../Work.c"        LED11HIGH;
+               01855 ;       .line   282; "../Work.c"        LED11HIGH;
 0088 0000      01856         BANKSEL _P4LR_bits
 0089 6B00      01857         SET     _P4LR_bits, 3
                01858 ;       ::->op : LABEL
                01859 ;       ::->op : BITWISEAND
 008A 01860 _00165_DS_
-               01861 ;       .line   284; "../Work.c"        if(Stop_Low_Addr & LED12ADDR)
+               01861 ;       .line   283; "../Work.c"        if(Stop_Low_Addr & LED12ADDR)
 008A 0000      01862         BANKSEL (_Stop_Low_Addr + 1)
 008B 7B00      01863         JB      (_Stop_Low_Addr + 1), 3
 008C C000      01864         JMP     _00171_DS_
                01865 ;       ::->op :*  =
-               01866 ;       .line   285; "../Work.c"        LED12HIGH;
+               01866 ;       .line   284; "../Work.c"        LED12HIGH;
 008D 0000      01867         BANKSEL _P4LR_bits
 008E 6D00      01868         SET     _P4LR_bits, 5
                01869 ;       ::->op : LABEL
@@ -7198,7 +7198,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                01885 ;   _Led_Tail_AllClose
                01886 ;   _LED_Stop_AllClose
                01887 ;   _Led_Tail_AllOpen
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 121
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 121
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -7223,7 +7223,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0000 01904 _Mode_Act       ;Function start
                01905 ; 2 exit points
                01906 ;       ::->op : EQ_OP
-               01907 ;       .line   204; "../Work.c"        switch(ActMode)
+               01907 ;       .line   203; "../Work.c"        switch(ActMode)
 0000 0000      01908         BANKSEL _ActMode
 0001 0E00      01909         MOVZ    R0, _ActMode
 0002 A801      01910         XOR     R0,# 0x01
@@ -7258,7 +7258,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 001D C000      01939         JMP     _00106_DS_
 001E 01940 _00118_DS_
 001E 0000      01941         BANKSEL _ActMode
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 122
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 122
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -7276,7 +7276,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0028 01951 _00119_DS_
 0028 C000      01952         JMP     _00110_DS_
 0029 01953 _00104_DS_
-               01954 ;       .line   207; "../Work.c"        Led_Tail_AllClose();    //位置灯全关闭
+               01954 ;       .line   206; "../Work.c"        Led_Tail_AllClose();    //位置灯全关闭
 0029 0000      01955         TRAPPC1 _Led_Tail_AllClose
 002A 0000      01956         TRAPPC2 _Led_Tail_AllClose
 002B 0000      01957         PAGESEL _Led_Tail_AllClose
@@ -7285,7 +7285,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 002E 0000      01960         TRAPPC2 $+1
 002F 0000      01961         PAGESEL $
                01962 ;       ::->op : CALL
-               01963 ;       .line   208; "../Work.c"        LED_Stop_AllClose();    //制动灯全关闭
+               01963 ;       .line   207; "../Work.c"        LED_Stop_AllClose();    //制动灯全关闭
 0030 0000      01964         TRAPPC1 _LED_Stop_AllClose
 0031 0000      01965         TRAPPC2 _LED_Stop_AllClose
 0032 0000      01966         PAGESEL _LED_Stop_AllClose
@@ -7294,12 +7294,12 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0035 0000      01969         TRAPPC2 $+1
 0036 0000      01970         PAGESEL $
                01971 ;       ::->op : GOTO
-               01972 ;       .line   209; "../Work.c"        break;
+               01972 ;       .line   208; "../Work.c"        break;
 0037 C000      01973         JMP     _00110_DS_
                01974 ;       ::->op : LABEL
                01975 ;       ::->op : CALL
 0038 01976 _00105_DS_
-               01977 ;       .line   211; "../Work.c"        Led_Tail_AllOpen();             //位置灯全开启
+               01977 ;       .line   210; "../Work.c"        Led_Tail_AllOpen();             //位置灯全开启
 0038 0000      01978         TRAPPC1 _Led_Tail_AllOpen
 0039 0000      01979         TRAPPC2 _Led_Tail_AllOpen
 003A 0000      01980         PAGESEL _Led_Tail_AllOpen
@@ -7308,7 +7308,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 003D 0000      01983         TRAPPC2 $+1
 003E 0000      01984         PAGESEL $
                01985 ;       ::->op : CALL
-               01986 ;       .line   212; "../Work.c"        LED_Stop_PWMOpen();             //制动灯5%PWM开启
+               01986 ;       .line   211; "../Work.c"        LED_Stop_PWMOpen();             //制动灯5%PWM开启
 003F 0000      01987         TRAPPC1 _LED_Stop_PWMOpen
 0040 0000      01988         TRAPPC2 _LED_Stop_PWMOpen
 0041 0000      01989         PAGESEL _LED_Stop_PWMOpen
@@ -7317,8 +7317,8 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0044 0000      01992         TRAPPC2 $+1
 0045 0000      01993         PAGESEL $
                01994 ;       ::->op : GOTO
-               01995 ;       .line   213; "../Work.c"        break;
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 123
+               01995 ;       .line   212; "../Work.c"        break;
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 123
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -7328,7 +7328,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                01997 ;       ::->op : LABEL
                01998 ;       ::->op : CALL
 0047 01999 _00106_DS_
-               02000 ;       .line   215; "../Work.c"        Led_Tail_AllClose();    //位置灯全关闭
+               02000 ;       .line   214; "../Work.c"        Led_Tail_AllClose();    //位置灯全关闭
 0047 0000      02001         TRAPPC1 _Led_Tail_AllClose
 0048 0000      02002         TRAPPC2 _Led_Tail_AllClose
 0049 0000      02003         PAGESEL _Led_Tail_AllClose
@@ -7337,7 +7337,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 004C 0000      02006         TRAPPC2 $+1
 004D 0000      02007         PAGESEL $
                02008 ;       ::->op : CALL
-               02009 ;       .line   216; "../Work.c"        LED_Stop_AllOpen();             //制动灯全开启
+               02009 ;       .line   215; "../Work.c"        LED_Stop_AllOpen();             //制动灯全开启
 004E 0000      02010         TRAPPC1 _LED_Stop_AllOpen
 004F 0000      02011         TRAPPC2 _LED_Stop_AllOpen
 0050 0000      02012         PAGESEL _LED_Stop_AllOpen
@@ -7346,12 +7346,12 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0053 0000      02015         TRAPPC2 $+1
 0054 0000      02016         PAGESEL $
                02017 ;       ::->op : GOTO
-               02018 ;       .line   217; "../Work.c"        break;
+               02018 ;       .line   216; "../Work.c"        break;
 0055 C000      02019         JMP     _00110_DS_
                02020 ;       ::->op : LABEL
                02021 ;       ::->op : CALL
 0056 02022 _00107_DS_
-               02023 ;       .line   219; "../Work.c"        Led_Tail_AllOpen();             //位置灯全开启
+               02023 ;       .line   218; "../Work.c"        Led_Tail_AllOpen();             //位置灯全开启
 0056 0000      02024         TRAPPC1 _Led_Tail_AllOpen
 0057 0000      02025         TRAPPC2 _Led_Tail_AllOpen
 0058 0000      02026         PAGESEL _Led_Tail_AllOpen
@@ -7360,7 +7360,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 005B 0000      02029         TRAPPC2 $+1
 005C 0000      02030         PAGESEL $
                02031 ;       ::->op : CALL
-               02032 ;       .line   220; "../Work.c"        LED_Stop_AllOpen();             //制动灯全开启
+               02032 ;       .line   219; "../Work.c"        LED_Stop_AllOpen();             //制动灯全开启
 005D 0000      02033         TRAPPC1 _LED_Stop_AllOpen
 005E 0000      02034         TRAPPC2 _LED_Stop_AllOpen
 005F 0000      02035         PAGESEL _LED_Stop_AllOpen
@@ -7371,14 +7371,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                02040 ;       ::->op : LABEL
                02041 ;       ::->op : ENDFUNCTION
 0064 02042 _00110_DS_
-               02043 ;       .line   223; "../Work.c"        }
+               02043 ;       .line   222; "../Work.c"        }
 0064 0008      02044         CRET    
                02045 ; exit point of _Mode_Act
                02046 
                02047 
                02048 
                02049 func._Tail_Stop_Check_Input     .code
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 124
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 124
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -7438,7 +7438,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0019 7A03      02101         JB      PSW, 2
 001A C000      02102         JMP     _00070_DS_
                02103 ;       ::->op : IFX
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 125
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 125
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -7498,7 +7498,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                02155 ;       ::->op : EQ_OP
 0041 02156 _00070_DS_
                02157 ;       .line   163; "../Work.c"        if(Tail_Status==1&&Stop_Status==0)//位置高，制动低
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 126
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 126
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -7558,7 +7558,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0067 9802      02209         MOV     R0,# 0x02
 0068 0000      02210         BANKSEL _ActMode
 0069 5100      02211         MOV     _ActMode, R0
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 127
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 127
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -7618,7 +7618,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                02263 ;       ::->op : GOTO
 0091 C000      02264         JMP     _00082_DS_
                02265 ;       ::->op : LABEL
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 128
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 128
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -7678,7 +7678,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                02317 ;       ::->op : =
                02318 ;       .line   192; "../Work.c"        ActMode=0;
 00B8 0000      02319         BANKSEL _ActMode
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 129
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 129
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -7738,7 +7738,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                02371 ;       ::->op : EQ_OP
                02372 ;       .line   132; "../Work.c"        switch(RT_ActMode)
 0000 0000      02373         BANKSEL _RT_ActMode
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 130
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 130
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -7798,7 +7798,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0029 0000      02425         PAGESEL _Led_RT_AllOpen
 002A D000      02426         CALL    _Led_RT_AllOpen
 002B 0000      02427         TRAPPC1 $+2
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 131
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 131
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -7858,7 +7858,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                02479 ;       ::->op : =
 0007 02480 _00240_DS_
 0007 0000      02481         BANKSEL r0x1021
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 132
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 132
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -7918,7 +7918,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0030 7A03      02533         JB      PSW, 2
 0031 C000      02534         JMP     _00027_DS_
                02535 ;       ::->op : =
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 133
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 133
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -7978,7 +7978,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0055 A802      02587         XOR     R0,# 0x02
 0056 7A03      02588         JB      PSW, 2
 0057 C000      02589         JMP     _00032_DS_
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 134
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 134
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -8038,7 +8038,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 007C 0000      02641         BANKSEL _RT_NowMode
 007D 0300      02642         CLR     (_RT_NowMode + 1)
                02643 ;       ::->op : EQ_OP
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 135
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 135
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -8098,7 +8098,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                02695 ; 2 exit points
                02696 ;has an exit
                02697 ;3 compiler assigned registers:
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 136
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 136
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -8158,7 +8158,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 001D 02749 _00021_DS_
 001D 0008      02750         CRET    
                02751 ; exit point of _delay_us
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 137
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 137
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -8218,7 +8218,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0015 C000      02803         JMP     _00010_DS_
                02804 ;       ::->op : =
                02805 ;       .line   79; "../Work.c" j=280;
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 138
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 138
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -8278,7 +8278,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                02857 
                02858 
                02859 func._Init_IO   .code
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 139
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 139
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -8338,7 +8338,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0014 0000      02911         BANKSEL _ANS3
 0015 0300      02912         CLR     _ANS3
                02913 ;       ::->op : =
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 140
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 140
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -8398,7 +8398,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                02965 ;       .line   57; "../Work.c" P7LR=0;
 0031 0000      02966         BANKSEL _P7LR
 0032 0300      02967         CLR     _P7LR
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 141
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 141
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -8458,7 +8458,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                03019 
                03020 ;       code size estimation:
                03021 ;         898+  293 =  1191 instructions ( 2968 byte)
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 142
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 142
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -8466,7 +8466,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
  
                03022 
                03023 
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 143
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 143
 
 
 SYMBOL TABLE
@@ -8526,7 +8526,7 @@ ADCDATA3L                         00000255
 ADCHS0                            00000000
 ADCHS1                            00000001
 ADCHS2                            00000002
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 144
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 144
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -8586,7 +8586,7 @@ AIEL                              00000006
 ALC0                              00000000
 ALC1                              00000001
 ALC2                              00000002
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 145
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 145
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -8646,7 +8646,7 @@ ANS16                             00000006
 ANS17                             00000007
 ANS2                              0000004C
 ANS20                             00000000
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 146
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 146
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -8706,7 +8706,7 @@ ANS87                             00000007
 ANS9                              0000014E
 ANS90                             00000000
 ANS91                             00000001
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 147
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 147
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -8766,7 +8766,7 @@ BPS1                              00000004
 BPS2                              00000005
 BPS3                              00000006
 BR2CKS0                           00000002
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 148
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 148
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -8826,7 +8826,7 @@ C3IF                              00000002
 C3M0                              00000000
 C3M1                              00000001
 C3M2                              00000002
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 149
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 149
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -8886,7 +8886,7 @@ CANTXDT4                          00000539
 CANTXDT5                          0000053A
 CANTXDT6                          0000053B
 CANTXDT7                          0000053C
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 150
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 150
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -8946,7 +8946,7 @@ CCT3                              00000001
 CCT7                              00000002
 CCTCTL                            00000068
 CCTEN                             00000007
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 151
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 151
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -9006,7 +9006,7 @@ DIVBH                             00000139
 DIVBL                             0000013D
 DIVCTL                            0000013A
 DIVEN                             00000000
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 152
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 152
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -9066,7 +9066,7 @@ ERSW21                            00000007
 EUBRGH1                           00000259
 EUBRGH2                           00000159
 EUBRGH3                           00000219
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 153
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 153
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -9126,7 +9126,7 @@ FILTCNT42                         00000002
 FP10                              00000000
 FP11                              00000001
 FP12                              00000002
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 154
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 154
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -9186,7 +9186,7 @@ HUR1                              00000001
 HUR2                              00000002
 HUR3                              00000003
 HUR4                              00000004
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 155
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 155
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -9246,7 +9246,7 @@ INTLFEN                           00000000
 INV1                              00000007
 INV2                              00000007
 INV3                              00000007
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 156
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 156
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -9306,7 +9306,7 @@ IOC22F                            00000006
 IOC22N                            00000006
 IOC22P                            00000006
 IOC23F                            00000007
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 157
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 157
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -9366,7 +9366,7 @@ IOCL0                             00000036
 IOCL00                            00000000
 IOCL01                            00000001
 IOCL02                            00000002
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 158
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 158
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -9426,7 +9426,7 @@ MSK11                             00000001
 MSK12                             00000002
 MSK13                             00000003
 MSK14                             00000004
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 159
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 159
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -9486,7 +9486,7 @@ OSCCAL2                           00000030
 OSCCAL3                           00000132
 OSCFAILIF                         00000007
 OSS                               00000001
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 160
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 160
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -9546,7 +9546,7 @@ P2LR                              00000046
 P2LR0                             00000000
 P2LR1                             00000001
 P2LR2                             00000002
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 161
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 161
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -9606,7 +9606,7 @@ P4                                00000009
 P43                               00000003
 P44                               00000004
 P45                               00000005
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 162
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 162
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -9666,7 +9666,7 @@ P5ASS1                            00000005
 P5ASS2                            00000006
 P5BSEL0                           00000005
 P5BSEL1                           00000006
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 163
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 163
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -9726,7 +9726,7 @@ P62                               00000002
 P63                               00000003
 P64                               00000004
 P65                               00000005
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 164
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 164
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -9786,7 +9786,7 @@ P7LR3                             00000003
 P7LR5                             00000005
 P7MOD0                            00000000
 P7MOD1                            00000001
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 165
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 165
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -9846,7 +9846,7 @@ PC2                               00000006
 PC3                               00000002
 PC4                               00000003
 PCA                               00000001
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 166
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 166
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -9906,7 +9906,7 @@ PP1                               00000016
 PP2                               00000032
 PP3H                              00000442
 PP3L                              00000443
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 167
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 167
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -9966,7 +9966,7 @@ PTX3                              00000000
 PTX4                              00000002
 PUIE                              00000006
 PUPH                              00000007
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 168
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 168
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -10026,7 +10026,7 @@ PUR7                              00000247
 PUR71                             00000001
 PUR72                             00000002
 PUR73                             00000003
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 169
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 169
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -10086,7 +10086,7 @@ PWM5H3                            00000621
 PWM5L0                            00000622
 PWM5L1                            00000623
 PWM5L2                            00000624
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 170
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 170
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -10146,7 +10146,7 @@ RES10                             00000000
 RES11                             00000001
 RES12                             00000002
 RES13                             00000003
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 171
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 171
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -10206,7 +10206,7 @@ RTCTMRCTL                         0000032C
 RTCTMREN                          0000032D
 RTCTTR                            00000320
 RTCTTR0                           00000000
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 172
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 172
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -10266,7 +10266,7 @@ SEC5                              00000005
 SEC6                              00000006
 SECIE                             00000000
 SECIF                             00000000
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 173
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 173
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -10326,7 +10326,7 @@ SRXEN3                            00000005
 SRXEN4                            00000005
 SS1SEL                            00000002
 SS2SEL0                           00000001
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 174
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 174
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -10386,7 +10386,7 @@ SSCI2ADD                          00000208
 SSCI2ADD0                         00000000
 SSCI2ADD1                         00000001
 SSCI2ADD2                         00000002
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 175
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 175
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -10446,7 +10446,7 @@ STK03                             00000000
 STK04                             00000000
 STK05                             00000000
 STK06                             00000000
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 176
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 176
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -10506,7 +10506,7 @@ T1CKS1                            00000003
 T1CLK0                            00000000
 T1CLK1                            00000001
 T1CS                              00000001
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 177
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 177
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -10566,7 +10566,7 @@ T3CKS0                            00000004
 T3CKS1                            00000005
 T3CS0                             00000001
 T3CS1                             00000002
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 178
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 178
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -10626,7 +10626,7 @@ T5CLK0                            00000001
 T5CLK1                            00000002
 T5CTL0                            00000550
 T5CTL1                            00000515
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 179
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 179
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -10686,7 +10686,7 @@ T8CCRH                            0000044A
 T8CCRL                            0000044B
 T8CKBS0                           00000003
 T8CKBS1                           00000004
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 180
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 180
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -10746,7 +10746,7 @@ TR10                              00000000
 TR11                              00000001
 TR12                              00000002
 TR13                              00000003
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 181
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 181
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -10806,7 +10806,7 @@ TRA0                              00000000
 TRA1                              00000001
 TRAPRx73                          00000000
 TRAPRx74                          00000000
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 182
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 182
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -10866,7 +10866,7 @@ U7816EN2                          00000007
 U7816RXCTL2                       00000167
 U7816TXCTL2                       00000163
 UADMATCH2                         00000160
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 183
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 183
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -10926,7 +10926,7 @@ WEK0                              00000000
 WEK1                              00000001
 WEK2                              00000002
 WEN1                              00000006
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 184
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 184
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -10986,7 +10986,7 @@ _00035_DS_                        00000067
 _00038_DS_                        0000008D
 _00041_DS_                        00000092
 _00053_DS_                        0000001F
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 185
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 185
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -11046,7 +11046,7 @@ _00233_DS_                        00000028
 _00234_DS_                        00000012
 _00235_DS_                        00000017
 _00236_DS_                        00000058
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 186
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 186
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -11106,7 +11106,7 @@ _ADCCTL1_bits                     00000000
 _ADCCTL2                          00000000
 _ADCCTL2_bits                     00000000
 _ADCCTL3                          00000000
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 187
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 187
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -11166,7 +11166,7 @@ _ADM44                            00000004
 _ADM45                            00000005
 _ADM46                            00000006
 _ADM47                            00000007
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 188
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 188
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -11226,7 +11226,7 @@ _ANS00                            00000000
 _ANS01                            00000001
 _ANS02                            00000002
 _ANS03                            00000003
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 189
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 189
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -11286,7 +11286,7 @@ _ANS62                            00000002
 _ANS63                            00000003
 _ANS64                            00000004
 _ANS65                            00000005
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 190
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 190
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -11346,7 +11346,7 @@ _APFCTL5_bits                     00000000
 _APFCTL6                          00000000
 _APFCTL6_bits                     00000000
 _APFCTL7                          00000000
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 191
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 191
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -11406,7 +11406,7 @@ _BRCTL3_bits                      00000000
 _BRCTL4                           00000000
 _BRCTL4_bits                      00000000
 _BRP0                             00000000
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 192
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 192
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -11466,7 +11466,7 @@ _C3OUT                            00000002
 _C3OUTSEL                         00000007
 _C3P0                             00000003
 _C3P1                             00000004
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 193
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 193
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -11526,7 +11526,7 @@ _CANRXE                           00000000
 _CANRXE_bits                      00000000
 _CANRXIE                          00000000
 _CANRXIF                          00000000
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 194
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 194
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -11586,7 +11586,7 @@ _CCP5IE                           00000004
 _CCP5IF                           00000004
 _CCP7CTL                          00000000
 _CCP7CTL_bits                     00000000
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 195
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 195
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -11646,7 +11646,7 @@ _CLKOUTSEL                        00000000
 _CLKS                             00000006
 _CMCTL0                           00000000
 _CMCTL0_bits                      00000000
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 196
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 196
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -11706,7 +11706,7 @@ _EGT21                            00000001
 _EGT22                            00000002
 _EGT23                            00000003
 _EGT24                            00000004
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 197
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 197
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -11766,7 +11766,7 @@ _EUBRGL4                          00000000
 _EWL0                             00000000
 _EWL1                             00000001
 _EWL2                             00000002
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 198
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 198
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -11826,7 +11826,7 @@ _FILTCNT41                        00000001
 _FILTCNT42                        00000002
 _FP10                             00000000
 _FP11                             00000001
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 199
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 199
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -11886,7 +11886,7 @@ _HT                               00000003
 _HTS                              00000004
 _HUR0                             00000000
 _HUR1                             00000001
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 200
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 200
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -11946,7 +11946,7 @@ _INV4                             00000007
 _IOC0F                            00000000
 _IOC0N                            00000000
 _IOC0P                            00000000
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 201
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 201
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -12006,7 +12006,7 @@ _IOC23N                           00000007
 _IOC23P                           00000007
 _IOC2F                            00000002
 _IOC2N                            00000002
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 202
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 202
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -12066,7 +12066,7 @@ _IOCCNEG_bits                     00000000
 _IOCCPOS                          00000000
 _IOCCPOS_bits                     00000000
 _IOCCUIE                          00000005
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 203
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 203
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -12126,7 +12126,7 @@ _LPRC0                            00000000
 _LPRC1                            00000001
 _LPRC2                            00000002
 _LPRCCAL                          00000000
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 204
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 204
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -12186,7 +12186,7 @@ _MSK35                            00000005
 _MSK36                            00000006
 _MSK37                            00000007
 _MTH0                             00000000
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 205
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 205
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -12246,7 +12246,7 @@ _P06                              00000006
 _P07                              00000007
 _P0IE                             00000003
 _P0IF                             00000000
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 206
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 206
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -12306,7 +12306,7 @@ _P32                              00000002
 _P34                              00000004
 _P35                              00000005
 _P36                              00000006
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 207
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 207
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -12366,7 +12366,7 @@ _P4ASE                            00000007
 _P4ASEL0                          00000000
 _P4ASEL1                          00000001
 _P4ASS0                           00000004
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 208
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 208
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -12426,7 +12426,7 @@ _P5ASS1                           00000005
 _P5ASS2                           00000006
 _P5BSEL0                          00000005
 _P5BSEL1                          00000006
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 209
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 209
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -12486,7 +12486,7 @@ _P5STRSYNC                        00000004
 _P5_bits                          00000000
 _P6                               00000000
 _P61                              00000001
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 210
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 210
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -12546,7 +12546,7 @@ _P7CH0HSEL                        00000004
 _P7CH1HSEL                        00000005
 _P7CH2HSEL                        00000006
 _P7CH3HSEL                        00000007
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 211
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 211
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -12606,7 +12606,7 @@ _PALRM                            00000004
 _PALR_bits                        00000000
 _PAREF2                           00000000
 _PA_bits                          00000000
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 212
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 212
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -12666,7 +12666,7 @@ _PHLVD                            00000002
 _PHOUR                            00000002
 _PIBIAS0                          00000004
 _PIBIAS1                          00000005
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 213
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 213
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -12726,7 +12726,7 @@ _PSEC                             00000000
 _PSEL2                            00000007
 _PSSCI1                           00000003
 _PSSCI2                           00000004
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 214
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 214
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -12786,7 +12786,7 @@ _PUR30                            00000000
 _PUR31                            00000001
 _PUR32                            00000002
 _PUR34                            00000004
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 215
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 215
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -12846,7 +12846,7 @@ _PWM1OUTSEL                       00000000
 _PWM2IE                           00000002
 _PWM2IF                           00000002
 _PWM2L                            00000000
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 216
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 216
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -12906,7 +12906,7 @@ _PWM6H0                           00000000
 _PWM6H1                           00000000
 _PWM6H2                           00000000
 _PWM6H3                           00000000
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 217
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 217
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -12966,7 +12966,7 @@ _RES12                            00000002
 _RES13                            00000003
 _RES20                            00000004
 _RES21                            00000005
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 218
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 218
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -13026,7 +13026,7 @@ _RTCOS                            00000006
 _RTCSEC                           00000000
 _RTCSEC_bits                      00000000
 _RTCSRT                           00000000
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 219
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 219
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -13086,7 +13086,7 @@ _SAMPLE2                          00000007
 _SCKCL1SEL0                       00000004
 _SCKCL1SEL1                       00000005
 _SCKCL2SEL                        00000005
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 220
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 220
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -13146,7 +13146,7 @@ _SPEN4                            00000007
 _SPI_Write_2Byte                  00000000
 _SRCLK0                           00000004
 _SRCLK1                           00000005
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 221
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 221
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -13206,7 +13206,7 @@ _SSCI1BUF                         00000000
 _SSCI1BUFR                        00000000
 _SSCI1CALLEN                      00000007
 _SSCI1CKP                         00000004
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 222
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 222
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -13266,7 +13266,7 @@ _SSCI2CALLEN                      00000007
 _SSCI2CKP                         00000004
 _SSCI2CKS0                        00000000
 _SSCI2CKS1                        00000001
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 223
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 223
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -13326,7 +13326,7 @@ _STK09                            00000000
 _STK10                            00000000
 _STK11                            00000000
 _STKR0                            00000000
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 224
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 224
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -13386,7 +13386,7 @@ _T1CKISEL                         00000002
 _T1CKS0                           00000002
 _T1CKS1                           00000003
 _T1CLK0                           00000000
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 225
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 225
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -13446,7 +13446,7 @@ _T2OFS0                           00000004
 _T2OFS1                           00000005
 _T2ON                             00000002
 _T2TRIGEN                         00000003
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 226
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 226
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -13506,7 +13506,7 @@ _T5CCR1H                          00000000
 _T5CCR1L                          00000000
 _T5CCR1ON                         00000003
 _T5CKBS0                          00000003
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 227
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 227
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -13566,7 +13566,7 @@ _T7CKS1                           00000005
 _T7CS0                            00000001
 _T7CS1                            00000002
 _T7CTL                            00000000
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 228
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 228
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -13626,7 +13626,7 @@ _TCSTA                            00000003
 _TE2IE                            00000002
 _TE2IF                            00000002
 _TINV2                            00000002
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 229
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 229
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -13686,7 +13686,7 @@ _TR53                             00000003
 _TR54                             00000004
 _TR55                             00000005
 _TR5_bits                         00000000
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 230
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 230
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -13746,7 +13746,7 @@ _TX2IE                            00000004
 _TX2IF                            00000004
 _TX3IE                            00000000
 _TX3IF                            00000000
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 231
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 231
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -13806,7 +13806,7 @@ _UADMATCH3_bits                   00000000
 _UADMATCH4                        00000000
 _UADMATCH4_bits                   00000000
 _UDEN                             00000000
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 232
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 232
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -13866,7 +13866,7 @@ _WCNT_bits                        00000000
 _WCTL                             00000000
 _WCTL_bits                        00000000
 _WDTPS                            00000000
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 233
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 233
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -13926,7 +13926,7 @@ _delay_ms                         00000000
 _delay_ms_i_1_1                   00000000
 _delay_ms_j_1_1                   00000000
 _delay_us                         00000000
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 234
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 234
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -13986,7 +13986,7 @@ _func._Led_Hello_0017             00000017
 _func._Led_Hello_0018             00000018
 _func._Led_Hello_0021             00000021
 _func._Led_Hello_0022             00000022
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 235
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 235
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -14046,7 +14046,7 @@ _func._Mode_Act_0035              00000035
 _func._Mode_Act_0036              00000036
 _func._Mode_Act_003C              0000003C
 _func._Mode_Act_003D              0000003D
-kf8asm-2.0.0                    Work.asm    10-20-2020  08:25:09         PAGE 236
+kf8asm-2.0.0                    Work.asm    11-7-2020  08:55:20          PAGE 236
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT

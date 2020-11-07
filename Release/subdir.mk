@@ -5,7 +5,6 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../Led.c \
-../Pwm.c \
 ../SoftSpi.c \
 ../Timer.c \
 ../Work.c \
@@ -14,7 +13,6 @@ C_SRCS += \
 
 OBJS += \
 ./Led.o \
-./Pwm.o \
 ./SoftSpi.o \
 ./Timer.o \
 ./Work.o \
@@ -23,7 +21,6 @@ OBJS += \
 
 C_DEPS += \
 ./Led.dep \
-./Pwm.dep \
 ./SoftSpi.dep \
 ./Timer.dep \
 ./Work.dep \

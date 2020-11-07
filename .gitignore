@@ -1,2 +1,15 @@
 /Debug/*
 /Release/*
+*.map
+*.cof
+*.cod
+*.lst
+*.lst
+*.lst
+*.map
+*.cof
+*.cod
+*.lst
+*.cof
+*.cod
+*.lst
